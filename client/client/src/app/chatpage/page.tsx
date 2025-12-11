@@ -16,18 +16,35 @@ interface QuizMessage {
   userAnswer: number | null;
 }
 
+interface ChatMessage {
+  type: "user" | "bot";
+  text: string;
+}
+
 interface Module {
   module_id: number;
   title: string;
   description: string;
 }
 
+interface Topic {
+  topic_id: number;
+  module_id: number;
+  title: string;
+  created_at: string;
+}
+
 export default function ChatPage() {
-  const [messages, setMessages] = useState<(({ type: "user" | "bot"; text: string }) | QuizMessage)[]>([]);
+  const [messages, setMessages] = useState<(ChatMessage | QuizMessage)[]>([]);
   const [input, setInput] = useState("");
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+  const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
+  const [topics, setTopics] = useState<Topic[]>([]);
   const [module, setModule] = useState<Module | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [showAddTopic, setShowAddTopic] = useState(false);
+  const [newTopicTitle, setNewTopicTitle] = useState("");
+  const [isAddingTopic, setIsAddingTopic] = useState(false);
+  const [isSendingMessage, setIsSendingMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -36,6 +53,7 @@ export default function ChatPage() {
   useEffect(() => {
     if (moduleId) {
       fetchModuleDetails();
+      fetchTopics();
     } else {
       setIsLoading(false);
     }
@@ -43,7 +61,6 @@ export default function ChatPage() {
 
   const fetchModuleDetails = async () => {
     try {
-      setIsLoading(true);
       const token = localStorage.getItem("token");
 
       if (!token) {
@@ -68,23 +85,116 @@ export default function ChatPage() {
       setModule(data);
     } catch (err) {
       console.error("Error fetching module:", err);
+    }
+  };
+
+  const fetchTopics = async () => {
+    try {
+      setIsLoading(true);
+      const token = localStorage.getItem("token");
+
+      if (!token) {
+        router.push("/loginpage");
+        return;
+      }
+
+      if (!moduleId) {
+        console.error("Module ID not found");
+        setIsLoading(false);
+        return;
+      }
+
+      const response = await fetch(
+        `http://localhost:5000/api/modules/${moduleId}/topics`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch topics");
+      }
+
+      const data = await response.json();
+      setTopics(data);
+    } catch (err) {
+      console.error("Error fetching topics:", err);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const topics = [
-    "Machine Learning",
-    "Deep Learning",
-    "Natural Language Processing",
-    "Computer Vision",
-    "Data Science",
-    "Cloud Computing",
-    "Cybersecurity",
-    "Web Development",
-    "Mobile Development",
-    "Database Management",
-  ];
+  const handleAddTopic = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!newTopicTitle.trim()) {
+      return;
+    }
+
+    setIsAddingTopic(true);
+
+    try {
+      const token = localStorage.getItem("token");
+
+      const response = await fetch(
+        `http://localhost:5000/api/modules/${moduleId}/topics`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ title: newTopicTitle }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to add topic");
+      }
+
+      const newTopic = await response.json();
+      setTopics([newTopic, ...topics]);
+      setNewTopicTitle("");
+      setShowAddTopic(false);
+    } catch (err) {
+      console.error("Error adding topic:", err);
+      alert(err instanceof Error ? err.message : "Error adding topic");
+    } finally {
+      setIsAddingTopic(false);
+    }
+  };
+
+  const handleDeleteTopic = async (topicId: number) => {
+    if (!window.confirm("Delete this topic?")) {
+      return;
+    }
+
+    try {
+      const token = localStorage.getItem("token");
+
+      const response = await fetch(
+        `http://localhost:5000/api/modules/${moduleId}/topics/${topicId}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to delete topic");
+      }
+
+      setTopics(topics.filter((t) => t.topic_id !== topicId));
+      setSelectedTopics(selectedTopics.filter((id) => id !== topicId));
+    } catch (err) {
+      console.error("Error deleting topic:", err);
+    }
+  };
 
   const sampleQuizzes: QuizQuestion[] = [
     {
@@ -114,15 +224,47 @@ export default function ChatPage() {
     },
   ];
 
-  const handleTopicSelect = (topic: string) => {
+  const handleSendMessageToHuggingFace = async (userMessage: string) => {
+    try {
+      setIsSendingMessage(true);
+      const token = localStorage.getItem("token");
+
+      const response = await fetch(
+        `http://localhost:5000/api/${moduleId}/chat`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ message: userMessage }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to get response from chatbot");
+      }
+
+      const data = await response.json();
+      return data.message;
+    } catch (err) {
+      console.error("Error sending message to HuggingFace:", err);
+      throw err;
+    } finally {
+      setIsSendingMessage(false);
+    }
+  };
+
+  const handleTopicSelect = (topicId: number) => {
     setSelectedTopics((prev) =>
-      prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]
+      prev.includes(topicId) ? prev.filter((t) => t !== topicId) : [...prev, topicId]
     );
   };
 
   const sortedTopics = [
-    ...selectedTopics,
-    ...topics.filter((t) => !selectedTopics.includes(t)),
+    ...topics.filter((t) => selectedTopics.includes(t.topic_id)),
+    ...topics.filter((t) => !selectedTopics.includes(t.topic_id)),
   ];
 
   const scrollToBottom = () => {
@@ -142,15 +284,22 @@ export default function ChatPage() {
 
   const handleSendMessage = () => {
     if (input.trim()) {
-      const userMessage = { type: "user" as const, text: input };
-      setMessages([...messages, userMessage]);
+      const userMessage = input;
+      setMessages([...messages, { type: "user", text: userMessage }]);
       setInput("");
 
-      // Simulate bot response after a short delay
-      setTimeout(() => {
-        const botMessage = { type: "bot" as const, text: "This is a response from the bot." };
-        setMessages((prev) => [...prev, botMessage]);
-      }, 500);
+      // Send to HuggingFace API
+      handleSendMessageToHuggingFace(userMessage)
+        .then((botResponse) => {
+          setMessages((prev) => [...prev, { type: "bot", text: botResponse }]);
+        })
+        .catch((err) => {
+          const errorMessage = err instanceof Error ? err.message : "Error getting response from chatbot";
+          setMessages((prev) => [
+            ...prev,
+            { type: "bot", text: `Sorry, there was an error: ${errorMessage}` },
+          ]);
+        });
     }
   };
 
@@ -170,11 +319,18 @@ export default function ChatPage() {
         setMessages((prev) => [...prev, quizMessage]);
       }, 500);
     } else {
-      // Simulate bot response for other questions
-      setTimeout(() => {
-        const botMessage = { type: "bot" as const, text: "This is a response from the bot." };
-        setMessages((prev) => [...prev, botMessage]);
-      }, 500);
+      // Send other questions to HuggingFace
+      handleSendMessageToHuggingFace(question)
+        .then((botResponse) => {
+          setMessages((prev) => [...prev, { type: "bot", text: botResponse }]);
+        })
+        .catch((err) => {
+          const errorMessage = err instanceof Error ? err.message : "Error getting response from chatbot";
+          setMessages((prev) => [
+            ...prev,
+            { type: "bot", text: `Sorry, there was an error: ${errorMessage}` },
+          ]);
+        });
     }
   };
 
@@ -197,27 +353,86 @@ export default function ChatPage() {
         <>
       {/* Topics Container */}
       <div className="flex w-48 flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-lg overflow-y-auto">
-        <h2 className="mb-4 text-lg font-semibold text-black">Topics</h2>
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-semibold text-black">Topics</h2>
+          <button
+            onClick={() => setShowAddTopic(!showAddTopic)}
+            className="text-lg font-bold text-black hover:text-gray-600"
+            title="Add topic"
+          >
+            +
+          </button>
+        </div>
+
+        {showAddTopic && (
+          <form onSubmit={handleAddTopic} className="mb-4 flex flex-col gap-2">
+            <input
+              type="text"
+              value={newTopicTitle}
+              onChange={(e) => setNewTopicTitle(e.target.value)}
+              placeholder="Topic name"
+              className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 focus:border-black focus:outline-none"
+            />
+            <div className="flex gap-2">
+              <button
+                type="submit"
+                disabled={isAddingTopic}
+                className="flex-1 rounded-lg bg-black px-2 py-1 text-xs font-semibold text-white hover:bg-gray-800 disabled:opacity-50"
+              >
+                {isAddingTopic ? "Adding..." : "Add"}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setShowAddTopic(false);
+                  setNewTopicTitle("");
+                }}
+                className="flex-1 rounded-lg border border-gray-300 px-2 py-1 text-xs font-semibold text-black hover:bg-gray-100"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
         <div className="space-y-2 flex-1">
-          {sortedTopics.map((topic) => (
-            <div
-              key={topic}
-              onClick={() => handleTopicSelect(topic)}
-              className={`rounded-lg px-4 py-3 cursor-pointer transition-colors ${
-                selectedTopics.includes(topic)
-                  ? "bg-blue-100 border border-blue-300"
-                  : "bg-white border border-gray-200 hover:bg-gray-50"
-              }`}
-            >
-              <p
-                className={`text-sm font-medium ${
-                  selectedTopics.includes(topic) ? "text-blue-900" : "text-gray-700"
+          {sortedTopics.length === 0 ? (
+            <p className="text-xs text-gray-500">No topics yet. Add one to get started!</p>
+          ) : (
+            sortedTopics.map((topic) => (
+              <div
+                key={topic.topic_id}
+                className={`rounded-lg px-4 py-3 cursor-pointer transition-colors flex items-center justify-between group ${
+                  selectedTopics.includes(topic.topic_id)
+                    ? "bg-blue-100 border border-blue-300"
+                    : "bg-white border border-gray-200 hover:bg-gray-50"
                 }`}
               >
-                {topic}
-              </p>
-            </div>
-          ))}
+                <div
+                  onClick={() => handleTopicSelect(topic.topic_id)}
+                  className="flex-1"
+                >
+                  <p
+                    className={`text-sm font-medium ${
+                      selectedTopics.includes(topic.topic_id) ? "text-blue-900" : "text-gray-700"
+                    }`}
+                  >
+                    {topic.title}
+                  </p>
+                </div>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDeleteTopic(topic.topic_id);
+                  }}
+                  className="text-lg text-red-500 hover:text-red-700 opacity-0 group-hover:opacity-100 transition-opacity"
+                  title="Delete topic"
+                >
+                  -
+                </button>
+              </div>
+            ))
+          )}
         </div>
       </div>
 
@@ -319,9 +534,9 @@ export default function ChatPage() {
                   </div>
                 ) : (
                   // Regular Chat Message
-                  <div className={`mb-4 mt-6 flex ${message.type === "user" ? "justify-end" : "justify-start"}`}>
-                    <div className={`rounded-lg px-4 py-2 ${message.type === "user" ? "bg-black text-white" : "bg-gray-100 text-gray-800"}`} style={{ maxWidth: "80%" }}>
-                      <p className="text-sm break-words">{(message as any).text}</p>
+                  <div className={`mb-4 mt-6 flex ${(message as ChatMessage).type === "user" ? "justify-end" : "justify-start"}`}>
+                    <div className={`rounded-lg px-4 py-2 ${(message as ChatMessage).type === "user" ? "bg-black text-white" : "bg-gray-100 text-gray-800"}`} style={{ maxWidth: "80%" }}>
+                      <p className="text-sm break-words">{(message as ChatMessage).text}</p>
                     </div>
                   </div>
                 )}
@@ -348,9 +563,10 @@ export default function ChatPage() {
             />
             <button
               onClick={handleSendMessage}
-              className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-500 text-white transition-colors hover:bg-red-600"
+              disabled={isSendingMessage}
+              className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-500 text-white transition-colors hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              ▶
+              {isSendingMessage ? "..." : "▶"}
             </button>
           </div>
         </div>

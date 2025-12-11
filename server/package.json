@@ -12,12 +12,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@huggingface/inference": "^4.13.5",
+    "axios": "^1.13.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.0",
     "mysql2": "^3.6.0",
-    "sequelize": "^6.35.0"
+    "sequelize": "^6.35.0",
+    "serpapi": "^2.2.1"
   }
 }

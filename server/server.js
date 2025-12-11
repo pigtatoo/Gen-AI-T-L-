@@ -3,16 +3,24 @@ const cors = require('cors');
 const sequelize = require('./config/database');
 require('dotenv').config();
 
+// Suppress HuggingFace warnings
+process.env.HF_HUB_DISABLE_IMPLICIT_TOKEN = '1';
+
 const authRoutes = require('./routes/auth');
 const modulesRoutes = require('./routes/modules');
+const topicsRoutes = require('./routes/topics');
+const chatRoutes = require('./routes/chat');
 
 // Import models
 const User = require('./models/User');
 const Module = require('./models/Modules');
+const Topic = require('./models/Topics');
 
 // Define relationships
 User.hasMany(Module, { foreignKey: 'user_id', onDelete: 'CASCADE' });
 Module.belongsTo(User, { foreignKey: 'user_id' });
+Module.hasMany(Topic, { foreignKey: 'module_id', onDelete: 'CASCADE' });
+Topic.belongsTo(Module, { foreignKey: 'module_id' });
 
 const app = express();
 
@@ -40,6 +48,12 @@ app.use('/api/auth', authRoutes);
 
 // Modules routes
 app.use('/api/modules', modulesRoutes);
+
+// Topics routes (nested under modules)
+app.use('/api/modules/:moduleId/topics', topicsRoutes);
+
+// Chat routes (Gemini integration)
+app.use('/api', chatRoutes);
 
 // Simple health route
 app.get('/api/health', (req, res) => {
