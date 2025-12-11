@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import ReactMarkdown from "react-markdown";
 
 interface ChatMessage {
   type: "user" | "bot";
@@ -157,6 +158,11 @@ export default function ChatPage() {
       setIsSendingMessage(true);
 
       const token = localStorage.getItem("token"); // optional if your backend uses auth
+      
+      // Get selected topic titles
+      const selectedTopicTitles = topics
+        .filter(t => selectedTopics.includes(t.topic_id))
+        .map(t => t.title);
 
       const response = await fetch("http://localhost:5000/api/chat", {
         method: "POST",
@@ -164,7 +170,12 @@ export default function ChatPage() {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify({ message: userMessage }),
+        body: JSON.stringify({ 
+          message: userMessage,
+          moduleTitle: module?.title,
+          moduleDescription: module?.description,
+          selectedTopics: selectedTopicTitles
+        }),
       });
 
       if (!response.ok) {
@@ -367,7 +378,32 @@ export default function ChatPage() {
             {messages.map((message, index) => (
               <div key={index} className={`mb-4 mt-6 flex ${message.type === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`rounded-lg px-4 py-2 ${message.type === "user" ? "bg-black text-white" : "bg-gray-100 text-gray-800"}`} style={{ maxWidth: "80%" }}>
-                  <p className="text-sm break-words">{message.text}</p>
+                  {message.type === "user" ? (
+                    <p className="text-sm break-words">{message.text}</p>
+                  ) : (
+                    <div className="text-sm break-words prose prose-sm max-w-none">
+                      <ReactMarkdown
+                        components={{
+                          h1: ({node, ...props}) => <h1 className="text-lg font-bold mt-2 mb-2" {...props} />,
+                          h2: ({node, ...props}) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
+                          h3: ({node, ...props}) => <h3 className="text-sm font-bold mt-1 mb-1" {...props} />,
+                          strong: ({node, ...props}) => <strong className="font-bold" {...props} />,
+                          em: ({node, ...props}) => <em className="italic" {...props} />,
+                          ul: ({node, ...props}) => <ul className="list-disc list-inside my-1" {...props} />,
+                          ol: ({node, ...props}) => <ol className="list-decimal list-inside my-1" {...props} />,
+                          li: ({node, ...props}) => <li className="ml-2" {...props} />,
+                          p: ({node, ...props}) => <p className="my-1" {...props} />,
+                          code: ({node, className, ...props}) => (
+                            className ? 
+                            <code className="bg-gray-300 px-2 py-1 rounded block text-xs my-1 overflow-x-auto" {...props} /> :
+                            <code className="bg-gray-300 px-1 rounded text-xs" {...props} />
+                          ),
+                        }}
+                      >
+                        {message.text}
+                      </ReactMarkdown>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

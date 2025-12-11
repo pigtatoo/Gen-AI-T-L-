@@ -46,9 +46,25 @@ app.use('/api/modules/:moduleId/topics', topicsRoutes);
 // DeepSeek Chat Endpoint
 // -----------------------------
 app.post('/api/chat', async (req, res) => {
-  const { message } = req.body;
+  const { message, moduleTitle, moduleDescription, selectedTopics } = req.body;
 
   if (!message) return res.status(400).json({ error: 'No message provided' });
+
+  // Build context-aware system message
+  let systemMessage = 'You are a helpful teacher assistant. Answer clearly and simply for students.';
+  
+  if (moduleTitle) {
+    systemMessage = `You are a teacher assistant for the module: "${moduleTitle}".`;
+    
+    if (moduleDescription) {
+      systemMessage += `\n\nModule description: ${moduleDescription}`;
+    }
+    
+    if (selectedTopics && selectedTopics.length > 0) {
+      systemMessage += `\n\nCurrent topics being studied: ${selectedTopics.join(', ')}.`;
+      systemMessage += '\n\nFocus your answers on these topics. You can provide summaries, explain concepts, and answer questions about them clearly and simply.';
+    }
+  }
 
   try {
     const response = await axios.post(
@@ -58,7 +74,7 @@ app.post('/api/chat', async (req, res) => {
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful teacher assistant. Answer clearly and simply for students.'
+            content: systemMessage
           },
           { role: 'user', content: message }
         ],
