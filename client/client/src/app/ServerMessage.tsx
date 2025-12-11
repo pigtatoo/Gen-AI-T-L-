@@ -9,13 +9,13 @@ export default function ServerMessage() {
 
   useEffect(() => {
     const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-    fetch(`${apiBase}/api/hello`)
+    fetch(`${apiBase}/api/health`)
       .then((res) => {
         if (!res.ok) throw new Error(`Status ${res.status}`);
         return res.json();
       })
       .then((data) => {
-        setMessage((data && (data.message as string)) || JSON.stringify(data));
+        setMessage('Connected');
       })
       .catch((err) => {
         setError(err?.message || String(err));
