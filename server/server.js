@@ -65,6 +65,11 @@ app.post('/api/chat', async (req, res) => {
     message
   );
 
+  // Check if user is asking for summary
+  const isSummaryRequest = /^(summary|summarize|recap|overview|key\s*points|learning\s*points)/i.test(
+    message.trim()
+  );
+
   // Build context-aware system message
   let systemMessage = 'You are a helpful teacher assistant. Provide concise, well-organized answers for students.';
   
@@ -78,6 +83,18 @@ app.post('/api/chat', async (req, res) => {
     if (selectedTopics && selectedTopics.length > 0) {
       systemMessage += `\n\nCurrent topics being studied: ${selectedTopics.join(', ')}.`;
       systemMessage += '\n\nFocus your answers on these topics. When asked for a summary, provide key points in a structured format (use bullet points for lists). Keep explanations clear but concise to fit in a single response.';
+
+      // If user asks for summary, add structured learning format
+      if (isSummaryRequest) {
+        systemMessage += 
+          '\n\n**USER REQUESTING SUMMARY:** Provide a structured summary with:\n' +
+          '📚 **Key Learning Points** (5-7 bullet points)\n' +
+          '🎯 **Learning Objectives** (2-3 core concepts)\n' +
+          '💡 **Key Takeaways** (practical insights)\n' +
+          '🔗 **Real-World Applications** (how this applies in practice)\n' +
+          '❓ **Common Questions** (FAQ format, 2-3 Q&As)\n' +
+          'Format each section clearly with headers and use markdown formatting.';
+      }
 
       // Add real-world case studies from mapped articles
       const mappedArticles = caseStudyService.getLatestMappedArticles();
