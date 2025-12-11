@@ -252,7 +252,7 @@ export default function ChatPage() {
   const suggestedQuestions = [
     "Summarised Newsletter",
     "Illustrations of Frameworks",
-    "Real world examples",
+    "Give me a case study",
   ];
 
   return (

@@ -1,0 +1,110 @@
+[
+  {
+    "topicId": 1,
+    "topicTitle": "IT Governance",
+    "moduleId": 2,
+    "moduleTitle": "Governance Risk & Compliance ",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "Users report chaos as Legal Aid Agency stumbles back online after cyberattack",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/11/legal_aid_agency_recovery/",
+        "source": "The Register",
+        "published": "2025-12-11T09:30:06.000Z",
+        "summary": "<h4>Workers frustrated with security-first changes to workflows and teething issues</h4> <p><strong>Exclusive</strong>  Seven months after a landmark cyberattack, the UK's Legal Aid Agency (LAA) says it's returning to pre-breach operations, although law firms are still wrestling with buggy and more laborious systems.…</p>",
+        "confidence": 0.8,
+        "reasoning": "The article directly addresses IT governance aspects such as cybersecurity incident response, system recovery, implementation of security controls (MFA, secure access), change management, and the impact of IT decisions on business processes and user experience, all core to IT governance frameworks."
+      },
+      {
+        "title": "US Navy pledges $448 million to test if Palantir is seaworthy",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/10/palantir_navy_448_million_contract/",
+        "source": "The Register",
+        "published": "2025-12-10T20:51:31.000Z",
+        "summary": "<h4>Meet 'ShipOS'</h4> <p>Palantir and the US Navy have signed a two-year deal to test whether its Foundry operational software can streamline the nation’s shipbuilding efforts and steer the Secretary of the Navy's top budget priority into port.…</p>",
+        "confidence": 0.8,
+        "reasoning": "The article discusses a major contract for implementing Palantir's Foundry software to optimize shipbuilding processes, focusing on visibility, risk management, cost control, and efficiency—key aspects of IT governance related to strategic alignment, resource management, and performance measurement."
+      },
+      {
+        "title": "How to answer the door when the AI agents come knocking",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/09/okta_agent_control/",
+        "source": "The Register",
+        "published": "2025-12-09T21:46:07.000Z",
+        "summary": "<h4>Identity management vendors like Okta see an opening to calm CISOs worried about agents running amok</h4> <p>The fear of AI agents running amok has thus far halted the wide deployment of these digital workhorses, Okta's president of Auth0, Shiv Ramji, told <em>The Register</em>.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+        "confidence": 0.8,
+        "reasoning": "The article discusses AI agent governance, security, and identity management within IT frameworks, directly relating to IT Governance principles of control, risk management, and compliance."
+      }
+    ]
+  },
+  {
+    "topicId": 2,
+    "topicTitle": "Algorithms",
+    "moduleId": 1,
+    "moduleTitle": "Data Structure and Algorithm (DSA)",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "Google's AI training tactics land it in another EU antitrust fight",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/09/eu_google_ai_antitrust/",
+        "source": "The Register",
+        "published": "2025-12-09T16:05:12.000Z",
+        "summary": "<h4>Brussels probes whether unpaid web and YouTube content – and rivals' lock-outs – amount to abuse of dominance</h4> <p>The European Commission is launching an antitrust probe at Google for allegedly using web and YouTube content to train its AI algorithms while putting competitors at a disadvantage.…</p>",
+        "confidence": 0.6,
+        "reasoning": "The article focuses on antitrust issues related to Google's use of web content to train AI algorithms, making algorithms a secondary topic rather than the primary subject."
+      },
+      {
+        "title": "US Navy pledges $448 million to test if Palantir is seaworthy",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/10/palantir_navy_448_million_contract/",
+        "source": "The Register",
+        "published": "2025-12-10T20:51:31.000Z",
+        "summary": "<h4>Meet 'ShipOS'</h4> <p>Palantir and the US Navy have signed a two-year deal to test whether its Foundry operational software can streamline the nation’s shipbuilding efforts and steer the Secretary of the Navy's top budget priority into port.…</p>",
+        "confidence": 0.3,
+        "reasoning": "The article focuses on a defense contract, software deployment, and industrial efficiency, with only indirect mentions of AI and optimization tools; algorithms are not the central topic."
+      },
+      {
+        "title": "Linux Foundation aims to become the Switzerland of AI agents",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/09/linux_foundation_agentic_ai_foundation/",
+        "source": "The Register",
+        "published": "2025-12-09T19:54:59.000Z",
+        "summary": "<h4>An attempt to provide vendor-neutral oversight as the agent train barrels on</h4> <p>The Linux Foundation on Tuesday said it has formed the Agentic AI Foundation (AAIF) to provide vendor-neutral oversight for the development of AI agent infrastructure.…</p>",
+        "confidence": 0.3,
+        "reasoning": "The article focuses on organizational governance, open-source projects, and industry trends related to AI agents, with only peripheral mentions of algorithms in the context of machine learning models and AI infrastructure, making it indirectly relevant at best."
+      }
+    ]
+  },
+  {
+    "topicId": 3,
+    "topicTitle": "Framework for Governance of Enterprise IT ",
+    "moduleId": 2,
+    "moduleTitle": "Governance Risk & Compliance ",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "US Navy pledges $448 million to test if Palantir is seaworthy",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/10/palantir_navy_448_million_contract/",
+        "source": "The Register",
+        "published": "2025-12-10T20:51:31.000Z",
+        "summary": "<h4>Meet 'ShipOS'</h4> <p>Palantir and the US Navy have signed a two-year deal to test whether its Foundry operational software can streamline the nation’s shipbuilding efforts and steer the Secretary of the Navy's top budget priority into port.…</p>",
+        "confidence": 0.8,
+        "reasoning": "The article directly addresses enterprise IT governance through a major contract for Palantir's Foundry platform, focusing on data integration, process optimization, risk management, and performance measurement in a large-scale defense context, aligning closely with governance principles."
+      },
+      {
+        "title": "Users report chaos as Legal Aid Agency stumbles back online after cyberattack",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/11/legal_aid_agency_recovery/",
+        "source": "The Register",
+        "published": "2025-12-11T09:30:06.000Z",
+        "summary": "<h4>Workers frustrated with security-first changes to workflows and teething issues</h4> <p><strong>Exclusive</strong>  Seven months after a landmark cyberattack, the UK's Legal Aid Agency (LAA) says it's returning to pre-breach operations, although law firms are still wrestling with buggy and more laborious systems.…</p>",
+        "confidence": 0.6,
+        "reasoning": "The article is indirectly relevant as it describes the operational and security challenges following a cyberattack at a government agency, which relates to IT governance aspects like security management, incident response, and user access controls, but lacks explicit discussion of a governance framework."
+      },
+      {
+        "title": "Linux Foundation aims to become the Switzerland of AI agents",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/09/linux_foundation_agentic_ai_foundation/",
+        "source": "The Register",
+        "published": "2025-12-09T19:54:59.000Z",
+        "summary": "<h4>An attempt to provide vendor-neutral oversight as the agent train barrels on</h4> <p>The Linux Foundation on Tuesday said it has formed the Agentic AI Foundation (AAIF) to provide vendor-neutral oversight for the development of AI agent infrastructure.…</p>",
+        "confidence": 0.4,
+        "reasoning": "The article discusses the formation of a vendor-neutral oversight body (AAIF) for AI agent infrastructure, which touches on governance aspects like transparency, stability, and open governance. However, the focus is narrowly on AI agents rather than the broader scope of enterprise IT governance frameworks, and much of the content details specific projects and industry challenges not directly related to governance frameworks."
+      }
+    ]
+  }
+]

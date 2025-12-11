@@ -8,6 +8,13 @@ const axios = require('axios'); // for DeepSeek API requests
 const authRoutes = require('./routes/auth');
 const modulesRoutes = require('./routes/modules');
 const topicsRoutes = require('./routes/topics');
+const articlesRoutes = require('./routes/articles');
+
+// Scheduler
+const { initScheduler } = require('./jobs/scheduler');
+
+// Services
+const caseStudyService = require('./services/caseStudyService');
 
 const User = require('./models/User');
 const Module = require('./models/Modules');
@@ -42,6 +49,9 @@ app.use('/api/modules', modulesRoutes);
 // Topics routes (nested under modules)
 app.use('/api/modules/:moduleId/topics', topicsRoutes);
 
+// Articles routes (RSS, scraping, etc)
+app.use('/api/articles', articlesRoutes);
+
 // -----------------------------
 // DeepSeek Chat Endpoint
 // -----------------------------
@@ -50,11 +60,16 @@ app.post('/api/chat', async (req, res) => {
 
   if (!message) return res.status(400).json({ error: 'No message provided' });
 
+  // Check if user is asking for case study
+  const isCaseStudyRequest = /case\s*study|incident|example|latest|real[- ]?world|recent/i.test(
+    message
+  );
+
   // Build context-aware system message
-  let systemMessage = 'You are a helpful teacher assistant. Answer clearly and simply for students.';
+  let systemMessage = 'You are a helpful teacher assistant. Provide concise, well-organized answers for students.';
   
   if (moduleTitle) {
-    systemMessage = `You are a teacher assistant for the module: "${moduleTitle}".`;
+    systemMessage = `You are a teacher assistant for the module: "${moduleTitle}". Provide concise, well-organized summaries and explanations.`;
     
     if (moduleDescription) {
       systemMessage += `\n\nModule description: ${moduleDescription}`;
@@ -62,7 +77,23 @@ app.post('/api/chat', async (req, res) => {
     
     if (selectedTopics && selectedTopics.length > 0) {
       systemMessage += `\n\nCurrent topics being studied: ${selectedTopics.join(', ')}.`;
-      systemMessage += '\n\nFocus your answers on these topics. You can provide summaries, explain concepts, and answer questions about them clearly and simply.';
+      systemMessage += '\n\nFocus your answers on these topics. When asked for a summary, provide key points in a structured format (use bullet points for lists). Keep explanations clear but concise to fit in a single response.';
+
+      // Add real-world case studies from mapped articles
+      const mappedArticles = caseStudyService.getLatestMappedArticles();
+      if (mappedArticles) {
+        const topicArticles = caseStudyService.getArticlesForTopics(selectedTopics, mappedArticles);
+        if (topicArticles.length > 0) {
+          const articlesText = caseStudyService.formatArticlesForPrompt(topicArticles);
+          systemMessage += articlesText;
+
+          // If user asks for case study, add special instruction
+          if (isCaseStudyRequest) {
+            systemMessage +=
+              '\n\n**USER IS REQUESTING CASE STUDIES:** Provide detailed analysis with ALL URLs included.';
+          }
+        }
+      }
     }
   }
 
@@ -79,7 +110,7 @@ app.post('/api/chat', async (req, res) => {
           { role: 'user', content: message }
         ],
         temperature: 0.7,
-        max_tokens: 400
+        max_tokens: 800
       },
       {
         headers: {
@@ -109,4 +140,9 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+  
+  // Initialize RSS sync scheduler
+  initScheduler();
+});
