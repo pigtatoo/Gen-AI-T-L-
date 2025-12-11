@@ -2,16 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const sequelize = require('./config/database');
 require('dotenv').config();
+const axios = require('axios'); // for DeepSeek API requests
 
-// Suppress HuggingFace warnings
-process.env.HF_HUB_DISABLE_IMPLICIT_TOKEN = '1';
-
+// Routes
 const authRoutes = require('./routes/auth');
 const modulesRoutes = require('./routes/modules');
 const topicsRoutes = require('./routes/topics');
-const chatRoutes = require('./routes/chat');
 
-// Import models
 const User = require('./models/User');
 const Module = require('./models/Modules');
 const Topic = require('./models/Topics');
@@ -24,24 +21,17 @@ Topic.belongsTo(Module, { foreignKey: 'module_id' });
 
 const app = express();
 
-// Use JSON middleware
+// Middleware
 app.use(express.json());
+app.use(cors({
+  origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
+  credentials: true
+}));
 
-// CORS configuration
-const corsOptions = {
-	origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
-	credentials: true
-};
-app.use(cors(corsOptions));
-
-// Sync database
-sequelize.sync({ alter: true }).then(() => {
-	// eslint-disable-next-line no-console
-	console.log('Database synced');
-}).catch(err => {
-	// eslint-disable-next-line no-console
-	console.log('Database sync error:', err);
-});
+// Database sync
+sequelize.sync({ alter: true })
+  .then(() => console.log('Database synced'))
+  .catch(err => console.log('Database sync error:', err));
 
 // Auth routes
 app.use('/api/auth', authRoutes);
@@ -52,23 +42,55 @@ app.use('/api/modules', modulesRoutes);
 // Topics routes (nested under modules)
 app.use('/api/modules/:moduleId/topics', topicsRoutes);
 
-// Chat routes (Gemini integration)
-app.use('/api', chatRoutes);
+// -----------------------------
+// DeepSeek Chat Endpoint
+// -----------------------------
+app.post('/api/chat', async (req, res) => {
+  const { message } = req.body;
 
-// Simple health route
-app.get('/api/health', (req, res) => {
-	res.json({ status: 'ok', timestamp: Date.now() });
+  if (!message) return res.status(400).json({ error: 'No message provided' });
+
+  try {
+    const response = await axios.post(
+      'https://api.deepseek.com/chat/completions',
+      {
+        model: 'deepseek-chat',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a helpful teacher assistant. Answer clearly and simply for students.'
+          },
+          { role: 'user', content: message }
+        ],
+        temperature: 0.7,
+        max_tokens: 400
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.DEEPSEEK_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    const reply = response.data.choices[0].message.content;
+    res.json({ reply });
+  } catch (err) {
+    console.error('DeepSeek error:', err.response?.data || err.message);
+    res.status(500).json({ error: 'Failed to get response from DeepSeek' });
+  }
 });
 
-// Error handling middleware
+// Simple health check
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: Date.now() });
+});
+
+// Error handling
 app.use((err, req, res, next) => {
-	// eslint-disable-next-line no-console
-	console.error('Error:', err);
-	res.status(500).json({ error: err.message || 'Internal server error' });
+  console.error('Error:', err);
+  res.status(500).json({ error: err.message || 'Internal server error' });
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-	// eslint-disable-next-line no-console
-	console.log(`Server listening on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
