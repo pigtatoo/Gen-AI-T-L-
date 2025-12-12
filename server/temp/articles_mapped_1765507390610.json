@@ -1,0 +1,110 @@
+[
+  {
+    "topicId": 1,
+    "topicTitle": "IT Governance",
+    "moduleId": 2,
+    "moduleTitle": "Governance Risk & Compliance ",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "Crypto-crasher Do Kwon jailed for 15 years over $40bn UST bust",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/do_kwon_sentenced/",
+        "source": "The Register",
+        "published": "2025-12-12T01:53:15.000Z",
+        "summary": "<h4>Judge said his fraud was on 'epic, generational scale'</h4> <p>Terraform Labs founder Do Kwon will spend 15 years in jail after pleading guilty to committing fraud.…</p>",
+        "confidence": 0.92,
+        "reasoning": "The article details legal and regulatory actions against a tech company founder for fraud, involving securities laws, extradition, and court sentencing, directly aligning with governance, compliance, and legal oversight in enterprise IT."
+      },
+      {
+        "title": "Reddit launches High Court challenge to Australia's social media ban for kids",
+        "url": "https://www.bbc.com/news/articles/clykk2yrl9ko?at_medium=RSS&at_campaign=rss",
+        "source": "BBC News",
+        "published": "2025-12-12T00:02:02.000Z",
+        "summary": "It said the landmark policy has serious implications for Australians' privacy and political rights.",
+        "confidence": 0.92,
+        "reasoning": "The article discusses legal challenges to a government-imposed social media ban, involving compliance, policy implications, and corporate response, which directly relates to IT governance frameworks and regulatory adherence."
+      },
+      {
+        "title": "Silicon photonics won’t matter ‘anytime soon’ says Broadcom CEO",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/broadcom_q4_fy2025/",
+        "source": "The Register",
+        "published": "2025-12-12T00:48:28.000Z",
+        "summary": "<h4>Chips ’n’ code giant sitting on $50bn of custom AI accelerator orders, sees more to come</h4> <p>Silicon photonics won’t matter in the datacenter “anytime soon,” according to Broadcom CEO Hock Tan.…</p>",
+        "confidence": 0.65,
+        "reasoning": "The article covers Broadcom's strategic R&D investments and multi-year customer commitments for AI hardware, reflecting IT governance decisions around technology adoption and resource allocation."
+      }
+    ]
+  },
+  {
+    "topicId": 4,
+    "topicTitle": "Strategic Management",
+    "moduleId": 2,
+    "moduleTitle": "Governance Risk & Compliance ",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "Crypto-crasher Do Kwon jailed for 15 years over $40bn UST bust",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/do_kwon_sentenced/",
+        "source": "The Register",
+        "published": "2025-12-12T01:53:15.000Z",
+        "summary": "<h4>Judge said his fraud was on 'epic, generational scale'</h4> <p>Terraform Labs founder Do Kwon will spend 15 years in jail after pleading guilty to committing fraud.…</p>",
+        "confidence": 0.85,
+        "reasoning": "The collapse resulted from strategic decisions around token design, market operations, and crisis management (e.g., Bitcoin purchases), highlighting failures in strategic planning and risk management at an organizational level."
+      },
+      {
+        "title": "Reddit launches High Court challenge to Australia's social media ban for kids",
+        "url": "https://www.bbc.com/news/articles/clykk2yrl9ko?at_medium=RSS&at_campaign=rss",
+        "source": "BBC News",
+        "published": "2025-12-12T00:02:02.000Z",
+        "summary": "It said the landmark policy has serious implications for Australians' privacy and political rights.",
+        "confidence": 0.85,
+        "reasoning": "The article highlights Reddit's strategic response to legislation, including public statements and legal actions, reflecting corporate strategy in managing regulatory and reputational risks."
+      },
+      {
+        "title": "Silicon photonics won’t matter ‘anytime soon’ says Broadcom CEO",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/broadcom_q4_fy2025/",
+        "source": "The Register",
+        "published": "2025-12-12T00:48:28.000Z",
+        "summary": "<h4>Chips ’n’ code giant sitting on $50bn of custom AI accelerator orders, sees more to come</h4> <p>Silicon photonics won’t matter in the datacenter “anytime soon,” according to Broadcom CEO Hock Tan.…</p>",
+        "confidence": 0.6,
+        "reasoning": "Broadcom's CEO outlines the company's long-term technology roadmap (copper, pluggable optics, silicon photonics) and manages a $73B order backlog, demonstrating strategic planning and execution."
+      }
+    ]
+  },
+  {
+    "topicId": 2,
+    "topicTitle": "Algorithms",
+    "moduleId": 1,
+    "moduleTitle": "Data Structure and Algorithm (DSA)",
+    "articleCount": 3,
+    "articles": [
+      {
+        "title": "Reddit launches High Court challenge to Australia's social media ban for kids",
+        "url": "https://www.bbc.com/news/articles/clykk2yrl9ko?at_medium=RSS&at_campaign=rss",
+        "source": "BBC News",
+        "published": "2025-12-12T00:02:02.000Z",
+        "summary": "It said the landmark policy has serious implications for Australians' privacy and political rights.",
+        "confidence": 0.78,
+        "reasoning": "The ban is justified in part to protect children from harmful algorithms, making algorithmic content moderation and its societal impact a relevant topic."
+      },
+      {
+        "title": "Crypto-crasher Do Kwon jailed for 15 years over $40bn UST bust",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/do_kwon_sentenced/",
+        "source": "The Register",
+        "published": "2025-12-12T01:53:15.000Z",
+        "summary": "<h4>Judge said his fraud was on 'epic, generational scale'</h4> <p>Terraform Labs founder Do Kwon will spend 15 years in jail after pleading guilty to committing fraud.…</p>",
+        "confidence": 0.75,
+        "reasoning": "The article mentions 'complex scheme involving multiple protocols... and smart contracts,' which implies algorithmic and automated systems in blockchain technology, relevant to algorithmic design and implementation."
+      },
+      {
+        "title": "Silicon photonics won’t matter ‘anytime soon’ says Broadcom CEO",
+        "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/broadcom_q4_fy2025/",
+        "source": "The Register",
+        "published": "2025-12-12T00:48:28.000Z",
+        "summary": "<h4>Chips ’n’ code giant sitting on $50bn of custom AI accelerator orders, sees more to come</h4> <p>Silicon photonics won’t matter in the datacenter “anytime soon,” according to Broadcom CEO Hock Tan.…</p>",
+        "confidence": 0.75,
+        "reasoning": "The article discusses AI accelerators (XPUs) which encapsulate software functions into silicon, a process heavily reliant on optimized algorithms for AI workloads."
+      }
+    ]
+  }
+]

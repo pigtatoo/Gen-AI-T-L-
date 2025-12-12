@@ -68,26 +68,42 @@ function formatArticlesForPrompt(articlesData) {
     return '';
   }
 
-  let formatted = '\n\n## Recent Real-World Case Studies & Incidents:\n';
+  let formatted = '\n\n## 📚 Real-World Case Studies & Recent Incidents:\n';
 
   for (const topicGroup of articlesData) {
-    formatted += `\n### ${topicGroup.topic}:\n`;
+    formatted += `\n### Topic: ${topicGroup.topic}\n`;
+    formatted += '---\n';
 
     topicGroup.articles.forEach((article, idx) => {
-      formatted += `\n**Case Study ${idx + 1}: ${article.title}**\n`;
-      formatted += `📰 Source: ${article.source}\n`;
-      formatted += `📅 Date: ${new Date(article.published).toLocaleDateString()}\n`;
-      formatted += `🎯 Relevance: ${(article.confidence * 100).toFixed(0)}%\n`;
-      formatted += `📄 Summary: ${article.summary?.substring(0, 300)}...\n`;
-      formatted += `🔗 Full Article: ${article.url}\n`;
+      const publishDate = new Date(article.published).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      
+      const confidence = Math.round((article.confidence * 100));
+
+      // Consistent format for ALL articles
+      formatted += `\n**📌 Case Study ${idx + 1}: ${article.title}**\n`;
+      formatted += `\n📰 **Source:** ${article.source}\n`;
+      formatted += `📅 **Date:** ${publishDate}\n`;
+      formatted += `🎯 **Relevance:** ${confidence}%\n`;
+      formatted += `💡 **Why it matches:** ${article.reasoning || 'Related to this topic'}\n`;
+      formatted += `📖 **Summary:** ${article.summary?.substring(0, 300) || 'See full article'}...\n`;
+      formatted += `🔗 **Read Full Article:** ${article.url}\n`;
     });
   }
 
-  formatted += '\n\n**IMPORTANT INSTRUCTIONS:**\n';
-  formatted += '- When user asks for "case study", "incident", "example", or "latest", provide detailed analysis using these real-world case studies\n';
-  formatted += '- ALWAYS include the URL of each case study you reference\n';
-  formatted += '- Format as: **Title** → Summary → Analysis → URL\n';
-  formatted += '- Be specific about dates, sources, and relevance percentages\n';
+  formatted += '\n\n---\n';
+  formatted += '**CRITICAL INSTRUCTIONS FOR DEEPSEEK:**\n';
+  formatted += '1. When user asks for "case study", "incident", "example", "real-world", "latest", or "recent":\n';
+  formatted += '   - Reference the case studies above with specific details\n';
+  formatted += '   - ALWAYS include the full URL so user can click and read\n';
+  formatted += '   - Include date, source, and relevance percentage\n';
+  formatted += '   - Provide detailed analysis connecting theory to practice\n';
+  formatted += '2. Format example: "The [Title] incident ([Date], [Source]) demonstrates [concept]. Learn more: [URL]"\n';
+  formatted += '3. NEVER abbreviate or hide URLs - always provide complete link\n';
+  formatted += '4. Show relevance scores to justify why each article matches the topic\n';
 
   return formatted;
 }
