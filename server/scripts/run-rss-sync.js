@@ -16,7 +16,7 @@ async function runSync() {
     console.log('🚀 Starting standalone RSS sync...');
     console.log(`⏰ Time: ${new Date().toISOString()}`);
     console.log(`📦 DeepSeek API: ${process.env.DEEPSEEK_KEY ? '✓ Configured' : '✗ Missing'}`);
-    console.log(`🗄️  Database: ${process.env.DB_HOST || 'localhost'}`);
+    console.log(`� DATABASE_URL: ${process.env.DATABASE_URL ? '✓ Set' : '✗ Not set'}`);
     console.log('');
 
     // Sync database
