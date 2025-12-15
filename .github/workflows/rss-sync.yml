@@ -1,0 +1,71 @@
+name: Weekly RSS Sync
+
+on:
+  schedule:
+    # Runs every Sunday at 02:00 UTC (10:00 Singapore time)
+    - cron: "0 2 * * 0"
+  workflow_dispatch: {}  # lets you trigger manually from GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        working-directory: ./server
+        run: |
+          npm install
+          echo "✓ Dependencies installed"
+
+      # Step 4: Run RSS sync
+      - name: Run RSS Sync
+        working-directory: ./server
+        env:
+          # Database credentials (from GitHub Secrets)
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_DIALECT: ${{ secrets.DB_DIALECT || 'postgres' }}
+          
+          # DeepSeek API key
+          DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
+          
+          # RSS Configuration
+          RSS_SINCE_DAYS: "7"
+          RSS_TIMEOUT: "15000"
+          ARTICLE_OUTPUT_DIR: "./temp"
+        run: |
+          echo "🚀 Starting RSS sync workflow..."
+          echo "📅 Time: $(date)"
+          node scripts/run-rss-sync.js
+
+      # Step 5: Upload results as artifact (for debugging)
+      - name: Upload sync results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-sync-results-${{ github.run_id }}
+          path: server/temp/
+          retention-days: 14
+
+      # Step 6: Log completion
+      - name: Sync Completed
+        if: success()
+        run: echo "✅ RSS sync completed successfully!"
+
+      # Step 7: Log failure
+      - name: Sync Failed
+        if: failure()
+        run: echo "❌ RSS sync failed - check logs above"
