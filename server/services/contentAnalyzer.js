@@ -1,7 +1,5 @@
 const axios = require('axios');
-const sequelize = require('../config/database');
-const Topic = require('../models/Topics');
-const Module = require('../models/Modules');
+const supabase = require('../config/supabase');
 
 /**
  * Quick relevance check using title + summary
@@ -37,7 +35,8 @@ Reply with ONLY "yes" or "no".`;
       }
     );
 
-    const answer = response.data.choices[0].message.content.toLowerCase().trim();
+    const raw = (response.data?.choices?.[0]?.message?.content ?? '').toString();
+    const answer = raw.toLowerCase().trim();
     return answer.includes('yes');
   } catch (err) {
     console.error(`Quick relevance check failed:`, err.message);
@@ -167,11 +166,31 @@ async function analyzeAndMapArticles(articles) {
   console.log('='.repeat(60));
 
   try {
-    // Fetch all modules and topics
-    const allModules = await Module.findAll({
-      include: [{ model: Topic, attributes: ['topic_id', 'title'] }],
-      attributes: ['module_id', 'title']
+    // Fetch all modules and topics from Supabase over HTTPS
+    const { data: modules, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,title');
+    if (modErr) throw new Error(`Failed to load modules: ${modErr.message}`);
+
+    const { data: topics, error: topErr } = await supabase
+      .from('Topics')
+      .select('topic_id,title,module_id');
+    if (topErr) throw new Error(`Failed to load topics: ${topErr.message}`);
+
+    // Group topics by module_id
+    const topicsByModule = new Map();
+    (topics || []).forEach((t) => {
+      const list = topicsByModule.get(t.module_id) || [];
+      list.push({ topic_id: t.topic_id, title: t.title });
+      topicsByModule.set(t.module_id, list);
     });
+
+    // Build module structures matching previous shape
+    const allModules = (modules || []).map((m) => ({
+      module_id: m.module_id,
+      title: m.title,
+      Topics: topicsByModule.get(m.module_id) || []
+    }));
 
     if (allModules.length === 0) {
       console.warn('No modules found in database');
@@ -333,16 +352,20 @@ Confidence should be 0-1. Include ONLY top 3 items. No markdown.`;
 
     const matchedModules = suggestions
       .map((suggestion) => {
-        const module = allModules.find(
-          (m) => m.title.toLowerCase() === suggestion.title.toLowerCase()
+        const sTitle = typeof suggestion?.title === 'string' ? suggestion.title : null;
+        if (!sTitle) return null;
+        const module = allModules.find((m) =>
+          typeof m?.title === 'string' && m.title.toLowerCase() === sTitle.toLowerCase()
         );
-        return module
-          ? {
-              moduleId: module.module_id,
-              moduleTitle: module.title,
-              confidence: Math.min(Math.max(suggestion.confidence, 0), 1)
-            }
-          : null;
+        if (!module) return null;
+        const conf = Number.isFinite(suggestion.confidence)
+          ? Math.min(Math.max(suggestion.confidence, 0), 1)
+          : 0.0;
+        return {
+          moduleId: module.module_id,
+          moduleTitle: module.title,
+          confidence: conf
+        };
       })
       .filter((m) => m !== null && m.confidence >= 0.5);
 
@@ -417,17 +440,21 @@ Confidence should be 0-1. Include top 3 items. No markdown.`;
 
     const matchedTopics = suggestions
       .map((suggestion) => {
+        const sTitle = typeof suggestion?.title === 'string' ? suggestion.title : null;
+        if (!sTitle) return null;
         const topic = topicsInModule.find(
-          (t) => t.title.toLowerCase() === suggestion.title.toLowerCase()
+          (t) => typeof t?.title === 'string' && t.title.toLowerCase() === sTitle.toLowerCase()
         );
-        return topic
-          ? {
-              topicId: topic.topic_id,
-              topicTitle: topic.title,
-              confidence: Math.min(Math.max(suggestion.confidence, 0), 1),
-              reasoning: suggestion.reasoning || ''
-            }
-          : null;
+        if (!topic) return null;
+        const conf = Number.isFinite(suggestion.confidence)
+          ? Math.min(Math.max(suggestion.confidence, 0), 1)
+          : 0.0;
+        return {
+          topicId: topic.topic_id,
+          topicTitle: topic.title,
+          confidence: conf,
+          reasoning: typeof suggestion.reasoning === 'string' ? suggestion.reasoning : ''
+        };
       })
       .filter((t) => t !== null);
 
@@ -517,17 +544,21 @@ Confidence should be 0-1. Include ONLY ${topN} items. No markdown.`;
     // Map topic titles back to topic IDs
     const scoredTopics = suggestions
       .map((suggestion) => {
+        const sTitle = typeof suggestion?.title === 'string' ? suggestion.title : null;
+        if (!sTitle) return null;
         const topic = allTopics.find(
-          (t) => t.title.toLowerCase() === suggestion.title.toLowerCase()
+          (t) => typeof t?.title === 'string' && t.title.toLowerCase() === sTitle.toLowerCase()
         );
-        return topic
-          ? {
-              topicId: topic.topic_id,
-              topicTitle: topic.title,
-              confidence: Math.min(Math.max(suggestion.confidence, 0), 1),
-              reasoning: suggestion.reasoning || ''
-            }
-          : null;
+        if (!topic) return null;
+        const conf = Number.isFinite(suggestion.confidence)
+          ? Math.min(Math.max(suggestion.confidence, 0), 1)
+          : 0.0;
+        return {
+          topicId: topic.topic_id,
+          topicTitle: topic.title,
+          confidence: conf,
+          reasoning: typeof suggestion.reasoning === 'string' ? suggestion.reasoning : ''
+        };
       })
       .filter((t) => t !== null);
 

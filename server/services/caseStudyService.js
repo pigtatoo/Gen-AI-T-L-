@@ -38,20 +38,48 @@ function getLatestMappedArticles() {
  * @returns {Array} Articles relevant to selected topics
  */
 function getArticlesForTopics(selectedTopics, mappedArticles) {
-  if (!mappedArticles || !selectedTopics || selectedTopics.length === 0) {
+  if (!Array.isArray(mappedArticles) || !Array.isArray(selectedTopics) || selectedTopics.length === 0) {
     return [];
   }
 
-  const topicLower = selectedTopics.map((t) => t.toLowerCase());
+  const topicLower = selectedTopics
+    .filter((t) => typeof t === 'string' && t.trim().length > 0)
+    .map((t) => t.toLowerCase());
+
+  if (topicLower.length === 0) return [];
+
   const relevant = [];
 
-  // Find mapped data for selected topics
-  for (const topicData of mappedArticles) {
-    if (topicLower.some((t) => topicData.topicTitle.toLowerCase().includes(t))) {
-      relevant.push({
-        topic: topicData.topicTitle,
-        articles: topicData.articles
-      });
+  // Support two shapes:
+  // 1) Legacy: [ { topicTitle, articles } ]
+  // 2) Module-first: [ { moduleId, moduleTitle, topics: [ { topicId, topicTitle, articles } ] } ]
+  const looksModuleFirst = mappedArticles.some((m) => Array.isArray(m?.topics));
+
+  if (looksModuleFirst) {
+    for (const mod of mappedArticles) {
+      const topics = Array.isArray(mod?.topics) ? mod.topics : [];
+      for (const t of topics) {
+        const title = typeof t?.topicTitle === 'string' ? t.topicTitle : '';
+        const titleLower = title.toLowerCase();
+        if (titleLower && topicLower.some((q) => titleLower.includes(q))) {
+          relevant.push({
+            topic: title,
+            articles: Array.isArray(t?.articles) ? t.articles : []
+          });
+        }
+      }
+    }
+  } else {
+    // Legacy shape
+    for (const topicData of mappedArticles) {
+      const title = typeof topicData?.topicTitle === 'string' ? topicData.topicTitle : '';
+      const titleLower = title.toLowerCase();
+      if (titleLower && topicLower.some((q) => titleLower.includes(q))) {
+        relevant.push({
+          topic: title,
+          articles: Array.isArray(topicData?.articles) ? topicData.articles : []
+        });
+      }
     }
   }
 

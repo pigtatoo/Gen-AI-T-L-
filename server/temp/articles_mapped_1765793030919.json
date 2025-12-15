@@ -1,0 +1,118 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Roomba vacuum cleaner firm files for bankruptcy",
+            "url": "https://www.bbc.com/news/articles/c1lr75lp239o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-15T07:47:31.000Z",
+            "summary": "Under the so-called pre-packaged Chapter 11 process, the main maker of its devices will take ownership of the firm.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses iRobot's bankruptcy filing due to competitive pressures, tariffs, and failed acquisition, which are strategic challenges and decisions impacting corporate direction and survival."
+          },
+          {
+            "title": "Starlink claims Chinese launch came within 200 meters of broadband satellite",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/15/asia_tech_news_roundup/",
+            "source": "The Register",
+            "published": "2025-12-15T02:02:22.000Z",
+            "summary": "<h4>PLUS: Drugs found in ink cartridges; Chinse censorship fighters criticize Vultr; Coupang CEO resigns; And more!</h4> <p><strong>Asia In Brief</strong>  A SpaceX executive has claimed that a Chinese satellite launch came within 200 meters of hitting a Starlink satellite.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The incident involves strategic implications for space operations and international relations, touching on risk assessment and long-term planning in a competitive environment."
+          },
+          {
+            "title": "Techie 'forgot' to tell boss their cost-saving idea meant a day of gaming",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/15/who_me/",
+            "source": "The Register",
+            "published": "2025-12-15T07:30:12.000Z",
+            "summary": "<h4>One keypress turned a tricky Windows NT balancing act into a life of leisure</h4> <p><strong>Who, Me?</strong>  After a weekend of R&amp;R, <i>The Register</i> welcomes you back to the working week with a new installment of Who, Me? It's the reader-contributed column in which you confess to workplace errors and indiscretions and reveal how you survived to tell the tale.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The story touches on cost-saving initiatives and resource allocation for IT hardware, but focuses more on an individual's ad-hoc action rather than organizational strategy or long-term planning."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Honeypots can help defenders, or damn them if implemented badly",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/14/infosec_news_in_brief/",
+            "source": "The Register",
+            "published": "2025-12-14T23:26:27.000Z",
+            "summary": "<h4>PLUS: Crims could burn your AI budgets thanks to weak defaults; CISA's top 25 vulns for 2025; And more</h4> <p><strong>Infosec In Brief</strong>  The UK's National Cyber Security Centre (NCSC) has found that cyber-deception tactics such as honeypots and decoy accounts designed to fool attackers can be useful if implemented very carefully.…</p>",
+            "confidence": 0.82,
+            "reasoning": "The article discusses the strategic implementation and management of cybersecurity tools like honeypots, emphasizing the need for clear strategy, proper configuration, and ongoing alignment to avoid risks—key aspects of IT governance."
+          },
+          {
+            "title": "Techie 'forgot' to tell boss their cost-saving idea meant a day of gaming",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/15/who_me/",
+            "source": "The Register",
+            "published": "2025-12-15T07:30:12.000Z",
+            "summary": "<h4>One keypress turned a tricky Windows NT balancing act into a life of leisure</h4> <p><strong>Who, Me?</strong>  After a weekend of R&amp;R, <i>The Register</i> welcomes you back to the working week with a new installment of Who, Me? It's the reader-contributed column in which you confess to workplace errors and indiscretions and reveal how you survived to tell the tale.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes an employee implementing an unauthorized technical solution (reflashing thin clients) that bypassed established vendor processes, impacting IT resource management and operational controls without formal oversight or approval."
+          },
+          {
+            "title": "Starlink claims Chinese launch came within 200 meters of broadband satellite",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/15/asia_tech_news_roundup/",
+            "source": "The Register",
+            "published": "2025-12-15T02:02:22.000Z",
+            "summary": "<h4>PLUS: Drugs found in ink cartridges; Chinse censorship fighters criticize Vultr; Coupang CEO resigns; And more!</h4> <p><strong>Asia In Brief</strong>  A SpaceX executive has claimed that a Chinese satellite launch came within 200 meters of hitting a Starlink satellite.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a lack of coordination and deconfliction between satellite operators in space, highlighting governance failures in operational protocols and risk management for critical infrastructure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Uncle Sam sues ex-Accenture manager over Army cloud security claims",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/us_sues_accenture_exec/",
+            "source": "The Register",
+            "published": "2025-12-12T13:25:09.000Z",
+            "summary": "<h4>Justice Department alleges federal auditors were misled over compliance with FedRAMP and DoD requirements</h4> <p>The US is suing a former senior manager at Accenture for allegedly misleading the government about the security of an Army cloud platform.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a cloud-based payroll and benefits system (NIFMS), which involves data storage and retrieval in a cloud platform. The allegations center on misrepresenting security controls for this system, directly relating to how information is stored and managed in cloud environments."
+          },
+          {
+            "title": "UK watchdog urged to probe GDPR failures in Home Office eVisa rollout",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/12/ico_home_office_evisa/",
+            "source": "The Register",
+            "published": "2025-12-12T12:36:34.000Z",
+            "summary": "<h4>Rights groups say digital-only record is leaking data and courting trouble</h4> <p>Civil society groups are urging the UK's data watchdog to investigate whether the Home Office's digital-only eVisa scheme is breaching GDPR, sounding the alarm about systemic data errors and design failures that are exposing sensitive personal information while leaving migrants unable to prove their lawful status.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a digital-only eVisa system that stores and retrieves sensitive immigration data, with reported failures in data accuracy, access, and security, directly relating to how information is stored and managed."
+          },
+          {
+            "title": "Russian hackers debut simple ransomware service, but store keys in plain text",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2025/12/11/cybervolk_ransomware_is_back/",
+            "source": "The Register",
+            "published": "2025-12-11T20:56:37.000Z",
+            "summary": "<h4>Operators accidentally left a way for you to get your data back</h4> <p>CyberVolk, a pro-Russian hacktivist crew, is back after months of silence with a new ransomware service. There's some bad news and some good news here.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses ransomware encrypting files on a victim's system, which relates to data storage and potential retrieval methods, though the focus is more on attack mechanisms than forensic recovery technologies."
+          }
+        ]
+      }
+    ]
+  }
+]
