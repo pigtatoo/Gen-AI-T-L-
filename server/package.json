@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "sync-db": "node scripts/sync-mysql-to-supabase.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -28,7 +28,25 @@ jobs:
           npm install
           echo "✓ Dependencies installed"
 
-      # Step 4: Run RSS sync
+      # Step 4: Sync MySQL to Supabase
+      - name: Sync MySQL to Supabase
+        working-directory: ./server
+        env:
+          # MySQL credentials (local database)
+          DB_NAME: ${{ secrets.DB_NAME || 'gen_ai_app' }}
+          DB_USER: ${{ secrets.DB_USER || 'root' }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_HOST: ${{ secrets.DB_HOST || 'localhost' }}
+          DB_PORT: ${{ secrets.DB_PORT || '3306' }}
+          
+          # Supabase connection for Supabase database
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NODE_OPTIONS: "--dns-result-order=ipv4first"
+        run: |
+          echo "🔄 Syncing MySQL to Supabase..."
+          node scripts/sync-mysql-to-supabase.js || echo "⚠️  Sync skipped (MySQL might not be accessible from GitHub Actions)"
+
+      # Step 5: Run RSS Sync
       - name: Run RSS Sync
         working-directory: ./server
         env:
@@ -60,6 +78,14 @@ jobs:
           retention-days: 14
 
       # Step 6: Log completion
+      - name: Sync Completed
+        if: success()
+        run: echo "✅ RSS sync completed successfully!"
+
+      # Step 7: Log failure
+      - name: Sync Failed
+        if: failure()
+        run: echo "❌ RSS sync failed - check logs above"
       - name: Sync Completed
         if: success()
         run: echo "✅ RSS sync completed successfully!"
