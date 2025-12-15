@@ -158,97 +158,283 @@ async function analyzeTopicRelevance(topic, articles, delayMs = 1000) {
 }
 
 /**
- * Analyze all articles against all topics SEMANTICALLY
- * Uses module context to find top 5 related topics per module
- * So newly added topics automatically get matched
+ * Analyze all articles against ALL MODULES first, then TOPICS within each module
+ * So newly added topics automatically inherit module-level articles
  */
 async function analyzeAndMapArticles(articles) {
   console.log('\n' + '='.repeat(60));
-  console.log('PHASE 2: Topic Filtering & Mapping (Semantic)');
+  console.log('PHASE 2: Module & Topic Filtering (Module-First)');
   console.log('='.repeat(60));
 
   try {
-    // Fetch all topics grouped by module
-    const allTopics = await Topic.findAll({
-      include: [{ model: Module, attributes: ['module_id', 'title'] }],
-      attributes: ['topic_id', 'title', 'module_id']
+    // Fetch all modules and topics
+    const allModules = await Module.findAll({
+      include: [{ model: Topic, attributes: ['topic_id', 'title'] }],
+      attributes: ['module_id', 'title']
     });
 
-    if (allTopics.length === 0) {
-      console.warn('No topics found in database');
+    if (allModules.length === 0) {
+      console.warn('No modules found in database');
       return [];
     }
 
-    console.log(`Found ${allTopics.length} topics to analyze against`);
-    console.log(`Found ${articles.length} articles to analyze`);
+    console.log(`Found ${allModules.length} modules`);
+    console.log(`Found ${articles.length} articles to analyze\n`);
 
     const mappedResults = [];
 
-    // For each article, find TOP 5 most relevant topics across ALL modules
-    // This allows newly added topics to be matched semantically
+    // STEP 1: For each article, find RELEVANT MODULES
     for (let i = 0; i < articles.length; i++) {
       const article = articles[i];
 
       console.log(`\n[Article ${i + 1}/${articles.length}] "${article.title}"`);
 
-      // Get semantic relevance scores for ALL topics
-      const topicScores = await findTopRelatedTopics(article, allTopics, 5);
+      // Find modules that match this article
+      const moduleMatches = await findRelevantModules(article, allModules);
 
-      // Group by topic and keep only high-confidence matches (>0.5)
-      for (const topicScore of topicScores) {
-        if (topicScore.confidence >= 0.5) {
-          // Find if this topic already has an entry in mappedResults
-          let topicEntry = mappedResults.find(
-            (m) => m.topicId === topicScore.topicId
-          );
+      // STEP 2: For each matched module, find relevant TOPICS
+      for (const moduleMatch of moduleMatches) {
+        const module = allModules.find((m) => m.module_id === moduleMatch.moduleId);
+        if (!module) continue;
 
-          if (!topicEntry) {
-            const topic = allTopics.find((t) => t.topic_id === topicScore.topicId);
-            topicEntry = {
-              topicId: topicScore.topicId,
-              topicTitle: topic.title,
-              moduleId: topic.module_id,
-              moduleTitle: topic.Module?.title || 'Unknown',
-              articleCount: 0,
-              articles: []
-            };
-            mappedResults.push(topicEntry);
-          }
+        // Find topics within this module that match the article
+        const topicMatches = await findRelevantTopicsInModule(
+          article,
+          module.Topics || [],
+          moduleMatch.moduleTitle
+        );
 
-          // Add article to this topic if not already there
-          const exists = topicEntry.articles.some((a) => a.url === article.url);
-          if (!exists && topicEntry.articles.length < 3) {
-            topicEntry.articles.push({
-              title: article.title,
-              url: article.url,
-              source: article.source,
-              published: article.published,
-              summary: article.summary,
-              confidence: topicScore.confidence,
-              reasoning: topicScore.reasoning
-            });
-            topicEntry.articleCount = topicEntry.articles.length;
+        // Add to results
+        for (const topicMatch of topicMatches) {
+          if (topicMatch.confidence >= 0.5) {
+            let moduleEntry = mappedResults.find(
+              (m) => m.moduleId === moduleMatch.moduleId
+            );
+
+            if (!moduleEntry) {
+              moduleEntry = {
+                moduleId: moduleMatch.moduleId,
+                moduleTitle: moduleMatch.moduleTitle,
+                moduleConfidence: moduleMatch.confidence,
+                topics: []
+              };
+              mappedResults.push(moduleEntry);
+            }
+
+            let topicEntry = moduleEntry.topics.find(
+              (t) => t.topicId === topicMatch.topicId
+            );
+
+            if (!topicEntry) {
+              topicEntry = {
+                topicId: topicMatch.topicId,
+                topicTitle: topicMatch.topicTitle,
+                articleCount: 0,
+                articles: []
+              };
+              moduleEntry.topics.push(topicEntry);
+            }
+
+            // Add article if not already there and under 3 articles per topic
+            const exists = topicEntry.articles.some((a) => a.url === article.url);
+            if (!exists && topicEntry.articles.length < 3) {
+              topicEntry.articles.push({
+                title: article.title,
+                url: article.url,
+                source: article.source,
+                published: article.published,
+                summary: article.summary,
+                confidence: topicMatch.confidence,
+                reasoning: topicMatch.reasoning
+              });
+              topicEntry.articleCount = topicEntry.articles.length;
+            }
           }
         }
       }
 
-      // Delay to avoid rate limiting
       if (i < articles.length - 1) {
         await new Promise((resolve) => setTimeout(resolve, 500));
       }
     }
 
     // Sort articles within each topic by confidence
-    mappedResults.forEach((m) => {
-      m.articles.sort((a, b) => b.confidence - a.confidence);
-      m.articles = m.articles.slice(0, 3); // Keep top 3 per topic
-      m.articleCount = m.articles.length;
+    mappedResults.forEach((moduleEntry) => {
+      moduleEntry.topics.forEach((topicEntry) => {
+        topicEntry.articles.sort((a, b) => b.confidence - a.confidence);
+      });
     });
+
+    console.log('\n' + '='.repeat(60));
+    console.log(`Mapping complete: ${mappedResults.length} modules with topics`);
+    console.log('='.repeat(60) + '\n');
 
     return mappedResults;
   } catch (err) {
     console.error('Error in analyzeAndMapArticles:', err.message);
     throw err;
+  }
+}
+
+/**
+ * Find relevant MODULES for an article
+ */
+async function findRelevantModules(article, allModules) {
+  try {
+    const moduleList = allModules.map((m) => `"${m.title}"`).join(', ');
+
+    const prompt = `You are a module relevance analyzer. Given an article and a list of modules, find the TOP 3 most relevant modules.
+
+Article Title: "${article.title}"
+Article Summary: "${article.summary}"
+Article Text (first 2000 chars):
+${article.articleText ? article.articleText.substring(0, 2000) : article.summary}
+
+AVAILABLE MODULES:
+${moduleList}
+
+Respond ONLY with JSON array (no other text):
+[
+  {"title": "Module Name", "confidence": 0.85},
+  ...
+]
+Confidence should be 0-1. Include ONLY top 3 items. No markdown.`;
+
+    const response = await axios.post(
+      'https://api.deepseek.com/chat/completions',
+      {
+        model: 'deepseek-chat',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a module relevance analyzer. Respond ONLY with valid JSON array. No markdown, no code blocks, no other text.'
+          },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.6,
+        max_tokens: 300
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.DEEPSEEK_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    const text = response.data.choices[0].message.content;
+    const jsonMatch = text.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) {
+      console.warn('  Could not parse modules response');
+      return [];
+    }
+
+    const suggestions = JSON.parse(jsonMatch[0]);
+
+    const matchedModules = suggestions
+      .map((suggestion) => {
+        const module = allModules.find(
+          (m) => m.title.toLowerCase() === suggestion.title.toLowerCase()
+        );
+        return module
+          ? {
+              moduleId: module.module_id,
+              moduleTitle: module.title,
+              confidence: Math.min(Math.max(suggestion.confidence, 0), 1)
+            }
+          : null;
+      })
+      .filter((m) => m !== null && m.confidence >= 0.5);
+
+    console.log(
+      `  → Relevant modules: ${matchedModules.map((m) => `${m.moduleTitle} (${(m.confidence * 100).toFixed(0)}%)`).join(', ')}`
+    );
+
+    return matchedModules.slice(0, 3);
+  } catch (err) {
+    console.error(`  Error finding modules:`, err.message);
+    return [];
+  }
+}
+
+/**
+ * Find relevant TOPICS within a specific module
+ */
+async function findRelevantTopicsInModule(article, topicsInModule, moduleName) {
+  try {
+    if (topicsInModule.length === 0) {
+      return [];
+    }
+
+    const topicList = topicsInModule.map((t) => `"${t.title}"`).join(', ');
+
+    const prompt = `You are a topic relevance analyzer. Given an article and a list of topics within the "${moduleName}" module, find the TOP 3 most relevant topics.
+
+Article Title: "${article.title}"
+Article Summary: "${article.summary}"
+Article Text (first 1500 chars):
+${article.articleText ? article.articleText.substring(0, 1500) : article.summary}
+
+AVAILABLE TOPICS IN "${moduleName}" MODULE:
+${topicList}
+
+Respond ONLY with JSON array (no other text):
+[
+  {"title": "Topic Name", "confidence": 0.85, "reasoning": "why it matches"},
+  ...
+]
+Confidence should be 0-1. Include top 3 items. No markdown.`;
+
+    const response = await axios.post(
+      'https://api.deepseek.com/chat/completions',
+      {
+        model: 'deepseek-chat',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a topic relevance analyzer. Respond ONLY with valid JSON array. No markdown.'
+          },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.6,
+        max_tokens: 300
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.DEEPSEEK_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    const text = response.data.choices[0].message.content;
+    const jsonMatch = text.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) {
+      return [];
+    }
+
+    const suggestions = JSON.parse(jsonMatch[0]);
+
+    const matchedTopics = suggestions
+      .map((suggestion) => {
+        const topic = topicsInModule.find(
+          (t) => t.title.toLowerCase() === suggestion.title.toLowerCase()
+        );
+        return topic
+          ? {
+              topicId: topic.topic_id,
+              topicTitle: topic.title,
+              confidence: Math.min(Math.max(suggestion.confidence, 0), 1),
+              reasoning: suggestion.reasoning || ''
+            }
+          : null;
+      })
+      .filter((t) => t !== null);
+
+    return matchedTopics.slice(0, 3);
+  } catch (err) {
+    console.error(`  Error finding topics:`, err.message);
+    return [];
   }
 }
 
@@ -426,5 +612,7 @@ module.exports = {
   analyzeRelevance,
   analyzeTopicRelevance,
   analyzeAndMapArticles,
+  findRelevantModules,
+  findRelevantTopicsInModule,
   findTopRelatedTopics
 };
