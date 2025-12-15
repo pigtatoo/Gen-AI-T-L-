@@ -10,6 +10,7 @@ const authRoutes = require('./routes/auth');
 const modulesRoutes = require('./routes/modules');
 const topicsRoutes = require('./routes/topics');
 const articlesRoutes = require('./routes/articles');
+const quizRoutes = require('./routes/quiz');
 
 // Scheduler
 const { initScheduler } = require('./jobs/scheduler');
@@ -63,6 +64,8 @@ app.use('/api/modules/:moduleId/topics', topicsRoutes);
 
 // Articles routes (RSS, scraping, etc)
 app.use('/api/articles', articlesRoutes);
+// Quiz routes
+app.use('/api/quiz', quizRoutes);
 
 // -----------------------------
 // DeepSeek Chat Endpoint

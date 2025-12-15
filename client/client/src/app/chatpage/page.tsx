@@ -7,6 +7,9 @@ import ReactMarkdown from "react-markdown";
 interface ChatMessage {
   type: "user" | "bot";
   text: string;
+  quiz?: {question:string; choices:{A:string;B:string;C:string;D:string}; answer:'A'|'B'|'C'|'D'; explanation:string};
+  selectedChoice?: 'A'|'B'|'C'|'D'|null;
+  showExplanation?: boolean;
 }
 
 interface Module {
@@ -200,6 +203,12 @@ export default function ChatPage() {
     setMessages([...messages, { type: "user", text: userMessage }]);
     setInput("");
 
+    // Check if user is asking for a quiz
+    if (/quiz me|quiz|Quiz me/i.test(userMessage)) {
+      handleGenerateQuizForChat();
+      return;
+    }
+
     handleSendMessageToOpenRouter(userMessage)
       .then((botResponse) => {
         setMessages((prev) => [...prev, { type: "bot", text: botResponse }]);
@@ -211,6 +220,67 @@ export default function ChatPage() {
           { type: "bot", text: `Sorry, there was an error: ${errorMessage}` },
         ]);
       });
+  };
+
+  const handleGenerateQuizForChat = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      const selectedTopicTitles = topics
+        .filter(t => selectedTopics.includes(t.topic_id))
+        .map(t => t.title);
+
+      const res = await fetch('http://localhost:5000/api/quiz/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ selectedTopics: selectedTopicTitles })
+      });
+      if (!res.ok) throw new Error('Failed to generate quiz');
+      const data = await res.json();
+      
+      // Shuffle the quiz choices on frontend
+      const quiz = data.quiz;
+      const choiceArray = [
+        { letter: 'A', text: quiz.choices.A },
+        { letter: 'B', text: quiz.choices.B },
+        { letter: 'C', text: quiz.choices.C },
+        { letter: 'D', text: quiz.choices.D }
+      ];
+      
+      // Fisher-Yates shuffle
+      for (let i = choiceArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [choiceArray[i], choiceArray[j]] = [choiceArray[j], choiceArray[i]];
+      }
+      
+      // Rebuild choices object and find new answer position
+      const shuffledChoices: {A: string; B: string; C: string; D: string} = {
+        A: choiceArray[0].text,
+        B: choiceArray[1].text,
+        C: choiceArray[2].text,
+        D: choiceArray[3].text
+      };
+      const newAnswerLetter = choiceArray.find(c => c.letter === 'A')?.letter || 'A';
+      const newAnswerIndex = choiceArray.findIndex(c => c.letter === 'A');
+      const answerLetters = ['A', 'B', 'C', 'D'];
+      const newAnswer = answerLetters[newAnswerIndex] as 'A'|'B'|'C'|'D';
+      
+      quiz.choices = shuffledChoices;
+      quiz.answer = newAnswer;
+      
+      setMessages((prev) => [...prev, { 
+        type: "bot", 
+        text: "Here's a quiz question for you:", 
+        quiz: quiz,
+        selectedChoice: null,
+        showExplanation: false
+      }]);
+    } catch (e) {
+      console.error('Quiz error:', e);
+      setMessages((prev) => [...prev, { 
+        type: "bot", 
+        text: `Error generating quiz: ${e instanceof Error ? e.message : 'Unknown error'}` 
+      }]);
+    }
   };
 
   const handleSuggestedQuestion = (question: string) => {
@@ -251,9 +321,10 @@ export default function ChatPage() {
 
   const suggestedQuestions = [
     "Summarised Newsletter",
-    "Illustrations of Frameworks",
+    "Quiz me",
     "Give me a case study",
   ];
+
 
   return (
     <div className="flex h-screen w-full gap-4 bg-white p-4">
@@ -373,6 +444,7 @@ export default function ChatPage() {
                   </button>
                 ))}
               </div>
+              
             </div>
 
             {messages.map((message, index) => (
@@ -381,28 +453,84 @@ export default function ChatPage() {
                   {message.type === "user" ? (
                     <p className="text-sm break-words">{message.text}</p>
                   ) : (
-                    <div className="text-sm break-words prose prose-sm max-w-none">
-                      <ReactMarkdown
-                        components={{
-                          h1: ({node, ...props}) => <h1 className="text-lg font-bold mt-2 mb-2" {...props} />,
-                          h2: ({node, ...props}) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
-                          h3: ({node, ...props}) => <h3 className="text-sm font-bold mt-1 mb-1" {...props} />,
-                          strong: ({node, ...props}) => <strong className="font-bold" {...props} />,
-                          em: ({node, ...props}) => <em className="italic" {...props} />,
-                          ul: ({node, ...props}) => <ul className="list-disc list-inside my-1" {...props} />,
-                          ol: ({node, ...props}) => <ol className="list-decimal list-inside my-1" {...props} />,
-                          li: ({node, ...props}) => <li className="ml-2" {...props} />,
-                          p: ({node, ...props}) => <p className="my-1" {...props} />,
-                          code: ({node, className, ...props}) => (
-                            className ? 
-                            <code className="bg-gray-300 px-2 py-1 rounded block text-xs my-1 overflow-x-auto" {...props} /> :
-                            <code className="bg-gray-300 px-1 rounded text-xs" {...props} />
-                          ),
-                        }}
-                      >
-                        {message.text}
-                      </ReactMarkdown>
-                    </div>
+                    <>
+                      {message.text && (
+                        <div className="text-sm break-words prose prose-sm max-w-none">
+                          <ReactMarkdown
+                            components={{
+                              h1: ({node, ...props}) => <h1 className="text-lg font-bold mt-2 mb-2" {...props} />,
+                              h2: ({node, ...props}) => <h2 className="text-base font-bold mt-2 mb-1" {...props} />,
+                              h3: ({node, ...props}) => <h3 className="text-sm font-bold mt-1 mb-1" {...props} />,
+                              strong: ({node, ...props}) => <strong className="font-bold" {...props} />,
+                              em: ({node, ...props}) => <em className="italic" {...props} />,
+                              ul: ({node, ...props}) => <ul className="list-disc list-inside my-1" {...props} />,
+                              ol: ({node, ...props}) => <ol className="list-decimal list-inside my-1" {...props} />,
+                              li: ({node, ...props}) => <li className="ml-2" {...props} />,
+                              p: ({node, ...props}) => <p className="my-1" {...props} />,
+                              code: ({node, className, ...props}) => (
+                                className ? 
+                                <code className="bg-gray-300 px-2 py-1 rounded block text-xs my-1 overflow-x-auto" {...props} /> :
+                                <code className="bg-gray-300 px-1 rounded text-xs" {...props} />
+                              ),
+                            }}
+                          >
+                            {message.text}
+                          </ReactMarkdown>
+                        </div>
+                      )}
+                      {message.quiz && (
+                        <div className="mt-3 rounded-lg bg-white p-4 border border-gray-300 z-50 relative">
+                          <p className="text-sm font-semibold text-gray-800 mb-3">{message.quiz.question}</p>
+                          <div className="space-y-2">
+                            {(['A','B','C','D'] as const).map((opt) => {
+                              const text = message.quiz!.choices[opt];
+                              const isSelected = message.selectedChoice === opt;
+                              const isCorrect = message.quiz!.answer === opt;
+                              const bg = message.selectedChoice
+                                ? (isCorrect && isSelected ? 'bg-green-100 border-green-400' : (isSelected ? 'bg-red-100 border-red-400' : 'bg-gray-50 border-gray-200'))
+                                : 'bg-gray-50 border-gray-200 hover:bg-gray-100';
+                              const textColor = message.selectedChoice
+                                ? (isCorrect && isSelected ? 'text-green-800' : (isSelected ? 'text-red-800' : 'text-gray-800'))
+                                : 'text-gray-800';
+                              return (
+                                <button
+                                  key={opt}
+                                  type="button"
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    const newMessages = [...messages];
+                                    newMessages[index] = { ...newMessages[index], selectedChoice: opt };
+                                    setMessages(newMessages);
+                                  }}
+                                  className={`w-full text-left rounded-lg border px-3 py-2 ${bg} ${textColor} transition-colors cursor-pointer font-normal`}
+                                >
+                                  <span className="font-semibold mr-2">{opt}.</span>{text}
+                                </button>
+                              );
+                            })}
+                          </div>
+                          <div className="mt-3">
+                            <button
+                              onClick={() => {
+                                const newMessages = [...messages];
+                                newMessages[index] = { ...newMessages[index], showExplanation: !message.showExplanation };
+                                setMessages(newMessages);
+                              }}
+                              className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+                            >
+                              {message.showExplanation ? "Hide Explanation" : "Reveal Explanation"}
+                            </button>
+                          </div>
+                          {message.showExplanation && (
+                            <div className="mt-2 rounded bg-gray-50 p-3 text-sm text-gray-800">
+                              <p><span className="font-semibold">Correct Answer:</span> {message.quiz.answer}</p>
+                              <p className="mt-1"><span className="font-semibold">Explanation:</span> {message.quiz.explanation}</p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
