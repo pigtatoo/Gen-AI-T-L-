@@ -9,6 +9,18 @@
 require('dotenv').config();
 
 const sequelize = require('../config/database');
+
+// Import models to establish relationships
+const User = require('../models/User');
+const Module = require('../models/Modules');
+const Topic = require('../models/Topics');
+
+// Define relationships (same as server.js)
+User.hasMany(Module, { foreignKey: 'user_id', onDelete: 'CASCADE' });
+Module.belongsTo(User, { foreignKey: 'user_id' });
+Module.hasMany(Topic, { foreignKey: 'module_id', onDelete: 'CASCADE' });
+Topic.belongsTo(Module, { foreignKey: 'module_id' });
+
 const { syncRssWeekly } = require('../jobs/rssSync');
 
 async function runSync() {
