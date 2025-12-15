@@ -1,4 +1,4 @@
-name: Weekly RSS Sync
+name: Weekly RSS Sync to Supabase
 
 on:
   schedule:
@@ -28,30 +28,14 @@ jobs:
           npm install
           echo "✓ Dependencies installed"
 
-      # Step 4: Sync MySQL to Supabase
-      - name: Sync MySQL to Supabase
+      # Step 4: Run RSS Sync to Supabase
+      - name: Run RSS Sync to Supabase
         working-directory: ./server
         env:
-          # MySQL credentials (local database)
-          DB_NAME: ${{ secrets.DB_NAME || 'gen_ai_app' }}
-          DB_USER: ${{ secrets.DB_USER || 'root' }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_HOST: ${{ secrets.DB_HOST || 'localhost' }}
-          DB_PORT: ${{ secrets.DB_PORT || '3306' }}
-          
-          # Supabase connection for Supabase database
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          NODE_OPTIONS: "--dns-result-order=ipv4first"
-        run: |
-          echo "🔄 Syncing MySQL to Supabase..."
-          node scripts/sync-mysql-to-supabase.js || echo "⚠️  Sync skipped (MySQL might not be accessible from GitHub Actions)"
-
-      # Step 5: Run RSS Sync
-      - name: Run RSS Sync
-        working-directory: ./server
-        env:
-          # Use Supabase connection string
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          # Supabase credentials
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
           
           # DeepSeek API key
           DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
@@ -61,36 +45,20 @@ jobs:
           RSS_TIMEOUT: "15000"
           ARTICLE_OUTPUT_DIR: "./temp"
           
-          # Force IPv4 (GitHub Actions sometimes blocks IPv6)
+          # Force IPv4
           NODE_OPTIONS: "--dns-result-order=ipv4first"
         run: |
-          echo "🚀 Starting RSS sync workflow..."
+          echo "🚀 Starting RSS sync to Supabase..."
           echo "📅 Time: $(date)"
-          node scripts/run-rss-sync.js
+          node scripts/run-rss-sync-supabase.js
 
-      # Step 5: Upload results as artifact (for debugging)
-      - name: Upload sync results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: rss-sync-results-${{ github.run_id }}
-          path: server/temp/
-          retention-days: 14
-
-      # Step 6: Log completion
+      # Step 5: Log completion
       - name: Sync Completed
         if: success()
-        run: echo "✅ RSS sync completed successfully!"
+        run: echo "✅ RSS sync to Supabase completed successfully!"
 
-      # Step 7: Log failure
+      # Step 6: Log failure
       - name: Sync Failed
         if: failure()
         run: echo "❌ RSS sync failed - check logs above"
-      - name: Sync Completed
-        if: success()
-        run: echo "✅ RSS sync completed successfully!"
 
-      # Step 7: Log failure
-      - name: Sync Failed
-        if: failure()
-        run: echo "❌ RSS sync failed - check logs above"

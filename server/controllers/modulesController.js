@@ -1,14 +1,15 @@
-const Module = require('../models/Modules');
-const User = require('../models/User');
+const supabase = require('../config/supabase');
 
 // Get all modules for logged-in user
 exports.getAllModules = async (req, res) => {
   try {
-    const modules = await Module.findAll({
-      where: { user_id: req.user.id },
-      order: [['created_at', 'DESC']]
-    });
-    res.json(modules);
+    const { data, error } = await supabase
+      .from('Modules')
+      .select('*')
+      .eq('user_id', req.user.id)
+      .order('created_at', { ascending: false });
+    if (error) return res.status(500).json({ error: error.message });
+    res.json(data || []);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -23,13 +24,14 @@ exports.createModule = async (req, res) => {
       return res.status(400).json({ error: 'Title is required' });
     }
 
-    const module = await Module.create({
-      user_id: req.user.id,
-      title,
-      description
-    });
-
-    res.status(201).json(module);
+    const now = new Date().toISOString();
+    const { data, error } = await supabase
+      .from('Modules')
+      .insert({ user_id: req.user.id, title, description, created_at: now })
+      .select('*')
+      .limit(1);
+    if (error) return res.status(500).json({ error: error.message });
+    res.status(201).json(data && data[0]);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -38,12 +40,14 @@ exports.createModule = async (req, res) => {
 // Get a specific module
 exports.getModule = async (req, res) => {
   try {
-    const module = await Module.findOne({
-      where: {
-        module_id: req.params.id,
-        user_id: req.user.id
-      }
-    });
+    const { data, error } = await supabase
+      .from('Modules')
+      .select('*')
+      .eq('module_id', req.params.id)
+      .eq('user_id', req.user.id)
+      .limit(1);
+    if (error) return res.status(500).json({ error: error.message });
+    const module = data && data[0];
 
     if (!module) {
       return res.status(404).json({ error: 'Module not found' });
@@ -60,23 +64,32 @@ exports.updateModule = async (req, res) => {
   try {
     const { title, description } = req.body;
 
-    const module = await Module.findOne({
-      where: {
-        module_id: req.params.id,
-        user_id: req.user.id
-      }
-    });
+    const { data: found, error: findErr } = await supabase
+      .from('Modules')
+      .select('*')
+      .eq('module_id', req.params.id)
+      .eq('user_id', req.user.id)
+      .limit(1);
+    if (findErr) return res.status(500).json({ error: findErr.message });
+    const module = found && found[0];
 
     if (!module) {
       return res.status(404).json({ error: 'Module not found' });
     }
 
-    await module.update({
+    const updates = {
       title: title || module.title,
       description: description !== undefined ? description : module.description
-    });
-
-    res.json(module);
+    };
+    const { data, error } = await supabase
+      .from('Modules')
+      .update(updates)
+      .eq('module_id', req.params.id)
+      .eq('user_id', req.user.id)
+      .select('*')
+      .limit(1);
+    if (error) return res.status(500).json({ error: error.message });
+    res.json(data && data[0]);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -85,19 +98,25 @@ exports.updateModule = async (req, res) => {
 // Delete a module
 exports.deleteModule = async (req, res) => {
   try {
-    const module = await Module.findOne({
-      where: {
-        module_id: req.params.id,
-        user_id: req.user.id
-      }
-    });
+    const { data: found, error: findErr } = await supabase
+      .from('Modules')
+      .select('module_id')
+      .eq('module_id', req.params.id)
+      .eq('user_id', req.user.id)
+      .limit(1);
+    if (findErr) return res.status(500).json({ error: findErr.message });
+    const module = found && found[0];
 
     if (!module) {
       return res.status(404).json({ error: 'Module not found' });
     }
 
-    await module.destroy();
-
+    const { error } = await supabase
+      .from('Modules')
+      .delete()
+      .eq('module_id', req.params.id)
+      .eq('user_id', req.user.id);
+    if (error) return res.status(500).json({ error: error.message });
     res.json({ message: 'Module deleted successfully' });
   } catch (error) {
     res.status(500).json({ error: error.message });

@@ -1,5 +1,4 @@
-const Topic = require('../models/Topics');
-const Module = require('../models/Modules');
+const supabase = require('../config/supabase');
 
 // Get all topics for a specific module
 exports.getAllTopics = async (req, res) => {
@@ -7,23 +6,24 @@ exports.getAllTopics = async (req, res) => {
     const { moduleId } = req.params;
 
     // Verify module exists and belongs to user
-    const module = await Module.findOne({
-      where: {
-        module_id: moduleId,
-        user_id: req.user.id
-      }
-    });
+    const { data: module, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,user_id')
+      .eq('module_id', moduleId)
+      .eq('user_id', req.user.id)
+      .maybeSingle();
 
-    if (!module) {
-      return res.status(404).json({ error: 'Module not found' });
-    }
+    if (modErr) return res.status(500).json({ error: modErr.message });
+    if (!module) return res.status(404).json({ error: 'Module not found' });
 
-    const topics = await Topic.findAll({
-      where: { module_id: moduleId },
-      order: [['created_at', 'DESC']]
-    });
+    const { data: topics, error } = await supabase
+      .from('Topics')
+      .select('*')
+      .eq('module_id', moduleId)
+      .order('created_at', { ascending: false });
 
-    res.json(topics);
+    if (error) return res.status(500).json({ error: error.message });
+    res.json(topics || []);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -40,23 +40,25 @@ exports.createTopic = async (req, res) => {
     }
 
     // Verify module exists and belongs to user
-    const module = await Module.findOne({
-      where: {
-        module_id: moduleId,
-        user_id: req.user.id
-      }
-    });
+    const { data: module, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,user_id')
+      .eq('module_id', moduleId)
+      .eq('user_id', req.user.id)
+      .maybeSingle();
 
-    if (!module) {
-      return res.status(404).json({ error: 'Module not found' });
-    }
+    if (modErr) return res.status(500).json({ error: modErr.message });
+    if (!module) return res.status(404).json({ error: 'Module not found' });
 
-    const topic = await Topic.create({
-      module_id: moduleId,
-      title
-    });
+    const now = new Date().toISOString();
+    const { data, error } = await supabase
+      .from('Topics')
+      .insert([{ module_id: moduleId, title, created_at: now }])
+      .select()
+      .single();
 
-    res.status(201).json(topic);
+    if (error) return res.status(500).json({ error: error.message });
+    res.status(201).json(data);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -68,27 +70,25 @@ exports.getTopic = async (req, res) => {
     const { moduleId, topicId } = req.params;
 
     // Verify module exists and belongs to user
-    const module = await Module.findOne({
-      where: {
-        module_id: moduleId,
-        user_id: req.user.id
-      }
-    });
+    const { data: module, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,user_id')
+      .eq('module_id', moduleId)
+      .eq('user_id', req.user.id)
+      .maybeSingle();
 
-    if (!module) {
-      return res.status(404).json({ error: 'Module not found' });
-    }
+    if (modErr) return res.status(500).json({ error: modErr.message });
+    if (!module) return res.status(404).json({ error: 'Module not found' });
 
-    const topic = await Topic.findOne({
-      where: {
-        topic_id: topicId,
-        module_id: moduleId
-      }
-    });
+    const { data: topic, error } = await supabase
+      .from('Topics')
+      .select('*')
+      .eq('topic_id', topicId)
+      .eq('module_id', moduleId)
+      .maybeSingle();
 
-    if (!topic) {
-      return res.status(404).json({ error: 'Topic not found' });
-    }
+    if (error) return res.status(500).json({ error: error.message });
+    if (!topic) return res.status(404).json({ error: 'Topic not found' });
 
     res.json(topic);
   } catch (error) {
@@ -107,31 +107,28 @@ exports.updateTopic = async (req, res) => {
     }
 
     // Verify module exists and belongs to user
-    const module = await Module.findOne({
-      where: {
-        module_id: moduleId,
-        user_id: req.user.id
-      }
-    });
+    const { data: module, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,user_id')
+      .eq('module_id', moduleId)
+      .eq('user_id', req.user.id)
+      .maybeSingle();
 
-    if (!module) {
-      return res.status(404).json({ error: 'Module not found' });
-    }
+    if (modErr) return res.status(500).json({ error: modErr.message });
+    if (!module) return res.status(404).json({ error: 'Module not found' });
 
-    const topic = await Topic.findOne({
-      where: {
-        topic_id: topicId,
-        module_id: moduleId
-      }
-    });
+    const { data, error } = await supabase
+      .from('Topics')
+      .update({ title })
+      .eq('topic_id', topicId)
+      .eq('module_id', moduleId)
+      .select()
+      .single();
 
-    if (!topic) {
-      return res.status(404).json({ error: 'Topic not found' });
-    }
+    if (error) return res.status(500).json({ error: error.message });
+    if (!data) return res.status(404).json({ error: 'Topic not found' });
 
-    await topic.update({ title });
-
-    res.json(topic);
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -143,30 +140,23 @@ exports.deleteTopic = async (req, res) => {
     const { moduleId, topicId } = req.params;
 
     // Verify module exists and belongs to user
-    const module = await Module.findOne({
-      where: {
-        module_id: moduleId,
-        user_id: req.user.id
-      }
-    });
+    const { data: module, error: modErr } = await supabase
+      .from('Modules')
+      .select('module_id,user_id')
+      .eq('module_id', moduleId)
+      .eq('user_id', req.user.id)
+      .maybeSingle();
 
-    if (!module) {
-      return res.status(404).json({ error: 'Module not found' });
-    }
+    if (modErr) return res.status(500).json({ error: modErr.message });
+    if (!module) return res.status(404).json({ error: 'Module not found' });
 
-    const topic = await Topic.findOne({
-      where: {
-        topic_id: topicId,
-        module_id: moduleId
-      }
-    });
+    const { error } = await supabase
+      .from('Topics')
+      .delete()
+      .eq('topic_id', topicId)
+      .eq('module_id', moduleId);
 
-    if (!topic) {
-      return res.status(404).json({ error: 'Topic not found' });
-    }
-
-    await topic.destroy();
-
+    if (error) return res.status(500).json({ error: error.message });
     res.json({ message: 'Topic deleted successfully' });
   } catch (error) {
     res.status(500).json({ error: error.message });

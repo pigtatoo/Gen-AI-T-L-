@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const sequelize = require('./config/database');
+// Supabase client (HTTPS-based, avoids local Postgres DNS issues)
+const supabase = require('./config/supabase');
 require('dotenv').config();
 const axios = require('axios'); // for DeepSeek API requests
 
@@ -35,10 +36,21 @@ app.use(cors({
   credentials: true
 }));
 
-// Database sync
-sequelize.sync({ alter: true })
-  .then(() => console.log('Database synced'))
-  .catch(err => console.log('Database sync error:', err));
+// Database sync disabled: using Supabase client instead of Sequelize
+console.log('[DB] Using Supabase client; skipping Sequelize sync');
+
+// Simple health check to verify Supabase connectivity at startup
+app.get('/health', async (req, res) => {
+  try {
+    const { error } = await supabase.from('Modules').select('module_id', { count: 'exact', head: true });
+    if (error) {
+      return res.status(500).json({ status: 'error', message: error.message });
+    }
+    return res.json({ status: 'ok' });
+  } catch (e) {
+    return res.status(500).json({ status: 'error', message: e.message });
+  }
+});
 
 // Auth routes
 app.use('/api/auth', authRoutes);

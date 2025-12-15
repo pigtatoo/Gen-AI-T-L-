@@ -1,47 +1,35 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
-let sequelize;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-console.log('[DB Config] Checking connection method...');
-console.log('[DB Config] DATABASE_URL:', process.env.DATABASE_URL ? '✓ Set' : '✗ Not set');
-console.log('[DB Config] DB_HOST:', process.env.DB_HOST || '✗ Not set');
-
-// If DATABASE_URL is provided (Supabase connection string), use it
-if (process.env.DATABASE_URL) {
-  console.log('[DB Config] Using Supabase (PostgreSQL via DATABASE_URL)');
-  sequelize = new Sequelize(process.env.DATABASE_URL, {
-    dialect: 'postgres',
-    logging: false,
-    pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    },
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false
-      },
-      // Force IPv4 for Supabase
-      family: 4
-    }
-  });
-} else {
-  // Otherwise use individual credentials (local MySQL)
-  console.log('[DB Config] Using Local MySQL');
-  sequelize = new Sequelize(
-    process.env.DB_NAME || 'gen_ai_app',
-    process.env.DB_USER || 'root',
-    process.env.DB_PASSWORD || 'password',
-    {
-      host: process.env.DB_HOST || 'localhost',
-      port: process.env.DB_PORT || 3306,
-      dialect: process.env.DB_DIALECT || 'mysql',
-      logging: false
-    }
-  );
+if (!supabaseUrl || !supabaseServiceRoleKey) {
+  throw new Error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY');
 }
+
+// Build PostgreSQL connection string from Supabase
+const dbHost = supabaseUrl.replace('https://', '').split('.')[0] + '.supabase.co';
+const databaseUrl = `postgresql://postgres:${process.env.SUPABASE_DB_PASSWORD || 'postgres'}@db.${dbHost}:5432/postgres`;
+
+console.log('[DB Config] Connecting to Supabase (PostgreSQL)');
+
+const sequelize = new Sequelize(databaseUrl, {
+  dialect: 'postgres',
+  logging: false,
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    },
+    family: 4
+  }
+});
 
 module.exports = sequelize;
