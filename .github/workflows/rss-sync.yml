@@ -42,6 +42,9 @@ jobs:
           RSS_SINCE_DAYS: "7"
           RSS_TIMEOUT: "15000"
           ARTICLE_OUTPUT_DIR: "./temp"
+          
+          # Force IPv4 (GitHub Actions sometimes blocks IPv6)
+          NODE_OPTIONS: "--dns-result-order=ipv4first"
         run: |
           echo "🚀 Starting RSS sync workflow..."
           echo "📅 Time: $(date)"
