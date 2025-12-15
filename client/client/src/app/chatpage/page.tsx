@@ -204,7 +204,7 @@ export default function ChatPage() {
     setInput("");
 
     // Check if user is asking for a quiz
-    if (/quiz me|quiz|Quiz me/i.test(userMessage)) {
+    if (/quiz/i.test(userMessage)) {
       handleGenerateQuizForChat();
       return;
     }
@@ -239,30 +239,32 @@ export default function ChatPage() {
       
       // Shuffle the quiz choices on frontend
       const quiz = data.quiz;
-      const choiceArray = [
-        { letter: 'A', text: quiz.choices.A },
-        { letter: 'B', text: quiz.choices.B },
-        { letter: 'C', text: quiz.choices.C },
-        { letter: 'D', text: quiz.choices.D }
-      ];
+      const choices = ['A', 'B', 'C', 'D'];
+      const choiceTexts: {[key: string]: string} = {
+        A: quiz.choices.A,
+        B: quiz.choices.B,
+        C: quiz.choices.C,
+        D: quiz.choices.D
+      };
       
-      // Fisher-Yates shuffle
-      for (let i = choiceArray.length - 1; i > 0; i--) {
+      // Fisher-Yates shuffle of the positions
+      for (let i = choices.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [choiceArray[i], choiceArray[j]] = [choiceArray[j], choiceArray[i]];
+        [choices[i], choices[j]] = [choices[j], choices[i]];
       }
       
-      // Rebuild choices object and find new answer position
+      // Build new shuffled choices
       const shuffledChoices: {A: string; B: string; C: string; D: string} = {
-        A: choiceArray[0].text,
-        B: choiceArray[1].text,
-        C: choiceArray[2].text,
-        D: choiceArray[3].text
+        A: choiceTexts[choices[0]],
+        B: choiceTexts[choices[1]],
+        C: choiceTexts[choices[2]],
+        D: choiceTexts[choices[3]]
       };
-      const newAnswerLetter = choiceArray.find(c => c.letter === 'A')?.letter || 'A';
-      const newAnswerIndex = choiceArray.findIndex(c => c.letter === 'A');
-      const answerLetters = ['A', 'B', 'C', 'D'];
-      const newAnswer = answerLetters[newAnswerIndex] as 'A'|'B'|'C'|'D';
+      
+      // Find where 'A' (the correct answer) ended up
+      const newAnswerPosition = choices.indexOf('A');
+      const answerMap = ['A', 'B', 'C', 'D'];
+      const newAnswer = answerMap[newAnswerPosition] as 'A'|'B'|'C'|'D';
       
       quiz.choices = shuffledChoices;
       quiz.answer = newAnswer;
@@ -408,6 +410,13 @@ export default function ChatPage() {
             ))
           )}
         </div>
+
+        <button
+          onClick={() => router.push(`/quizpage?moduleId=${moduleId}`)}
+          className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+        >
+          📝 Take Full Quiz
+        </button>
       </div>
 
       {/* Chat container */}
@@ -444,7 +453,6 @@ export default function ChatPage() {
                   </button>
                 ))}
               </div>
-              
             </div>
 
             {messages.map((message, index) => (
