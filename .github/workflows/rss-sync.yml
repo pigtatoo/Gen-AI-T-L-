@@ -32,12 +32,8 @@ jobs:
       - name: Run RSS Sync
         working-directory: ./server
         env:
-          # Database credentials (from GitHub Secrets)
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_DIALECT: ${{ secrets.DB_DIALECT || 'postgres' }}
+          # Use Supabase connection string
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
           
           # DeepSeek API key
           DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
