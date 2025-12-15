@@ -2,8 +2,8 @@ name: Weekly RSS Sync
 
 on:
   schedule:
-    # Runs every Sunday at 02:00 UTC (10:00 Singapore time)
-    - cron: "0 2 * * 0"
+    # Runs every Monday at 21:00 UTC (5:00 AM Tuesday Singapore time)
+    - cron: "0 21 * * 1"
   workflow_dispatch: {}  # lets you trigger manually from GitHub
 
 jobs:

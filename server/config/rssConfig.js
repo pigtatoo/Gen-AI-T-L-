@@ -58,8 +58,8 @@ const rssConfig = {
   // Max characters for article text
   maxArticleLength: 15000,
 
-  // Schedule: Every Sunday at 2 AM
-  schedule: process.env.RSS_SYNC_SCHEDULE || '0 2 * * 0'
+  // Schedule: Every Monday at 9 PM (21:00)
+  schedule: process.env.RSS_SYNC_SCHEDULE || '0 21 * * 1'
 };
 
 module.exports = rssConfig;
