@@ -2,8 +2,8 @@ name: Weekly RSS Sync to Supabase
 
 on:
   schedule:
-    # Runs every Monday at 21:00 UTC (5:00 AM Tuesday Singapore time)
-    - cron: "0 21 * * 1"
+    # Runs every Monday at 4:00 AM Singapore time (Sunday 20:00 UTC)
+    - cron: "0 20 * * 0"
   workflow_dispatch: {}  # lets you trigger manually from GitHub
 
 jobs:
