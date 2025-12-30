@@ -7,5 +7,5 @@ cd to client\client to run frontend
 
 server
 1. create .env file to store API keys and sensitive informations
-2. node server.js 
+2. npm start
 
