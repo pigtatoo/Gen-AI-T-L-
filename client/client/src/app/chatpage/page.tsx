@@ -51,10 +51,34 @@ export default function ChatPage() {
     if (moduleId) {
       fetchModuleDetails();
       fetchTopics();
+      loadChatHistory();
     } else {
       setIsLoading(false);
     }
   }, [moduleId]);
+
+  const loadChatHistory = async () => {
+    try {
+      if (!moduleId) return;
+      // Load from localStorage instead of database
+      const stored = localStorage.getItem(`chat_${moduleId}`);
+      if (stored) {
+        setMessages(JSON.parse(stored));
+      }
+    } catch (err) {
+      console.error("Error loading chat history:", err);
+    }
+  };
+
+  const saveChatHistory = (messagesToSave: ChatMessage[]) => {
+    try {
+      if (!moduleId) return;
+      // Save to localStorage only
+      localStorage.setItem(`chat_${moduleId}`, JSON.stringify(messagesToSave));
+    } catch (err) {
+      console.error("Error saving chat history:", err);
+    }
+  };
 
   const fetchModuleDetails = async () => {
     try {
@@ -202,6 +226,8 @@ export default function ChatPage() {
         setMessages((prev) => {
           const updated = [...prev];
           updated[updated.length - 1] = { type: "bot", text: displayedText };
+          // Save after each update
+          saveChatHistory(updated);
           return updated;
         });
         // 20ms delay between characters for smooth typing effect
@@ -219,7 +245,9 @@ export default function ChatPage() {
     if (!input.trim()) return;
 
     const userMessage = input;
-    setMessages([...messages, { type: "user", text: userMessage }]);
+    const updatedMessages: ChatMessage[] = [...messages, { type: "user", text: userMessage }];
+    setMessages(updatedMessages);
+    saveChatHistory(updatedMessages);
     setInput(""); // Input clears before thinking starts
     setIsSendingMessage(true);
 
@@ -231,7 +259,11 @@ export default function ChatPage() {
     }
 
     // Add loading message immediately
-    setMessages((prev) => [...prev, { type: "bot", text: "🤔 Thinking..." }]);
+    setMessages((prev) => {
+      const withLoading: ChatMessage[] = [...prev, { type: "bot", text: "🤔 Thinking..." }];
+      saveChatHistory(withLoading);
+      return withLoading;
+    });
 
     handleSendMessageToOpenRouter(userMessage)
       .catch((err) => {
@@ -239,6 +271,7 @@ export default function ChatPage() {
         setMessages((prev) => {
           const updated = [...prev];
           updated[updated.length - 1] = { type: "bot", text: `Sorry, there was an error: ${errorMessage}` };
+          saveChatHistory(updated);
           return updated;
         });
       });
@@ -298,22 +331,38 @@ export default function ChatPage() {
         selectedChoice: null,
         showExplanation: false
       }]);
+      
+      // Save quiz message to history
+      setMessages((prev) => {
+        saveChatHistory(prev);
+        return prev;
+      });
     } catch (e) {
       console.error('Quiz error:', e);
-      setMessages((prev) => [...prev, { 
-        type: "bot", 
-        text: `Error generating quiz: ${e instanceof Error ? e.message : 'Unknown error'}` 
-      }]);
+      setMessages((prev) => {
+        const withError: ChatMessage[] = [...prev, { 
+          type: "bot", 
+          text: `Error generating quiz: ${e instanceof Error ? e.message : 'Unknown error'}` 
+        }];
+        saveChatHistory(withError);
+        return withError;
+      });
     }
   };
 
   const handleSuggestedQuestion = (question: string) => {
-    const userMessage = { type: "user" as const, text: question };
-    setMessages([...messages, userMessage]);
+    const userMessage: ChatMessage = { type: "user", text: question };
+    const updatedMessages: ChatMessage[] = [...messages, userMessage];
+    setMessages(updatedMessages);
+    saveChatHistory(updatedMessages);
     setIsSendingMessage(true);
 
     // Add loading message
-    setMessages((prev) => [...prev, { type: "bot", text: "🤔 Thinking..." }]);
+    setMessages((prev) => {
+      const withLoading: ChatMessage[] = [...prev, { type: "bot", text: "🤔 Thinking..." }];
+      saveChatHistory(withLoading);
+      return withLoading;
+    });
 
     handleSendMessageToOpenRouter(question)
       .catch((err) => {
@@ -321,6 +370,7 @@ export default function ChatPage() {
         setMessages((prev) => {
           const updated = [...prev];
           updated[updated.length - 1] = { type: "bot", text: `Sorry, there was an error: ${errorMessage}` };
+          saveChatHistory(updated);
           return updated;
         });
       });
@@ -537,6 +587,7 @@ export default function ChatPage() {
                                     const newMessages = [...messages];
                                     newMessages[index] = { ...newMessages[index], selectedChoice: opt };
                                     setMessages(newMessages);
+                                    saveChatHistory(newMessages);
                                   }}
                                   className={`w-full text-left rounded-lg border px-3 py-2 ${bg} ${textColor} transition-colors cursor-pointer font-normal`}
                                 >
@@ -551,6 +602,7 @@ export default function ChatPage() {
                                 const newMessages = [...messages];
                                 newMessages[index] = { ...newMessages[index], showExplanation: !message.showExplanation };
                                 setMessages(newMessages);
+                                saveChatHistory(newMessages);
                               }}
                               className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700"
                             >
