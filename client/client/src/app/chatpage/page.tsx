@@ -41,6 +41,12 @@ export default function ChatPage() {
   const router = useRouter();
   const moduleId = searchParams.get("moduleId");
 
+  // Convert plain URLs to markdown links
+  const convertUrlsToMarkdown = (text: string): string => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlRegex, '[$1]($1)');
+  };
+
   useEffect(() => {
     if (moduleId) {
       fetchModuleDetails();
@@ -160,7 +166,7 @@ export default function ChatPage() {
     try {
       setIsSendingMessage(true);
 
-      const token = localStorage.getItem("token"); // optional if your backend uses auth
+      const token = localStorage.getItem("token");
       
       // Get selected topic titles
       const selectedTopicTitles = topics
@@ -187,7 +193,20 @@ export default function ChatPage() {
       }
 
       const data = await response.json();
-      return data.reply;
+      const fullText = data.reply;
+
+      // Typewriter effect - display text character by character
+      let displayedText = '';
+      for (let i = 0; i < fullText.length; i++) {
+        displayedText += fullText[i];
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { type: "bot", text: displayedText };
+          return updated;
+        });
+        // 20ms delay between characters for smooth typing effect
+        await new Promise(resolve => setTimeout(resolve, 20));
+      }
     } catch (err) {
       console.error("Error sending message to OpenRouter:", err);
       throw err;
@@ -201,24 +220,27 @@ export default function ChatPage() {
 
     const userMessage = input;
     setMessages([...messages, { type: "user", text: userMessage }]);
-    setInput("");
+    setInput(""); // Input clears before thinking starts
+    setIsSendingMessage(true);
 
     // Check if user is asking for a quiz
     if (/quiz/i.test(userMessage)) {
+      setIsSendingMessage(false);
       handleGenerateQuizForChat();
       return;
     }
 
+    // Add loading message immediately
+    setMessages((prev) => [...prev, { type: "bot", text: "🤔 Thinking..." }]);
+
     handleSendMessageToOpenRouter(userMessage)
-      .then((botResponse) => {
-        setMessages((prev) => [...prev, { type: "bot", text: botResponse }]);
-      })
       .catch((err) => {
         const errorMessage = err instanceof Error ? err.message : "Error getting response from chatbot";
-        setMessages((prev) => [
-          ...prev,
-          { type: "bot", text: `Sorry, there was an error: ${errorMessage}` },
-        ]);
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { type: "bot", text: `Sorry, there was an error: ${errorMessage}` };
+          return updated;
+        });
       });
   };
 
@@ -288,17 +310,19 @@ export default function ChatPage() {
   const handleSuggestedQuestion = (question: string) => {
     const userMessage = { type: "user" as const, text: question };
     setMessages([...messages, userMessage]);
+    setIsSendingMessage(true);
+
+    // Add loading message
+    setMessages((prev) => [...prev, { type: "bot", text: "🤔 Thinking..." }]);
 
     handleSendMessageToOpenRouter(question)
-      .then((botResponse) => {
-        setMessages((prev) => [...prev, { type: "bot", text: botResponse }]);
-      })
       .catch((err) => {
         const errorMessage = err instanceof Error ? err.message : "Error getting response from chatbot";
-        setMessages((prev) => [
-          ...prev,
-          { type: "bot", text: `Sorry, there was an error: ${errorMessage}` },
-        ]);
+        setMessages((prev) => {
+          const updated = [...prev];
+          updated[updated.length - 1] = { type: "bot", text: `Sorry, there was an error: ${errorMessage}` };
+          return updated;
+        });
       });
   };
 
@@ -475,6 +499,9 @@ export default function ChatPage() {
                               ol: ({node, ...props}) => <ol className="list-decimal list-inside my-1" {...props} />,
                               li: ({node, ...props}) => <li className="ml-2" {...props} />,
                               p: ({node, ...props}) => <p className="my-1" {...props} />,
+                              a: ({node, href, ...props}) => (
+                                <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline cursor-pointer" {...props} />
+                              ),
                               code: ({node, className, ...props}) => (
                                 className ? 
                                 <code className="bg-gray-300 px-2 py-1 rounded block text-xs my-1 overflow-x-auto" {...props} /> :
@@ -482,7 +509,7 @@ export default function ChatPage() {
                               ),
                             }}
                           >
-                            {message.text}
+                            {convertUrlsToMarkdown(message.text)}
                           </ReactMarkdown>
                         </div>
                       )}
@@ -565,8 +592,13 @@ export default function ChatPage() {
               onClick={handleSendMessage}
               disabled={isSendingMessage}
               className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-500 text-white transition-colors hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              title={isSendingMessage ? "Waiting for response..." : "Send message"}
             >
-              {isSendingMessage ? "..." : "▶"}
+              {isSendingMessage ? (
+                <span className="animate-spin inline-block">⏳</span>
+              ) : (
+                "▶"
+              )}
             </button>
           </div>
         </div>

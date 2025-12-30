@@ -2,6 +2,7 @@ const FeedParser = require('feedparser');
 const axios = require('axios');
 const { Readable } = require('stream');
 const rssConfig = require('../config/rssConfig');
+const supabase = require('../config/supabase');
 
 /**
  * Parse RSS feed and extract articles published since given date
@@ -124,24 +125,65 @@ function deduplicateArticles(articles) {
  * Fetch all RSS feeds and return combined articles
  * @returns {Promise<Array>} Array of article objects
  */
+/**
+ * Get all active RSS feeds from database, with fallback to defaults
+ * First tries to get user feeds from Supabase, then falls back to hardcoded defaults
+ * @returns {Promise<Array>} Array of feed URLs
+ */
+async function getAllFeeds() {
+  try {
+    // Fetch all active feeds from database (from all users)
+    // Custom feeds are added ON TOP of default feeds
+    const { data: userFeeds, error } = await supabase
+      .from('userfeeds')
+      .select('url')
+      .eq('active', true);
+
+    if (error) {
+      console.warn(`⚠️  Failed to fetch feeds from database: ${error.message}`);
+      console.log('📡 Using default feeds...');
+      return rssConfig.feeds;
+    }
+
+    const customUrls = userFeeds.map(f => f.url);
+    
+    // Combine custom feeds with default feeds
+    const allFeeds = [...rssConfig.feeds, ...customUrls];
+    
+    console.log(`📡 Loaded ${customUrls.length} custom feeds + ${rssConfig.feeds.length} default feeds = ${allFeeds.length} total feeds`);
+    return allFeeds;
+  } catch (err) {
+    console.warn(`⚠️  Error fetching feeds: ${err.message}`);
+    console.log('📡 Using default feeds...');
+    return rssConfig.feeds;
+  }
+}
+
+/**
+ * Fetch all RSS feeds
+ * @returns {Promise<Array>} Array of article objects from all feeds
+ */
 async function fetchAllRSSFeeds() {
   const sinceDate = new Date();
   sinceDate.setDate(sinceDate.getDate() - rssConfig.sinceDays);
 
   console.log(`Fetching RSS feeds since ${sinceDate.toISOString()}...`);
 
+  // Get feeds from database or use defaults
+  const feeds = await getAllFeeds();
+
   // Fetch all feeds in parallel
-  const feedPromises = rssConfig.feeds.map((url) => parseRssSince(url, sinceDate));
+  const feedPromises = feeds.map((url) => parseRssSince(url, sinceDate));
   const results = await Promise.allSettled(feedPromises);
 
   // Combine all results
   let allArticles = [];
   results.forEach((result, index) => {
     if (result.status === 'fulfilled') {
-      console.log(`✓ Fetched ${result.value.length} articles from ${rssConfig.feeds[index]}`);
+      console.log(`✓ Fetched ${result.value.length} articles from ${feeds[index]}`);
       allArticles = allArticles.concat(result.value);
     } else {
-      console.error(`✗ Failed to fetch ${rssConfig.feeds[index]}`);
+      console.error(`✗ Failed to fetch ${feeds[index]}`);
     }
   });
 
@@ -189,5 +231,6 @@ module.exports = {
   filterByKeywords,
   deduplicateArticles,
   fetchAllRSSFeeds,
+  getAllFeeds,
   syncRSS
 };

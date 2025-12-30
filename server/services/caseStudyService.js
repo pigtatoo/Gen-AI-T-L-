@@ -102,7 +102,12 @@ function formatArticlesForPrompt(articlesData) {
     formatted += `\n### Topic: ${topicGroup.topic}\n`;
     formatted += '---\n';
 
-    topicGroup.articles.forEach((article, idx) => {
+    // Sort by confidence score (highest first) and keep only top 3
+    const topArticles = (topicGroup.articles || [])
+      .sort((a, b) => (b.confidence || 0) - (a.confidence || 0))
+      .slice(0, 3);
+
+    topArticles.forEach((article, idx) => {
       const publishDate = new Date(article.published).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
@@ -118,7 +123,7 @@ function formatArticlesForPrompt(articlesData) {
       formatted += `🎯 **Relevance:** ${confidence}%\n`;
       formatted += `💡 **Why it matches:** ${article.reasoning || 'Related to this topic'}\n`;
       formatted += `📖 **Summary:** ${article.summary?.substring(0, 300) || 'See full article'}...\n`;
-      formatted += `🔗 **Read Full Article:** ${article.url}\n`;
+      formatted += `🔗 **[Read Full Article](${article.url})**\n`;
     });
   }
 

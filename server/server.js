@@ -11,6 +11,7 @@ const modulesRoutes = require('./routes/modules');
 const topicsRoutes = require('./routes/topics');
 const articlesRoutes = require('./routes/articles');
 const quizRoutes = require('./routes/quiz');
+const feedRoutes = require('./routes/feeds');
 
 // Scheduler
 const { initScheduler } = require('./jobs/scheduler');
@@ -61,6 +62,9 @@ app.use('/api/modules', modulesRoutes);
 
 // Topics routes (nested under modules)
 app.use('/api/modules/:moduleId/topics', topicsRoutes);
+
+// Feeds routes (for user-customizable RSS feeds)
+app.use('/api/feeds', feedRoutes);
 
 // Articles routes (RSS, scraping, etc)
 app.use('/api/articles', articlesRoutes);

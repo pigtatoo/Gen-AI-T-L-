@@ -1,0 +1,125 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Amazon blocks 1,800 job applications from suspected North Korean agents",
+            "url": "https://www.bbc.com/news/articles/c3e0kw80wwzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T02:49:45.000Z",
+            "summary": "The firm’s chief security officer said North Koreans tried to apply for remote working IT jobs using stolen or fake identities.",
+            "confidence": 0.9,
+            "reasoning": "The article details Amazon's use of AI tools and staff verification to screen job applications, addressing IT security, identity management, and fraud prevention—core aspects of IT Governance."
+          },
+          {
+            "title": "UK social media campaigners among five denied US visas",
+            "url": "https://www.bbc.com/news/articles/cp39kngz008o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-24T15:09:56.000Z",
+            "summary": "The Trump administration bans five people who have called for tech regulation from entering the country.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses campaigns for tech regulation and content moderation on digital platforms, which directly relates to IT governance frameworks and policies for managing technology use, risks, and compliance."
+          },
+          {
+            "title": "TikTok removes AI weight loss ads from fake Boots account",
+            "url": "https://www.bbc.com/news/articles/c997lkdjdy5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T09:23:51.000Z",
+            "summary": "The adverts for prescription-only drugs showed healthcare professionals impersonating the British retailer.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses TikTok's platform policies, content moderation, and enforcement actions regarding AI-generated ads, which relates to IT governance frameworks for managing technology use, compliance, and risk."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Amazon blocks 1,800 job applications from suspected North Korean agents",
+            "url": "https://www.bbc.com/news/articles/c3e0kw80wwzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T02:49:45.000Z",
+            "summary": "The firm’s chief security officer said North Koreans tried to apply for remote working IT jobs using stolen or fake identities.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses Amazon's proactive response to a systemic industry threat, involving strategic decisions to protect the firm and collaborate with authorities, aligning with risk management and strategic oversight."
+          },
+          {
+            "title": "UK social media campaigners among five denied US visas",
+            "url": "https://www.bbc.com/news/articles/cp39kngz008o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-24T15:09:56.000Z",
+            "summary": "The Trump administration bans five people who have called for tech regulation from entering the country.",
+            "confidence": 0.65,
+            "reasoning": "The article involves geopolitical tensions and strategic responses (e.g., visa bans, sovereignty claims) between governments and organizations, aligning with strategic management's focus on high-level planning and decision-making in complex environments."
+          },
+          {
+            "title": "TikTok removes AI weight loss ads from fake Boots account",
+            "url": "https://www.bbc.com/news/articles/c997lkdjdy5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T09:23:51.000Z",
+            "summary": "The adverts for prescription-only drugs showed healthcare professionals impersonating the British retailer.",
+            "confidence": 0.55,
+            "reasoning": "The incident involves Boots' brand protection strategy and TikTok's handling of platform integrity, touching on strategic responses to reputational and operational risks."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Uber and Lyft announce plans to trial Chinese robotaxis in UK in 2026",
+            "url": "https://www.bbc.com/news/articles/cy8jmx1dl9ro?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-22T14:08:48.000Z",
+            "summary": "Baidu's Apollo Go robotaxis have already accrued millions of driverless rides in cities worldwide.",
+            "confidence": 0.55,
+            "reasoning": "The partnerships aim to transform travel and provide new mobility options, implying expected benefits like improved services or efficiency, though the article focuses more on announcements and trials rather than measured outcomes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 2,
+        "articles": [
+          {
+            "title": "TikTok removes AI weight loss ads from fake Boots account",
+            "url": "https://www.bbc.com/news/articles/c997lkdjdy5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T09:23:51.000Z",
+            "summary": "The adverts for prescription-only drugs showed healthcare professionals impersonating the British retailer.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the removal and re-upload of AI-generated ad videos on TikTok, which involves digital content storage, platform moderation systems, and retrieval of user data/accounts, aligning with forensic investigation of digital media storage and access."
+          },
+          {
+            "title": "Amazon blocks 1,800 job applications from suspected North Korean agents",
+            "url": "https://www.bbc.com/news/articles/c3e0kw80wwzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2025-12-23T02:49:45.000Z",
+            "summary": "The firm’s chief security officer said North Koreans tried to apply for remote working IT jobs using stolen or fake identities.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses using AI tools and staff verification to screen job applications, which involves retrieving and analyzing stored identity and application data to detect fraud."
+          }
+        ]
+      }
+    ]
+  }
+]

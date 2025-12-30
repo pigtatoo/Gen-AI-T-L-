@@ -49,6 +49,11 @@ export default function Sidebar() {
               {!isCollapsed && <span className="text-sm text-gray-700">Quiz</span>}
             </div>
           </Link>
+          <Link href="/feedspage">
+            <div className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-100 cursor-pointer">
+              {!isCollapsed && <span className="text-sm text-gray-700">📡 Feeds</span>}
+            </div>
+          </Link>
           <div className="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-gray-100 cursor-pointer">
             {!isCollapsed && <span className="text-sm text-gray-700">Flashcards</span>}
           </div>

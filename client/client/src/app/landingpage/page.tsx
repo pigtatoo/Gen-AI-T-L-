@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import AddFeedComponent from "../components/AddFeedComponent";
 
 interface Module {
   module_id: number;
@@ -233,6 +234,25 @@ function LandingPage() {
               </form>
             </div>
           )}
+        </div>
+
+        {/* Add RSS Feed Component */}
+        <div className="mb-12 rounded-lg border border-blue-200 bg-blue-50 p-6">
+          <div className="mb-4 flex items-center justify-between">
+            <div>
+              <h2 className="text-xl font-bold text-blue-900">📡 Content Sources</h2>
+              <p className="text-sm text-blue-700">
+                Add custom RSS feeds to customize the articles and case studies in your learning modules
+              </p>
+            </div>
+            <Link
+              href="/feedspage"
+              className="rounded-lg px-4 py-2 text-sm font-semibold text-black whitespace-nowrap ml-4"
+            >
+              Manage Feeds →
+            </Link>
+          </div>
+          <AddFeedComponent compact={false} />
         </div>
 
         {/* Modules List */}
