@@ -1,10 +1,8 @@
 const cron = require('node-cron');
 const { syncRssWeekly } = require('./rssSync');
-const { cleanupOldChatHistory } = require('./chatHistoryCleanup');
 const rssConfig = require('../config/rssConfig');
 
 let scheduledTask = null;
-let cleanupTask = null;
 
 /**
  * Initialize the scheduler
@@ -24,15 +22,6 @@ function initScheduler() {
 
     console.log('✓ RSS sync scheduler initialized');
   }
-
-  // Schedule chat history cleanup daily at 2 AM UTC
-  console.log('Scheduling chat history cleanup daily at 2 AM UTC');
-  cleanupTask = cron.schedule('0 2 * * *', async () => {
-    console.log('\n⏰ Chat history cleanup started');
-    await cleanupOldChatHistory();
-  });
-
-  console.log('✓ Chat history cleanup scheduler initialized');
 }
 
 /**
@@ -42,10 +31,6 @@ function stopScheduler() {
   if (scheduledTask) {
     scheduledTask.stop();
     console.log('✓ RSS sync scheduler stopped');
-  }
-  if (cleanupTask) {
-    cleanupTask.stop();
-    console.log('✓ Chat history cleanup scheduler stopped');
   }
 }
 

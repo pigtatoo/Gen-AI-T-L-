@@ -13,6 +13,7 @@ const articlesRoutes = require('./routes/articles');
 const quizRoutes = require('./routes/quiz');
 const feedRoutes = require('./routes/feeds');
 const chatHistoryRoutes = require('./routes/chatHistory');
+const newsletterRoutes = require('./routes/newsletters');
 
 // Scheduler
 const { initScheduler } = require('./jobs/scheduler');
@@ -69,6 +70,9 @@ app.use('/api/feeds', feedRoutes);
 
 // Chat history routes
 app.use('/api/chat-history', chatHistoryRoutes);
+
+// Newsletter routes
+app.use('/api/newsletters', newsletterRoutes);
 
 // Articles routes (RSS, scraping, etc)
 app.use('/api/articles', articlesRoutes);

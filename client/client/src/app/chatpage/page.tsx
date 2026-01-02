@@ -36,6 +36,9 @@ export default function ChatPage() {
   const [newTopicTitle, setNewTopicTitle] = useState("");
   const [isAddingTopic, setIsAddingTopic] = useState(false);
   const [isSendingMessage, setIsSendingMessage] = useState(false);
+  const [showNewsletterModal, setShowNewsletterModal] = useState(false);
+  const [newsletterDaysBack, setNewsletterDaysBack] = useState(7);
+  const [isGeneratingNewsletter, setIsGeneratingNewsletter] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -183,6 +186,87 @@ export default function ChatPage() {
       setSelectedTopics(selectedTopics.filter((id) => id !== topicId));
     } catch (err) {
       console.error("Error deleting topic:", err);
+    }
+  };
+
+  const handleDownloadNewsletter = async () => {
+    if (selectedTopics.length === 0) {
+      alert("Please select at least one topic");
+      return;
+    }
+
+    try {
+      setIsGeneratingNewsletter(true);
+      const token = localStorage.getItem("token");
+
+      if (!token) {
+        router.push("/loginpage");
+        return;
+      }
+
+      const selectedTopicTitles = topics
+        .filter((t) => selectedTopics.includes(t.topic_id))
+        .map((t) => t.title);
+
+      console.log("Sending newsletter request with:", {
+        moduleId: parseInt(moduleId || "0"),
+        moduleTitle: module?.title,
+        topicIds: selectedTopics,
+        topicTitles: selectedTopicTitles,
+        daysBack: newsletterDaysBack,
+      });
+
+      const response = await fetch("http://localhost:5000/api/newsletters/generate", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          moduleId: parseInt(moduleId || "0"),
+          moduleTitle: module?.title || "Module Newsletter",
+          topicIds: selectedTopics,
+          topicTitles: selectedTopicTitles,
+          daysBack: newsletterDaysBack,
+        }),
+      });
+
+      console.log("Newsletter response status:", response.status);
+
+      if (!response.ok) {
+        let errorMessage = "Failed to generate newsletter";
+        try {
+          const errorData = await response.json();
+          errorMessage = errorData.error || errorMessage;
+          console.error("Error details:", errorData);
+        } catch (parseErr) {
+          console.error("Could not parse error response:", parseErr);
+          const text = await response.text();
+          console.error("Response text:", text);
+        }
+        throw new Error(errorMessage);
+      }
+
+      // Create blob and download
+      const blob = await response.blob();
+      console.log("Received blob of size:", blob.size);
+
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `newsletter-${module?.title?.replace(/\s+/g, "-")}-${new Date().toISOString().split("T")[0]}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+
+      setShowNewsletterModal(false);
+      alert("Newsletter downloaded successfully!");
+    } catch (err) {
+      console.error("Error downloading newsletter:", err);
+      alert(err instanceof Error ? err.message : "Failed to download newsletter");
+    } finally {
+      setIsGeneratingNewsletter(false);
     }
   };
 
@@ -491,6 +575,78 @@ export default function ChatPage() {
         >
           📝 Take Full Quiz
         </button>
+
+        <button
+          onClick={() => {
+            if (selectedTopics.length === 0) {
+              alert("Please select at least one topic");
+            } else {
+              setShowNewsletterModal(true);
+            }
+          }}
+          className="mt-2 w-full rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700"
+        >
+          📥 Download Newsletter PDF
+        </button>
+
+        {/* Newsletter Modal */}
+        {showNewsletterModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="max-w-sm rounded-lg bg-white p-6 shadow-lg w-96">
+              <h2 className="mb-2 text-lg font-semibold text-black">📰 Download Newsletter</h2>
+              <p className="mb-4 text-sm text-gray-600">
+                Generate a PDF newsletter with articles from your selected topics.
+              </p>
+
+              <div className="mb-4">
+                <label className="mb-2 block text-sm font-semibold text-black">Date Range:</label>
+                <div className="space-y-2">
+                  {[
+                    { value: 7, label: "Last 7 days" },
+                    { value: 30, label: "Last 30 days" },
+                    { value: 90, label: "Last 90 days" },
+                  ].map((option) => (
+                    <label key={option.value} className="flex items-center text-sm text-gray-700">
+                      <input
+                        type="radio"
+                        name="daysBack"
+                        value={option.value}
+                        checked={newsletterDaysBack === option.value}
+                        onChange={(e) => setNewsletterDaysBack(parseInt(e.target.value))}
+                        className="mr-2"
+                      />
+                      {option.label}
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-4 rounded-lg bg-blue-50 p-3 text-sm text-blue-700">
+                ℹ️ Selected topics: {topics
+                  .filter((t) => selectedTopics.includes(t.topic_id))
+                  .map((t) => t.title)
+                  .join(", ")}
+              </div>
+
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setShowNewsletterModal(false)}
+                  className="flex-1 rounded-lg bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-300 disabled:opacity-50"
+                  disabled={isGeneratingNewsletter}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleDownloadNewsletter}
+                  className="flex-1 rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700 disabled:opacity-50"
+                  disabled={isGeneratingNewsletter}
+                >
+                  {isGeneratingNewsletter ? "Generating..." : "Download"}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Chat container */}
