@@ -80,14 +80,27 @@ function renderMarkdownToPDF(doc, markdownText, options = {}) {
 /**
  * Generate content using AI (DeepSeek/OpenRouter)
  */
-async function generateAIContent(topics, moduleTitle, contentType, region = null) {
+async function generateAIContent(topics, moduleTitle, contentType, region = null, articles = null) {
   try {
     const topicsList = Array.isArray(topics) ? topics.join(', ') : topics;
     
     let prompt = '';
     if (contentType === 'case-study') {
-      const regionText = region ? ` specifically in the context of ${region}` : '';
-      prompt = `Create a detailed real-world case study for the following topics: ${topicsList} in the context of the module: ${moduleTitle}${regionText}. 
+      // If region is specified, generate region-specific case study
+      // If not, generate case study based on featured articles
+      let regionContext = '';
+      if (region) {
+        regionContext = ` specifically in the context of ${region}`;
+      } else if (articles && articles.length > 0) {
+        // Use featured articles as context for case study generation
+        const articlesToUse = articles.slice(0, 3);
+        const articlesContext = articlesToUse
+          .map((a) => `- "${a.title}" (${a.source}, ${a.confidence ? Math.round(a.confidence * 100) + '%' : 'N/A'})`)
+          .join('\n');
+        regionContext = `. Use these featured articles as reference:\n${articlesContext}`;
+      }
+      
+      prompt = `Create a detailed real-world case study for the following topics: ${topicsList} in the context of the module: ${moduleTitle}${regionContext}. 
 
 Use this markdown format:
 # Case Study Title
@@ -460,10 +473,10 @@ async function generateNewsletter(req, res) {
     console.log(`Filtered to ${filteredArticles.length} articles`);
 
     // Generate AI content in parallel (case study, Q&A, definitions)
-    // Pass region to case study generation so it's region-specific
-    console.log("Generating AI content (case study for region, Q&A, definitions)...");
+    // Pass region to case study generation, or pass articles if no region selected
+    console.log("Generating AI content (case study, Q&A, definitions)...");
     const [caseStudy, qa, definitions] = await Promise.all([
-      generateAIContent(topicTitles, moduleTitle, 'case-study', region),
+      generateAIContent(topicTitles, moduleTitle, 'case-study', region || null, filteredArticles),
       generateAIContent(topicTitles, moduleTitle, 'qa'),
       generateAIContent(topicTitles, moduleTitle, 'definitions')
     ]);

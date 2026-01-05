@@ -231,7 +231,7 @@ export default function ChatPage() {
           moduleTitle: module?.title || "Module Newsletter",
           topicIds: selectedTopics,
           topicTitles: selectedTopicTitles,
-          region: selectedRegion,
+          region: selectedRegion || null,
         }),
       });
 
@@ -603,15 +603,16 @@ export default function ChatPage() {
               </p>
 
               <div className="mb-4">
-                <label className="mb-2 block text-sm font-semibold text-black">Country/Region:</label>
+                <label className="mb-2 block text-sm font-semibold text-black">Country/Region (Optional):</label>
                 <div className="space-y-2">
                   {[
+                    { value: '', label: '🌐 Global - Based on Featured Articles' },
                     { value: 'Singapore', label: '🇸🇬 Singapore' },
                     { value: 'Asia', label: '🌏 Asia' },
                     { value: 'America', label: '🌎 America' },
                     { value: 'Europe', label: '🌍 Europe' },
                   ].map((option) => (
-                    <label key={option.value} className="flex items-center text-sm text-gray-700">
+                    <label key={option.value || 'global'} className="flex items-center text-sm text-gray-700">
                       <input
                         type="radio"
                         name="region"
@@ -644,7 +645,7 @@ export default function ChatPage() {
                   .filter((t) => selectedTopics.includes(t.topic_id))
                   .map((t) => t.title)
                   .join(", ")}</p>
-                <p className="mt-2">📍 Region: {newsletterCustomRegion.trim() || newsletterRegion}</p>
+                <p className="mt-2">📍 Region: {(newsletterCustomRegion.trim() || newsletterRegion) ? (newsletterCustomRegion.trim() || newsletterRegion) : "Global - Based on Featured Articles"}</p>
               </div>
 
               <div className="flex gap-2">
