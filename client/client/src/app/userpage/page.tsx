@@ -84,111 +84,58 @@ function UserPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="border-b border-gray-200 bg-white">
-        <div className="mx-auto max-w-4xl px-8 py-6 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-black">Profile</h1>
-          <div className="flex gap-4">
-            <Link
-              href="/landingpage"
-              className="rounded-lg bg-gray-200 px-4 py-2 text-sm font-semibold text-black hover:bg-gray-300"
-            >
-              Back to Modules
-            </Link>
-            <button
-              onClick={handleLogout}
-              className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700"
-            >
-              Logout
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Main content */}
-      <div className="mx-auto max-w-4xl px-8 py-12">
-        <div className="rounded-lg border border-gray-200 bg-gray-50 p-8">
-          <h2 className="mb-8 text-xl font-bold text-black">User Information</h2>
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {/* Name */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Full Name
-              </label>
-              <div className="rounded-lg border border-gray-300 bg-white px-4 py-3 text-black">
-                {user?.name}
-              </div>
+    <div className="flex h-screen w-full bg-white">
+      {/* Main content - centered */}
+      <div className="flex flex-1 items-center justify-center">
+        <div className="w-full max-w-md px-8">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-2">
+              <h1 className="text-4xl font-bold text-black">Profile</h1>
+              <p className="text-lg text-gray-600">Your account information</p>
             </div>
 
-            {/* Email */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Email
-              </label>
-              <div className="rounded-lg border border-gray-300 bg-white px-4 py-3 text-black">
-                {user?.email}
-              </div>
-            </div>
-
-            {/* Role */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Role
-              </label>
-              <div className="rounded-lg border border-gray-300 bg-white px-4 py-3">
-                <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-800 capitalize">
-                  {user?.role}
-                </span>
-              </div>
-            </div>
-
-            {/* Account Status */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Account Status
-              </label>
-              <div className="rounded-lg border border-gray-300 bg-white px-4 py-3">
-                <span className="inline-block rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-800">
-                  Active
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Account Details Section */}
-          <div className="mt-8 border-t border-gray-300 pt-8">
-            <h3 className="mb-6 text-lg font-bold text-black">Account Details</h3>
-
-            <div className="space-y-4">
-              <div className="flex justify-between rounded-lg border border-gray-300 bg-white p-4">
-                <span className="font-semibold text-gray-700">User ID</span>
-                <span className="text-gray-900">#{user?.id}</span>
+            {/* User Information */}
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-600">Full Name</label>
+                <p className="text-lg text-black">{user?.name}</p>
               </div>
 
-              <div className="flex justify-between rounded-lg border border-gray-300 bg-white p-4">
-                <span className="font-semibold text-gray-700">Member Since</span>
-                <span className="text-gray-900">
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-600">Email</label>
+                <p className="text-lg text-black">{user?.email}</p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-600">Role</label>
+                <p className="text-lg text-black capitalize">{user?.role}</p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-600">Member Since</label>
+                <p className="text-lg text-black">
                   {user?.createdAt
                     ? new Date(user.createdAt).toLocaleDateString()
                     : "N/A"}
-                </span>
-              </div>
-
-              <div className="flex justify-between rounded-lg border border-gray-300 bg-white p-4">
-                <span className="font-semibold text-gray-700">Account Type</span>
-                <span className="text-gray-900 capitalize">{user?.role}</span>
+                </p>
               </div>
             </div>
-          </div>
 
-          {/* Danger Zone */}
-          <div className="mt-8 border-t border-gray-300 pt-8">
-            <h3 className="mb-6 text-lg font-bold text-red-600">Danger Zone</h3>
-            <button className="rounded-lg border border-red-300 px-6 py-3 font-semibold text-red-600 hover:bg-red-50">
-              Delete Account
-            </button>
+            {/* Actions */}
+            <div className="flex flex-col gap-3">
+              <Link
+                href="/landingpage"
+                className="rounded-lg bg-black px-8 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-gray-800"
+              >
+                Back to Modules
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="rounded-lg border border-gray-300 px-8 py-3 text-center text-lg font-semibold text-black transition-colors hover:bg-gray-50"
+              >
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </div>

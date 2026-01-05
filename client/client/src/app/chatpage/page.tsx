@@ -47,8 +47,15 @@ export default function ChatPage() {
 
   // Convert plain URLs to markdown links, but skip URLs already in markdown format [text](url)
   const convertUrlsToMarkdown = (text: string): string => {
-    // Match URLs that are NOT already in markdown link format (not preceded by ]()
-    const urlRegex = /(?<!\]\()https?:\/\/[^\s\)]+/g;
+    // First, fix empty markdown links [](url) -> [url](url)
+    text = text.replace(/\[\]\(https?:\/\/[^\)]+\)/g, (match) => {
+      const url = match.match(/\(https?:\/\/[^\)]+\)/)?.[0]?.slice(1, -1) || '';
+      return url ? `[${url}](${url})` : match;
+    });
+    
+    // Then, convert plain URLs that are NOT already in markdown link format
+    // Match URLs that are not preceded by ]( and not followed by )
+    const urlRegex = /(?<!\]\()https?:\/\/[^\s\)\]]+/g;
     return text.replace(urlRegex, '[$&]($&)');
   };
 
@@ -575,9 +582,9 @@ export default function ChatPage() {
 
         <button
           onClick={() => router.push(`/quizpage?moduleId=${moduleId}`)}
-          className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+          className="mt-4 rounded-lg px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-800 transition-colors text-left"
         >
-          📝 Take Full Quiz
+          Take Full Quiz
         </button>
 
         <button
@@ -588,9 +595,9 @@ export default function ChatPage() {
               setShowNewsletterModal(true);
             }
           }}
-          className="mt-2 w-full rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700"
+          className="mt-2 rounded-lg px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-800 transition-colors text-left"
         >
-          📥 Download Newsletter PDF
+          Download Newsletter PDF
         </button>
 
         {/* Newsletter Modal */}
@@ -671,8 +678,17 @@ export default function ChatPage() {
 
       {/* Chat container */}
       <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg">
-        <div className="border-b border-gray-200 px-6 py-4">
-          <h1 className="text-xl font-semibold text-black">ChatBot</h1>
+        <div className="border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => router.push("/landingpage")}
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              title="Back to modules"
+            >
+              ←
+            </button>
+            <h1 className="text-xl font-semibold text-black">ChatBot</h1>
+          </div>
         </div>
 
         <div className="flex flex-1 flex-col overflow-hidden">
