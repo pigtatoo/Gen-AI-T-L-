@@ -52,12 +52,22 @@ jobs:
           echo "📅 Time: $(date)"
           node scripts/run-rss-sync-supabase.js
 
-      # Step 5: Log completion
+      # Step 5: Commit and push temp files
+      - name: Commit and push temp files
+        if: success()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add server/temp/*.json
+          git commit -m "📰 Update temp files from RSS sync - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push
+
+      # Step 6: Log completion
       - name: Sync Completed
         if: success()
         run: echo "✅ RSS sync to Supabase completed successfully!"
 
-      # Step 6: Log failure
+      # Step 7: Log failure
       - name: Sync Failed
         if: failure()
         run: echo "❌ RSS sync failed - check logs above"

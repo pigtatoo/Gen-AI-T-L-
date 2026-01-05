@@ -1,0 +1,152 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Watch: BBC reporter tests AI anti-shoplifting tech",
+            "url": "https://www.bbc.com/news/videos/c98p1jg3p58o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-01-05T00:01:31.000Z",
+            "summary": "Some major retailers and independent stores have introduced AI body scans, CCTV or facial recognition equipment to identify crimes like shoplifting.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the implementation of AI, CCTV, and facial recognition technologies by retailers, which involves IT systems, data handling, and compliance with data protection laws—key aspects of IT governance."
+          },
+          {
+            "title": "Trump admin sends heart emoji to commercial spyware makers with lifted Predator sanctions",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/04/trump_admin_lifts_sanctions_predator_spyware_execs/",
+            "source": "The Register",
+            "published": "2026-01-04T19:02:14.000Z",
+            "summary": "<h4>Also, Korean Air hacked, EmEditor installer hijacked, a perfect 10 router RCE vuln, and more</h4> <p><strong>infosec in brief</strong>  The Trump administration has cleared a trio of individuals sanctioned by the Biden administration for involvement with the Intellexa spyware consortium behind the Predator surveillance tool, removing restrictions that had barred them from doing business with the US.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses US government sanctions and policy changes regarding commercial spyware, which directly relates to the governance of information technology, security policies, and regulatory compliance."
+          },
+          {
+            "title": "ExpressVPN's road to accessible privacy — is it really possible in 2026?",
+            "url": "https://www.techradar.com/vpn/vpn-services/expressvpns-road-to-accessible-privacy-is-it-really-possible-in-2026",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-04T12:00:00.000Z",
+            "summary": "2025 was a year of structural change for the industry giant. From breaking away from its one-size-fits-all pricing model to leading the charge on post-quantum standards, here is how ExpressVPN adapted to a changing market.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses technical backend adaptations, including post-quantum standards and engineering improvements, which relate to IT governance's emphasis on aligning IT strategy with business goals and managing IT resources effectively."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ExpressVPN's road to accessible privacy — is it really possible in 2026?",
+            "url": "https://www.techradar.com/vpn/vpn-services/expressvpns-road-to-accessible-privacy-is-it-really-possible-in-2026",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-04T12:00:00.000Z",
+            "summary": "2025 was a year of structural change for the industry giant. From breaking away from its one-size-fits-all pricing model to leading the charge on post-quantum standards, here is how ExpressVPN adapted to a changing market.",
+            "confidence": 0.82,
+            "reasoning": "The article details ExpressVPN's strategic pivot in its business model, pricing structure, and technical backend to adapt to market changes and competitive pressures, aligning with strategic management's focus on organizational direction and adaptation."
+          },
+          {
+            "title": "Trump admin sends heart emoji to commercial spyware makers with lifted Predator sanctions",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/04/trump_admin_lifts_sanctions_predator_spyware_execs/",
+            "source": "The Register",
+            "published": "2026-01-04T19:02:14.000Z",
+            "summary": "<h4>Also, Korean Air hacked, EmEditor installer hijacked, a perfect 10 router RCE vuln, and more</h4> <p><strong>infosec in brief</strong>  The Trump administration has cleared a trio of individuals sanctioned by the Biden administration for involvement with the Intellexa spyware consortium behind the Predator surveillance tool, removing restrictions that had barred them from doing business with the US.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.6,
+            "reasoning": "The shifting administrative stances on spyware sanctions reflect high-level strategic decisions about national security, foreign policy, and technology oversight, aligning with strategic management concerns."
+          },
+          {
+            "title": "Proton VPN: 2025’s privacy milestones & the 2026 roadmap",
+            "url": "https://www.techradar.com/vpn/proton-vpn-2025s-privacy-milestones-and-the-2026-roadmap",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-04T11:00:00.000Z",
+            "summary": "New architecture, expanded free servers, and the race for quantum-proof privacy",
+            "confidence": 0.6,
+            "reasoning": "The article outlines Proton VPN's roadmap, market positioning, and response to regulatory trends, reflecting strategic planning and competitive adaptation."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ExpressVPN's road to accessible privacy — is it really possible in 2026?",
+            "url": "https://www.techradar.com/vpn/vpn-services/expressvpns-road-to-accessible-privacy-is-it-really-possible-in-2026",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-04T12:00:00.000Z",
+            "summary": "2025 was a year of structural change for the industry giant. From breaking away from its one-size-fits-all pricing model to leading the charge on post-quantum standards, here is how ExpressVPN adapted to a changing market.",
+            "confidence": 0.68,
+            "reasoning": "The article highlights changes aimed at making privacy tools accessible and meeting user demands, suggesting a focus on delivering value and realizing benefits from strategic initiatives, though this connection is less explicit than others."
+          },
+          {
+            "title": "Microsoft CEO Satya Nadella becomes AI influencer, asks us all to move beyond slop",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/02/microsoft_ceo_satya_nadella_calls/",
+            "source": "The Register",
+            "published": "2026-01-02T21:04:53.000Z",
+            "summary": "<h4>Exec argues we need a new metaphor focused on AI as a lever rather than a job killer</h4> <p>Microsoft CEO and head AI peddler Satya Nadella wants you to know that it's time for the next phase of AI acceptance, where we focus on how humans are empowered by tools and agents and how we deploy resources to support this growth.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article touches on justifying AI investments, measuring returns, and focusing on how AI empowers humans, which relates to realizing expected benefits from technology initiatives."
+          },
+          {
+            "title": "Palo Alto Networks security-intel boss calls AI agents 2026's biggest insider threat",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/04/ai_agents_insider_threats_panw/",
+            "source": "The Register",
+            "published": "2026-01-04T10:40:07.000Z",
+            "summary": "<h4>Lock 'em down</h4> <p><strong>interview</strong>  AI agents represent the new insider threat to companies in 2026, according to Palo Alto Networks Chief Security Intel Officer Wendi Whitmore, and this poses several challenges to executives tasked with securing the expected surge in autonomous agents.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article mentions the benefits of AI agents in addressing cyber-skills gaps and improving security operations, which relates to realizing and measuring the value of technology investments, though it is less focused on formal benefit tracking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Watch: BBC reporter tests AI anti-shoplifting tech",
+            "url": "https://www.bbc.com/news/videos/c98p1jg3p58o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-01-05T00:01:31.000Z",
+            "summary": "Some major retailers and independent stores have introduced AI body scans, CCTV or facial recognition equipment to identify crimes like shoplifting.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI body scans, CCTV, and facial recognition systems used by retailers, which involve capturing, storing, and retrieving biometric and surveillance data for crime identification, aligning with data handling and storage aspects of the topic."
+          },
+          {
+            "title": "Cybercrook claims to be selling infrastructure info about three major US utilities",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/02/critical_utility_files_for_sale/",
+            "source": "The Register",
+            "published": "2026-01-02T18:34:24.000Z",
+            "summary": "<h4>For the bargain price of 6.5 bitcoin</h4> <p>A cybercrook claims to have breached Pickett and Associates, a Florida-based engineering firm whose clients include major US utilities, and is selling what they claim to be about 139 GB of engineering data about Tampa Electric Company, Duke Energy Florida, and American Electric Power. The price is 6.5 bitcoin, which amounts to about $585,000.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach involving large volumes of engineering files (e.g., LiDAR point clouds, design files), which directly relates to how data is stored, accessed, and potentially retrieved in forensic investigations."
+          },
+          {
+            "title": "Users prompt Elon Musk's Grok AI chatbot to remove clothes in photos then 'apologize' for it",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/03/elon_musk_grok_scandal_underwear_strippers_gross/",
+            "source": "The Register",
+            "published": "2026-01-03T00:30:59.000Z",
+            "summary": "<h4>Repeat after me: Chatbots are not sentient and have no agency</h4> <p>Grok, the AI chatbot owned and operated by Elon Musk's xAI, is facing a firestorm of outrage after users prompted it to create images of naked and scantily clad people from real photographs, some of whom are underage.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses AI processing of user-uploaded images and text prompts, which involves data storage and retrieval from training datasets, though the core forensic focus is limited."
+          }
+        ]
+      }
+    ]
+  }
+]

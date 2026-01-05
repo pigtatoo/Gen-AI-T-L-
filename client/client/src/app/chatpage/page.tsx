@@ -44,10 +44,11 @@ export default function ChatPage() {
   const router = useRouter();
   const moduleId = searchParams.get("moduleId");
 
-  // Convert plain URLs to markdown links
+  // Convert plain URLs to markdown links, but skip URLs already in markdown format [text](url)
   const convertUrlsToMarkdown = (text: string): string => {
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    return text.replace(urlRegex, '[$1]($1)');
+    // Match URLs that are NOT already in markdown link format (not preceded by ]()
+    const urlRegex = /(?<!\]\()https?:\/\/[^\s\)]+/g;
+    return text.replace(urlRegex, '[$&]($&)');
   };
 
   useEffect(() => {

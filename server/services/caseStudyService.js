@@ -102,10 +102,10 @@ function formatArticlesForPrompt(articlesData) {
     formatted += `\n### Topic: ${topicGroup.topic}\n`;
     formatted += '---\n';
 
-    // Sort by confidence score (highest first) and keep only top 3
+    // Sort by confidence score (highest first) and keep only top 1
     const topArticles = (topicGroup.articles || [])
       .sort((a, b) => (b.confidence || 0) - (a.confidence || 0))
-      .slice(0, 3);
+      .slice(0, 1);
 
     topArticles.forEach((article, idx) => {
       const publishDate = new Date(article.published).toLocaleDateString('en-US', {
