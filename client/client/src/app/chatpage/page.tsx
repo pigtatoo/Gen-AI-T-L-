@@ -37,7 +37,8 @@ export default function ChatPage() {
   const [isAddingTopic, setIsAddingTopic] = useState(false);
   const [isSendingMessage, setIsSendingMessage] = useState(false);
   const [showNewsletterModal, setShowNewsletterModal] = useState(false);
-  const [newsletterDaysBack, setNewsletterDaysBack] = useState(7);
+  const [newsletterRegion, setNewsletterRegion] = useState('Singapore');
+  const [newsletterCustomRegion, setNewsletterCustomRegion] = useState('');
   const [isGeneratingNewsletter, setIsGeneratingNewsletter] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
@@ -209,12 +210,14 @@ export default function ChatPage() {
         .filter((t) => selectedTopics.includes(t.topic_id))
         .map((t) => t.title);
 
+      const selectedRegion = newsletterCustomRegion.trim() || newsletterRegion;
+
       console.log("Sending newsletter request with:", {
         moduleId: parseInt(moduleId || "0"),
         moduleTitle: module?.title,
         topicIds: selectedTopics,
         topicTitles: selectedTopicTitles,
-        daysBack: newsletterDaysBack,
+        region: selectedRegion,
       });
 
       const response = await fetch("http://localhost:5000/api/newsletters/generate", {
@@ -228,7 +231,7 @@ export default function ChatPage() {
           moduleTitle: module?.title || "Module Newsletter",
           topicIds: selectedTopics,
           topicTitles: selectedTopicTitles,
-          daysBack: newsletterDaysBack,
+          region: selectedRegion,
         }),
       });
 
@@ -600,33 +603,48 @@ export default function ChatPage() {
               </p>
 
               <div className="mb-4">
-                <label className="mb-2 block text-sm font-semibold text-black">Date Range:</label>
+                <label className="mb-2 block text-sm font-semibold text-black">Country/Region:</label>
                 <div className="space-y-2">
                   {[
-                    { value: 7, label: "Last 7 days" },
-                    { value: 30, label: "Last 30 days" },
-                    { value: 90, label: "Last 90 days" },
+                    { value: 'Singapore', label: '🇸🇬 Singapore' },
+                    { value: 'Asia', label: '🌏 Asia' },
+                    { value: 'America', label: '🌎 America' },
+                    { value: 'Europe', label: '🌍 Europe' },
                   ].map((option) => (
                     <label key={option.value} className="flex items-center text-sm text-gray-700">
                       <input
                         type="radio"
-                        name="daysBack"
+                        name="region"
                         value={option.value}
-                        checked={newsletterDaysBack === option.value}
-                        onChange={(e) => setNewsletterDaysBack(parseInt(e.target.value))}
+                        checked={newsletterRegion === option.value && !newsletterCustomRegion}
+                        onChange={(e) => {
+                          setNewsletterRegion(e.target.value);
+                          setNewsletterCustomRegion('');
+                        }}
                         className="mr-2"
                       />
                       {option.label}
                     </label>
                   ))}
                 </div>
+                <div className="mt-3 border-t pt-3">
+                  <label className="mb-2 block text-sm font-semibold text-black">Or Enter Custom Region:</label>
+                  <input
+                    type="text"
+                    value={newsletterCustomRegion}
+                    onChange={(e) => setNewsletterCustomRegion(e.target.value)}
+                    placeholder="e.g., Australia, Japan, India"
+                    className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 focus:border-black focus:outline-none"
+                  />
+                </div>
               </div>
 
               <div className="mb-4 rounded-lg bg-blue-50 p-3 text-sm text-blue-700">
-                ℹ️ Selected topics: {topics
+                <p>ℹ️ Selected topics: {topics
                   .filter((t) => selectedTopics.includes(t.topic_id))
                   .map((t) => t.title)
-                  .join(", ")}
+                  .join(", ")}</p>
+                <p className="mt-2">📍 Region: {newsletterCustomRegion.trim() || newsletterRegion}</p>
               </div>
 
               <div className="flex gap-2">

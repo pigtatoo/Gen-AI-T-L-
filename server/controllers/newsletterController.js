@@ -80,13 +80,14 @@ function renderMarkdownToPDF(doc, markdownText, options = {}) {
 /**
  * Generate content using AI (DeepSeek/OpenRouter)
  */
-async function generateAIContent(topics, moduleTitle, contentType) {
+async function generateAIContent(topics, moduleTitle, contentType, region = null) {
   try {
     const topicsList = Array.isArray(topics) ? topics.join(', ') : topics;
     
     let prompt = '';
     if (contentType === 'case-study') {
-      prompt = `Create a detailed real-world case study for the following topics: ${topicsList} in the context of the module: ${moduleTitle}. 
+      const regionText = region ? ` specifically in the context of ${region}` : '';
+      prompt = `Create a detailed real-world case study for the following topics: ${topicsList} in the context of the module: ${moduleTitle}${regionText}. 
 
 Use this markdown format:
 # Case Study Title
@@ -218,17 +219,14 @@ function getLatestArticles() {
 }
 
 /**
- * Filter articles by module and selected topics
+ * Filter articles by module and selected topics (NOT by region)
+ * Shows all relevant articles regardless of source country
  * @param {Array} allArticles - All articles from temp files
  * @param {number} moduleId - Module ID to filter by
  * @param {Array} topicIds - Selected topic IDs
- * @param {number} daysBack - How many days back to include
  * @returns {Array} Filtered articles
  */
-function filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds, daysBack = 7) {
-  const cutoffDate = new Date();
-  cutoffDate.setDate(cutoffDate.getDate() - daysBack);
-
+function filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds) {
   const filtered = [];
 
   allArticles.forEach((module) => {
@@ -244,20 +242,18 @@ function filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds, daysBa
       }
 
       topic.articles?.forEach((article) => {
-        const publishedDate = new Date(article.published);
-
-        if (publishedDate >= cutoffDate) {
-          filtered.push({
-            title: article.title,
-            url: article.url,
-            summary: article.summary,
-            source: article.source,
-            published: article.published,
-            confidence: article.confidence,
-            topic: topic.topicTitle,
-            module: module.moduleTitle
-          });
-        }
+        // Include all articles regardless of region/country
+        filtered.push({
+          title: article.title,
+          url: article.url,
+          summary: article.summary,
+          source: article.source,
+          published: article.published,
+          confidence: article.confidence,
+          topic: topic.topicTitle,
+          module: module.moduleTitle,
+          country: article.country || article.region || 'Global'
+        });
       });
     });
   });
@@ -272,9 +268,9 @@ function filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds, daysBa
  * @param {string} moduleTitle - Module title for the newsletter
  * @param {Array} selectedTopics - Selected topic titles
  * @param {Object} aiContent - AI-generated content { caseStudy, qa, definitions }
- * @param {number} daysBack - Date range for newsletter
+ * @param {string} region - Country/Region for newsletter
  */
-function generatePDF(res, articles, moduleTitle, selectedTopics, aiContent = {}, daysBack = 7) {
+function generatePDF(res, articles, moduleTitle, selectedTopics, aiContent = {}, region = 'Singapore') {
   try {
     console.log(`Generating comprehensive PDF with ${articles.length} articles + AI content`);
     
@@ -314,7 +310,7 @@ function generatePDF(res, articles, moduleTitle, selectedTopics, aiContent = {},
     if (articles.length > 0) {
       doc.addPage();
       doc.fontSize(16).font('Helvetica-Bold').text('Featured Articles', { underline: true });
-      doc.fontSize(10).text(`${articles.length} articles from the last ${daysBack} days`, { 
+      doc.fontSize(10).text(`${articles.length} relevant articles`, { 
         color: '#666666',
         width: 500 
       });
@@ -442,7 +438,7 @@ async function generateNewsletter(req, res) {
       daysBack: req.body.daysBack,
     });
 
-    const { moduleId, moduleTitle, topicIds, topicTitles, daysBack = 7 } = req.body;
+    const { moduleId, moduleTitle, topicIds, topicTitles, region = 'Singapore' } = req.body;
 
     // Validate required fields
     if (!moduleId || !moduleTitle || !topicIds || !Array.isArray(topicIds) || topicIds.length === 0) {
@@ -457,15 +453,17 @@ async function generateNewsletter(req, res) {
     const allArticles = getLatestArticles();
     console.log(`Found ${allArticles.length} modules with articles`);
     
-    // Filter articles by module and topics (may be empty, which is OK)
+    // Filter articles by module and topics (NOT by region)
+    // Featured articles show best relevant articles from all regions
     console.log(`Filtering articles for moduleId=${moduleId}, topicIds=${topicIds.join(",")}`);
-    const filteredArticles = filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds, daysBack);
+    const filteredArticles = filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds);
     console.log(`Filtered to ${filteredArticles.length} articles`);
 
     // Generate AI content in parallel (case study, Q&A, definitions)
-    console.log("Generating AI content (case study, Q&A, definitions)...");
+    // Pass region to case study generation so it's region-specific
+    console.log("Generating AI content (case study for region, Q&A, definitions)...");
     const [caseStudy, qa, definitions] = await Promise.all([
-      generateAIContent(topicTitles, moduleTitle, 'case-study'),
+      generateAIContent(topicTitles, moduleTitle, 'case-study', region),
       generateAIContent(topicTitles, moduleTitle, 'qa'),
       generateAIContent(topicTitles, moduleTitle, 'definitions')
     ]);
@@ -480,7 +478,7 @@ async function generateNewsletter(req, res) {
 
     // Generate PDF with articles (if any) and AI content
     console.log("Generating PDF with all sections...");
-    generatePDF(res, filteredArticles, moduleTitle, topicTitles || [], aiContent, daysBack);
+    generatePDF(res, filteredArticles, moduleTitle, topicTitles || [], aiContent, region);
   } catch (err) {
     console.error("Error in generateNewsletter:", err);
     res.status(500).json({ error: 'Failed to generate newsletter', details: err.message });
