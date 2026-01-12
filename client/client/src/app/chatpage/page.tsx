@@ -346,8 +346,8 @@ export default function ChatPage() {
     setInput(""); // Input clears before thinking starts
     setIsSendingMessage(true);
 
-    // Check if user is asking for a quiz
-    if (/quiz/i.test(userMessage)) {
+    // Check if user is asking for a quiz (case-insensitive)
+    if (/\bquiz\b/i.test(userMessage)) {
       setIsSendingMessage(false);
       handleGenerateQuizForChat();
       return;
@@ -442,6 +442,16 @@ export default function ChatPage() {
         saveChatHistory(withError);
         return withError;
       });
+    }
+  };
+
+  const handleClearChat = () => {
+    if (!window.confirm("Clear all chat history? This cannot be undone.")) {
+      return;
+    }
+    setMessages([]);
+    if (moduleId) {
+      localStorage.removeItem(`chat_${moduleId}`);
     }
   };
 
@@ -602,8 +612,8 @@ export default function ChatPage() {
 
         {/* Newsletter Modal */}
         {showNewsletterModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="max-w-sm rounded-lg bg-white p-6 shadow-lg w-96">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 pointer-events-auto">
+            <div className="max-w-sm rounded-lg bg-white p-6 shadow-xl w-96 z-50">
               <h2 className="mb-2 text-lg font-semibold text-black">📰 Download Newsletter</h2>
               <p className="mb-4 text-sm text-gray-600">
                 Generate a PDF newsletter with articles from your selected topics.
@@ -689,6 +699,13 @@ export default function ChatPage() {
             </button>
             <h1 className="text-xl font-semibold text-black">ChatBot</h1>
           </div>
+          <button
+            onClick={handleClearChat}
+            className="px-3 py-1 text-sm font-semibold text-red-600 hover:text-red-800 hover:bg-red-50 rounded-lg transition-colors"
+            title="Clear chat history"
+          >
+            🗑️ Clear
+          </button>
         </div>
 
         <div className="flex flex-1 flex-col overflow-hidden">
@@ -756,7 +773,7 @@ export default function ChatPage() {
                         </div>
                       )}
                       {message.quiz && (
-                        <div className="mt-3 rounded-lg bg-white p-4 border border-gray-300 z-50 relative">
+                        <div className="mt-3 rounded-lg bg-white p-4 border border-gray-300 relative">
                           <p className="text-sm font-semibold text-gray-800 mb-3">{message.quiz.question}</p>
                           <div className="space-y-2">
                             {(['A','B','C','D'] as const).map((opt) => {

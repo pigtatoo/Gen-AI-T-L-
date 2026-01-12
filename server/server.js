@@ -12,7 +12,6 @@ const topicsRoutes = require('./routes/topics');
 const articlesRoutes = require('./routes/articles');
 const quizRoutes = require('./routes/quiz');
 const feedRoutes = require('./routes/feeds');
-const chatHistoryRoutes = require('./routes/chatHistory');
 const newsletterRoutes = require('./routes/newsletters');
 
 // Scheduler
@@ -67,9 +66,6 @@ app.use('/api/modules/:moduleId/topics', topicsRoutes);
 
 // Feeds routes (for user-customizable RSS feeds)
 app.use('/api/feeds', feedRoutes);
-
-// Chat history routes
-app.use('/api/chat-history', chatHistoryRoutes);
 
 // Newsletter routes
 app.use('/api/newsletters', newsletterRoutes);

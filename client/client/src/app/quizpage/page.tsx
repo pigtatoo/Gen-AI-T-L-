@@ -43,6 +43,8 @@ export default function QuizPage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [score, setScore] = useState(0);
   const [totalAttempts, setTotalAttempts] = useState(0);
+  const [numQuestions, setNumQuestions] = useState(5);
+  const [isDownloadingPDF, setIsDownloadingPDF] = useState(false);
 
   useEffect(() => {
     if (moduleId) {
@@ -106,57 +108,121 @@ export default function QuizPage() {
         .filter(t => selectedTopics.includes(t.topic_id))
         .map(t => t.title);
 
-      const res = await fetch('http://localhost:5000/api/quiz/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-        body: JSON.stringify({ selectedTopics: selectedTopicTitles })
-      });
+      const newQuizzes: QuizMessage[] = [];
       
-      if (!res.ok) throw new Error('Failed to generate quiz');
-      const data = await res.json();
-      
-      // Shuffle choices
-      const quiz = data.quiz;
-      const choices = ['A', 'B', 'C', 'D'];
-      const choiceTexts: {[key: string]: string} = {
-        A: quiz.choices.A,
-        B: quiz.choices.B,
-        C: quiz.choices.C,
-        D: quiz.choices.D
-      };
-      
-      // Fisher-Yates shuffle of the positions
-      for (let i = choices.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [choices[i], choices[j]] = [choices[j], choices[i]];
+      // Generate multiple quizzes
+      for (let i = 0; i < numQuestions; i++) {
+        const res = await fetch('http://localhost:5000/api/quiz/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ selectedTopics: selectedTopicTitles })
+        });
+        
+        if (!res.ok) throw new Error('Failed to generate quiz');
+        const data = await res.json();
+        
+        // Shuffle choices
+        const quiz = data.quiz;
+        const choices = ['A', 'B', 'C', 'D'];
+        const choiceTexts: {[key: string]: string} = {
+          A: quiz.choices.A,
+          B: quiz.choices.B,
+          C: quiz.choices.C,
+          D: quiz.choices.D
+        };
+        
+        // Fisher-Yates shuffle of the positions
+        for (let i = choices.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [choices[i], choices[j]] = [choices[j], choices[i]];
+        }
+        
+        // Build new shuffled choices
+        const shuffledChoices: {A: string; B: string; C: string; D: string} = {
+          A: choiceTexts[choices[0]],
+          B: choiceTexts[choices[1]],
+          C: choiceTexts[choices[2]],
+          D: choiceTexts[choices[3]]
+        };
+        
+        // Find where 'A' (the correct answer) ended up
+        const newAnswerPosition = choices.indexOf('A');
+        const answerMap = ['A', 'B', 'C', 'D'];
+        const newAnswer = answerMap[newAnswerPosition] as 'A'|'B'|'C'|'D';
+        
+        quiz.choices = shuffledChoices;
+        quiz.answer = newAnswer;
+        
+        newQuizzes.push({
+          quiz,
+          selectedChoice: null,
+          showExplanation: false
+        });
+        
+        // Add small delay between requests to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 500));
       }
       
-      // Build new shuffled choices
-      const shuffledChoices: {A: string; B: string; C: string; D: string} = {
-        A: choiceTexts[choices[0]],
-        B: choiceTexts[choices[1]],
-        C: choiceTexts[choices[2]],
-        D: choiceTexts[choices[3]]
-      };
-      
-      // Find where 'A' (the correct answer) ended up
-      const newAnswerPosition = choices.indexOf('A');
-      const answerMap = ['A', 'B', 'C', 'D'];
-      const newAnswer = answerMap[newAnswerPosition] as 'A'|'B'|'C'|'D';
-      
-      quiz.choices = shuffledChoices;
-      quiz.answer = newAnswer;
-      
-      setQuizzes([...quizzes, {
-        quiz,
-        selectedChoice: null,
-        showExplanation: false
-      }]);
+      setQuizzes([...quizzes, ...newQuizzes]);
+      setScore(0);
+      setTotalAttempts(0);
     } catch (e) {
       console.error('Quiz error:', e);
       alert(`Error generating quiz: ${e instanceof Error ? e.message : 'Unknown error'}`);
     } finally {
       setIsGenerating(false);
+    }
+  };
+
+  const downloadQuizAsPDF = async () => {
+    try {
+      setIsDownloadingPDF(true);
+      const token = localStorage.getItem("token");
+
+      if (!token) {
+        router.push("/loginpage");
+        return;
+      }
+
+      const selectedTopicTitles = topics
+        .filter(t => selectedTopics.includes(t.topic_id))
+        .map(t => t.title);
+
+      const response = await fetch("http://localhost:5000/api/quiz/download-pdf", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          moduleTitle: module?.title || "Module Quiz",
+          topicTitles: selectedTopicTitles,
+          quizzes: quizzes,
+          score: score,
+          totalAttempts: totalAttempts
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate quiz PDF");
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `quiz-${module?.title?.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().split("T")[0]}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+
+      alert("Quiz downloaded successfully!");
+    } catch (err) {
+      console.error("Error downloading PDF:", err);
+      alert("Failed to download quiz as PDF");
+    } finally {
+      setIsDownloadingPDF(false);
     }
   };
 
@@ -212,17 +278,39 @@ export default function QuizPage() {
       {/* Quiz Container */}
       <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg">
         <div className="border-b border-gray-200 px-6 py-4">
-          <h1 className="text-2xl font-semibold text-black">{module?.title} - Quiz</h1>
+          <div className="flex items-center justify-between mb-2">
+            <h1 className="text-2xl font-semibold text-black">{module?.title} - Quiz</h1>
+            <button
+              onClick={downloadQuizAsPDF}
+              disabled={quizzes.length === 0 || isDownloadingPDF}
+              className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              title="Download quiz as PDF"
+            >
+              {isDownloadingPDF ? '📥 Downloading...' : '📥 Download PDF'}
+            </button>
+          </div>
           <p className="text-sm text-gray-600">Score: {score}/{totalAttempts}</p>
         </div>
 
         <div className="flex-1 overflow-y-auto p-6">
           {quizzes.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full gap-4">
-              <p className="text-gray-600 text-lg">No quizzes yet. Start generating!</p>
+              <p className="text-gray-600 text-lg">No quizzes yet. Customize and start generating!</p>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <label className="block text-sm font-semibold text-gray-800 mb-2">Number of Questions:</label>
+                <input
+                  type="number"
+                  min="1"
+                  max="20"
+                  value={numQuestions}
+                  onChange={(e) => setNumQuestions(Math.max(1, Math.min(20, parseInt(e.target.value) || 1)))}
+                  className="w-32 px-3 py-2 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-blue-500"
+                />
+                <p className="text-xs text-gray-500 mt-2">Generate 1-20 questions</p>
+              </div>
               <button
                 onClick={generateQuiz}
-                disabled={isGenerating}
+                disabled={isGenerating || selectedTopics.length === 0}
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700 disabled:opacity-50"
               >
                 {isGenerating ? "Generating..." : "Generate Quiz"}
@@ -284,16 +372,30 @@ export default function QuizPage() {
 
         {/* Generate Button */}
         <div className="border-t border-gray-200 bg-white px-6 py-4">
-          <button
-            onClick={generateQuiz}
-            disabled={isGenerating || selectedTopics.length === 0}
-            className="w-full rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isGenerating ? "Generating..." : "Generate New Quiz"}
-          </button>
+          <div className="mb-3 flex items-end gap-3">
+            <div>
+              <label className="block text-sm font-semibold text-gray-800 mb-2">Number of Questions:</label>
+              <input
+                type="number"
+                min="1"
+                max="20"
+                value={numQuestions}
+                onChange={(e) => setNumQuestions(Math.max(1, Math.min(20, parseInt(e.target.value) || 1)))}
+                className="w-24 px-3 py-2 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-blue-500"
+              />
+              <p className="text-xs text-gray-500 mt-1">1-20 questions</p>
+            </div>
+            <button
+              onClick={generateQuiz}
+              disabled={isGenerating || selectedTopics.length === 0}
+              className="flex-1 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isGenerating ? "Generating..." : "Generate New Quiz"}
+            </button>
+          </div>
           <button
             onClick={() => router.push(`/chatpage?moduleId=${moduleId}`)}
-            className="w-full mt-2 rounded-lg bg-gray-600 px-6 py-3 text-white font-semibold hover:bg-gray-700"
+            className="w-full rounded-lg bg-gray-600 px-6 py-3 text-white font-semibold hover:bg-gray-700"
           >
             Back to Chat
           </button>
