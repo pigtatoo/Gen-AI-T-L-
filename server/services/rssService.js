@@ -5,6 +5,32 @@ const rssConfig = require('../config/rssConfig');
 const supabase = require('../config/supabase');
 
 /**
+ * Clean up redirected URLs to get the actual article URL
+ * Handles cases like: https://go.theregister.com/feed/www.theregister.com/...
+ * @param {string} url - Raw URL from RSS feed
+ * @returns {string} Cleaned URL
+ */
+function cleanRedirectUrl(url) {
+  if (!url) return url;
+  
+  try {
+    // Handle TheRegister redirect URLs: https://go.theregister.com/feed/www.theregister.com/...
+    if (url.includes('go.theregister.com/feed/')) {
+      const match = url.match(/go\.theregister\.com\/feed\/(www\.theregister\.com.+)/);
+      if (match) {
+        return 'https://' + match[1];
+      }
+    }
+    
+    // Add more redirect patterns as needed
+    return url;
+  } catch (err) {
+    console.error('Error cleaning URL:', err.message);
+    return url;
+  }
+}
+
+/**
  * Parse RSS feed and extract articles published since given date
  * @param {string} url - Feed URL
  * @param {Date} sinceDate - Only include articles published after this date
@@ -44,7 +70,7 @@ async function parseRssSince(url, sinceDate) {
 
             articles.push({
               title: item.title || '',
-              url: item.link || '',
+              url: cleanRedirectUrl(item.link || ''),
               published,
               summary: item.summary || item.description || '',
               source: item.meta?.title || url

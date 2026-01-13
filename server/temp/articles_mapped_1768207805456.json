@@ -1,0 +1,193 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Singapore reviewing early findings from Hong Kong's investigations into Wang Fuk Court fire",
+            "url": "https://www.channelnewsasia.com/singapore/review-early-findings-hong-kong-investigation-wang-fuk-court-fire-5852651",
+            "source": "Latest News",
+            "published": "2026-01-12T08:17:09.000Z",
+            "summary": "The Singapore government is studying whether it needs to strengthen regulations for works during the construction and maintenance of residential buildings.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Singapore reviewing findings from an incident to potentially strengthen regulations, which involves high-level decision-making and policy formulation to manage risks and ensure compliance—core aspects of strategic management in governance."
+          },
+          {
+            "title": "UK's IQE forecasts 2025 earnings boost from defence, AI demand",
+            "url": "https://www.channelnewsasia.com/business/uks-iqe-forecasts-2025-earnings-boost-defence-ai-demand-5852671",
+            "source": "Latest News",
+            "published": "2026-01-12T07:25:28.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses IQE's earnings forecast driven by defense and AI demand, which involves strategic planning and alignment of business operations with market opportunities, a core aspect of strategic management."
+          },
+          {
+            "title": "Cloudflare CEO threatens to make the Winter Olympics a political football after Italy slugs it with a fine",
+            "url": "https://www.theregister.com/2026/01/12/cloudflare_vs_italy/",
+            "source": "The Register",
+            "published": "2026-01-12T06:47:05.000Z",
+            "summary": "<h4>Labels Rome's comms regulator ‘a quasi-judicial body’ that works on behalf of ‘shadowy, European media cabal’</h4> <p>Cloudflare’s CEO has threatened to pull the company out of Italy, and to withdraw free services it intends to provide to the Winter Olympic games, after the nation’s communications regulator slugged it with a fine equal to one percent of its annual revenue for violating anti-piracy regulations.…</p>",
+            "confidence": 0.75,
+            "reasoning": "Cloudflare's CEO is making strategic threats (withdrawing from Italy and Olympic services) in response to regulatory pressure, reflecting strategic decision-making and risk assessment in a business context."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Cloudflare CEO threatens to make the Winter Olympics a political football after Italy slugs it with a fine",
+            "url": "https://www.theregister.com/2026/01/12/cloudflare_vs_italy/",
+            "source": "The Register",
+            "published": "2026-01-12T06:47:05.000Z",
+            "summary": "<h4>Labels Rome's comms regulator ‘a quasi-judicial body’ that works on behalf of ‘shadowy, European media cabal’</h4> <p>Cloudflare’s CEO has threatened to pull the company out of Italy, and to withdraw free services it intends to provide to the Winter Olympic games, after the nation’s communications regulator slugged it with a fine equal to one percent of its annual revenue for violating anti-piracy regulations.…</p>",
+            "confidence": 0.9,
+            "reasoning": "The article discusses regulatory compliance, enforcement actions by a communications regulator (AGCOM), and a company's response to IT-related legal obligations, which directly aligns with IT governance principles concerning compliance, risk management, and regulatory adherence."
+          },
+          {
+            "title": "Techie banned from client site for outage he didn’t cause",
+            "url": "https://www.theregister.com/2026/01/12/who_me/",
+            "source": "The Register",
+            "published": "2026-01-12T07:31:12.000Z",
+            "summary": "<h4>UPSes don’t work without power, or well-designed electricals</h4> <p><strong>Who, Me?</strong>  Welcome to Monday morning and another instalment of “Who, Me?” - the weekly reader-contributed column in which we share your stories of what not to do at work, and how to get away with it.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes an IT infrastructure incident (UPS failure causing a NAS and server outage) at a council office, highlighting issues with IT operations, maintenance procedures, and accountability, which relate to IT governance frameworks."
+          },
+          {
+            "title": "Demand for AI, tech experts pushes UK financial sector vacancies up 12%, recruiter says",
+            "url": "https://www.channelnewsasia.com/business/demand-ai-tech-experts-pushes-uk-financial-sector-vacancies-up-12-recruiter-says-5852541",
+            "source": "Latest News",
+            "published": "2026-01-12T06:15:52.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses increased demand for AI and tech experts in the financial sector, which directly relates to the governance of IT resources, skills, and technology strategy within an organization."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK's IQE forecasts 2025 earnings boost from defence, AI demand",
+            "url": "https://www.channelnewsasia.com/business/uks-iqe-forecasts-2025-earnings-boost-defence-ai-demand-5852671",
+            "source": "Latest News",
+            "published": "2026-01-12T07:25:28.000Z",
+            "summary": "",
+            "confidence": 0.65,
+            "reasoning": "The forecast of an earnings boost implies a focus on achieving expected benefits from investments in defense and AI sectors, relating to benefit realization processes."
+          },
+          {
+            "title": "Cloudflare CEO threatens to make the Winter Olympics a political football after Italy slugs it with a fine",
+            "url": "https://www.theregister.com/2026/01/12/cloudflare_vs_italy/",
+            "source": "The Register",
+            "published": "2026-01-12T06:47:05.000Z",
+            "summary": "<h4>Labels Rome's comms regulator ‘a quasi-judicial body’ that works on behalf of ‘shadowy, European media cabal’</h4> <p>Cloudflare’s CEO has threatened to pull the company out of Italy, and to withdraw free services it intends to provide to the Winter Olympic games, after the nation’s communications regulator slugged it with a fine equal to one percent of its annual revenue for violating anti-piracy regulations.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article touches on revenue preservation for copyright holders and Cloudflare's financial penalties, indirectly relating to realizing benefits from governance and compliance measures, though it is less central than other topics."
+          },
+          {
+            "title": "Demand for AI, tech experts pushes UK financial sector vacancies up 12%, recruiter says",
+            "url": "https://www.channelnewsasia.com/business/demand-ai-tech-experts-pushes-uk-financial-sector-vacancies-up-12-recruiter-says-5852541",
+            "source": "Latest News",
+            "published": "2026-01-12T06:15:52.000Z",
+            "summary": "",
+            "confidence": 0.55,
+            "reasoning": "The push for tech talent suggests an organizational focus on investing in technology to realize benefits such as efficiency, competitiveness, and innovation, though the direct link to measuring those benefits is weaker."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Meta admits to Instagram password reset mess, denies data leak",
+            "url": "https://www.theregister.com/2026/01/11/infosec_news_in_brief/",
+            "source": "The Register",
+            "published": "2026-01-11T23:43:34.000Z",
+            "summary": "<h4>PLUS: Veeam patches critical vuln; Crims bribing dark web insiders; UK school takedown; And more</h4> <p><strong>infosec in brief</strong>  Meta has fixed a flaw in its Instagram service that allowed third parties to generate password reset emails, but denied the problem led to theft of users’ personal information.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a potential data leak and dataset posted to BreachForums, which involves how user information (like usernames, addresses, phone numbers) is stored, accessed, and potentially retrieved by unauthorized parties, aligning with forensic analysis of data storage and retrieval mechanisms in cyber incidents."
+          },
+          {
+            "title": "AI industry insiders launch site to poison the data that feeds them",
+            "url": "https://www.theregister.com/2026/01/11/industry_insiders_seek_to_poison/",
+            "source": "The Register",
+            "published": "2026-01-11T14:30:12.000Z",
+            "summary": "<h4>Poison Fountain project seeks allies to fight the power</h4> <p>Alarmed by what companies are building with artificial intelligence models, a handful of industry insiders are calling for those opposed to the current state of affairs to undertake a mass data poisoning effort to undermine the technology.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI crawlers scraping data from websites for model training, which directly involves the retrieval of information from storage systems. The data poisoning attack targets this retrieval process to corrupt the data at its source."
+          },
+          {
+            "title": "Techie banned from client site for outage he didn’t cause",
+            "url": "https://www.theregister.com/2026/01/12/who_me/",
+            "source": "The Register",
+            "published": "2026-01-12T07:31:12.000Z",
+            "summary": "<h4>UPSes don’t work without power, or well-designed electricals</h4> <p><strong>Who, Me?</strong>  Welcome to Monday morning and another instalment of “Who, Me?” - the weekly reader-contributed column in which we share your stories of what not to do at work, and how to get away with it.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.6,
+            "reasoning": "The article involves a NAS (Network Attached Storage) failure, which is directly related to storage technology. However, the core incident is about a power issue (UPS tripping) causing the failure, not forensic analysis or retrieval methods, so relevance is moderate."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 5,
+    "moduleTitle": "AI Data & Analytics",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 7,
+        "topicTitle": "Foundations of AI",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Legal practice must guard against risks of AI degrading lawyers' skills: Chief Justice",
+            "url": "https://www.channelnewsasia.com/singapore/ai-lawyer-skills-chief-justice-opening-legal-year-oly-ag-5852236",
+            "source": "Latest News",
+            "published": "2026-01-12T04:59:00.000Z",
+            "summary": "The Chief Justice, the Attorney-General and the president of the Law Society of Singapore spoke about the risks and opportunities&nbsp;that AI can provide to the legal practice.",
+            "confidence": 0.95,
+            "reasoning": "The article directly discusses the impact, risks, and opportunities of AI in a professional field (legal practice), which aligns with understanding AI's fundamental principles, applications, and societal implications covered in foundational AI topics."
+          },
+          {
+            "title": "Demand for AI, tech experts pushes UK financial sector vacancies up 12%, recruiter says",
+            "url": "https://www.channelnewsasia.com/business/demand-ai-tech-experts-pushes-uk-financial-sector-vacancies-up-12-recruiter-says-5852541",
+            "source": "Latest News",
+            "published": "2026-01-12T06:15:52.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses increased demand for AI experts in the UK financial sector, indicating a foundational need for AI skills and knowledge in the industry, though the article text provided is primarily navigation/header content with limited substantive detail."
+          },
+          {
+            "title": "TSMC Q4 profit poised to soar 27% as AI demand drives growth",
+            "url": "https://www.channelnewsasia.com/business/tsmc-q4-profit-poised-soar-27-ai-demand-drives-growth-5852306",
+            "source": "Latest News",
+            "published": "2026-01-12T04:43:02.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses TSMC's profit surge driven by AI demand, indicating the foundational role of semiconductor manufacturing in enabling AI technologies and infrastructure."
+          }
+        ]
+      }
+    ]
+  }
+]

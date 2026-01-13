@@ -460,6 +460,13 @@ export default function ChatPage() {
     const updatedMessages: ChatMessage[] = [...messages, userMessage];
     setMessages(updatedMessages);
     saveChatHistory(updatedMessages);
+
+    // Check if user is asking for a quiz (case-insensitive)
+    if (/\bquiz\b/i.test(question)) {
+      handleGenerateQuizForChat();
+      return;
+    }
+
     setIsSendingMessage(true);
 
     // Add loading message
