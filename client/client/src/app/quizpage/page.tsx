@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import * as XLSX from "xlsx";
 import { useSearchParams, useRouter } from "next/navigation";
 
 interface Module {
@@ -45,6 +46,85 @@ export default function QuizPage() {
   const [totalAttempts, setTotalAttempts] = useState(0);
   const [numQuestions, setNumQuestions] = useState(5);
   const [isDownloadingPDF, setIsDownloadingPDF] = useState(false);
+  const [isDownloadingCSV, setIsDownloadingCSV] = useState(false);
+  const [isDownloadingExcel, setIsDownloadingExcel] = useState(false);
+
+  // Download as Kahoot CSV
+  const downloadKahootCSV = async () => {
+    try {
+      setIsDownloadingCSV(true);
+      if (quizzes.length === 0) return;
+      // Kahoot expects: Question, Correct answer, Incorrect 1, Incorrect 2, Incorrect 3
+      const rows = quizzes.map((item) => {
+        // Find correct and incorrect answers
+        const correct = item.quiz.choices[item.quiz.answer];
+        const incorrect = (['A', 'B', 'C', 'D'] as const)
+          .filter(opt => opt !== item.quiz.answer)
+          .map(opt => item.quiz.choices[opt]);
+        return {
+          Question: item.quiz.question,
+          "Correct answer": correct,
+          "Incorrect 1": incorrect[0] || "",
+          "Incorrect 2": incorrect[1] || "",
+          "Incorrect 3": incorrect[2] || ""
+        };
+      });
+      const header = Object.keys(rows[0]);
+      const csv = [header.join(",")].concat(
+        rows.map(row => header.map(h => '"' + String((row as Record<string, unknown>)[h]).replace(/"/g, '""') + '"').join(","))
+      ).join("\n");
+      const blob = new Blob([csv], { type: "text/csv" });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `kahoot-quiz-${module?.title?.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().split("T")[0]}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+      alert("Kahoot CSV downloaded successfully!");
+    } catch (err) {
+      console.error("Error downloading Kahoot CSV:", err);
+      alert("Failed to download Kahoot CSV");
+    } finally {
+      setIsDownloadingCSV(false);
+    }
+  };
+
+  // Download as Brightspace CSV/Excel
+  const downloadBrightspaceExcel = async () => {
+    try {
+      setIsDownloadingExcel(true);
+      if (quizzes.length === 0) return;
+      // Brightspace expects: Type, Question Text, Points, Option 1, Option 2, Option 3, Option 4, Correct Answer, Feedback
+      // We'll use Multiple Choice (MC)
+      const rows = quizzes.map((item) => {
+        const options = [item.quiz.choices.A, item.quiz.choices.B, item.quiz.choices.C, item.quiz.choices.D];
+        return {
+          Type: "MC",
+          "Question Text": item.quiz.question,
+          Points: 1,
+          "Option 1": options[0],
+          "Option 2": options[1],
+          "Option 3": options[2],
+          "Option 4": options[3],
+          "Correct Answer": item.quiz.choices[item.quiz.answer],
+          Feedback: item.quiz.explanation
+        };
+      });
+      const ws = XLSX.utils.json_to_sheet(rows);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "BrightspaceQuiz");
+      const filename = `brightspace-quiz-${module?.title?.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().split("T")[0]}.xlsx`;
+      XLSX.writeFile(wb, filename);
+      alert("Brightspace Excel downloaded successfully!");
+    } catch (err) {
+      console.error("Error downloading Brightspace Excel:", err);
+      alert("Failed to download Brightspace Excel");
+    } finally {
+      setIsDownloadingExcel(false);
+    }
+  };
 
   useEffect(() => {
     if (moduleId) {
@@ -280,14 +360,32 @@ export default function QuizPage() {
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between mb-2">
             <h1 className="text-2xl font-semibold text-black">{module?.title} - Quiz</h1>
-            <button
-              onClick={downloadQuizAsPDF}
-              disabled={quizzes.length === 0 || isDownloadingPDF}
-              className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              title="Download quiz as PDF"
-            >
-              {isDownloadingPDF ? '📥 Downloading...' : '📥 Download PDF'}
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={downloadQuizAsPDF}
+                disabled={quizzes.length === 0 || isDownloadingPDF}
+                className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Download quiz as PDF"
+              >
+                {isDownloadingPDF ? '📥 Downloading...' : '📥 Download PDF'}
+              </button>
+              <button
+                onClick={downloadKahootCSV}
+                disabled={quizzes.length === 0 || isDownloadingCSV}
+                className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Download Kahoot CSV"
+              >
+                {isDownloadingCSV ? '⬇️ Downloading...' : '⬇️ Kahoot CSV'}
+              </button>
+              <button
+                onClick={downloadBrightspaceExcel}
+                disabled={quizzes.length === 0 || isDownloadingExcel}
+                className="px-4 py-2 text-sm font-semibold text-white bg-yellow-600 rounded-lg hover:bg-yellow-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Download Brightspace Excel"
+              >
+                {isDownloadingExcel ? '⬇️ Downloading...' : '⬇️ Brightspace Excel'}
+              </button>
+            </div>
           </div>
           <p className="text-sm text-gray-600">Score: {score}/{totalAttempts}</p>
         </div>
