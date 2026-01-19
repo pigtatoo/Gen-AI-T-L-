@@ -4,18 +4,22 @@ on:
   schedule:
     # Runs every Monday at 4:00 AM Singapore time (Sunday 20:00 UTC)
     - cron: "0 20 * * 0"
-  workflow_dispatch: {}  # lets you trigger manually from GitHub
+  workflow_dispatch: {}
+
+# ✅ REQUIRED so github-actions[bot] can push commits
+permissions:
+  contents: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout repository
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js
+      # Step 2: Setup Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -32,48 +36,47 @@ jobs:
       - name: Run RSS Sync to Supabase
         working-directory: ./server
         env:
-          # Supabase credentials
+          # Supabase
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
-          
-          # DeepSeek API key
+
+          # AI
           DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
-          
-          # RSS Configuration
+
+          # RSS config
           RSS_SINCE_DAYS: "7"
           RSS_TIMEOUT: "15000"
           ARTICLE_OUTPUT_DIR: "./temp"
-          
-          # Force IPv4
+
+          # Force IPv4 (prevents DNS issues)
           NODE_OPTIONS: "--dns-result-order=ipv4first"
         run: |
           echo "🚀 Starting RSS sync to Supabase..."
           echo "📅 Time: $(date)"
           node scripts/run-rss-sync-supabase.js
 
-      # Step 5: Commit and push temp files
+      # Step 5: Commit & push temp files (SAFE)
       - name: Commit and push temp files
-        if: success()
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add server/temp/*.json
-          git commit -m "📰 Update temp files from RSS sync - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-          git remote set-url origin https://x-access-token:$GH_PAT@github.com/${GITHUB_REPOSITORY}.git
-          echo "Git remote URL after set-url:"
-          git remote -v
-          git push
+          git config --local user.name "github-actions[bot]"
 
-      # Step 6: Log completion
+          git add server/temp/*.json || true
+
+          if git diff --cached --quiet; then
+            echo "ℹ️ No changes to commit"
+          else
+            git commit -m "📰 Update temp files from RSS sync - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
+
+      # Step 6: Success log
       - name: Sync Completed
         if: success()
         run: echo "✅ RSS sync to Supabase completed successfully!"
 
-      # Step 7: Log failure
+      # Step 7: Failure log
       - name: Sync Failed
         if: failure()
-        run: echo "❌ RSS sync failed - check logs above"
-
+        run: echo "❌ RSS sync failed — check logs above"
