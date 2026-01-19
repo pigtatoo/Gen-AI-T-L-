@@ -1,0 +1,152 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Former vice-principal, executive director who covered up molestation of toddlers by preschool cook get jail",
+            "url": "https://www.channelnewsasia.com/singapore/preschool-molestation-cook-jail-former-vice-principal-executive-director-5867316",
+            "source": "Latest News",
+            "published": "2026-01-19T02:39:00.000Z",
+            "summary": "The judge said the women were \"plainly motivated by a desire to protect their own interests\".",
+            "confidence": 0.75,
+            "reasoning": "The article describes senior executives (vice-principal, executive director) making decisions to cover up a serious crime to protect their own and the institution's interests, which reflects a failure in strategic leadership, ethical decision-making, and organizational oversight."
+          },
+          {
+            "title": "Elliott says offer for Toyota Industries is 40% undervalued, proposes alternative plan",
+            "url": "https://www.channelnewsasia.com/business/elliott-says-offer-toyota-industries-40-undervalued-proposes-alternative-plan-5867256",
+            "source": "Latest News",
+            "published": "2026-01-18T23:55:00.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article involves a shareholder (Elliott) challenging a company's valuation and proposing an alternative strategic plan, which directly relates to corporate strategy, board decisions, and strategic oversight—core aspects of strategic management in governance."
+          },
+          {
+            "title": "Passwords are still a problem for UK businesses - what next?",
+            "url": "https://www.techradar.com/pro/passwords-are-still-a-problem-for-uk-businesses-what-next",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T15:00:00.000Z",
+            "summary": "The challenge for British security leaders is no longer whether NCSC guidance on credential management is sound, but how to operationalize it effectively.",
+            "confidence": 0.75,
+            "reasoning": "The article emphasizes operationalizing security guidance across organizations, shifting security models, and addressing systemic issues, aligning with strategic planning and execution."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Passwords are still a problem for UK businesses - what next?",
+            "url": "https://www.techradar.com/pro/passwords-are-still-a-problem-for-uk-businesses-what-next",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T15:00:00.000Z",
+            "summary": "The challenge for British security leaders is no longer whether NCSC guidance on credential management is sound, but how to operationalize it effectively.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses organizational-level failures in credential management, policy enforcement, and implementing NCSC guidance, which directly relates to IT governance frameworks and controls."
+          },
+          {
+            "title": "Mandiant releases quick credential cracker, to hasten the death of a bad protocol",
+            "url": "https://www.theregister.com/2026/01/18/infosec_news_in_brief/",
+            "source": "The Register",
+            "published": "2026-01-18T23:57:05.000Z",
+            "summary": "<h4>PLUS: Navy spy sent to brig for 200 months in brig; Black Axe busted again; Bill aims to crimp ICE apps; and more</h4> <p><strong>Infosec In Brief</strong>  PLUS: Google’s security outfit Mandiant last week released tools that can crack credentials in 12 hours, in the hope that doing so will accelerate the death of an ancient Microsoft security protocol.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Mandiant releasing tools to crack credentials in a legacy Microsoft protocol, highlighting security weaknesses and urging organizations to disable it, which relates to IT governance through security policy enforcement and technology lifecycle management."
+          },
+          {
+            "title": "Not hot on bots, project names and shames AI-created open source software",
+            "url": "https://www.theregister.com/2026/01/18/openslopware_is_back/",
+            "source": "The Register",
+            "published": "2026-01-18T09:33:13.000Z",
+            "summary": "<h4>'OpenSlopware' briefly flowers, fades, falls – but fortunately was forked, fast</h4> <p>The splendidly-named \"OpenSlopware\" was, for a short time, a list of open source projects using LLM bots. Due to harassment, it's gone, but forks of it live on.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses open source projects using AI-generated code and the governance challenges around tracking, listing, and maintaining such projects, including issues of harassment and repository management."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Responsible innovation: what 2026 should look like for businesses harnessing AI",
+            "url": "https://www.techradar.com/pro/responsible-innovation-what-2026-should-look-like-for-businesses-harnessing-ai",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T09:00:00.000Z",
+            "summary": "Businesses harnessing artificial intelligence should do so with governance, data integrity and investing in people.",
+            "confidence": 0.65,
+            "reasoning": "The article highlights using AI to deliver measurable results, streamline operations, and support cost-efficiency, which relates to Benefit Realization's focus on achieving intended benefits from investments."
+          },
+          {
+            "title": "Passwords are still a problem for UK businesses - what next?",
+            "url": "https://www.techradar.com/pro/passwords-are-still-a-problem-for-uk-businesses-what-next",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T15:00:00.000Z",
+            "summary": "The challenge for British security leaders is no longer whether NCSC guidance on credential management is sound, but how to operationalize it effectively.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on improving cybersecurity posture by effectively implementing guidance, which could relate to realizing benefits from security investments, though it is less explicitly covered."
+          },
+          {
+            "title": "S Twatter: When text-to-speech goes down the drain",
+            "url": "https://www.theregister.com/2026/01/17/uk_water_company_gets_in/",
+            "source": "The Register",
+            "published": "2026-01-17T09:33:15.000Z",
+            "summary": "<h4>Rinse of the machines: A cautionary tale about relying on robots</h4> <p><strong>Bork!Bork!Bork!</strong>  UK water company Severn Trent learned an unfortunate lesson about text-to-speech systems when a robocall to customers went hilariously wrong.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The incident illustrates a failure to realize intended benefits from a technology investment, as the automated system produced unintended and potentially damaging outcomes instead of effective customer communication."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Passwords are still a problem for UK businesses - what next?",
+            "url": "https://www.techradar.com/pro/passwords-are-still-a-problem-for-uk-businesses-what-next",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T15:00:00.000Z",
+            "summary": "The challenge for British security leaders is no longer whether NCSC guidance on credential management is sound, but how to operationalize it effectively.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses credential management, access control, and identity management systems, which involve storing and retrieving authentication data securely."
+          },
+          {
+            "title": "Responsible innovation: what 2026 should look like for businesses harnessing AI",
+            "url": "https://www.techradar.com/pro/responsible-innovation-what-2026-should-look-like-for-businesses-harnessing-ai",
+            "source": "Latest from TechRadar",
+            "published": "2026-01-18T09:00:00.000Z",
+            "summary": "Businesses harnessing artificial intelligence should do so with governance, data integrity and investing in people.",
+            "confidence": 0.65,
+            "reasoning": "The article emphasizes data integrity and governance in AI systems, which directly relates to how information is stored, managed, and retrieved securely and reliably in cyber forensics contexts."
+          },
+          {
+            "title": "Sorry Dave, I’m afraid I can’t do that! PCs refuse to shut down after Microsoft patch",
+            "url": "https://www.theregister.com/2026/01/16/patch_tuesday_secure_launch_bug_no_shutdown/",
+            "source": "The Register",
+            "published": "2026-01-16T16:44:20.000Z",
+            "summary": "<h4>Microsoft claims it's a Secure Launch bug</h4> <p>We're not saying Copilot has become sentient and decided it doesn't want to lose consciousness. But if it did, it would create Microsoft's January Patch Tuesday update, which has made it so that some PCs flat-out refuse to shut down or hibernate, no matter how many times you try.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses a bug in Windows security updates affecting system shutdown/hibernation, which relates to how operating systems manage system states and data persistence—areas relevant to storage and retrieval technologies in forensic contexts."
+          }
+        ]
+      }
+    ]
+  }
+]
