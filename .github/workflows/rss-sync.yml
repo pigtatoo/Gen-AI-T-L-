@@ -63,6 +63,8 @@ jobs:
           git add server/temp/*.json
           git commit -m "📰 Update temp files from RSS sync - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git
+          echo "Git remote URL after set-url:"
+          git remote -v
           git push
 
       # Step 6: Log completion
