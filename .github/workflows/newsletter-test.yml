@@ -49,13 +49,12 @@ jobs:
           NEWSLETTER_ENABLED: true
           CLIENT_URL: ${{ secrets.CLIENT_URL }}
 
-          # Force IPv4 ONLY (prevents IPv6 DNS issues on GitHub Actions)
+          # Force IPv4 (prevents DNS issues)
           NODE_OPTIONS: "--dns-result-order=ipv4first"
         run: |
           echo "📧 Starting newsletter email test..."
           echo "📅 Time: $(date)"
-          # Run with explicit IPv4-only DNS resolution
-          node --dns-result-order=ipv4first scripts/test-newsletter-email.js
+          node scripts/test-newsletter-email.js
 
       # Step 5: Success log
       - name: Test Completed
