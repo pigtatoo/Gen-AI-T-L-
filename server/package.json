@@ -7,6 +7,7 @@
     "start": "node -r dotenv/config server.js",
     "rss": "node scripts/run-rss-sync-supabase.js",
     "db:test": "node scripts/test-supabase.js",
+    "newsletter:test": "node -r dotenv/config scripts/test-newsletter-email.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@huggingface/inference": "^4.13.5",
+    "@sendgrid/mail": "^8.1.6",
     "@supabase/supabase-js": "^2.87.1",
     "axios": "^1.13.2",
     "bcryptjs": "^2.4.3",
@@ -28,8 +30,10 @@
     "marked": "^17.0.1",
     "mysql2": "^3.6.0",
     "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.12",
     "pdfkit": "^0.17.2",
     "pg": "^8.16.3",
+    "resend": "^6.8.0",
     "sequelize": "^6.35.0",
     "serpapi": "^2.2.1",
     "sqlite3": "^5.1.7",

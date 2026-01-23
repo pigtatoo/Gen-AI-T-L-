@@ -318,7 +318,7 @@ export default function ChatPage() {
       let displayedText = '';
       let currentIndex = 0;
       const startTime = Date.now();
-      const charsPerMs = 0.05; // Adjust for typing speed (higher = faster)
+      const charsPerMs = 0.1; // Adjust for typing speed (higher = faster)
 
       const typeCharacter = () => {
         const elapsedTime = Date.now() - startTime;
@@ -616,6 +616,13 @@ export default function ChatPage() {
           className="mt-4 rounded-lg px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-800 transition-colors text-left"
         >
           Take Full Quiz
+        </button>
+
+        <button
+          onClick={() => router.push('/newsletterpage')}
+          className="mt-2 rounded-lg px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-800 transition-colors text-left"
+        >
+          📬 Newsletter Subscriptions
         </button>
 
         <button

@@ -13,9 +13,13 @@ const articlesRoutes = require('./routes/articles');
 const quizRoutes = require('./routes/quiz');
 const feedRoutes = require('./routes/feeds');
 const newsletterRoutes = require('./routes/newsletters');
+const newsletterSubscriptionRoutes = require('./routes/newsletter-subscriptions');
+const jobsRoutes = require('./routes/jobs');
 
 // Scheduler
 const { initScheduler } = require('./jobs/scheduler');
+const { initNewsletterScheduler } = require('./jobs/newsletterScheduler');
+const { verifyEmailService } = require('./services/emailService');
 
 // Services
 const caseStudyService = require('./services/caseStudyService');
@@ -69,6 +73,12 @@ app.use('/api/feeds', feedRoutes);
 
 // Newsletter routes
 app.use('/api/newsletters', newsletterRoutes);
+
+// Newsletter subscription routes
+app.use('/api/user/newsletter-subscriptions', newsletterSubscriptionRoutes);
+
+// Jobs routes (manual triggers for testing)
+app.use('/api/jobs', jobsRoutes);
 
 // Articles routes (RSS, scraping, etc)
 app.use('/api/articles', articlesRoutes);
@@ -185,4 +195,14 @@ app.listen(PORT, () => {
   
   // Initialize RSS sync scheduler
   initScheduler();
+  
+  // Initialize newsletter scheduler
+  initNewsletterScheduler();
+  
+  // Verify email service
+  verifyEmailService().then(isValid => {
+    if (!isValid) {
+      console.warn('⚠️  Email service verification failed. Newsletters will not be sent.');
+    }
+  });
 });

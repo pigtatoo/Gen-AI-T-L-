@@ -144,12 +144,20 @@ function LandingPage() {
       <div className="border-b border-gray-200 bg-white">
         <div className="mx-auto max-w-6xl px-8 py-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-black">My Modules</h1>
-          <button
-            onClick={navigateToUserPage}
-            className="rounded-lg  px-4 py-2 text-sm font-semibold text-black hover:bg-gray-100"
-          >
-            {userName}
-          </button>
+          <div className="flex gap-4 items-center">
+            <button
+              onClick={() => router.push("/newsletterpage")}
+              className="rounded-lg px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50"
+            >
+              📬 Newsletter
+            </button>
+            <button
+              onClick={navigateToUserPage}
+              className="rounded-lg  px-4 py-2 text-sm font-semibold text-black hover:bg-gray-100"
+            >
+              {userName}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -258,6 +266,24 @@ function LandingPage() {
             <AddFeedComponent compact={false} />
           </div>
         )}
+
+        {/* Newsletter Subscriptions Section */}
+        <div className="mb-12 rounded-lg border border-green-200 bg-green-50 p-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-xl font-bold text-green-900">📬 Newsletter Subscriptions</h2>
+              <p className="text-sm text-green-700 mt-1">
+                Subscribe to weekly newsletters for your selected modules and topics. Receive curated content, case studies, and Q&A directly in your inbox every Monday at 7 AM.
+              </p>
+            </div>
+            <button
+              onClick={() => router.push("/newsletterpage")}
+              className="rounded-lg bg-green-600 text-white px-6 py-2 text-sm font-semibold hover:bg-green-700 transition-colors whitespace-nowrap ml-4"
+            >
+              Manage Subscriptions →
+            </button>
+          </div>
+        </div>
 
         {/* Modules List */}
         {isLoading ? (

@@ -1,0 +1,193 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oracle, Michael Dell, named as investors in JV that will run TikTok's US operations",
+            "url": "https://www.theregister.com/2026/01/23/jv_announces_tiktok_us_acquisition/",
+            "source": "The Register",
+            "published": "2026-01-23T02:56:34.000Z",
+            "summary": "<h4>Big Red gets to store data, advise on security, and store the 'I'll watch just one more video' algo</h4> <p>Made-in-China social network TikTok has announced the formation of a joint venture that will run its US operations, the condition lawmakers required for its flagship app to continue operating in America.…</p>",
+            "confidence": 0.9,
+            "reasoning": "The article details Oracle's role as a 'trusted security partner' responsible for hosting US user data, reviewing source code, and securing the content recommendation algorithm in its cloud, which directly aligns with IT governance principles of data security, compliance, and IT oversight."
+          },
+          {
+            "title": "New rule limits customers to 10 postpaid SIM cards across all telcos",
+            "url": "https://www.channelnewsasia.com/singapore/scams-postpaid-sim-cards-limit-imda-police-5878191",
+            "source": "Latest News",
+            "published": "2026-01-23T05:14:00.000Z",
+            "summary": "The move comes as Singapore’s authorities tighten SIM card limits to prevent illicit use and protect the public against scams.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a regulatory rule limiting SIM cards to prevent misuse and scams, which aligns with IT Governance's focus on policies, controls, and compliance for managing IT systems and security risks."
+          },
+          {
+            "title": "Former crypto-mining company building 430 MW datacenter in secret location for secret client",
+            "url": "https://www.theregister.com/2026/01/23/applied_digital_secret_datacenter/",
+            "source": "The Register",
+            "published": "2026-01-23T01:24:03.000Z",
+            "summary": "<h4>Keeps location under wraps after communities opposed past projects</h4> <p>Crypto miner turned AI infrastructure provider Applied Digital announced it has broken ground on a 430 MW data center somewhere in the southern US, but it isn’t yet ready to reveal the location of its new facility.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The construction and operation of a large-scale data center involve IT governance considerations such as infrastructure management, stakeholder communication, and handling public opposition, though the article focuses more on strategic and community aspects than formal governance frameworks."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Law Society calls for lawyer Lim Tean to be struck off over handling of S$30,000 belonging to client",
+            "url": "https://www.channelnewsasia.com/singapore/lim-tean-lawsoc-seek-striking-30000-client-5878251",
+            "source": "Latest News",
+            "published": "2026-01-23T05:05:36.000Z",
+            "summary": "Lim Tean claimed that he had been acting on his client's instructions and questioned why the Law Society did not produce the client as a witness.",
+            "confidence": 0.75,
+            "reasoning": "The article involves a legal professional's handling of client funds and disciplinary proceedings by the Law Society, which relates to strategic oversight, ethical decision-making, and risk management within a professional governance framework."
+          },
+          {
+            "title": "'Canada doesn't live because of US,' Carney says in Trump retort",
+            "url": "https://www.channelnewsasia.com/world/canada-carney-hits-back-trump-speech-us-5878016",
+            "source": "Latest News",
+            "published": "2026-01-23T03:09:00.000Z",
+            "summary": "\"Canada doesn't live because of the United States. Canada thrives because we are Canadian,” Canadian Prime Minister Mark Carney said in response to Donald Trump’s comment at the World Economic Forum.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a national leader's public strategic positioning and response to international commentary, reflecting high-level strategic decision-making and national governance, which aligns with strategic management principles in a governance context."
+          },
+          {
+            "title": "New rule limits customers to 10 postpaid SIM cards across all telcos",
+            "url": "https://www.channelnewsasia.com/singapore/scams-postpaid-sim-cards-limit-imda-police-5878191",
+            "source": "Latest News",
+            "published": "2026-01-23T05:14:00.000Z",
+            "summary": "The move comes as Singapore’s authorities tighten SIM card limits to prevent illicit use and protect the public against scams.",
+            "confidence": 0.55,
+            "reasoning": "The rule reflects a strategic decision by authorities to address public safety and fraud, involving planning and implementation of measures that could influence organizational and societal outcomes."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oracle, Michael Dell, named as investors in JV that will run TikTok's US operations",
+            "url": "https://www.theregister.com/2026/01/23/jv_announces_tiktok_us_acquisition/",
+            "source": "The Register",
+            "published": "2026-01-23T02:56:34.000Z",
+            "summary": "<h4>Big Red gets to store data, advise on security, and store the 'I'll watch just one more video' algo</h4> <p>Made-in-China social network TikTok has announced the formation of a joint venture that will run its US operations, the condition lawmakers required for its flagship app to continue operating in America.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The JV's management of global product interoperability and commercial activities aims to deliver value by enabling US creators and businesses to operate globally, though specific benefits are not fully detailed in the text."
+          },
+          {
+            "title": "Trump says he got a deal for rare earths in Greenland, but they won't come easy",
+            "url": "https://www.theregister.com/2026/01/22/trump_greenland_rare_earths_hard/",
+            "source": "The Register",
+            "published": "2026-01-22T22:04:45.000Z",
+            "summary": "<h4>You can't just grab 'em by the mine shafts - there aren't any</h4> <p>The US invasion of Greenland might be off the table for now, but the Trump administration won't have an easy time using the rare earth elements and critical minerals it claims it's getting access to as part of a deal with NATO. …</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.6,
+            "reasoning": "The article highlights challenges in extracting and processing minerals, questioning the feasibility and actual benefits of the claimed deal, relating to realizing expected outcomes from strategic initiatives."
+          },
+          {
+            "title": "Former crypto-mining company building 430 MW datacenter in secret location for secret client",
+            "url": "https://www.theregister.com/2026/01/23/applied_digital_secret_datacenter/",
+            "source": "The Register",
+            "published": "2026-01-23T01:24:03.000Z",
+            "summary": "<h4>Keeps location under wraps after communities opposed past projects</h4> <p>Crypto miner turned AI infrastructure provider Applied Digital announced it has broken ground on a 430 MW data center somewhere in the southern US, but it isn’t yet ready to reveal the location of its new facility.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The company's transition to AI infrastructure suggests an effort to realize benefits from new market opportunities, but the article does not detail specific benefit metrics or realization processes, making this connection weaker."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crims compromised energy firms' Microsoft accounts, sent 600 phishing emails",
+            "url": "https://www.theregister.com/2026/01/22/crims_compromised_energy_firms_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-22T19:18:58.000Z",
+            "summary": "<h4>Logging in, not breaking in</h4> <p>Unknown attackers are abusing Microsoft SharePoint file-sharing services to target multiple energy-sector organizations, harvest user credentials, take over corporate inboxes, and then send hundreds of phishing emails from compromised accounts to contacts inside and outside those organizations.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes attackers exploiting Microsoft SharePoint (a file-sharing and storage service) to harvest credentials and manipulate email inboxes, directly involving technologies for storing, sharing, and retrieving digital information, which is central to this topic."
+          },
+          {
+            "title": "Europe's GDPR cops dished out €1.2B in fines last year as data breaches piled up",
+            "url": "https://www.theregister.com/2026/01/22/europes_gdpr_cops_dished_out/",
+            "source": "The Register",
+            "published": "2026-01-22T13:39:04.000Z",
+            "summary": "<h4>Regulators logged over 400 personal data breach notifications a day for first time since law came into force</h4> <p>GDPR fines pushed past the £1 billion (€1.2 billion) mark in 2025 as Europe's regulators were deluged with more than 400 data breach notifications a day, according to a new survey that suggests the post-plateau era of enforcement has well and truly arrived.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses GDPR fines and data breach notifications, which involve the storage, management, and retrieval of personal data. Forensic investigations into breaches often require analyzing how data is stored, accessed, and reported, aligning with this topic's focus on data handling and retrieval systems."
+          },
+          {
+            "title": "AI conference's papers contaminated by AI hallucinations",
+            "url": "https://www.theregister.com/2026/01/22/neurips_papers_contaiminated_ai_hallucinations/",
+            "source": "The Register",
+            "published": "2026-01-22T21:52:37.000Z",
+            "summary": "<h4>100 vibe citations spotted in 51 NeurIPS papers show vetting efforts have room for improvement</h4> <p>GPTZero, a detector of AI output, has found yet again that scientists are undermining their credibility by relying on unreliable AI assistance.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses AI-generated content and citations in academic papers, which relates to the retrieval and verification of information sources, a key aspect of information storage and retrieval systems in forensic contexts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crims compromised energy firms' Microsoft accounts, sent 600 phishing emails",
+            "url": "https://www.theregister.com/2026/01/22/crims_compromised_energy_firms_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-22T19:18:58.000Z",
+            "summary": "<h4>Logging in, not breaking in</h4> <p>Unknown attackers are abusing Microsoft SharePoint file-sharing services to target multiple energy-sector organizations, harvest user credentials, take over corporate inboxes, and then send hundreds of phishing emails from compromised accounts to contacts inside and outside those organizations.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article details a cybersecurity attack involving compromised accounts and phishing, which directly aligns with incident management's focus on detecting, responding to, and recovering from security incidents and service disruptions."
+          },
+          {
+            "title": "Europe's GDPR cops dished out €1.2B in fines last year as data breaches piled up",
+            "url": "https://www.theregister.com/2026/01/22/europes_gdpr_cops_dished_out/",
+            "source": "The Register",
+            "published": "2026-01-22T13:39:04.000Z",
+            "summary": "<h4>Regulators logged over 400 personal data breach notifications a day for first time since law came into force</h4> <p>GDPR fines pushed past the £1 billion (€1.2 billion) mark in 2025 as Europe's regulators were deluged with more than 400 data breach notifications a day, according to a new survey that suggests the post-plateau era of enforcement has well and truly arrived.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on data breach notifications, reporting regimes, and regulatory responses, which are core aspects of incident management processes in IT service management, specifically involving detection, reporting, and handling of security incidents."
+          },
+          {
+            "title": "Windows fails to tip the scales in grocery store deployment",
+            "url": "https://www.theregister.com/2026/01/22/windows_grocery_store_scale/",
+            "source": "The Register",
+            "published": "2026-01-22T18:10:28.000Z",
+            "summary": "<h4>Recovery from an excess of sprouts, or something else?</h4> <p><strong>Bork!Bork!Bork!</strong>  Microsoft's flagship OS can power everything from a mini PC to a giant workstation or even a server. But using it for a grocery-store scale might just be overkill.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a Windows system failure (error code 0xc0000001) in a grocery store scale, which is an operational disruption requiring diagnosis and recovery—core aspects of incident management."
+          }
+        ]
+      }
+    ]
+  }
+]

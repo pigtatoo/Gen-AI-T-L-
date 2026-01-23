@@ -498,6 +498,10 @@ async function generateNewsletter(req, res) {
   }
 }
 
-module.exports = { generateNewsletter };
-
-module.exports = { generateNewsletter };
+module.exports = { 
+  generateNewsletter,
+  generateAIContent,
+  getLatestArticles,
+  filterArticlesByModuleAndTopics,
+  renderMarkdownToPDF
+};
