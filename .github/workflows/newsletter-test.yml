@@ -2,11 +2,9 @@ name: Newsletter Email Test
 
 on:
   schedule:
-    # Runs every Monday at 5:00 AM Singapore time (Sunday 21:00 UTC)
     - cron: "0 21 * * 0"
   workflow_dispatch: {}
 
-# ✅ REQUIRED so github-actions[bot] can push commits
 permissions:
   contents: write
 
@@ -15,53 +13,46 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         working-directory: ./server
-        run: |
-          npm install
-          echo "✓ Dependencies installed"
+        run: npm install
 
-      # Step 4: Run Newsletter Email Test
       - name: Run Newsletter Email Test
         working-directory: ./server
         env:
-          # Supabase
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
 
-          # Resend Email
+          # 🔥 HARD BLOCK postgres
+          DATABASE_URL: ""
+          PGHOST: ""
+          PGUSER: ""
+          PGPASSWORD: ""
+          PGPORT: ""
+
+          NODE_OPTIONS: "--dns-result-order=ipv4first"
+
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
 
-          # Newsletter Config
           NEWSLETTER_ENABLED: true
           CLIENT_URL: ${{ secrets.CLIENT_URL }}
+
         run: |
           echo "📧 Starting newsletter email test..."
           echo "📅 Time: $(date)"
-          # Force IPv4 before running node
-          export NODE_OPTIONS="--dns-result-order=ipv4first"
-          export NODE_NO_WARNINGS=1
           node scripts/test-newsletter-email.js
 
-      # Step 5: Success log
       - name: Test Completed
         if: success()
         run: echo "✅ Newsletter email test completed successfully!"
 
-      # Step 6: Failure log
       - name: Test Failed
         if: failure()
         run: echo "❌ Newsletter email test failed — check logs above"
