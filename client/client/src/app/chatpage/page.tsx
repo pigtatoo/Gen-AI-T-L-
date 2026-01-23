@@ -618,13 +618,7 @@ export default function ChatPage() {
           Take Full Quiz
         </button>
 
-        <button
-          onClick={() => router.push('/newsletterpage')}
-          className="mt-2 rounded-lg px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-800 transition-colors text-left"
-        >
-          📬 Newsletter Subscriptions
-        </button>
-
+        
         <button
           onClick={() => {
             if (selectedTopics.length === 0) {

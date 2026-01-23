@@ -267,15 +267,23 @@ function initNewsletterScheduler() {
     return;
   }
 
-  // Cron: 0 7 * * 1 = Every Monday at 7:00 AM
-  // Note: Cron times are in server timezone; consider running in UTC and adjusting
-  const schedule = '0 7 * * 1';
-  console.log(`📬 Scheduling newsletter job with cron: "${schedule}" (Every Monday at 7:00 AM)`);
+  // Cron: 0 16 * * 5 = Every Friday at 16:00 (4:00 PM) Singapore Time
+  // Use timezone option so the job runs at Singapore local time regardless of server TZ
+  const schedule = '0 16 * * 5';
+  const timezone = 'Asia/Singapore';
+  console.log(`📬 Scheduling newsletter job with cron: "${schedule}" (Every Friday at 4:00 PM ${timezone})`);
 
-  newsletterScheduledTask = cron.schedule(schedule, async () => {
-    console.log('\n🔔 Newsletter scheduled time reached');
-    await sendAllNewsletters();
-  });
+  newsletterScheduledTask = cron.schedule(
+    schedule,
+    async () => {
+      console.log('\n🔔 Newsletter scheduled time reached');
+      await sendAllNewsletters();
+    },
+    {
+      scheduled: true,
+      timezone
+    }
+  );
 
   console.log('✓ Newsletter scheduler initialized');
 }

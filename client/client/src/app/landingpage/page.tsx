@@ -146,12 +146,6 @@ function LandingPage() {
           <h1 className="text-2xl font-bold text-black">My Modules</h1>
           <div className="flex gap-4 items-center">
             <button
-              onClick={() => router.push("/newsletterpage")}
-              className="rounded-lg px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50"
-            >
-              📬 Newsletter
-            </button>
-            <button
               onClick={navigateToUserPage}
               className="rounded-lg  px-4 py-2 text-sm font-semibold text-black hover:bg-gray-100"
             >
