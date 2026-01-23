@@ -29,6 +29,9 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
+          # Supabase DB password required for Sequelize connection
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+
           # 🔥 HARD BLOCK postgres
           DATABASE_URL: ""
           PGHOST: ""
