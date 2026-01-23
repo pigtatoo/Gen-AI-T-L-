@@ -314,20 +314,34 @@ export default function ChatPage() {
       const data = await response.json();
       const fullText = data.reply;
 
-      // Typewriter effect - display text character by character
+      // Typewriter effect using requestAnimationFrame for better tab-switching support
       let displayedText = '';
-      for (let i = 0; i < fullText.length; i++) {
-        displayedText += fullText[i];
-        setMessages((prev) => {
-          const updated = [...prev];
-          updated[updated.length - 1] = { type: "bot", text: displayedText };
-          // Save after each update
-          saveChatHistory(updated);
-          return updated;
-        });
-        // 20ms delay between characters for smooth typing effect
-        await new Promise(resolve => setTimeout(resolve, 20));
-      }
+      let currentIndex = 0;
+      const startTime = Date.now();
+      const charsPerMs = 0.05; // Adjust for typing speed (higher = faster)
+
+      const typeCharacter = () => {
+        const elapsedTime = Date.now() - startTime;
+        const targetIndex = Math.floor(elapsedTime * charsPerMs);
+
+        if (targetIndex > currentIndex && currentIndex < fullText.length) {
+          currentIndex = Math.min(targetIndex, fullText.length);
+          displayedText = fullText.substring(0, currentIndex);
+          
+          setMessages((prev) => {
+            const updated = [...prev];
+            updated[updated.length - 1] = { type: "bot", text: displayedText };
+            saveChatHistory(updated);
+            return updated;
+          });
+        }
+
+        if (currentIndex < fullText.length) {
+          requestAnimationFrame(typeCharacter);
+        }
+      };
+
+      requestAnimationFrame(typeCharacter);
     } catch (err) {
       console.error("Error sending message to OpenRouter:", err);
       throw err;

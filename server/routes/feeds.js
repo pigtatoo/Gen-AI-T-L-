@@ -22,8 +22,10 @@ router.get('/', authenticate, async (req, res) => {
   }
 });
 
-// Add new feed
-router.post('/', authenticate, async (req, res) => {
+const { authorize } = require('../middleware/auth');
+
+// Add new feed (only for teacher and staff)
+router.post('/', authenticate, authorize(['teacher', 'staff']), async (req, res) => {
   try {
     const userId = req.user.id;
     const { url, name } = req.body;
