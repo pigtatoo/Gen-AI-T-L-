@@ -48,12 +48,12 @@ jobs:
           # Newsletter Config
           NEWSLETTER_ENABLED: true
           CLIENT_URL: ${{ secrets.CLIENT_URL }}
-
-          # Force IPv4 (prevents DNS issues)
-          NODE_OPTIONS: "--dns-result-order=ipv4first"
         run: |
           echo "📧 Starting newsletter email test..."
           echo "📅 Time: $(date)"
+          # Force IPv4 before running node
+          export NODE_OPTIONS="--dns-result-order=ipv4first"
+          export NODE_NO_WARNINGS=1
           node scripts/test-newsletter-email.js
 
       # Step 5: Success log
