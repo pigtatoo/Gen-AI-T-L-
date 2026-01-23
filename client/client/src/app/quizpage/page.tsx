@@ -49,6 +49,8 @@ export default function QuizPage() {
   const [isDownloadingCSV, setIsDownloadingCSV] = useState(false);
   const [isDownloadingExcel, setIsDownloadingExcel] = useState(false);
 
+  const saveKey = moduleId ? `saved_quiz_module_${moduleId}` : null;
+
   // Download as Kahoot CSV
   const downloadKahootCSV = async () => {
     try {
@@ -95,29 +97,56 @@ export default function QuizPage() {
   const downloadBrightspaceExcel = async () => {
     try {
       setIsDownloadingExcel(true);
-      if (quizzes.length === 0) return;
-      // Brightspace expects: Type, Question Text, Points, Option 1, Option 2, Option 3, Option 4, Correct Answer, Feedback
-      // We'll use Multiple Choice (MC)
-      const rows = quizzes.map((item) => {
-        const options = [item.quiz.choices.A, item.quiz.choices.B, item.quiz.choices.C, item.quiz.choices.D];
-        return {
-          Type: "MC",
-          "Question Text": item.quiz.question,
-          Points: 1,
-          "Option 1": options[0],
-          "Option 2": options[1],
-          "Option 3": options[2],
-          "Option 4": options[3],
-          "Correct Answer": item.quiz.choices[item.quiz.answer],
-          Feedback: item.quiz.explanation
-        };
+      if (quizzes.length === 0) { setIsDownloadingExcel(false); return; }
+      // Produce Brightspace import style rows for MULTIPLE CHOICE (MC) questions.
+      // Format follows the sample: NewQuestion,MC then rows like ID, Title, QuestionText, Points, Difficulty, Image, Option,..., Hint, Feedback
+      const rows: any[][] = [];
+
+      // Optional header lines similar to sample guidance
+      rows.push(["//MULTIPLE CHOICE QUESTION TYPE"]);
+      rows.push(["//Options must include text in column3"]);
+      rows.push([]);
+
+      quizzes.forEach((item, idx) => {
+        const qIndex = idx + 1;
+        const safeModule = module?.title ? String(module.title).replace(/\s+/g, "-") : "module";
+        const generatedId = `${safeModule}-${qIndex}`;
+
+        rows.push(["NewQuestion", "MC", "", "", ""]);
+        rows.push(["ID", generatedId, "", "", ""]);
+        rows.push(["Title", `Question ${qIndex}`, "", "", ""]);
+        rows.push(["QuestionText", item.quiz.question, "", "", ""]);
+        rows.push(["Points", 1, "", "", ""]);
+        rows.push(["Difficulty", 1, "", "", ""]);
+        rows.push(["Image", "", "", "", ""]);
+
+        // Add each option as: Option,scorePercent,optionText,,feedback
+        (['A', 'B', 'C', 'D'] as const).forEach((opt) => {
+          const text = item.quiz.choices[opt] || "";
+          const score = item.quiz.answer === opt ? 100 : 0;
+          rows.push(["Option", score, text, "", item.quiz.explanation || ""]);
+        });
+
+        rows.push(["Hint", "", "", "", ""]);
+        rows.push(["Feedback", item.quiz.explanation || "", "", "", ""]);
+        rows.push([]);
       });
-      const ws = XLSX.utils.json_to_sheet(rows);
-      const wb = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, ws, "BrightspaceQuiz");
-      const filename = `brightspace-quiz-${module?.title?.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().split("T")[0]}.xlsx`;
-      XLSX.writeFile(wb, filename);
-      alert("Brightspace Excel downloaded successfully!");
+
+      const ws = XLSX.utils.aoa_to_sheet(rows);
+      // Generate CSV UTF-8 (with BOM) for Brightspace import
+      const csv = XLSX.utils.sheet_to_csv(ws);
+      const csvWithBOM = "\uFEFF" + csv;
+      const filename = `brightspace-quiz-${module?.title?.replace(/\s+/g, "-").toLowerCase()}-${new Date().toISOString().split("T")[0]}.csv`;
+      const blob = new Blob([csvWithBOM], { type: 'text/csv;charset=utf-8;' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+      alert("Brightspace CSV downloaded successfully! (UTF-8)");
     } catch (err) {
       console.error("Error downloading Brightspace Excel:", err);
       alert("Failed to download Brightspace Excel");
@@ -134,6 +163,43 @@ export default function QuizPage() {
       setIsLoading(false);
     }
   }, [moduleId]);
+
+  // Load saved quiz state from localStorage for this module
+  useEffect(() => {
+    if (!moduleId) return;
+    try {
+      const key = `saved_quiz_module_${moduleId}`;
+      const raw = localStorage.getItem(key);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed?.quizzes) setQuizzes(parsed.quizzes);
+        if (typeof parsed.score === 'number') setScore(parsed.score);
+        if (typeof parsed.totalAttempts === 'number') setTotalAttempts(parsed.totalAttempts);
+        if (typeof parsed.numQuestions === 'number') setNumQuestions(parsed.numQuestions);
+        if (Array.isArray(parsed.selectedTopics)) setSelectedTopics(parsed.selectedTopics);
+      }
+    } catch (err) {
+      console.error('Failed to load saved quiz from localStorage', err);
+    }
+  }, [moduleId]);
+
+  // Persist quiz state to localStorage whenever it changes
+  useEffect(() => {
+    if (!moduleId) return;
+    try {
+      const key = `saved_quiz_module_${moduleId}`;
+      const toSave = {
+        quizzes,
+        score,
+        totalAttempts,
+        numQuestions,
+        selectedTopics,
+      };
+      localStorage.setItem(key, JSON.stringify(toSave));
+    } catch (err) {
+      console.error('Failed to save quiz to localStorage', err);
+    }
+  }, [moduleId, quizzes, score, totalAttempts, numQuestions, selectedTopics]);
 
   const fetchModuleDetails = async () => {
     try {
@@ -190,7 +256,7 @@ export default function QuizPage() {
 
       const newQuizzes: QuizMessage[] = [];
       
-      // Generate multiple quizzes
+      // Generate multiple quizzes (replace existing set)
       for (let i = 0; i < numQuestions; i++) {
         const res = await fetch('http://localhost:5000/api/quiz/generate', {
           method: 'POST',
@@ -243,7 +309,8 @@ export default function QuizPage() {
         await new Promise(resolve => setTimeout(resolve, 500));
       }
       
-      setQuizzes([...quizzes, ...newQuizzes]);
+      // Replace existing quizzes with newly generated set
+      setQuizzes(newQuizzes);
       setScore(0);
       setTotalAttempts(0);
     } catch (e) {
@@ -383,7 +450,7 @@ export default function QuizPage() {
                 className="px-4 py-2 text-sm font-semibold text-white bg-yellow-600 rounded-lg hover:bg-yellow-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 title="Download Brightspace Excel"
               >
-                {isDownloadingExcel ? '⬇️ Downloading...' : '⬇️ Brightspace Excel'}
+                {isDownloadingExcel ? '⬇️ Downloading...' : '⬇️ BrightspaceCSV'}
               </button>
             </div>
           </div>
@@ -489,6 +556,20 @@ export default function QuizPage() {
               className="flex-1 rounded-lg bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isGenerating ? "Generating..." : "Generate New Quiz"}
+            </button>
+            <button
+              onClick={() => {
+                // Clear saved quiz for this module and reset state
+                if (moduleId) {
+                  try { localStorage.removeItem(`saved_quiz_module_${moduleId}`); } catch (e) {}
+                }
+                setQuizzes([]);
+                setScore(0);
+                setTotalAttempts(0);
+              }}
+              className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-100 ml-2"
+            >
+              Clear Saved Quiz
             </button>
           </div>
           <button
