@@ -1,0 +1,193 @@
+[
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crims compromised energy firms' Microsoft accounts, sent 600 phishing emails",
+            "url": "https://www.theregister.com/2026/01/22/crims_compromised_energy_firms_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-22T19:18:58.000Z",
+            "summary": "<h4>Logging in, not breaking in</h4> <p>Unknown attackers are abusing Microsoft SharePoint file-sharing services to target multiple energy-sector organizations, harvest user credentials, take over corporate inboxes, and then send hundreds of phishing emails from compromised accounts to contacts inside and outside those organizations.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses attackers compromising Microsoft accounts and SharePoint services, which are platforms for storing and retrieving organizational data. The forensic analysis of such incidents would involve examining these storage systems for evidence of unauthorized access, credential harvesting, and email manipulation."
+          },
+          {
+            "title": "Tech support detective solved PC crime by looking in the carpark",
+            "url": "https://www.theregister.com/2026/01/23/on_call/",
+            "source": "The Register",
+            "published": "2026-01-23T07:30:14.000Z",
+            "summary": "<h4>Overnight action made for a sticky situation in the candy factory</h4> <p><strong>On Call</strong>  Some tech support jobs are sweet, and others go sour. Whatever taste they leave in your mouth, <em>The Register</em> celebrates them all each week in On Call – the reader-contributed column that shares your support experiences.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article involves analyzing log files (firewall logs, system logs) and using monitoring tools to capture screenshots, which relates to retrieving and storing digital evidence for investigation."
+          },
+          {
+            "title": "Europe's GDPR cops dished out €1.2B in fines last year as data breaches piled up",
+            "url": "https://www.theregister.com/2026/01/22/europes_gdpr_cops_dished_out/",
+            "source": "The Register",
+            "published": "2026-01-22T13:39:04.000Z",
+            "summary": "<h4>Regulators logged over 400 personal data breach notifications a day for first time since law came into force</h4> <p>GDPR fines pushed past the £1 billion (€1.2 billion) mark in 2025 as Europe's regulators were deluged with more than 400 data breach notifications a day, according to a new survey that suggests the post-plateau era of enforcement has well and truly arrived.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses GDPR data breach notifications and fines, which inherently involve the storage, management, and retrieval of personal data. Forensic investigations into breaches would examine how data was stored, accessed, and potentially exfiltrated."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Tech support detective solved PC crime by looking in the carpark",
+            "url": "https://www.theregister.com/2026/01/23/on_call/",
+            "source": "The Register",
+            "published": "2026-01-23T07:30:14.000Z",
+            "summary": "<h4>Overnight action made for a sticky situation in the candy factory</h4> <p><strong>On Call</strong>  Some tech support jobs are sweet, and others go sour. Whatever taste they leave in your mouth, <em>The Register</em> celebrates them all each week in On Call – the reader-contributed column that shares your support experiences.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.95,
+            "reasoning": "The article details a tech support investigation into a slow PC, identifying unauthorized software and an account, which aligns with detecting, logging, and resolving an IT incident."
+          },
+          {
+            "title": "Crims compromised energy firms' Microsoft accounts, sent 600 phishing emails",
+            "url": "https://www.theregister.com/2026/01/22/crims_compromised_energy_firms_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-22T19:18:58.000Z",
+            "summary": "<h4>Logging in, not breaking in</h4> <p>Unknown attackers are abusing Microsoft SharePoint file-sharing services to target multiple energy-sector organizations, harvest user credentials, take over corporate inboxes, and then send hundreds of phishing emails from compromised accounts to contacts inside and outside those organizations.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a cybersecurity attack involving compromised accounts and phishing, which directly aligns with incident management's focus on detecting, responding to, and recovering from security incidents and service disruptions."
+          },
+          {
+            "title": "Windows fails to tip the scales in grocery store deployment",
+            "url": "https://www.theregister.com/2026/01/22/windows_grocery_store_scale/",
+            "source": "The Register",
+            "published": "2026-01-22T18:10:28.000Z",
+            "summary": "<h4>Recovery from an excess of sprouts, or something else?</h4> <p><strong>Bork!Bork!Bork!</strong>  Microsoft's flagship OS can power everything from a mini PC to a giant workstation or even a server. But using it for a grocery-store scale might just be overkill.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a Windows system failure (error code 0xc0000001) in a grocery store scale, representing an unplanned interruption that requires restoration of service, which aligns with incident management's focus on restoring normal operation."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oracle, Michael Dell, named as investors in JV that will run TikTok's US operations",
+            "url": "https://www.theregister.com/2026/01/23/jv_announces_tiktok_us_acquisition/",
+            "source": "The Register",
+            "published": "2026-01-23T02:56:34.000Z",
+            "summary": "<h4>Big Red gets to store data, advise on security, and store the 'I'll watch just one more video' algo</h4> <p>Made-in-China social network TikTok has announced the formation of a joint venture that will run its US operations, the condition lawmakers required for its flagship app to continue operating in America.…</p>",
+            "confidence": 0.9,
+            "reasoning": "The article details Oracle's role as a 'trusted security partner' hosting US user data, validating source code, and securing the algorithm in its cloud, which directly relates to IT governance frameworks for data security, compliance, and technology oversight."
+          },
+          {
+            "title": "Tech support detective solved PC crime by looking in the carpark",
+            "url": "https://www.theregister.com/2026/01/23/on_call/",
+            "source": "The Register",
+            "published": "2026-01-23T07:30:14.000Z",
+            "summary": "<h4>Overnight action made for a sticky situation in the candy factory</h4> <p><strong>On Call</strong>  Some tech support jobs are sweet, and others go sour. Whatever taste they leave in your mouth, <em>The Register</em> celebrates them all each week in On Call – the reader-contributed column that shares your support experiences.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article involves IT support addressing unauthorized software and account usage, monitoring systems, and investigating security incidents, which aligns with IT governance practices for managing IT systems, policies, and security."
+          },
+          {
+            "title": "New rule limits customers to 10 postpaid SIM cards across all telcos",
+            "url": "https://www.channelnewsasia.com/singapore/scams-postpaid-sim-cards-limit-imda-police-5878191",
+            "source": "Latest News",
+            "published": "2026-01-23T05:14:00.000Z",
+            "summary": "The move comes as Singapore’s authorities tighten SIM card limits to prevent illicit use and protect the public against scams.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a regulatory rule limiting SIM cards to prevent misuse and scams, which involves establishing IT policies, controls, and compliance measures to manage technology risks and ensure secure operations."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oracle, Michael Dell, named as investors in JV that will run TikTok's US operations",
+            "url": "https://www.theregister.com/2026/01/23/jv_announces_tiktok_us_acquisition/",
+            "source": "The Register",
+            "published": "2026-01-23T02:56:34.000Z",
+            "summary": "<h4>Big Red gets to store data, advise on security, and store the 'I'll watch just one more video' algo</h4> <p>Made-in-China social network TikTok has announced the formation of a joint venture that will run its US operations, the condition lawmakers required for its flagship app to continue operating in America.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The formation of a joint venture to comply with US laws, involving major investors like Oracle and Michael Dell, and managing commercial activities like e-commerce and advertising reflects strategic decisions to navigate regulatory and market challenges."
+          },
+          {
+            "title": "Law Society calls for lawyer Lim Tean to be struck off over handling of S$30,000 belonging to client",
+            "url": "https://www.channelnewsasia.com/singapore/lim-tean-lawsoc-seek-striking-30000-client-5878251",
+            "source": "Latest News",
+            "published": "2026-01-23T05:05:36.000Z",
+            "summary": "Lim Tean claimed that he had been acting on his client's instructions and questioned why the Law Society did not produce the client as a witness.",
+            "confidence": 0.65,
+            "reasoning": "The article involves a legal professional facing disciplinary action for alleged mishandling of client funds, which relates to strategic oversight, ethical decision-making, and risk management within a professional governance framework."
+          },
+          {
+            "title": "New rule limits customers to 10 postpaid SIM cards across all telcos",
+            "url": "https://www.channelnewsasia.com/singapore/scams-postpaid-sim-cards-limit-imda-police-5878191",
+            "source": "Latest News",
+            "published": "2026-01-23T05:14:00.000Z",
+            "summary": "The move comes as Singapore’s authorities tighten SIM card limits to prevent illicit use and protect the public against scams.",
+            "confidence": 0.55,
+            "reasoning": "The rule reflects a strategic decision by authorities to address public safety and fraud, aligning with broader organizational or governmental objectives, though it is more regulatory than core strategic planning."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oracle, Michael Dell, named as investors in JV that will run TikTok's US operations",
+            "url": "https://www.theregister.com/2026/01/23/jv_announces_tiktok_us_acquisition/",
+            "source": "The Register",
+            "published": "2026-01-23T02:56:34.000Z",
+            "summary": "<h4>Big Red gets to store data, advise on security, and store the 'I'll watch just one more video' algo</h4> <p>Made-in-China social network TikTok has announced the formation of a joint venture that will run its US operations, the condition lawmakers required for its flagship app to continue operating in America.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The JV aims to ensure interoperability for US creators and businesses on a global scale, which aligns with realizing benefits from strategic investments and partnerships, though the article focuses more on structure than measurable outcomes."
+          },
+          {
+            "title": "Former crypto-mining company building 430 MW datacenter in secret location for secret client",
+            "url": "https://www.theregister.com/2026/01/23/applied_digital_secret_datacenter/",
+            "source": "The Register",
+            "published": "2026-01-23T01:24:03.000Z",
+            "summary": "<h4>Keeps location under wraps after communities opposed past projects</h4> <p>Crypto miner turned AI infrastructure provider Applied Digital announced it has broken ground on a 430 MW data center somewhere in the southern US, but it isn’t yet ready to reveal the location of its new facility.…</p>",
+            "confidence": 0.55,
+            "reasoning": "There is indirect relevance as the company's pivot to AI infrastructure and data center expansion aims to realize business benefits, but the article emphasizes operational challenges and community impact rather than explicit benefit measurement or realization processes."
+          },
+          {
+            "title": "Female-dominated careers among most exposed to AI disruption",
+            "url": "https://www.theregister.com/2026/01/22/female_dominated_careers_ai_disruption/",
+            "source": "The Register",
+            "published": "2026-01-22T18:56:27.000Z",
+            "summary": "<h4>Dentists least likely to get an LLM kick in the teeth</h4> <p>Most US workers in jobs exposed to AI are also relatively well placed to adapt if disruption leads to displacement, according to research summarized by the Brookings Institution. However, there are some careers with high percentages of female workers that are in a bad position.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The article touches on AI's potential to displace workers and the need for adaptive capacity, which connects to benefit realization in terms of evaluating the outcomes of AI investments and ensuring they deliver intended benefits without excessive negative impacts."
+          }
+        ]
+      }
+    ]
+  }
+]
