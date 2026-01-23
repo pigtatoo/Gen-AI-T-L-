@@ -27,9 +27,13 @@ const sequelize = new Sequelize(databaseUrl, {
     ssl: {
       require: true,
       rejectUnauthorized: false
-    },
-    family: 4
-  }
+    }
+  },
+  // Force IPv4 only (critical for GitHub Actions compatibility)
+  // Setting family to 4 tells the Node.js DNS resolver to prefer IPv4
+  host: process.env.SUPABASE_URL ? 
+    (`db.${process.env.SUPABASE_URL.replace('https://', '').split('.')[0]}.supabase.co`) : 
+    'localhost'
 });
 
 module.exports = sequelize;
