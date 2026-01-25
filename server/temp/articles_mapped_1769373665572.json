@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "No one talking about a datacenter could be a sign one is coming",
+            "url": "https://www.theregister.com/2026/01/25/datacenters_nda/",
+            "source": "The Register",
+            "published": "2026-01-25T19:00:14.000Z",
+            "summary": "<h4>Balancing the need to know with the need to get shovels in the ground is causing friction in communities across the country</h4> <p><strong>feature</strong>  Applied Digital CEO Wes Cummins said when his company decides on a location for a datacenter, he asks town officials to sign non-disclosure agreements to stop politicians from leaking insider information.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses corporate practices (NDAs with officials) that impact transparency and decision-making in IT infrastructure projects, aligning with IT governance concerns about control, accountability, and ethical management of IT resources."
+          },
+          {
+            "title": "CISA won't attend infosec industry's biggest conference this year",
+            "url": "https://www.theregister.com/2026/01/24/cisa_skipping_rsa_exclusive/",
+            "source": "The Register",
+            "published": "2026-01-24T00:22:51.000Z",
+            "summary": "<h4>But ex-CISA boss and new RSAC CEO Jen Easterly will be there</h4> <p><strong>exclusive</strong>  The US Cybersecurity and Infrastructure Security Agency won't attend the annual RSA Conference in March, an agency spokesperson confirmed to <em>The Register</em>.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses CISA's decision to not attend a major cybersecurity conference, which relates to how government agencies manage their IT engagements and stakeholder interactions, aligning with IT governance principles of oversight and strategic alignment of IT activities."
+          },
+          {
+            "title": "UK border tech budget swells by £100M as Home Office targets small boat crossings",
+            "url": "https://www.theregister.com/2026/01/24/home_office_small_boats/",
+            "source": "The Register",
+            "published": "2026-01-24T09:29:14.000Z",
+            "summary": "<h4>Drone, satellite, and other data combined to monitor unwanted vessels</h4> <p>The UK Home Office is spending up to £100 million on intelligence tech in part to tackle the so-called \"small boats\" issue of refugees and irregular immigrants coming across the English Channel.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The procurement of a maritime situational awareness system involving drones, satellites, and data fusion relates to IT investment oversight, technology lifecycle management, and ensuring IT initiatives support compliance and security goals."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Future of UK's multibillion Ajax armored vehicle program looks shaky",
+            "url": "https://www.theregister.com/2026/01/25/uk_defence_grapples_with_ajax/",
+            "source": "The Register",
+            "published": "2026-01-25T12:01:10.000Z",
+            "summary": "<h4>Noise and vibration keeps sending soldiers to the medics</h4> <p>The future of the British Army's troublesome Ajax armored vehicle program has again been called into question after the official in charge was removed and use of Ajax halted over its effects on personnel.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses high-level decision-making, oversight failures, and procurement reform in a major defense program, aligning with strategic management's focus on organizational direction and resource allocation."
+          },
+          {
+            "title": "UK border tech budget swells by £100M as Home Office targets small boat crossings",
+            "url": "https://www.theregister.com/2026/01/24/home_office_small_boats/",
+            "source": "The Register",
+            "published": "2026-01-24T09:29:14.000Z",
+            "summary": "<h4>Drone, satellite, and other data combined to monitor unwanted vessels</h4> <p>The UK Home Office is spending up to £100 million on intelligence tech in part to tackle the so-called \"small boats\" issue of refugees and irregular immigrants coming across the English Channel.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a significant budget allocation and procurement strategy by the Home Office to address a high-priority national security and immigration issue, reflecting strategic decision-making and resource alignment with organizational objectives."
+          },
+          {
+            "title": "No one talking about a datacenter could be a sign one is coming",
+            "url": "https://www.theregister.com/2026/01/25/datacenters_nda/",
+            "source": "The Register",
+            "published": "2026-01-25T19:00:14.000Z",
+            "summary": "<h4>Balancing the need to know with the need to get shovels in the ground is causing friction in communities across the country</h4> <p><strong>feature</strong>  Applied Digital CEO Wes Cummins said when his company decides on a location for a datacenter, he asks town officials to sign non-disclosure agreements to stop politicians from leaking insider information.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article highlights strategic decisions by tech companies regarding datacenter locations, tax breaks, and community relations, which involve long-term planning and resource allocation central to strategic management."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Future of UK's multibillion Ajax armored vehicle program looks shaky",
+            "url": "https://www.theregister.com/2026/01/25/uk_defence_grapples_with_ajax/",
+            "source": "The Register",
+            "published": "2026-01-25T12:01:10.000Z",
+            "summary": "<h4>Noise and vibration keeps sending soldiers to the medics</h4> <p>The future of the British Army's troublesome Ajax armored vehicle program has again been called into question after the official in charge was removed and use of Ajax halted over its effects on personnel.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The program's failure to deliver intended operational capabilities (due to safety issues) and the declaration of initial operating capability despite known problems relate to challenges in achieving expected benefits."
+          },
+          {
+            "title": "No one talking about a datacenter could be a sign one is coming",
+            "url": "https://www.theregister.com/2026/01/25/datacenters_nda/",
+            "source": "The Register",
+            "published": "2026-01-25T19:00:14.000Z",
+            "summary": "<h4>Balancing the need to know with the need to get shovels in the ground is causing friction in communities across the country</h4> <p><strong>feature</strong>  Applied Digital CEO Wes Cummins said when his company decides on a location for a datacenter, he asks town officials to sign non-disclosure agreements to stop politicians from leaking insider information.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.55,
+            "reasoning": "The article touches on the trade-offs between project benefits (e.g., jobs, economic development) and costs (e.g., environmental impacts, public subsidies), relating to benefit realization in evaluating and achieving intended outcomes from investments."
+          },
+          {
+            "title": "UK border tech budget swells by £100M as Home Office targets small boat crossings",
+            "url": "https://www.theregister.com/2026/01/24/home_office_small_boats/",
+            "source": "The Register",
+            "published": "2026-01-24T09:29:14.000Z",
+            "summary": "<h4>Drone, satellite, and other data combined to monitor unwanted vessels</h4> <p>The UK Home Office is spending up to £100 million on intelligence tech in part to tackle the so-called \"small boats\" issue of refugees and irregular immigrants coming across the English Channel.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.55,
+            "reasoning": "The initiative aims to deliver enhanced domain awareness and strengthen responses to clandestine entry, implying a focus on achieving measurable outcomes and value from the technology investment, though specific benefits are not detailed in the provided text."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK border tech budget swells by £100M as Home Office targets small boat crossings",
+            "url": "https://www.theregister.com/2026/01/24/home_office_small_boats/",
+            "source": "The Register",
+            "published": "2026-01-24T09:29:14.000Z",
+            "summary": "<h4>Drone, satellite, and other data combined to monitor unwanted vessels</h4> <p>The UK Home Office is spending up to £100 million on intelligence tech in part to tackle the so-called \"small boats\" issue of refugees and irregular immigrants coming across the English Channel.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a procurement for a maritime surveillance system that fuses data from drones, satellites, and other sources to autonomously detect and track vessels. This aligns with the cyber security topic of 'Information gathering' (often called reconnaissance or intelligence collection), as it involves the systematic acquisition of data (in this case, for border security and domain awareness) to support decision-making and operations."
+          },
+          {
+            "title": "No one talking about a datacenter could be a sign one is coming",
+            "url": "https://www.theregister.com/2026/01/25/datacenters_nda/",
+            "source": "The Register",
+            "published": "2026-01-25T19:00:14.000Z",
+            "summary": "<h4>Balancing the need to know with the need to get shovels in the ground is causing friction in communities across the country</h4> <p><strong>feature</strong>  Applied Digital CEO Wes Cummins said when his company decides on a location for a datacenter, he asks town officials to sign non-disclosure agreements to stop politicians from leaking insider information.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses the use of NDAs to restrict the flow of insider information about datacenter locations, which relates to controlling sensitive data and preventing unauthorized information disclosure, a defensive aspect of information security."
+          },
+          {
+            "title": "Surrender as a service: Microsoft unlocks BitLocker for feds",
+            "url": "https://www.theregister.com/2026/01/23/surrender_as_a_service_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-23T20:41:07.000Z",
+            "summary": "<h4>If you're serious about encryption, keep control of your encryption keys</h4> <p><strong>updated</strong>  If you think using Microsoft's BitLocker encryption will keep your data 100 percent safe, think again. Last year, Redmond reportedly provided the FBI with encryption keys to unlock the laptops of Windows users charged in a fraud indictment.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses how encryption keys can be accessed by third parties (Microsoft, FBI), which relates to gathering sensitive security information, though it's more about key management and legal access than active reconnaissance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Patch or die: VMware vCenter Server bug fixed in 2024 under attack today",
+            "url": "https://www.theregister.com/2026/01/23/critical_vmware_vcenter_server_bug/",
+            "source": "The Register",
+            "published": "2026-01-23T22:04:13.000Z",
+            "summary": "<h4>If you skipped it back then, now’s a very good time</h4> <p>You've got to keep your software updated. Some unknown miscreants are exploiting a critical VMware vCenter Server bug more than a year after Broadcom patched the flaw.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes an active security incident involving exploitation of a known vulnerability, requiring urgent patching and response, which aligns directly with incident management processes for detection, response, and resolution."
+          },
+          {
+            "title": "London boroughs limping back online months after cyberattack",
+            "url": "https://www.theregister.com/2026/01/23/landmark_milestone_as_hammersmith_fulham/",
+            "source": "The Register",
+            "published": "2026-01-23T10:34:57.000Z",
+            "summary": "<h4>Direct debits? Maybe February. Birth certificates? Dream on. Council tax bills? Oh, those are coming</h4> <p>Hammersmith &amp; Fulham Council says payments are now being processed as usual, two months after a cyberattack that affected multiple boroughs in the UK's capital city.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article details a cyberattack incident affecting multiple councils, describing the response actions taken (isolating networks, investigating impacts, restoring services), which aligns directly with incident management processes for identifying, responding to, and recovering from IT service disruptions."
+          },
+          {
+            "title": "UK border tech budget swells by £100M as Home Office targets small boat crossings",
+            "url": "https://www.theregister.com/2026/01/24/home_office_small_boats/",
+            "source": "The Register",
+            "published": "2026-01-24T09:29:14.000Z",
+            "summary": "<h4>Drone, satellite, and other data combined to monitor unwanted vessels</h4> <p>The UK Home Office is spending up to £100 million on intelligence tech in part to tackle the so-called \"small boats\" issue of refugees and irregular immigrants coming across the English Channel.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article describes a system to autonomously detect and track unauthorized vessels, which aligns with incident management's focus on identifying, logging, and responding to events that disrupt normal operations, though the context is border security rather than IT services."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Surrender as a service: Microsoft unlocks BitLocker for feds",
+            "url": "https://www.theregister.com/2026/01/23/surrender_as_a_service_microsoft/",
+            "source": "The Register",
+            "published": "2026-01-23T20:41:07.000Z",
+            "summary": "<h4>If you're serious about encryption, keep control of your encryption keys</h4> <p><strong>updated</strong>  If you think using Microsoft's BitLocker encryption will keep your data 100 percent safe, think again. Last year, Redmond reportedly provided the FBI with encryption keys to unlock the laptops of Windows users charged in a fraud indictment.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on BitLocker encryption keys, their storage, backup, and retrieval by Microsoft and organizations, directly relating to how encrypted data is stored and accessed."
+          },
+          {
+            "title": "ShinyHunters claims Okta customer breaches, leaks data belonging to 3 orgs",
+            "url": "https://www.theregister.com/2026/01/23/shinyhunters_claims_okta_customer_breaches/",
+            "source": "The Register",
+            "published": "2026-01-23T18:46:37.000Z",
+            "summary": "<h4>'A lot more' victims to come, we're told</h4> <p>ShinyHunters has claimed responsibility for an Okta voice-phishing campaign during which the extortionist crew allegedly gained access to Crunchbase and Betterment.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach where sensitive customer data was allegedly stolen and leaked, which directly involves the storage, security, and potential retrieval of digital information by both the organizations and the attackers."
+          },
+          {
+            "title": "Tech support detective solved PC crime by looking in the carpark",
+            "url": "https://www.theregister.com/2026/01/23/on_call/",
+            "source": "The Register",
+            "published": "2026-01-23T07:30:14.000Z",
+            "summary": "<h4>Overnight action made for a sticky situation in the candy factory</h4> <p><strong>On Call</strong>  Some tech support jobs are sweet, and others go sour. Whatever taste they leave in your mouth, <em>The Register</em> celebrates them all each week in On Call – the reader-contributed column that shares your support experiences.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article involves analyzing log files (firewall logs, system logs) to investigate unauthorized access and malicious software installation, which directly relates to retrieving and interpreting stored digital evidence."
+          }
+        ]
+      }
+    ]
+  }
+]
