@@ -186,6 +186,24 @@ export default function NewsletterPage() {
     }
   };
 
+  const handleSendSubscription = async (subscriptionId: number) => {
+    try {
+      setErrorMessage('');
+      setSuccessMessage('');
+      const token = localStorage.getItem('token');
+      const res = await fetch(`http://localhost:5000/api/user/newsletter-subscriptions/send/${subscriptionId}`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error || 'Failed to send newsletter');
+      setSuccessMessage('✓ Newsletter sent successfully');
+      setTimeout(() => setSuccessMessage(''), 3000);
+    } catch (err) {
+      setErrorMessage(err instanceof Error ? err.message : 'Error sending newsletter');
+    }
+  };
+
   const handleToggleActive = async (subscription: Subscription) => {
     try {
       const token = localStorage.getItem("token");
@@ -401,6 +419,13 @@ export default function NewsletterPage() {
                           .map((t) => t.title)
                           .join(", ")}
                       </p>
+
+                      <button
+                        onClick={() => handleSendSubscription(sub.id)}
+                        className="w-full mb-2 px-2 py-1 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded transition-colors"
+                      >
+                        Send
+                      </button>
 
                       <button
                         onClick={() => handleDeleteSubscription(sub.id)}

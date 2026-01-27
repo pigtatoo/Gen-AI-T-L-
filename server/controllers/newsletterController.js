@@ -3,6 +3,8 @@ const path = require('path');
 const PDFDocument = require('pdfkit');
 const axios = require('axios');
 const { marked } = require('marked');
+const nodemailer = require('nodemailer');
+const supabase = require('../config/supabase');
 
 /**
  * Render markdown text to PDF with formatting
@@ -491,17 +493,119 @@ async function generateNewsletter(req, res) {
 
     // Generate PDF with articles (if any) and AI content
     console.log("Generating PDF with all sections...");
-    generatePDF(res, filteredArticles, moduleTitle, topicTitles || [], aiContent, region);
+      generatePDF(res, filteredArticles, moduleTitle, topicTitles || [], aiContent, region);
   } catch (err) {
     console.error("Error in generateNewsletter:", err);
     res.status(500).json({ error: 'Failed to generate newsletter', details: err.message });
   }
 }
 
-module.exports = { 
-  generateNewsletter,
-  generateAIContent,
-  getLatestArticles,
-  filterArticlesByModuleAndTopics,
-  renderMarkdownToPDF
-};
+  // Send newsletter for a subscription (generate PDF buffer and email it)
+  async function sendSubscriptionNewsletter(subscriptionId, user) {
+    try {
+      const { data: subscription, error: subErr } = await supabase
+        .from('user_newsletter_subscriptions')
+        .select()
+        .eq('id', subscriptionId)
+        .single();
+
+      if (subErr || !subscription) return { success: false, error: 'Subscription not found' };
+      if (subscription.user_id !== user.id) return { success: false, error: 'Not authorized' };
+
+      const moduleId = subscription.module_id;
+      const topicIds = subscription.topic_ids || [];
+      const toEmail = subscription.email;
+
+      // Get module info
+      let moduleTitle = `Module ${moduleId}`;
+      try {
+        const { data: modData, error: modErr } = await supabase.from('Modules').select('module_id,title,description').eq('module_id', moduleId).single();
+        if (!modErr && modData) moduleTitle = modData.title || moduleTitle;
+      } catch (e) {
+        console.warn('Failed to fetch module title from Supabase', e.message || e);
+      }
+
+      const allArticles = getLatestArticles();
+      const articles = filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds);
+
+      let aiContent = null;
+      try { aiContent = await generateAIContent(topicIds, moduleTitle, 'case-study', null, articles); } catch (e) { console.warn('AI content generation failed', e); }
+
+      const doc = new PDFDocument({ margin: 40, bufferPages: true });
+      const chunks = [];
+      doc.on('data', c => chunks.push(c));
+
+      const endPromise = new Promise((resolve, reject) => {
+        doc.on('end', () => resolve(Buffer.concat(chunks)));
+        doc.on('error', reject);
+      });
+
+      doc.fontSize(20).font('Helvetica-Bold').text('Synthora Newsletter', { align: 'center' });
+      doc.moveDown(0.5);
+      doc.fontSize(16).font('Helvetica').text(moduleTitle, { align: 'center' });
+      doc.moveDown();
+
+      if (Array.isArray(topicIds) && topicIds.length) {
+        doc.fontSize(12).font('Helvetica-Bold').text('Topics:');
+        doc.fontSize(11).font('Helvetica').text(topicIds.join(', '));
+        doc.moveDown();
+      }
+
+      if (aiContent) {
+        doc.fontSize(12).font('Helvetica-Bold').text('AI Summary:');
+        doc.moveDown(0.2);
+        doc.fontSize(10).font('Helvetica').text(aiContent, { width: 500 });
+        doc.moveDown();
+      }
+
+      if (articles && articles.length > 0) {
+        doc.fontSize(12).font('Helvetica-Bold').text('Articles:');
+        doc.moveDown(0.2);
+        articles.forEach((a, idx) => {
+          const title = a.title || a.headline || `Article ${idx + 1}`;
+          const url = a.url || a.link || '';
+          doc.fontSize(11).font('Helvetica-Bold').text(`${idx + 1}. ${title}`);
+          if (url) doc.fontSize(10).font('Helvetica').fillColor('blue').text(url, { link: url });
+          doc.fillColor('black');
+          doc.moveDown(0.5);
+        });
+      } else {
+        doc.fontSize(11).font('Helvetica').text('No recent articles available for these topics.');
+      }
+
+      doc.end();
+      const pdfBuffer = await endPromise;
+
+      const EMAIL_FROM = process.env.EMAIL_FROM;
+      const PASS = process.env.PASS;
+      if (!EMAIL_FROM || !PASS) return { success: false, error: 'Email not configured on server' };
+
+      const primary = nodemailer.createTransport({ host: 'smtp.gmail.com', port: 465, secure: true, auth: { user: EMAIL_FROM, pass: PASS }, tls: { rejectUnauthorized: false } });
+      try {
+        await primary.sendMail({ from: EMAIL_FROM, to: toEmail, subject: 'Synthora Newsletter', text: 'Please find the attached newsletter.', attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] });
+        return { success: true, info: { emailedTo: toEmail } };
+      } catch (pErr) {
+        console.error('Primary SMTP send failed:', pErr && pErr.code ? pErr.code : pErr.message || pErr);
+        const fallback = nodemailer.createTransport({ host: 'smtp.gmail.com', port: 587, secure: false, requireTLS: true, auth: { user: EMAIL_FROM, pass: PASS }, tls: { rejectUnauthorized: false } });
+        try {
+          await fallback.sendMail({ from: EMAIL_FROM, to: toEmail, subject: 'Synthora Newsletter', text: 'Please find the attached newsletter.', attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] });
+          return { success: true, info: { emailedTo: toEmail, fallback: true } };
+        } catch (fErr) {
+          console.error('Fallback SMTP send failed:', fErr && fErr.code ? fErr.code : fErr.message || fErr);
+          return { success: false, error: 'Failed to send email' };
+        }
+      }
+    } catch (err) {
+      console.error('sendSubscriptionNewsletter error:', err);
+      return { success: false, error: err.message || 'Internal error' };
+    }
+  }
+
+  module.exports = { 
+    generateNewsletter,
+    generateAIContent,
+    getLatestArticles,
+    filterArticlesByModuleAndTopics,
+    renderMarkdownToPDF,
+    sendSubscriptionNewsletter
+  };

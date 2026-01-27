@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { authenticate: auth } = require('../middleware/auth');
 const supabase = require('../config/supabase');
+const newsletterController = require('../controllers/newsletterController');
 
 /**
  * GET /api/user/newsletter-subscriptions
@@ -182,6 +183,22 @@ router.get('/module/:moduleId', auth, async (req, res) => {
   } catch (err) {
     console.error('Error fetching subscription:', err);
     res.status(500).json({ error: 'Failed to fetch subscription' });
+  }
+});
+
+/**
+ * POST /api/user/newsletter-subscriptions/send/:id
+ * Generate newsletter for the subscription and email it to the subscription email
+ */
+router.post('/send/:id', auth, async (req, res) => {
+  try {
+    const subscriptionId = parseInt(req.params.id);
+    const result = await newsletterController.sendSubscriptionNewsletter(subscriptionId, req.user);
+    if (!result.success) return res.status(500).json({ error: result.error || 'Failed to send newsletter' });
+    res.json({ message: 'Newsletter sent', info: result.info });
+  } catch (err) {
+    console.error('Error sending newsletter:', err);
+    res.status(500).json({ error: err.message || 'Failed to send newsletter' });
   }
 });
 

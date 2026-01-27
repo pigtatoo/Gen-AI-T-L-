@@ -15,6 +15,7 @@ const feedRoutes = require('./routes/feeds');
 const newsletterRoutes = require('./routes/newsletters');
 const newsletterSubscriptionRoutes = require('./routes/newsletter-subscriptions');
 const adminRoutes = require('./routes/admin');
+const testRoutes = require('./routes/test');
 
 // Scheduler
 const { initScheduler } = require('./jobs/scheduler');
@@ -83,6 +84,8 @@ app.use('/api/articles', articlesRoutes);
 app.use('/api/quiz', quizRoutes);
 // Admin routes (staff only)
 app.use('/api/admin', adminRoutes);
+// Test submissions (simple email + content storage)
+app.use('/api/test', testRoutes);
 
 // -----------------------------
 // DeepSeek Chat Endpoint
