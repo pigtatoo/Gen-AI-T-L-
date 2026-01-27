@@ -37,8 +37,12 @@ function LoginPage() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
 
-      // Redirect to chat page
-      router.push("/landingpage");
+      // Redirect based on role
+      if (data.user?.role === 'staff') {
+        router.push('/staffpage');
+      } else {
+        router.push('/landingpage');
+      }
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error("Login error:", err);
