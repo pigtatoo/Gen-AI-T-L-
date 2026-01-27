@@ -80,7 +80,7 @@ function renderMarkdownToPDF(doc, markdownText, options = {}) {
 }
 
 /**
- * Generate content using AI (DeepSeek/OpenRouter)
+ * Generate content using AI (DeepSeek)
  */
 async function generateAIContent(topics, moduleTitle, contentType, region = null, articles = null) {
   try {
@@ -518,19 +518,45 @@ async function generateNewsletter(req, res) {
 
       // Get module info
       let moduleTitle = `Module ${moduleId}`;
+      let topicTitles = [];
       try {
         const { data: modData, error: modErr } = await supabase.from('Modules').select('module_id,title,description').eq('module_id', moduleId).single();
         if (!modErr && modData) moduleTitle = modData.title || moduleTitle;
+
+        // Get topic titles for the selected topics
+        const { data: topicsData, error: topicsErr } = await supabase
+          .from('Topics')
+          .select('topic_id,title')
+          .eq('module_id', moduleId);
+        
+        if (!topicsErr && topicsData) {
+          topicTitles = topicsData
+            .filter(t => topicIds.includes(t.topic_id))
+            .map(t => t.title);
+        }
       } catch (e) {
-        console.warn('Failed to fetch module title from Supabase', e.message || e);
+        console.warn('Failed to fetch module/topic info from Supabase', e.message || e);
       }
 
+      // Get latest articles and filter by module and topics
       const allArticles = getLatestArticles();
       const articles = filterArticlesByModuleAndTopics(allArticles, moduleId, topicIds);
 
-      let aiContent = null;
-      try { aiContent = await generateAIContent(topicIds, moduleTitle, 'case-study', null, articles); } catch (e) { console.warn('AI content generation failed', e); }
+      // Generate AI content in parallel (case study, Q&A, definitions) with global region
+      console.log("Generating AI content for subscription newsletter...");
+      const [caseStudy, qa, definitions] = await Promise.all([
+        generateAIContent(topicTitles, moduleTitle, 'case-study', null, articles),
+        generateAIContent(topicTitles, moduleTitle, 'qa'),
+        generateAIContent(topicTitles, moduleTitle, 'definitions')
+      ]);
 
+      const aiContent = {
+        caseStudy: caseStudy || 'Unable to generate case study at this time.',
+        qa: qa || 'Unable to generate Q&A at this time.',
+        definitions: definitions || 'Unable to generate definitions at this time.'
+      };
+
+      // Generate comprehensive PDF with same format as chatpage
       const doc = new PDFDocument({ margin: 40, bufferPages: true });
       const chunks = [];
       doc.on('data', c => chunks.push(c));
@@ -540,38 +566,130 @@ async function generateNewsletter(req, res) {
         doc.on('error', reject);
       });
 
-      doc.fontSize(20).font('Helvetica-Bold').text('Synthora Newsletter', { align: 'center' });
-      doc.moveDown(0.5);
-      doc.fontSize(16).font('Helvetica').text(moduleTitle, { align: 'center' });
-      doc.moveDown();
+      // ===== TITLE PAGE =====
+      doc.fontSize(28).font('Helvetica-Bold').text('Module Newsletter', { align: 'center', width: 500 });
+      doc.fontSize(18).font('Helvetica').text(moduleTitle, { align: 'center', width: 500 });
+      doc.fontSize(12).font('Helvetica').text(`Generated: ${new Date().toLocaleDateString()}`, {
+        align: 'center',
+        underline: true,
+        width: 500
+      });
+      doc.fontSize(10).text(`Topics: ${topicTitles.join(', ')}`, { align: 'center', width: 500 });
+      doc.moveDown(3);
 
-      if (Array.isArray(topicIds) && topicIds.length) {
-        doc.fontSize(12).font('Helvetica-Bold').text('Topics:');
-        doc.fontSize(11).font('Helvetica').text(topicIds.join(', '));
-        doc.moveDown();
-      }
+      // Table of Contents
+      doc.fontSize(12).font('Helvetica-Bold').text('Contents:', { width: 500 });
+      doc.fontSize(10).font('Helvetica');
+      doc.text('1. Featured Articles (if available)', { width: 500 });
+      doc.text('2. Case Study', { width: 500 });
+      doc.text('3. Key Concepts & Definitions', { width: 500 });
+      doc.text('4. Q&A Section', { width: 500 });
+      doc.moveDown(2);
 
-      if (aiContent) {
-        doc.fontSize(12).font('Helvetica-Bold').text('AI Summary:');
-        doc.moveDown(0.2);
-        doc.fontSize(10).font('Helvetica').text(aiContent, { width: 500 });
-        doc.moveDown();
-      }
+      // ===== SECTION 1: ARTICLES =====
+      if (articles.length > 0) {
+        doc.addPage();
+        doc.fontSize(16).font('Helvetica-Bold').text('Featured Articles', { underline: true });
+        doc.fontSize(10).text(`${articles.length} relevant articles`, { 
+          color: '#666666',
+          width: 500 
+        });
+        doc.moveDown(1);
 
-      if (articles && articles.length > 0) {
-        doc.fontSize(12).font('Helvetica-Bold').text('Articles:');
-        doc.moveDown(0.2);
-        articles.forEach((a, idx) => {
-          const title = a.title || a.headline || `Article ${idx + 1}`;
-          const url = a.url || a.link || '';
-          doc.fontSize(11).font('Helvetica-Bold').text(`${idx + 1}. ${title}`);
-          if (url) doc.fontSize(10).font('Helvetica').fillColor('blue').text(url, { link: url });
-          doc.fillColor('black');
-          doc.moveDown(0.5);
+        articles.forEach((article, index) => {
+          try {
+            doc.fontSize(12).font('Helvetica-Bold').text(`${index + 1}. ${article.title || 'Untitled'}`, {
+              align: 'left',
+              width: 500
+            });
+
+            doc.fontSize(9).font('Helvetica').fillColor('#666666');
+            doc.text(`Source: ${article.source || 'Unknown'}`, { width: 500 });
+            doc.text(`Published: ${new Date(article.published).toLocaleDateString()}`, { width: 500 });
+            if (article.confidence) {
+              doc.text(`Confidence: ${(article.confidence * 100).toFixed(0)}%`, { width: 500 });
+            }
+            doc.fillColor('blue').text(`Link: ${article.url || '#'}`, { width: 500 });
+
+            doc.moveDown(0.3);
+            doc.fontSize(9).font('Helvetica').fillColor('black');
+            
+            const cleanSummary = (article.summary || '')
+              .replace(/<[^>]*>/g, '')
+              .replace(/&nbsp;/g, ' ')
+              .replace(/&quot;/g, '"')
+              .replace(/&amp;/g, '&')
+              .replace(/&lt;/g, '<')
+              .replace(/&gt;/g, '>')
+              .trim();
+
+            doc.text(cleanSummary, { align: 'left', width: 500 });
+            doc.moveDown(1);
+
+            if (index < articles.length - 1 && doc.y > 700) {
+              doc.addPage();
+            }
+          } catch (articleErr) {
+            console.error(`Error processing article ${index}:`, articleErr.message);
+          }
         });
       } else {
-        doc.fontSize(11).font('Helvetica').text('No recent articles available for these topics.');
+        doc.fontSize(10).fillColor('#999999').text('(No articles found for this date range)', { width: 500 });
+        doc.moveDown(1);
       }
+
+      // ===== SECTION 2: CASE STUDY =====
+      doc.addPage();
+      doc.fontSize(16).font('Helvetica-Bold').text('Case Study', { underline: true });
+      doc.moveDown(0.5);
+
+      if (aiContent.caseStudy) {
+        doc.fontSize(10).font('Helvetica').fillColor('black');
+        renderMarkdownToPDF(doc, aiContent.caseStudy, { width: 500, fontSize: 10 });
+      } else {
+        doc.fontSize(10).fillColor('#999999').text('(Case study could not be generated. Check DEEPSEEK_KEY in .env)', {
+          width: 500
+        });
+      }
+
+      // ===== SECTION 3: KEY CONCEPTS & DEFINITIONS =====
+      doc.addPage();
+      doc.fontSize(16).font('Helvetica-Bold').text('Key Concepts & Definitions', { underline: true });
+      doc.moveDown(0.5);
+
+      if (aiContent.definitions) {
+        doc.fontSize(10).font('Helvetica').fillColor('black');
+        renderMarkdownToPDF(doc, aiContent.definitions, { width: 500, fontSize: 10 });
+      } else {
+        doc.fontSize(10).fillColor('#999999').text('(Definitions could not be generated. Check DEEPSEEK_KEY in .env)', {
+          width: 500
+        });
+      }
+
+      // ===== SECTION 4: Q&A =====
+      doc.addPage();
+      doc.fontSize(16).font('Helvetica-Bold').text('Questions & Answers', { underline: true });
+      doc.moveDown(0.5);
+
+      if (aiContent.qa) {
+        doc.fontSize(10).font('Helvetica').fillColor('black');
+        renderMarkdownToPDF(doc, aiContent.qa, { width: 500, fontSize: 10 });
+      } else {
+        doc.fontSize(10).fillColor('#999999').text('(Q&A could not be generated. Check DEEPSEEK_KEY in .env)', {
+          width: 500
+        });
+      }
+
+      // ===== FOOTER =====
+      doc.addPage();
+      doc.fontSize(8).fillColor('#999999');
+      doc.text('---', { align: 'center' });
+      doc.text('This comprehensive newsletter was auto-generated from your learning module', {
+        align: 'center'
+      });
+      doc.text('combining relevant articles, AI-generated insights, and study materials', {
+        align: 'center'
+      });
 
       doc.end();
       const pdfBuffer = await endPromise;
