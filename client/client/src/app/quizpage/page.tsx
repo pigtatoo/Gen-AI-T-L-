@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import * as XLSX from "xlsx";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -60,7 +60,7 @@ interface QuizMessage {
   score?: boolean;
 }
 
-export default function QuizPage() {
+function QuizPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const moduleId = searchParams.get("moduleId");
@@ -991,3 +991,13 @@ export default function QuizPage() {
     </div>
   );
 }
+
+function QuizPageWrapper() {
+  return (
+    <Suspense fallback={<div className="flex h-screen items-center justify-center"><div className="text-gray-600">Loading quiz...</div></div>}>
+      <QuizPage />
+    </Suspense>
+  );
+}
+
+export default QuizPageWrapper;

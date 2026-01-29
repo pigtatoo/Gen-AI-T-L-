@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
@@ -335,4 +335,12 @@ function ModulePage() {
   );
 }
 
-export default ModulePage;
+function ModulePageWrapper() {
+  return (
+    <Suspense fallback={<div className="flex h-screen items-center justify-center"><div className="text-gray-600">Loading module...</div></div>}>
+      <ModulePage />
+    </Suspense>
+  );
+}
+
+export default ModulePageWrapper;

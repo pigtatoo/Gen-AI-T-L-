@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 
@@ -27,7 +27,7 @@ interface Topic {
   created_at: string;
 }
 
-export default function ChatPage() {
+function ChatPage() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [selectedTopics, setSelectedTopics] = useState<number[]>([]);
@@ -891,3 +891,13 @@ export default function ChatPage() {
     </div>
   );
 }
+
+function ChatPageWrapper() {
+  return (
+    <Suspense fallback={<div className="flex h-screen items-center justify-center"><div className="text-gray-600">Loading...</div></div>}>
+      <ChatPage />
+    </Suspense>
+  );
+}
+
+export default ChatPageWrapper;
