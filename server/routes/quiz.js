@@ -7,8 +7,8 @@ const { generateQuizQuestion } = require('../services/quizService');
 // Generate one quiz question for selected topics
 router.post('/generate', authenticate, async (req, res) => {
   try {
-    const { selectedTopics } = req.body;
-    const quiz = await generateQuizQuestion(selectedTopics || []);
+    const { selectedTopics, questionType } = req.body;
+    const quiz = await generateQuizQuestion(selectedTopics || [], questionType || 'MC');
     res.json({ quiz });
   } catch (err) {
     console.error('Quiz generation failed:', err.message);
