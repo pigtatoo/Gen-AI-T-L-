@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface UserItem {
   id: number;
   name: string;
@@ -39,7 +41,7 @@ export default function StaffPage() {
     const fetchUsers = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch('http://localhost:5000/api/admin/users', {
+        const res = await fetch(`${API_URL}/api/admin/users`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!res.ok) throw new Error('Failed to fetch users');
@@ -76,7 +78,7 @@ export default function StaffPage() {
     setUsers((prevUsers) => prevUsers.map(u => (u.id === id ? { ...u, role: role as any } : u)));
     setActionStatus(prev => ({ ...prev, [id]: 'saving' }));
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/users/${id}/role`, {
+      const res = await fetch(`${API_URL}/api/admin/users/${id}/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

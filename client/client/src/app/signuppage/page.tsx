@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 function SignupPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,7 +27,7 @@ function SignupPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/signup", {
+      const response = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +52,7 @@ function SignupPage() {
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error("Signup error:", err);
-      setError("Network error. Make sure the server is running on http://localhost:5000");
+      setError("Network error. Please check your connection and try again.");
     } finally {
       setIsLoading(false);
     }

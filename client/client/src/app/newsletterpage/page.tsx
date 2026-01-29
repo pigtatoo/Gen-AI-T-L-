@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface Module {
   module_id: number;
   title: string;
@@ -58,7 +60,7 @@ export default function NewsletterPage() {
       setEmail(userEmail);
 
       // Fetch modules
-      const modulesRes = await fetch("http://localhost:5000/api/modules", {
+      const modulesRes = await fetch(`${API_URL}/api/modules`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -70,7 +72,7 @@ export default function NewsletterPage() {
       const topicsMap: { [key: number]: Topic[] } = {};
       for (const module of modulesData) {
         const topicsRes = await fetch(
-          `http://localhost:5000/api/modules/${module.module_id}/topics`,
+          `${API_URL}/api/modules/${module.module_id}/topics`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         if (topicsRes.ok) {
@@ -82,7 +84,7 @@ export default function NewsletterPage() {
 
       // Fetch existing subscriptions
       const subsRes = await fetch(
-        "http://localhost:5000/api/user/newsletter-subscriptions",
+        `${API_URL}/api/user/newsletter-subscriptions`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -130,7 +132,7 @@ export default function NewsletterPage() {
 
       const token = localStorage.getItem("token");
 
-      const response = await fetch("http://localhost:5000/api/user/newsletter-subscriptions", {
+      const response = await fetch(`${API_URL}/api/user/newsletter-subscriptions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,7 +173,7 @@ export default function NewsletterPage() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/user/newsletter-subscriptions/${subscriptionId}`,
+        `${API_URL}/api/user/newsletter-subscriptions/${subscriptionId}`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },
@@ -194,7 +196,7 @@ export default function NewsletterPage() {
       setSuccessMessage('');
       setSendingSubscriptionId(subscriptionId);
       const token = localStorage.getItem('token');
-      const res = await fetch(`http://localhost:5000/api/user/newsletter-subscriptions/send/${subscriptionId}`, {
+      const res = await fetch(`${API_URL}/api/user/newsletter-subscriptions/send/${subscriptionId}`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -222,7 +224,7 @@ export default function NewsletterPage() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/user/newsletter-subscriptions/${subscription.id}`,
+        `${API_URL}/api/user/newsletter-subscriptions/${subscription.id}`,
         {
           method: "PUT",
           headers: {

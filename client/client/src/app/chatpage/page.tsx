@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface ChatMessage {
   type: "user" | "bot";
   text: string;
@@ -101,7 +103,7 @@ export default function ChatPage() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/modules/${moduleId}`, {
+      const response = await fetch(`${API_URL}/api/modules/${moduleId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -130,7 +132,7 @@ export default function ChatPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}/topics`,
+        `${API_URL}/api/modules/${moduleId}/topics`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -154,7 +156,7 @@ export default function ChatPage() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}/topics`,
+        `${API_URL}/api/modules/${moduleId}/topics`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
@@ -185,7 +187,7 @@ export default function ChatPage() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}/topics/${topicId}`,
+        `${API_URL}/api/modules/${moduleId}/topics/${topicId}`,
         { method: "DELETE", headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -227,7 +229,7 @@ export default function ChatPage() {
         region: selectedRegion,
       });
 
-      const response = await fetch("http://localhost:5000/api/newsletters/generate", {
+      const response = await fetch(`${API_URL}/api/newsletters/generate`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -292,7 +294,7 @@ export default function ChatPage() {
         .filter(t => selectedTopics.includes(t.topic_id))
         .map(t => t.title);
 
-      const response = await fetch("http://localhost:5000/api/chat", {
+      const response = await fetch(`${API_URL}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -393,7 +395,7 @@ export default function ChatPage() {
         .filter(t => selectedTopics.includes(t.topic_id))
         .map(t => t.title);
 
-      const res = await fetch('http://localhost:5000/api/quiz/generate', {
+      const res = await fetch(`${API_URL}/api/quiz/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify({ selectedTopics: selectedTopicTitles })

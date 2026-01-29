@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface Module {
   module_id: number;
   title: string;
@@ -43,7 +45,7 @@ function ModulePage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}`,
+        `${API_URL}/api/modules/${moduleId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -80,7 +82,7 @@ function ModulePage() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}`,
+        `${API_URL}/api/modules/${moduleId}`,
         {
           method: "PUT",
           headers: {
@@ -115,7 +117,7 @@ function ModulePage() {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}`,
+        `${API_URL}/api/modules/${moduleId}`,
         {
           method: "DELETE",
           headers: {

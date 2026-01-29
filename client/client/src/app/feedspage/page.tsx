@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import AddFeedComponent from "../components/AddFeedComponent";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface Feed {
   feed_id: number;
   user_id: number;
@@ -36,7 +38,7 @@ export default function FeedsPage() {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/feeds", {
+      const response = await fetch(`${API_URL}/api/feeds`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -74,7 +76,7 @@ export default function FeedsPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/feeds/${feedId}`,
+        `${API_URL}/api/feeds/${feedId}`,
         {
           method: "DELETE",
           headers: {

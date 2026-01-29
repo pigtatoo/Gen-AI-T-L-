@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import * as XLSX from "xlsx";
 import { useSearchParams, useRouter } from "next/navigation";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+
 interface Module {
   module_id: number;
   title: string;
@@ -312,7 +314,7 @@ export default function QuizPage() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/modules/${moduleId}`, {
+      const response = await fetch(`${API_URL}/api/modules/${moduleId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -334,7 +336,7 @@ export default function QuizPage() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/modules/${moduleId}/topics`,
+        `${API_URL}/api/modules/${moduleId}/topics`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -375,7 +377,7 @@ export default function QuizPage() {
       
       // Generate quizzes for each type
       for (const qType of questionTypeArray) {
-        const res = await fetch('http://localhost:5000/api/quiz/generate', {
+        const res = await fetch(`${API_URL}/api/quiz/generate`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
           body: JSON.stringify({ selectedTopics: selectedTopicTitles, questionType: qType })
@@ -474,7 +476,7 @@ export default function QuizPage() {
         .filter(t => selectedTopics.includes(t.topic_id))
         .map(t => t.title);
 
-      const response = await fetch("http://localhost:5000/api/quiz/download-pdf", {
+      const response = await fetch(`${API_URL}/api/quiz/download-pdf`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
