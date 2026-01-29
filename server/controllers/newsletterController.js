@@ -694,63 +694,60 @@ async function generateNewsletter(req, res) {
       doc.end();
       const pdfBuffer = await endPromise;
 
-      // Try Brevo (recommended for production - works with cloud hosting)
-      const BREVO_SMTP_SERVER = process.env.BREVO_SMTP_SERVER;
-      const BREVO_SMTP_PORT = process.env.BREVO_SMTP_PORT;
-      const BREVO_SMTP_USER = process.env.BREVO_SMTP_USER;
-      const BREVO_SMTP_PASS = process.env.BREVO_SMTP_PASS;
-      const BREVO_FROM_EMAIL = process.env.BREVO_FROM_EMAIL || process.env.EMAIL_FROM;
-      
-      if (BREVO_SMTP_SERVER && BREVO_SMTP_USER && BREVO_SMTP_PASS && BREVO_FROM_EMAIL) {
-        try {
-          const brevoTransporter = nodemailer.createTransport({
-            host: BREVO_SMTP_SERVER,
-            port: parseInt(BREVO_SMTP_PORT) || 587,
-            secure: false, // Use TLS
-            auth: {
-              user: BREVO_SMTP_USER,
-              pass: BREVO_SMTP_PASS
-            }
-          });
-
-          await brevoTransporter.sendMail({
-            from: BREVO_FROM_EMAIL,
-            to: toEmail,
-            subject: 'Synthora Newsletter',
-            text: 'Please find the attached newsletter.',
-            html: '<p>Please find the attached newsletter.</p>',
-            attachments: [{
-              filename: 'newsletter.pdf',
-              content: pdfBuffer
-            }]
-          });
-
-          console.log('✓ Email sent via Brevo to:', toEmail);
-          return { success: true, info: { emailedTo: toEmail, service: 'brevo' } };
-        } catch (brevoErr) {
-          console.error('Brevo error:', brevoErr);
-          // Fall through to Gmail SMTP
-        }
-      }
-
-      // Fallback to Gmail SMTP (for local development only)
+      // Use Gmail SMTP (works locally, may timeout in production)
       const EMAIL_FROM = process.env.EMAIL_FROM;
       const PASS = process.env.PASS;
       if (!EMAIL_FROM || !PASS) return { success: false, error: 'Email not configured on server' };
 
-      const primary = nodemailer.createTransport({ host: 'smtp.gmail.com', port: 465, secure: true, auth: { user: EMAIL_FROM, pass: PASS }, tls: { rejectUnauthorized: false } });
+      // Try port 465 (SSL) first
+      const primary = nodemailer.createTransport({ 
+        host: 'smtp.gmail.com', 
+        port: 465, 
+        secure: true, 
+        auth: { user: EMAIL_FROM, pass: PASS }, 
+        tls: { rejectUnauthorized: false },
+        connectionTimeout: 10000,
+        greetingTimeout: 10000
+      });
+      
       try {
-        await primary.sendMail({ from: EMAIL_FROM, to: toEmail, subject: 'Synthora Newsletter', text: 'Please find the attached newsletter.', attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] });
-        return { success: true, info: { emailedTo: toEmail } };
+        await primary.sendMail({ 
+          from: EMAIL_FROM, 
+          to: toEmail, 
+          subject: 'Synthora Newsletter', 
+          text: 'Please find the attached newsletter.', 
+          attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] 
+        });
+        console.log('✓ Email sent via Gmail (port 465) to:', toEmail);
+        return { success: true, info: { emailedTo: toEmail, service: 'gmail-465' } };
       } catch (pErr) {
-        console.error('Primary SMTP send failed:', pErr && pErr.code ? pErr.code : pErr.message || pErr);
-        const fallback = nodemailer.createTransport({ host: 'smtp.gmail.com', port: 587, secure: false, requireTLS: true, auth: { user: EMAIL_FROM, pass: PASS }, tls: { rejectUnauthorized: false } });
+        console.error('Gmail port 465 failed:', pErr && pErr.code ? pErr.code : pErr.message || pErr);
+        
+        // Try port 587 (TLS) as fallback
+        const fallback = nodemailer.createTransport({ 
+          host: 'smtp.gmail.com', 
+          port: 587, 
+          secure: false, 
+          requireTLS: true, 
+          auth: { user: EMAIL_FROM, pass: PASS }, 
+          tls: { rejectUnauthorized: false },
+          connectionTimeout: 10000,
+          greetingTimeout: 10000
+        });
+        
         try {
-          await fallback.sendMail({ from: EMAIL_FROM, to: toEmail, subject: 'Synthora Newsletter', text: 'Please find the attached newsletter.', attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] });
-          return { success: true, info: { emailedTo: toEmail, fallback: true } };
+          await fallback.sendMail({ 
+            from: EMAIL_FROM, 
+            to: toEmail, 
+            subject: 'Synthora Newsletter', 
+            text: 'Please find the attached newsletter.', 
+            attachments: [{ filename: 'newsletter.pdf', content: pdfBuffer }] 
+          });
+          console.log('✓ Email sent via Gmail (port 587) to:', toEmail);
+          return { success: true, info: { emailedTo: toEmail, service: 'gmail-587' } };
         } catch (fErr) {
-          console.error('Fallback SMTP send failed:', fErr && fErr.code ? fErr.code : fErr.message || fErr);
-          return { success: false, error: 'Failed to send email' };
+          console.error('Gmail port 587 failed:', fErr && fErr.code ? fErr.code : fErr.message || fErr);
+          return { success: false, error: 'Failed to send email - SMTP timeout or blocked' };
         }
       }
     } catch (err) {
