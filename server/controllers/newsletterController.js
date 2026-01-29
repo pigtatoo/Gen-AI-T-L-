@@ -4,6 +4,7 @@ const PDFDocument = require('pdfkit');
 const axios = require('axios');
 const { marked } = require('marked');
 const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 const supabase = require('../config/supabase');
 
 /**
@@ -694,6 +695,39 @@ async function generateNewsletter(req, res) {
       doc.end();
       const pdfBuffer = await endPromise;
 
+      // Try Resend first (production-friendly), fallback to nodemailer
+      const RESEND_API_KEY = process.env.RESEND_API_KEY;
+      const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+      
+      if (RESEND_API_KEY) {
+        // Use Resend (recommended for production)
+        try {
+          const resend = new Resend(RESEND_API_KEY);
+          const { data, error } = await resend.emails.send({
+            from: RESEND_FROM_EMAIL,
+            to: toEmail,
+            subject: 'Synthora Newsletter',
+            text: 'Please find the attached newsletter.',
+            attachments: [{
+              filename: 'newsletter.pdf',
+              content: pdfBuffer,
+            }],
+          });
+
+          if (error) {
+            console.error('Resend send failed:', error);
+            throw error;
+          }
+          
+          console.log('✓ Email sent via Resend:', data);
+          return { success: true, info: { emailedTo: toEmail, service: 'resend' } };
+        } catch (resendErr) {
+          console.error('Resend error:', resendErr);
+          // Fall through to nodemailer
+        }
+      }
+
+      // Fallback to nodemailer (for local development)
       const EMAIL_FROM = process.env.EMAIL_FROM;
       const PASS = process.env.PASS;
       if (!EMAIL_FROM || !PASS) return { success: false, error: 'Email not configured on server' };
