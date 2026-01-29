@@ -4,7 +4,6 @@ const PDFDocument = require('pdfkit');
 const axios = require('axios');
 const { marked } = require('marked');
 const nodemailer = require('nodemailer');
-const { Resend } = require('resend');
 const supabase = require('../config/supabase');
 
 /**
@@ -695,39 +694,46 @@ async function generateNewsletter(req, res) {
       doc.end();
       const pdfBuffer = await endPromise;
 
-      // Try Resend first (production-friendly), fallback to nodemailer
-      const RESEND_API_KEY = process.env.RESEND_API_KEY;
-      const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+      // Try Brevo (recommended for production - works with cloud hosting)
+      const BREVO_SMTP_SERVER = process.env.BREVO_SMTP_SERVER;
+      const BREVO_SMTP_PORT = process.env.BREVO_SMTP_PORT;
+      const BREVO_SMTP_USER = process.env.BREVO_SMTP_USER;
+      const BREVO_SMTP_PASS = process.env.BREVO_SMTP_PASS;
+      const BREVO_FROM_EMAIL = process.env.BREVO_FROM_EMAIL || process.env.EMAIL_FROM;
       
-      if (RESEND_API_KEY) {
-        // Use Resend (recommended for production)
+      if (BREVO_SMTP_SERVER && BREVO_SMTP_USER && BREVO_SMTP_PASS && BREVO_FROM_EMAIL) {
         try {
-          const resend = new Resend(RESEND_API_KEY);
-          const { data, error } = await resend.emails.send({
-            from: RESEND_FROM_EMAIL,
+          const brevoTransporter = nodemailer.createTransport({
+            host: BREVO_SMTP_SERVER,
+            port: parseInt(BREVO_SMTP_PORT) || 587,
+            secure: false, // Use TLS
+            auth: {
+              user: BREVO_SMTP_USER,
+              pass: BREVO_SMTP_PASS
+            }
+          });
+
+          await brevoTransporter.sendMail({
+            from: BREVO_FROM_EMAIL,
             to: toEmail,
             subject: 'Synthora Newsletter',
             text: 'Please find the attached newsletter.',
+            html: '<p>Please find the attached newsletter.</p>',
             attachments: [{
               filename: 'newsletter.pdf',
-              content: pdfBuffer,
-            }],
+              content: pdfBuffer
+            }]
           });
 
-          if (error) {
-            console.error('Resend send failed:', error);
-            throw error;
-          }
-          
-          console.log('✓ Email sent via Resend:', data);
-          return { success: true, info: { emailedTo: toEmail, service: 'resend' } };
-        } catch (resendErr) {
-          console.error('Resend error:', resendErr);
-          // Fall through to nodemailer
+          console.log('✓ Email sent via Brevo to:', toEmail);
+          return { success: true, info: { emailedTo: toEmail, service: 'brevo' } };
+        } catch (brevoErr) {
+          console.error('Brevo error:', brevoErr);
+          // Fall through to Gmail SMTP
         }
       }
 
-      // Fallback to nodemailer (for local development)
+      // Fallback to Gmail SMTP (for local development only)
       const EMAIL_FROM = process.env.EMAIL_FROM;
       const PASS = process.env.PASS;
       if (!EMAIL_FROM || !PASS) return { success: false, error: 'Email not configured on server' };
