@@ -56,7 +56,7 @@ Copy these from your .env file:
 ```
 JWT_SECRET=change_this_to_a_random_secure_key
 CLIENT_ORIGIN=(your Vercel URL - add after Step 3)
-DEEPSEEK_KEY=sk-7de6824047d34943884b6f073578b7d1
+DEEPSEEK_KEY=your_deepseek_api_key_here
 SUPABASE_URL=https://uzcaxtxmkcfjuofgbalw.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=(your key from .env)
 RSS_SYNC_ENABLED=true

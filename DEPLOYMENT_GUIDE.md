@@ -61,7 +61,7 @@ Click **"Advanced"** → **"Add Environment Variable"** for each:
 ```
 JWT_SECRET=your_secure_random_key_here
 CLIENT_ORIGIN=https://your-app.vercel.app
-DEEPSEEK_KEY=sk-7de6824047d34943884b6f073578b7d1
+DEEPSEEK_KEY=your_deepseek_api_key_here
 SUPABASE_URL=https://uzcaxtxmkcfjuofgbalw.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6Y2F4dHhta2NmanVvZmdiYWx3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NTc2NTA4MiwiZXhwIjoyMDgxMzQxMDgyfQ.ysLjh9ZM8zlEKOfbr3d_YjFmt7PuAlvu3lsbBbxG2Pg
 RSS_SYNC_ENABLED=true
