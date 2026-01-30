@@ -9,16 +9,4 @@ services:
         value: production
       - key: PORT
         value: 10000
-    # Remember to add these in Render Dashboard:
-    # - JWT_SECRET
-    # - CLIENT_ORIGIN (your Vercel URL)
-    # - DEEPSEEK_KEY
-    # - SUPABASE_URL
-    # - SUPABASE_SERVICE_ROLE_KEY
-    # - RSS_SYNC_ENABLED
-    # - RSS_SYNC_SCHEDULE
-    # - RSS_SINCE_DAYS
-    # - RSS_TIMEOUT
-    # - ARTICLE_OUTPUT_DIR
-    # - EMAIL_FROM
-    # - PASS
+  
