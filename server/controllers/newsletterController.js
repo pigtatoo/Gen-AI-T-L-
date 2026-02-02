@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const PDFDocument = require('pdfkit');
 const axios = require('axios');
-const { marked } = require('marked');
 const nodemailer = require('nodemailer');
 const supabase = require('../config/supabase');
 
