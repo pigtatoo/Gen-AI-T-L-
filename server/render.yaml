@@ -9,4 +9,15 @@ services:
         value: production
       - key: PORT
         value: 10000
+
+  # Cron job to run RSS sync weekly (every Tuesday at 4 AM Singapore time = Monday 8 PM UTC)
+  - type: cron
+    name: weekly-rss-sync
+    runtime: node
+    schedule: "0 20 * * 1"
+    buildCommand: npm install
+    startCommand: npm run rss
+    envVars:
+      - key: NODE_ENV
+        value: production
   

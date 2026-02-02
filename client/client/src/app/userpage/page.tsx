@@ -124,10 +124,10 @@ function UserPage() {
             {/* Actions */}
             <div className="flex flex-col gap-3">
               <Link
-                href="/landingpage"
+                href={user?.role === "staff" ? "/staffpage" : "/landingpage"}
                 className="rounded-lg bg-black px-8 py-3 text-center text-lg font-semibold text-white transition-colors hover:bg-gray-800"
               >
-                Back to Modules
+                {user?.role === "staff" ? "Back to Staff Console" : "Back to Modules"}
               </Link>
               <button
                 onClick={handleLogout}

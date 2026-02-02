@@ -21,6 +21,8 @@ export default function StaffPage() {
   const [error, setError] = useState('');
   const [userName, setUserName] = useState('User');
   const [actionStatus, setActionStatus] = useState<Record<number, 'idle' | 'saving' | 'saved' | 'error'>>({});
+  const [rssSyncStatus, setRssSyncStatus] = useState<'idle' | 'syncing' | 'success' | 'error'>('idle');
+  const [rssSyncMessage, setRssSyncMessage] = useState('');
 
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
 
@@ -102,6 +104,34 @@ export default function StaffPage() {
     }
   };
 
+  const triggerRssSync = async () => {
+    if (!token) return;
+    setRssSyncStatus('syncing');
+    setRssSyncMessage('');
+    try {
+      const res = await fetch(`${API_URL}/api/admin/rss-sync`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) throw new Error('Failed to trigger RSS sync');
+      const data = await res.json();
+      setRssSyncStatus('success');
+      setRssSyncMessage(data.message || 'RSS sync started successfully');
+      setTimeout(() => {
+        setRssSyncStatus('idle');
+        setRssSyncMessage('');
+      }, 5000);
+    } catch (err) {
+      console.error(err);
+      setRssSyncStatus('error');
+      setRssSyncMessage(err instanceof Error ? err.message : 'Error triggering RSS sync');
+      setTimeout(() => {
+        setRssSyncStatus('idle');
+        setRssSyncMessage('');
+      }, 5000);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header (matching landing page style) */}
@@ -123,6 +153,34 @@ export default function StaffPage() {
       {/* Main content */}
       <div className="mx-auto max-w-6xl px-8 py-12">
         <div className="max-w-4xl mx-auto">
+          {/* RSS Sync Section */}
+          <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+            <h3 className="text-lg font-semibold mb-3">RSS Sync Control</h3>
+            <p className="text-sm text-gray-600 mb-4">
+              Manually trigger the weekly RSS sync to fetch and analyze new articles.
+            </p>
+            <button
+              onClick={triggerRssSync}
+              disabled={rssSyncStatus === 'syncing'}
+              className={`rounded-lg px-6 py-2 font-semibold transition-colors ${
+                rssSyncStatus === 'syncing'
+                  ? 'bg-gray-400 text-white cursor-not-allowed'
+                  : 'bg-black text-white hover:bg-gray-800'
+              }`}
+            >
+              {rssSyncStatus === 'syncing' ? 'Syncing...' : 'Trigger RSS Sync'}
+            </button>
+            {rssSyncMessage && (
+              <div
+                className={`mt-3 text-sm font-medium ${
+                  rssSyncStatus === 'success' ? 'text-green-600' : 'text-red-600'
+                }`}
+              >
+                {rssSyncMessage}
+              </div>
+            )}
+          </div>
+
           <h2 className="text-2xl font-semibold mb-4">Manage Users</h2>
           {error && <div className="mb-4 text-red-600">{error}</div>}
 
