@@ -1,0 +1,44 @@
+name: Send Weekly Newsletters
+
+on:
+  # Run every Tuesday at 7:00 AM Singapore Time (Monday 11:00 PM UTC)
+  schedule:
+    - cron: '0 23 * * 1'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  send-newsletters:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        working-directory: ./server
+        run: npm install
+      
+      - name: Send newsletters
+        working-directory: ./server
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          PASS: ${{ secrets.EMAIL_PASS }}
+        run: node scripts/send-all-newsletters.js
+      
+      - name: Report completion
+        if: success()
+        run: echo "✅ All newsletters sent successfully"
+      
+      - name: Report failure
+        if: failure()
+        run: echo "❌ Newsletter sending failed - check logs above"
