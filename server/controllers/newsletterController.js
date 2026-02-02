@@ -695,7 +695,7 @@ async function generateNewsletter(req, res) {
 
       // Use Gmail SMTP (works locally, may timeout in production)
       const EMAIL_FROM = process.env.EMAIL_FROM;
-      const PASS = process.env.PASS;
+      const PASS = process.env.PASS || process.env.EMAIL_PASS; // Support both PASS and EMAIL_PASS
       if (!EMAIL_FROM || !PASS) return { success: false, error: 'Email not configured on server' };
 
       // Try port 465 (SSL) first
