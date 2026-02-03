@@ -408,18 +408,15 @@ export default function NewsletterPage() {
                         <h3 className="font-semibold text-black text-sm">
                           {modules.find(m => m.module_id === sub.module_id)?.title || 'Unknown Module'}
                         </h3>
-                        <button
-                          onClick={() =>
-                            handleToggleActive(sub)
-                          }
-                          className={`px-2 py-1 text-xs rounded font-semibold transition-colors ${
+                        <span
+                          className={`px-2 py-1 text-xs rounded font-semibold ${
                             sub.is_active
-                              ? "bg-green-200 text-green-800 hover:bg-green-300"
-                              : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                              ? "bg-green-200 text-green-800"
+                              : "bg-gray-200 text-gray-800"
                           }`}
                         >
                           {sub.is_active ? "Active" : "Paused"}
-                        </button>
+                        </span>
                       </div>
 
                       <p className="text-xs text-gray-600 mb-2">
@@ -436,21 +433,14 @@ export default function NewsletterPage() {
                       </p>
 
                       <button
-                        onClick={() => handleSendSubscription(sub.id)}
-                        disabled={sendingSubscriptionId === sub.id}
+                        onClick={() => handleToggleActive(sub)}
                         className={`w-full mb-2 px-2 py-1 text-xs font-semibold rounded transition-colors ${
-                          sendingSubscriptionId === sub.id
-                            ? "bg-gray-400 text-white cursor-not-allowed"
-                            : sentSubscriptionIds.has(sub.id)
-                            ? "bg-green-600 text-white hover:bg-green-700"
-                            : "text-white bg-blue-600 hover:bg-blue-700"
+                          sub.is_active
+                            ? "bg-yellow-600 text-white hover:bg-yellow-700"
+                            : "bg-blue-600 text-white hover:bg-blue-700"
                         }`}
                       >
-                        {sendingSubscriptionId === sub.id
-                          ? "Generating..."
-                          : sentSubscriptionIds.has(sub.id)
-                          ? "Sent ✓"
-                          : "Send"}
+                        {sub.is_active ? "⏸ Pause Newsletter" : "▶ Resume Newsletter"}
                       </button>
 
                       <button
