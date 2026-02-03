@@ -1,0 +1,28 @@
+name: Keep Render Server Awake
+
+on:
+  # Run every 14 minutes to prevent Render free tier from sleeping (15min timeout)
+  schedule:
+    - cron: '*/14 * * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  ping-server:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Ping health endpoint
+        run: |
+          echo "🏓 Pinging server to keep it awake..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" ${{ secrets.SERVER_URL }}/health || echo "000")
+          
+          if [ "$response" = "200" ]; then
+            echo "✅ Server is awake (HTTP $response)"
+          else
+            echo "⚠️  Server returned HTTP $response"
+          fi
+      
+      - name: Log timestamp
+        run: echo "⏰ Pinged at $(date -u +"%Y-%m-%d %H:%M:%S UTC")"

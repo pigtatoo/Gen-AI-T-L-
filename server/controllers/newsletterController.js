@@ -544,7 +544,7 @@ async function generateNewsletter(req, res) {
       // Generate AI content in parallel (case study, Q&A, definitions) with global region
       console.log("Generating AI content for subscription newsletter...");
       const [caseStudy, qa, definitions] = await Promise.all([
-        generateAIContent(topicTitles, moduleTitle, 'case-study', null, articles),
+        generateAIContent(topicTitles, moduleTitle, 'case-study', 'Global', articles),
         generateAIContent(topicTitles, moduleTitle, 'qa'),
         generateAIContent(topicTitles, moduleTitle, 'definitions')
       ]);

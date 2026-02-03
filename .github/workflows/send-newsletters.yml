@@ -1,9 +1,9 @@
 name: Send Weekly Newsletters
 
 on:
-  # Run every Tuesday at 7:00 AM Singapore Time (Monday 11:00 PM UTC)
+  # Run every Monday at 7:00 AM Singapore Time (Sunday 11:00 PM UTC)
   schedule:
-    - cron: '0 23 * * 1'
+    - cron: '0 23 * * 0'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
