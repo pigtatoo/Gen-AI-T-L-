@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Ukraine urges acceleration of peace talks, says only Trump can broker deal",
+            "url": "https://www.channelnewsasia.com/world/ukraine-urges-acceleration-peace-talks-says-only-trump-can-broker-deal-5915851",
+            "source": "Latest News",
+            "published": "2026-02-08T18:30:07.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses high-level diplomatic negotiations and geopolitical strategy involving Ukraine and a potential U.S. mediator, which aligns with strategic decision-making and long-term planning at an organizational or national level."
+          },
+          {
+            "title": "Openreach turns up the heat to force laggards off legacy copper lines",
+            "url": "https://www.theregister.com/2026/02/07/openreach_ptsn_hikes/",
+            "source": "The Register",
+            "published": "2026-02-07T09:30:10.000Z",
+            "summary": "<h4>Half a million businesses face successive price hikes ahead of PTSN shutdown</h4> <p>Openreach is warning British businesses that the old phone network shuts down in less than a year, with half a million commercial lines still unmigrated.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Openreach's strategic decision to migrate from legacy copper lines to an all-digital, IP-based fiber network, including pricing strategies and deadlines to drive adoption, aligning with organizational strategy and change management."
+          },
+          {
+            "title": "AI video company arouses fury by boasting about replacing creative jobs",
+            "url": "https://www.theregister.com/2026/02/06/higgsfield_ai_job_loss/",
+            "source": "The Register",
+            "published": "2026-02-06T21:45:08.000Z",
+            "summary": "<h4>Marketing stunt backfires with creators</h4> <p>The first rule of AI-generated job loss is you don't talk about AI-generated job loss ... if you're the company that caused it. Higgsfield.ai, a startup offering AI video creation tools, recently generated outrage when it claimed it had caused artists to hit the unemployment line.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a company's marketing strategy and its impact on reputation and stakeholder relations, which relates to strategic decision-making and long-term planning in governance."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Four horsemen of the AI-pocalypse line up capex bigger than Israel's GDP",
+            "url": "https://www.theregister.com/2026/02/06/ai_capex_plans/",
+            "source": "The Register",
+            "published": "2026-02-06T17:44:05.000Z",
+            "summary": "<h4>Amazon, Google, Meta, Microsoft eye $635B in infrastructure spend</h4> <p>Four tech megacorps intend to collectively fork out roughly $635 billion this year on capex, much of it for datacenters and AI infrastructure – more than the entire output of Israel's economy and well beyond all global cloud infrastructure services revenue generated last year.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The focus on datacenter and AI infrastructure investments involves decisions on IT spending, technology adoption, and infrastructure management, which are core to IT governance frameworks."
+          },
+          {
+            "title": "Openreach turns up the heat to force laggards off legacy copper lines",
+            "url": "https://www.theregister.com/2026/02/07/openreach_ptsn_hikes/",
+            "source": "The Register",
+            "published": "2026-02-07T09:30:10.000Z",
+            "summary": "<h4>Half a million businesses face successive price hikes ahead of PTSN shutdown</h4> <p>Openreach is warning British businesses that the old phone network shuts down in less than a year, with half a million commercial lines still unmigrated.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The migration involves IT infrastructure changes (PSTN shutdown, fiber adoption) and governance aspects like setting deadlines, resolving technical barriers, and managing service transitions, though it focuses more on operational execution than high-level governance frameworks."
+          },
+          {
+            "title": "AI video company arouses fury by boasting about replacing creative jobs",
+            "url": "https://www.theregister.com/2026/02/06/higgsfield_ai_job_loss/",
+            "source": "The Register",
+            "published": "2026-02-06T21:45:08.000Z",
+            "summary": "<h4>Marketing stunt backfires with creators</h4> <p>The first rule of AI-generated job loss is you don't talk about AI-generated job loss ... if you're the company that caused it. Higgsfield.ai, a startup offering AI video creation tools, recently generated outrage when it claimed it had caused artists to hit the unemployment line.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article involves an AI technology company's practices and ethical considerations in deploying IT tools, touching on governance of technology use and oversight."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Openreach turns up the heat to force laggards off legacy copper lines",
+            "url": "https://www.theregister.com/2026/02/07/openreach_ptsn_hikes/",
+            "source": "The Register",
+            "published": "2026-02-07T09:30:10.000Z",
+            "summary": "<h4>Half a million businesses face successive price hikes ahead of PTSN shutdown</h4> <p>Openreach is warning British businesses that the old phone network shuts down in less than a year, with half a million commercial lines still unmigrated.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.55,
+            "reasoning": "The article implies benefits from migrating to digital services (e.g., modernized infrastructure, potential cost savings), but it primarily emphasizes enforcement via price hikes rather than measuring or realizing specific benefits."
+          },
+          {
+            "title": "AI video company arouses fury by boasting about replacing creative jobs",
+            "url": "https://www.theregister.com/2026/02/06/higgsfield_ai_job_loss/",
+            "source": "The Register",
+            "published": "2026-02-06T21:45:08.000Z",
+            "summary": "<h4>Marketing stunt backfires with creators</h4> <p>The first rule of AI-generated job loss is you don't talk about AI-generated job loss ... if you're the company that caused it. Higgsfield.ai, a startup offering AI video creation tools, recently generated outrage when it claimed it had caused artists to hit the unemployment line.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The article highlights unintended negative consequences of a company's actions, contrasting expected benefits with actual outcomes, which relates to evaluating and managing realized benefits and risks."
+          },
+          {
+            "title": "Uber ordered to pay $8.5m over claim driver raped passenger",
+            "url": "https://www.bbc.com/news/articles/cq5y5w148p5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-06T20:47:10.000Z",
+            "summary": "The verdict is expected to influence the outcome of thousands of other cases against the ride hailing firm.",
+            "confidence": 0.55,
+            "reasoning": "The case highlights a failure to realize the intended benefits of safety systems and governance controls, leading to significant financial and reputational costs instead of protected passenger safety."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Uber ordered to pay $8.5m over claim driver raped passenger",
+            "url": "https://www.bbc.com/news/articles/cq5y5w148p5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-06T20:47:10.000Z",
+            "summary": "The verdict is expected to influence the outcome of thousands of other cases against the ride hailing firm.",
+            "confidence": 0.95,
+            "reasoning": "The article describes a legal case where Uber is held liable for a driver's sexual assault, which is a severe incident affecting service delivery and safety. This directly relates to incident management processes for identifying, responding to, and resolving service disruptions or harmful events."
+          },
+          {
+            "title": "Microsoft starts the countdown for the end of Exchange Web Services",
+            "url": "https://www.theregister.com/2026/02/06/microsoft_ews_shutdown/",
+            "source": "The Register",
+            "published": "2026-02-06T13:51:21.000Z",
+            "summary": "<h4>Windows giant might try turning it off and on again to see who notices</h4> <p>Microsoft has laid out a timeline for the disablement and shutdown of Exchange Web Services (EWS) in Microsoft 365 and Exchange Online.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a major service retirement (Exchange Web Services) triggered partly by a security incident (Midnight Blizzard), which involves planning for service disruption, migration, and operational changes—key aspects of incident and problem management in IT service management."
+          },
+          {
+            "title": "CISA orders federal agencies to rip out EOL edge kit before cybercrooks move in",
+            "url": "https://www.theregister.com/2026/02/06/cisa_eol_edge_order/",
+            "source": "The Register",
+            "published": "2026-02-06T13:18:23.000Z",
+            "summary": "<h4>A year to replace end-of-support firewalls, routers, and VPN gateways</h4> <p>America's federal agencies have been told to hunt down and rip out aging firewalls, routers, and other network gatekeepers before attackers use them as skeleton keys into government systems.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a proactive directive to replace end-of-support devices to prevent security incidents, which aligns with incident management's focus on preventing, detecting, and responding to IT incidents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Flickr emails users about data breach, pins it on 3rd party",
+            "url": "https://www.theregister.com/2026/02/06/flickr_emails_users_about_data_breach/",
+            "source": "The Register",
+            "published": "2026-02-06T16:56:29.000Z",
+            "summary": "<h4>Attackers may have snapped user locations and activity information, message warns</h4> <p>Legacy image-sharing website Flickr suffered a data breach, according to customers emails seen by <em>The Register</em>.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach where attackers accessed personal information like names, email addresses, IP addresses, and activity data, which aligns with the topic of gathering sensitive information."
+          },
+          {
+            "title": "DDoS deluge: Brit biz battered as botnet blitzes break records",
+            "url": "https://www.theregister.com/2026/02/06/uk_climbs_up_ddos_hit/",
+            "source": "The Register",
+            "published": "2026-02-06T16:36:49.000Z",
+            "summary": "<h4>UK leaps to sixth in global flood charts as mega-swarm unleashes 31.4 Tbps Yuletide pummeling</h4> <p>Cloudflare says DDoS crews ended 2025 by pushing traffic floods to new extremes, while Britain made an unwelcome leap of 36 places to become the world's sixth-most targeted location.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses DDoS attacks, which are a form of cyber attack, but the primary focus is on the execution and scale of the attacks rather than the reconnaissance or intelligence-gathering phase. Information gathering is a precursor to attacks, so relevance is indirect."
+          },
+          {
+            "title": "Supermarket sorry after facial recognition alert flags right criminal, wrong customer",
+            "url": "https://www.theregister.com/2026/02/06/sainsburys_/",
+            "source": "The Register",
+            "published": "2026-02-06T15:03:30.000Z",
+            "summary": "<h4>System worked as intended, but staff then kicked out innocent bystander</h4> <p>A British supermarket says staff will undergo further training after a store manager ejected the wrong man when facial recognition technology triggered an alert.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses facial recognition technology used to identify individuals on a watchlist, which involves collecting and processing biometric data—a form of information gathering relevant to surveillance and security systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Flickr emails users about data breach, pins it on 3rd party",
+            "url": "https://www.theregister.com/2026/02/06/flickr_emails_users_about_data_breach/",
+            "source": "The Register",
+            "published": "2026-02-06T16:56:29.000Z",
+            "summary": "<h4>Attackers may have snapped user locations and activity information, message warns</h4> <p>Legacy image-sharing website Flickr suffered a data breach, according to customers emails seen by <em>The Register</em>.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach involving user information stored by Flickr, including names, email addresses, and activity data, which relates to how such data is stored, accessed, and potentially retrieved by unauthorized parties."
+          },
+          {
+            "title": "OpenClaw reveals meaty personal information after simple cracks",
+            "url": "https://www.theregister.com/2026/02/05/openclaw_skills_marketplace_leaky_security/",
+            "source": "The Register",
+            "published": "2026-02-05T23:32:52.000Z",
+            "summary": "<h4>Skills marketplace is full of stuff - like API keys and credit card numbers - that crims will find tasty</h4> <p>Another day, another vulnerability (or two, or 200) in the security nightmare that is OpenClaw.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses vulnerabilities leading to exposure of sensitive data like API keys and credit card numbers, which relates to how information is stored, accessed, and potentially retrieved by unauthorized parties in systems."
+          },
+          {
+            "title": "Romanian rail workers accused of bribery turned to ChatGPT for legal tips",
+            "url": "https://www.theregister.com/2026/02/06/romanian_rail_workers_chatgpt/",
+            "source": "The Register",
+            "published": "2026-02-06T11:39:43.000Z",
+            "summary": "<h4>Corruption probe takes detour as staff facing trial reportedly asked AI if seat-blocking scams caused financial damage</h4> <p>More than 30 Romanian railway employees accused of running a bribery and ticket resale racket allegedly tried to crowdsource their legal strategy from ChatGPT.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article involves manipulation of a booking system and use of personal data, which relates to how information is stored, accessed, and potentially retrieved in digital systems, though the forensic aspect is indirect."
+          }
+        ]
+      }
+    ]
+  }
+]
