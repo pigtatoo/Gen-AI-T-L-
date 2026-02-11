@@ -42,7 +42,7 @@ function UserPage() {
         name: parsedUser.name,
         email: parsedUser.email,
         role: parsedUser.role || "student",
-        createdAt: parsedUser.createdAt || parsedUser.updatedAt || new Date().toISOString(),
+        createdAt: parsedUser.createdAt || parsedUser.updatedAt || null,
       };
 
       setUser(userData);
