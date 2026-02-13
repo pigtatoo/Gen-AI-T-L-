@@ -265,19 +265,22 @@ function LandingPage() {
 
         {/* Newsletter Subscriptions Section */}
         <div className="mb-12 rounded-lg border border-green-200 bg-green-50 p-6">
-          <div className="flex items-center justify-between">
-            <div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex-1">
               <h2 className="text-xl font-bold text-green-900">📬 Newsletter Subscriptions</h2>
               <p className="text-sm text-green-700 mt-1">
                 Subscribe to weekly newsletters for your selected modules and topics. Receive curated content, case studies, and Q&A directly in your inbox every Monday at 7 AM.
               </p>
             </div>
-            <button
-              onClick={() => router.push("/newsletterpage")}
-              className="rounded-lg bg-green-600 text-white px-6 py-2 text-sm font-semibold hover:bg-green-700 transition-colors whitespace-nowrap ml-4"
-            >
-              Manage Subscriptions →
-            </button>
+
+            <div className="w-full sm:w-auto">
+              <button
+                onClick={() => router.push("/newsletterpage")}
+                className="w-full sm:w-auto rounded-lg bg-green-600 text-white px-6 py-2 text-sm font-semibold hover:bg-green-700 transition-colors text-center"
+              >
+                Manage Subscriptions →
+              </button>
+            </div>
           </div>
         </div>
 

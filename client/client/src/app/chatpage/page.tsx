@@ -531,9 +531,9 @@ function ChatPage() {
 
 
   return (
-    <div className="flex h-screen w-full gap-4 bg-white p-4">
+    <div className="flex flex-col md:flex-row h-screen w-full gap-4 bg-white p-4">
       {/* Topics Container */}
-      <div className="flex w-48 flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-lg overflow-y-auto">
+      <div className="flex w-full md:w-48 flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-lg overflow-y-auto max-h-56 md:max-h-none">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold text-black">Topics</h2>
           <button
@@ -637,7 +637,7 @@ function ChatPage() {
         {/* Newsletter Modal */}
         {showNewsletterModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 pointer-events-auto">
-            <div className="max-w-sm rounded-lg bg-white p-6 shadow-xl w-96 z-50">
+            <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-xl z-50">
               <h2 className="mb-2 text-lg font-semibold text-black">📰 Download Newsletter</h2>
               <p className="mb-4 text-sm text-gray-600">
                 Generate a PDF newsletter with articles from your selected topics.
@@ -711,7 +711,7 @@ function ChatPage() {
       </div>
 
       {/* Chat container */}
-      <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg">
+      <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg min-h-0">
         <div className="border-b border-gray-200 px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <button
@@ -732,7 +732,7 @@ function ChatPage() {
           </button>
         </div>
 
-        <div className="flex flex-1 flex-col overflow-hidden">
+        <div className="flex flex-1 flex-col overflow-hidden min-h-0">
           <div className="flex-1 overflow-y-auto p-6">
             <div className="mb-8 rounded-lg bg-gray-50 p-4">
               <div className="mb-2 flex items-center gap-2">

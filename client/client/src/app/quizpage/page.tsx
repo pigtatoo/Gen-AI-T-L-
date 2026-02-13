@@ -610,9 +610,9 @@ function QuizPage() {
   }
 
   return (
-    <div className="flex h-screen w-full gap-4 bg-white p-4">
+    <div className="flex flex-col md:flex-row h-screen w-full gap-4 bg-white p-4">
       {/* Topics Sidebar */}
-      <div className="flex w-48 flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-lg overflow-y-auto">
+      <div className="flex w-full md:w-48 flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-lg overflow-y-auto max-h-56 md:max-h-none">
         <h2 className="mb-4 text-lg font-semibold text-black">Topics</h2>
         <div className="space-y-2">
           {topics.map((topic) => (
@@ -630,15 +630,15 @@ function QuizPage() {
       </div>
 
       {/* Quiz Container */}
-      <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg">
+      <div className="flex-1 flex flex-col rounded-2xl border border-gray-200 bg-white shadow-lg min-h-0">
         <div className="border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between mb-2">
             <h1 className="text-2xl font-semibold text-black">{module?.title} - Quiz</h1>
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
               <button
                 onClick={downloadQuizAsPDF}
                 disabled={quizzes.length === 0 || isDownloadingPDF}
-                className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 title="Download quiz as PDF"
               >
                 {isDownloadingPDF ? '📥 Downloading...' : '📥 Download PDF'}
@@ -646,7 +646,7 @@ function QuizPage() {
               <button
                 onClick={downloadKahootCSV}
                 disabled={quizzes.length === 0 || isDownloadingCSV}
-                className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 title="Download Kahoot CSV"
               >
                 {isDownloadingCSV ? '⬇️ Downloading...' : '⬇️ Kahoot CSV'}
@@ -654,7 +654,7 @@ function QuizPage() {
               <button
                 onClick={downloadBrightspaceExcel}
                 disabled={quizzes.length === 0 || isDownloadingExcel}
-                className="px-4 py-2 text-sm font-semibold text-white bg-yellow-600 rounded-lg hover:bg-yellow-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto px-4 py-2 text-sm font-semibold text-white bg-yellow-600 rounded-lg hover:bg-yellow-700 disabled:opacity-50 disabled:cursor-not-allowed"
                 title="Download Brightspace Excel"
               >
                 {isDownloadingExcel ? '⬇️ Downloading...' : '⬇️ BrightspaceCSV'}
@@ -664,7 +664,7 @@ function QuizPage() {
           <p className="text-sm text-gray-600">Score: {score}/{totalAttempts}</p>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-6">
+        <div className="flex-1 overflow-y-auto p-6 min-h-0">
           {quizzes.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full gap-4">
               <p className="text-gray-600 text-lg">No quizzes yet. Customize and start generating!</p>
@@ -910,7 +910,7 @@ function QuizPage() {
         <div className="border-t border-gray-200 bg-white px-6 py-4">
           <div className="mb-3">
             <label className="block text-sm font-semibold text-gray-800 mb-2">Question Types:</label>
-            <div className="grid grid-cols-4 gap-2 mb-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
               <div>
                 <label className="text-xs text-gray-600">MC</label>
                 <input
