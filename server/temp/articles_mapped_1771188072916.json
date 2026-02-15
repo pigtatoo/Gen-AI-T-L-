@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "GPT-5 bests human judges in legal smack down",
+            "url": "https://www.theregister.com/2026/02/15/gpt5_bests_human_judges_in/",
+            "source": "The Register",
+            "published": "2026-02-15T14:32:11.000Z",
+            "summary": "<h4>But that doesn't mean AI is ready to dispense justice</h4> <p><strong>ai-pocalypse</strong>  Legal scholars have found that OpenAI's GPT-5 follows the law better than human judges, but they leave open the question of whether AI is right for the job.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the use of AI (GPT-5) in a judicial decision-making context, which relates to the governance of information technology systems, their alignment with organizational (or legal) objectives, and the oversight of AI deployment in critical functions."
+          },
+          {
+            "title": "How AI could eat itself: Competitors can probe models to steal their secrets and clone them",
+            "url": "https://www.theregister.com/2026/02/14/ai_risk_distillation_attacks/",
+            "source": "The Register",
+            "published": "2026-02-14T11:02:11.000Z",
+            "summary": "<h4>Just ask DeepSeek</h4> <p>Two of the world's biggest AI companies, Google and OpenAI, both warned this week that competitors including China's DeepSeek are probing their models to steal the underlying reasoning, and then copy these capabilities in their own AI systems.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses threats to AI models (valuable IP) through probing and cloning, which relates to IT governance concerns like protecting digital assets, managing technology risks, and ensuring secure and ethical use of IT systems."
+          },
+          {
+            "title": "ServiceNow can't seem to keep its wallet closed, snaps up small AI analytics company",
+            "url": "https://www.theregister.com/2026/02/14/servicenow_buys_pyramid_analytics_to/",
+            "source": "The Register",
+            "published": "2026-02-14T00:12:06.000Z",
+            "summary": "<h4>News of the deal came about two weeks after CEO Bill McDermott swore off any “large scale” M&amp;A this year. A spokesperson called this deal a “tuck in.”</h4> <p>Despite its CEO's insistence that it wasn't doing any \"large scale\" deals soon, ServiceNow has acquired yet another company. This time, the software firm has scooped up Pyramid Analytics, an Israeli corporation with data science and preparation expertise. The goal is to build additional context and semantics into its software stack.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The acquisition aims to enhance ServiceNow's software stack with analytics and semantics, which relates to IT decision-making, architecture, and aligning IT investments with business goals."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ServiceNow can't seem to keep its wallet closed, snaps up small AI analytics company",
+            "url": "https://www.theregister.com/2026/02/14/servicenow_buys_pyramid_analytics_to/",
+            "source": "The Register",
+            "published": "2026-02-14T00:12:06.000Z",
+            "summary": "<h4>News of the deal came about two weeks after CEO Bill McDermott swore off any “large scale” M&amp;A this year. A spokesperson called this deal a “tuck in.”</h4> <p>Despite its CEO's insistence that it wasn't doing any \"large scale\" deals soon, ServiceNow has acquired yet another company. This time, the software firm has scooped up Pyramid Analytics, an Israeli corporation with data science and preparation expertise. The goal is to build additional context and semantics into its software stack.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses ServiceNow's acquisition strategy and its CEO's statements on M&A, which are key aspects of corporate strategic planning and execution."
+          },
+          {
+            "title": "How AI could eat itself: Competitors can probe models to steal their secrets and clone them",
+            "url": "https://www.theregister.com/2026/02/14/ai_risk_distillation_attacks/",
+            "source": "The Register",
+            "published": "2026-02-14T11:02:11.000Z",
+            "summary": "<h4>Just ask DeepSeek</h4> <p>Two of the world's biggest AI companies, Google and OpenAI, both warned this week that competitors including China's DeepSeek are probing their models to steal the underlying reasoning, and then copy these capabilities in their own AI systems.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article touches on competitive threats from actors like DeepSeek, which could impact a company's strategic position and long-term goals in the AI market, aligning with strategic management's focus on maintaining competitive advantage."
+          },
+          {
+            "title": "GPT-5 bests human judges in legal smack down",
+            "url": "https://www.theregister.com/2026/02/15/gpt5_bests_human_judges_in/",
+            "source": "The Register",
+            "published": "2026-02-15T14:32:11.000Z",
+            "summary": "<h4>But that doesn't mean AI is ready to dispense justice</h4> <p><strong>ai-pocalypse</strong>  Legal scholars have found that OpenAI's GPT-5 follows the law better than human judges, but they leave open the question of whether AI is right for the job.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The article touches on strategic considerations about whether AI is suitable for dispensing justice, which involves long-term planning and decision-making regarding technology adoption in a core societal institution."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Investors shove another $30B into the Anthropic money furnace",
+            "url": "https://www.theregister.com/2026/02/13/anthropic_series_g/",
+            "source": "The Register",
+            "published": "2026-02-13T14:02:11.000Z",
+            "summary": "<h4>$380B valuation for a company that's yet to turn a profit? Sure, why not</h4> <p>The AI bubble continues to inflate with Anthropic's announcement of $30 billion in Series G funding at a $380 billion post-money valuation.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article highlights revenue growth and future projections versus current lack of profit, touching on the realization of expected benefits from significant investments."
+          },
+          {
+            "title": "ServiceNow can't seem to keep its wallet closed, snaps up small AI analytics company",
+            "url": "https://www.theregister.com/2026/02/14/servicenow_buys_pyramid_analytics_to/",
+            "source": "The Register",
+            "published": "2026-02-14T00:12:06.000Z",
+            "summary": "<h4>News of the deal came about two weeks after CEO Bill McDermott swore off any “large scale” M&amp;A this year. A spokesperson called this deal a “tuck in.”</h4> <p>Despite its CEO's insistence that it wasn't doing any \"large scale\" deals soon, ServiceNow has acquired yet another company. This time, the software firm has scooped up Pyramid Analytics, an Israeli corporation with data science and preparation expertise. The goal is to build additional context and semantics into its software stack.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.55,
+            "reasoning": "The article mentions the goal of building additional context into the software stack and embedding trusted meaning into workflows, which relates to realizing value from IT investments and acquisitions."
+          },
+          {
+            "title": "Ring kills Flock partnership amid surveillance scrutiny",
+            "url": "https://www.theregister.com/2026/02/13/ring_flock_partnership/",
+            "source": "The Register",
+            "published": "2026-02-13T14:05:58.000Z",
+            "summary": "<h4>Move comes against backdrop of disasterclass Super Bowl ad</h4> <p>Ring has cut ties with Flock, <a target=\"_blank\" href=\"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/\">citing</a> resource constraints, mere months after the pair announced a partnership.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The cancellation of the Flock partnership due to unforeseen resource requirements suggests a failure to realize anticipated benefits from the collaboration, touching on benefit realization topics like evaluating project feasibility and managing expected outcomes against constraints."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Penguin-powered platform board keels over at Alpine station",
+            "url": "https://www.theregister.com/2026/02/15/swiss_railway_bork/",
+            "source": "The Register",
+            "published": "2026-02-15T12:30:14.000Z",
+            "summary": "<h4>It must be that fresh mountain air</h4> <p><strong>Bork!Bork!Bork!</strong>  Just picture it. You're at a Swiss train station, looking for information on your connecting line. You peer up at the platform sign hoping to find out how long you'll be waiting and whether you're standing in the right place. But instead of helpful info, you see \"* Installation log files are stored in /tmp.\" Gee, thanks a lot!…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a public-facing IT system (train station digital signage) failing and displaying an error message, which constitutes an incident requiring logging, diagnosis, and resolution to restore normal service."
+          },
+          {
+            "title": "MPs brand NS&amp;I's £3B IT overhaul a 'full-spectrum disaster'",
+            "url": "https://www.theregister.com/2026/02/13/nsandi_pac_latest/",
+            "source": "The Register",
+            "published": "2026-02-13T12:31:14.000Z",
+            "summary": "<h4>Watchdog says savings bank botched tech revamp, warning taxpayers remain exposed after years of delays</h4> <p>Britain's state-backed savings bank has been dragged over the coals by Parliament's spending watchdog, which has branded its long-running digital overhaul a £3 billion \"full-spectrum disaster.\"…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a major IT project failure with ongoing risks and delays, which could involve managing and resolving significant operational incidents or crises stemming from the botched overhaul, though the focus is more on project failure than routine incident handling."
+          },
+          {
+            "title": "Enforcing piracy policy earned helpdesk worker death threats",
+            "url": "https://www.theregister.com/2026/02/13/on_call/",
+            "source": "The Register",
+            "published": "2026-02-13T07:27:12.000Z",
+            "summary": "<h4>Years later, he read about his antagonist doing time for murder</h4> <p><strong>On Call</strong>  Welcome to another installment of On Call, <i>The Register's</i> weekly reader-contributed column that tells your tech support tales.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a helpdesk worker enforcing a policy that led to a severe, disruptive event (death threats and a subsequent murder conviction), which aligns with incident management's focus on restoring normal service operation and minimizing business impact after an unplanned interruption or event."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "How AI could eat itself: Competitors can probe models to steal their secrets and clone them",
+            "url": "https://www.theregister.com/2026/02/14/ai_risk_distillation_attacks/",
+            "source": "The Register",
+            "published": "2026-02-14T11:02:11.000Z",
+            "summary": "<h4>Just ask DeepSeek</h4> <p>Two of the world's biggest AI companies, Google and OpenAI, both warned this week that competitors including China's DeepSeek are probing their models to steal the underlying reasoning, and then copy these capabilities in their own AI systems.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes competitors using systematic probing (over 100,000 prompts) to extract and replicate a model's reasoning, which is a form of active information gathering to steal intellectual property."
+          },
+          {
+            "title": "Top Dutch telco Odido admits 6.2M customers caught in contact system caper",
+            "url": "https://www.theregister.com/2026/02/13/odido_breach/",
+            "source": "The Register",
+            "published": "2026-02-13T11:45:13.000Z",
+            "summary": "<h4>Names, addresses, bank account numbers accessed – but biz insists passwords and call data untouched</h4> <p>The Netherlands' largest mobile network operator (MNO) has admitted that a breach of its customer contact system may have affected around 6.2 million people.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article details a data breach where attackers accessed extensive personal information (names, addresses, bank details, ID documents), which is a direct outcome of successful information gathering by attackers, a core topic in cyber attack phases."
+          },
+          {
+            "title": "Ring kills Flock partnership amid surveillance scrutiny",
+            "url": "https://www.theregister.com/2026/02/13/ring_flock_partnership/",
+            "source": "The Register",
+            "published": "2026-02-13T14:05:58.000Z",
+            "summary": "<h4>Move comes against backdrop of disasterclass Super Bowl ad</h4> <p>Ring has cut ties with Flock, <a target=\"_blank\" href=\"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/\">citing</a> resource constraints, mere months after the pair announced a partnership.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses surveillance technologies (license plate readers, facial recognition, networked cameras) used by companies like Ring and Flock, which are tools for collecting personal data—a core aspect of information gathering in cybersecurity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.82,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Log files that describe the history of the internet are disappearing. A new project hopes to save them",
+            "url": "https://www.theregister.com/2026/02/14/internet_history_initiative/",
+            "source": "The Register",
+            "published": "2026-02-14T09:01:11.000Z",
+            "summary": "<h4>The Internet History Initiative wants future historians to have a chance to understand how human progress and technical progress align</h4> <p><strong>APRICOT 2026</strong>  For almost 30 years, the PingER project at the USA’s SLAC National Accelerator Laboratory used ping thousands of time each day to measure the time a packet of data required to make a round trip between two nodes on the internet.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on the preservation, loss, and potential retrieval of historical internet data (like PingER and Renesys datasets), directly aligning with technologies and challenges in storing and accessing digital information for future analysis."
+          },
+          {
+            "title": "Ring kills Flock partnership amid surveillance scrutiny",
+            "url": "https://www.theregister.com/2026/02/13/ring_flock_partnership/",
+            "source": "The Register",
+            "published": "2026-02-13T14:05:58.000Z",
+            "summary": "<h4>Move comes against backdrop of disasterclass Super Bowl ad</h4> <p>Ring has cut ties with Flock, <a target=\"_blank\" href=\"https://blog.ring.com/about-ring/ring-and-flock-cancel-partnership/\">citing</a> resource constraints, mere months after the pair announced a partnership.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Ring's AI-powered Search Party feature and Flock's license plate recognition system, which involve data collection, storage, and retrieval for surveillance purposes, aligning with technologies that manage and access stored information."
+          },
+          {
+            "title": "Top Dutch telco Odido admits 6.2M customers caught in contact system caper",
+            "url": "https://www.theregister.com/2026/02/13/odido_breach/",
+            "source": "The Register",
+            "published": "2026-02-13T11:45:13.000Z",
+            "summary": "<h4>Names, addresses, bank account numbers accessed – but biz insists passwords and call data untouched</h4> <p>The Netherlands' largest mobile network operator (MNO) has admitted that a breach of its customer contact system may have affected around 6.2 million people.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach involving a customer contact system where personal data like names, addresses, and bank account numbers were accessed, highlighting issues related to how such sensitive information is stored, managed, and potentially retrieved by unauthorized parties."
+          }
+        ]
+      }
+    ]
+  }
+]
