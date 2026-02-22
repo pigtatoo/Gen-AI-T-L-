@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK council faces data breach claim after mishandling trans complaints",
+            "url": "https://www.theregister.com/2026/02/22/cornwall_council_complaints_breach/",
+            "source": "The Register",
+            "published": "2026-02-22T09:34:09.000Z",
+            "summary": "<h4>Confidential complainant details passed to local politician following debate</h4> <p>A UK councillor has dubbed her local authority's data breach \"crazy\" after the personal details of individuals behind a series of complaints were revealed to her.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach involving mishandled personal information, which directly relates to IT Governance topics like data protection, security policies, and compliance with regulations."
+          },
+          {
+            "title": "Password Managers Share a Hidden Weakness",
+            "url": "https://www.wired.com/story/security-news-this-week-password-managers-share-a-hidden-weakness/",
+            "source": "WIRED",
+            "published": "2026-02-21T11:30:00.000Z",
+            "summary": "Plus: The cybersecurity community grapples with Epstein files revelations, the US State Department plans an online anti-censorship “portal” for the world, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses cybersecurity incidents, data breaches, and IT security failures (e.g., exposed databases with sensitive information, PDF metadata leaks), which relate to IT policies, controls, and oversight under IT Governance."
+          },
+          {
+            "title": "Ofcom's grumble-o-meter lights up for EE, TalkTalk, Vodafone",
+            "url": "https://www.theregister.com/2026/02/21/ofcom_q3_2025_complaints/",
+            "source": "The Register",
+            "published": "2026-02-21T08:27:08.000Z",
+            "summary": "<h4>Q3 figures show the trio drawing the most broadband complaints per 100,000 customers</h4> <p>The UK's telecoms regulator has named and shamed the companies it receives the most customer complaints about, with certain brands cropping up more than others.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses telecom regulator Ofcom publishing complaint data about service faults, provisioning, and complaint handling, which relates to IT service management and operational governance within regulated industries."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "‘Narco-Submarine’ Carrying 4 Tons of Cocaine Captured by Mexico's Navy",
+            "url": "https://www.wired.com/story/narco-submarine-carrying-4-tons-of-cocaine-captured-by-mexicos-navy/",
+            "source": "WIRED",
+            "published": "2026-02-21T10:00:00.000Z",
+            "summary": "Following increased surveillance and patrols of routes used by transnational drug-trafficking networks, Mexican authorities have seized approximately 10 tons of cocaine in the past week alone.",
+            "confidence": 0.75,
+            "reasoning": "The article describes coordinated military and interagency operations, intelligence sharing, and strategic efforts to disrupt organized crime networks, aligning with strategic planning and execution in a security context."
+          },
+          {
+            "title": "Tumbler Ridge suspect's ChatGPT account banned before shooting",
+            "url": "https://www.bbc.com/news/articles/cn4gq352w89o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-21T07:30:32.000Z",
+            "summary": "OpenAI said the account's activity did not meet the threshold to flag it to authorities when it was identified.",
+            "confidence": 0.55,
+            "reasoning": "The article touches on OpenAI's strategic decisions about when to alert authorities, balancing operational policies with broader societal impacts, which involves strategic risk management and corporate responsibility."
+          },
+          {
+            "title": "Why fake AI videos of UK urban decline are taking over social media",
+            "url": "https://www.bbc.com/news/articles/c4g8r23yv71o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-21T06:04:41.000Z",
+            "summary": "Deepfakes showing grim taxpayer-funded waterparks have gone viral and drawn some racist responses.",
+            "confidence": 0.55,
+            "reasoning": "The article touches on how fake content influences public perception and societal divisions, which could indirectly relate to Strategic Management by highlighting the need for organizations to address external risks and align strategies with ethical and social responsibilities."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "They Bet Against Trump’s Tariffs. Now They Stand to Make Millions",
+            "url": "https://www.wired.com/story/they-bet-against-trumps-tariffs-now-they-stand-to-make-millions/",
+            "source": "WIRED",
+            "published": "2026-02-20T21:05:44.000Z",
+            "summary": "After the US Supreme Court struck down President Donald Trump’s tariff regime, investment firms are in line for a whopping return on a niche trade.",
+            "confidence": 0.65,
+            "reasoning": "The article highlights the financial returns and payoffs from investments tied to regulatory outcomes, reflecting the concept of realizing benefits from strategic initiatives or risks taken, though it is more financial than project-oriented."
+          },
+          {
+            "title": "DHS Wants a Single Search Engine to Flag Faces and Fingerprints Across Agencies",
+            "url": "https://www.wired.com/story/dhs-wants-a-single-search-engine-to-flag-faces-and-fingerprints-across-agencies/",
+            "source": "WIRED",
+            "published": "2026-02-20T20:03:23.000Z",
+            "summary": "Homeland Security aims to combine its face and fingerprint systems into one big biometric platform—after dismantling centralized privacy reviews and key limits on face recognition.",
+            "confidence": 0.65,
+            "reasoning": "The initiative aims to realize benefits such as improved data sharing, watch-listing, and investigative capabilities, but the article emphasizes implementation and privacy concerns over explicit benefit measurement or realization processes."
+          },
+          {
+            "title": "Amazon's vibe-coding tool Kiro reportedly vibed too hard and brought down AWS",
+            "url": "https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/",
+            "source": "The Register",
+            "published": "2026-02-20T17:52:41.000Z",
+            "summary": "<h4>Bezos-corp blames user error for outage, 'specifically misconfigured access controls'</h4> <p>In a cautionary tale of agentic AI, AWS reportedly suffered service outages caused by its own AI coding tools in December - though the company insists the downtime was ultimately due to human error.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The article touches on the intended benefits of AI coding tools (e.g., efficiency, easier production) versus the realized outcome (outage), relating to evaluating whether technology investments deliver expected benefits without unacceptable risks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Password Managers Share a Hidden Weakness",
+            "url": "https://www.wired.com/story/security-news-this-week-password-managers-share-a-hidden-weakness/",
+            "source": "WIRED",
+            "published": "2026-02-21T11:30:00.000Z",
+            "summary": "Plus: The cybersecurity community grapples with Epstein files revelations, the US State Department plans an online anti-censorship “portal” for the world, and more.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses multiple incidents involving exposed sensitive data (passwords, Social Security numbers, metadata in PDFs) and the collection of biometric data into a searchable database, all of which are methods or outcomes of information gathering by attackers or organizations."
+          },
+          {
+            "title": "Tumbler Ridge suspect's ChatGPT account banned before shooting",
+            "url": "https://www.bbc.com/news/articles/cn4gq352w89o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-21T07:30:32.000Z",
+            "summary": "OpenAI said the account's activity did not meet the threshold to flag it to authorities when it was identified.",
+            "confidence": 0.95,
+            "reasoning": "The article details OpenAI's use of automated tools and human investigations to identify and monitor a user's activity for potential threats, which aligns with the cybersecurity practice of gathering and analyzing information to detect malicious intent or misuse."
+          },
+          {
+            "title": "UK council faces data breach claim after mishandling trans complaints",
+            "url": "https://www.theregister.com/2026/02/22/cornwall_council_complaints_breach/",
+            "source": "The Register",
+            "published": "2026-02-22T09:34:09.000Z",
+            "summary": "<h4>Confidential complainant details passed to local politician following debate</h4> <p>A UK councillor has dubbed her local authority's data breach \"crazy\" after the personal details of individuals behind a series of complaints were revealed to her.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach where confidential complainant details were improperly disclosed, which involves unauthorized access to and exposure of sensitive personal information, a key aspect of information gathering in cyber attacks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK council faces data breach claim after mishandling trans complaints",
+            "url": "https://www.theregister.com/2026/02/22/cornwall_council_complaints_breach/",
+            "source": "The Register",
+            "published": "2026-02-22T09:34:09.000Z",
+            "summary": "<h4>Confidential complainant details passed to local politician following debate</h4> <p>A UK councillor has dubbed her local authority's data breach \"crazy\" after the personal details of individuals behind a series of complaints were revealed to her.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach where confidential complainant details were improperly disclosed, directly implicating failures in how personal information is stored, managed, and accessed, which falls under this topic."
+          },
+          {
+            "title": "Password Managers Share a Hidden Weakness",
+            "url": "https://www.wired.com/story/security-news-this-week-password-managers-share-a-hidden-weakness/",
+            "source": "WIRED",
+            "published": "2026-02-21T11:30:00.000Z",
+            "summary": "Plus: The cybersecurity community grapples with Epstein files revelations, the US State Department plans an online anti-censorship “portal” for the world, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a database containing sensitive information like passwords and Social Security numbers left accessible online, directly relating to the storage, security, and retrieval of digital data."
+          },
+          {
+            "title": "SerpApi says Google is the pot calling the kettle black when it comes to scraping",
+            "url": "https://www.theregister.com/2026/02/21/serpapi_google_scraping_lawsuit/",
+            "source": "The Register",
+            "published": "2026-02-21T00:56:04.000Z",
+            "summary": "<h4>'The DMCA was not designed to create walled gardens for tech giants'</h4> <p>SerpApi, a Texas-based web scraping company, has asked a California court to dismiss Google's claim that that it bypassed digital locks to gather copyrighted content in Google Search results.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses web scraping, which involves automated retrieval of data from websites, directly relating to technologies for accessing and gathering information from digital sources, though the legal and copyright aspects are more prominent than the technical storage mechanisms."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Amazon's vibe-coding tool Kiro reportedly vibed too hard and brought down AWS",
+            "url": "https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/",
+            "source": "The Register",
+            "published": "2026-02-20T17:52:41.000Z",
+            "summary": "<h4>Bezos-corp blames user error for outage, 'specifically misconfigured access controls'</h4> <p>In a cautionary tale of agentic AI, AWS reportedly suffered service outages caused by its own AI coding tools in December - though the company insists the downtime was ultimately due to human error.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article directly describes a service outage (incident) at AWS, detailing its cause, duration, and the response process, which aligns with incident management's focus on restoring normal service operations."
+          },
+          {
+            "title": "Government Docs Reveal New Details About Tesla and Waymo Robotaxis’ Human Babysitters",
+            "url": "https://www.wired.com/story/government-docs-reveal-new-details-about-tesla-and-waymo-robotaxi-programs/",
+            "source": "WIRED",
+            "published": "2026-02-20T21:53:01.000Z",
+            "summary": "Self-driving-vehicle companies are revealing new details about their safety-critical “remote assistance” programs—but questions remain.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses critical situations where self-driving vehicles encounter problems (e.g., power outages, illegal maneuvers) requiring human intervention to resolve, directly aligning with incident management's focus on restoring normal service operation after disruptions."
+          },
+          {
+            "title": "Ofcom's grumble-o-meter lights up for EE, TalkTalk, Vodafone",
+            "url": "https://www.theregister.com/2026/02/21/ofcom_q3_2025_complaints/",
+            "source": "The Register",
+            "published": "2026-02-21T08:27:08.000Z",
+            "summary": "<h4>Q3 figures show the trio drawing the most broadband complaints per 100,000 customers</h4> <p>The UK's telecoms regulator has named and shamed the companies it receives the most customer complaints about, with certain brands cropping up more than others.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses customer complaints about faults, service, and provisioning in telecom services, which aligns with incident management's focus on restoring normal service operations after disruptions or issues reported by users."
+          }
+        ]
+      }
+    ]
+  }
+]
