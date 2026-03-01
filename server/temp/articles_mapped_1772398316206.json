@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The 5 Big ‘Known Unknowns’ of Donald Trump’s New War With Iran",
+            "url": "https://www.wired.com/story/5-big-known-unknowns-donald-trump-iran-war/",
+            "source": "WIRED",
+            "published": "2026-03-01T17:47:31.000Z",
+            "summary": "The all-out air assault on the Islamic Republic might be the biggest gamble of the president’s career.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses high-stakes presidential decisions, military strategy, and geopolitical risk management, which align with strategic leadership and organizational direction aspects of Strategic Management."
+          },
+          {
+            "title": "Trump says 48 leaders killed in strikes on Iran, and new leaders want to talk",
+            "url": "https://www.channelnewsasia.com/world/trump-says-48-leaders-killed-in-strikes-iran-fox-news-interview-5962156",
+            "source": "Latest News",
+            "published": "2026-03-01T17:04:31.000Z",
+            "summary": "Trump said in media interviews on Sunday that 48 leaders were killed in strikes on Iran, but that he would \"be talking\" to new Iranian leaders, although he didn't specify when.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses high-level geopolitical actions and statements by a former U.S. president regarding Iran, which relates to strategic decision-making and international relations at an organizational (national) level."
+          },
+          {
+            "title": "Crew member killed after projectile hits tanker off Oman, manager says",
+            "url": "https://www.channelnewsasia.com/world/crew-member-killed-after-projectile-hits-tanker-oman-manager-says-5962176",
+            "source": "Latest News",
+            "published": "2026-03-01T18:58:45.000Z",
+            "summary": "V.Ships Asia said that the crew member was killed in the engine room of the tanker.&nbsp;At least three ships are known to have been attacked in the Strait of Hormuz on Sunday.",
+            "confidence": 0.65,
+            "reasoning": "The article describes a security incident (attack on a tanker) in a critical maritime chokepoint, which relates to strategic risk assessment, crisis management, and operational security decisions within an organization's strategic framework."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OpenClaw, but in containers: Meet NanoClaw",
+            "url": "https://www.theregister.com/2026/03/01/nanoclaw_container_openclaw/",
+            "source": "The Register",
+            "published": "2026-03-01T11:30:06.000Z",
+            "summary": "<h4>A smaller, security-conscious take on the viral AI agent platform</h4> <p><strong>Interview</strong>  Ideally, you shouldn't have to defend yourself against your own AI agent. But we don't live in an ideal world and an unrestrained agent can cause a ton of damage.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses security and control mechanisms for AI agent platforms, focusing on secure design, auditability, and containerization to manage risk, which aligns with IT governance principles of ensuring IT systems are managed securely and effectively."
+          },
+          {
+            "title": "The Piracy Problem Streaming Platforms Can’t Solve",
+            "url": "https://www.wired.com/story/the-piracy-problem-streaming-platforms-cant-solve/",
+            "source": "WIRED",
+            "published": "2026-03-01T10:00:00.000Z",
+            "summary": "In parts of the Middle East and North Africa, a patchwork of sanctions, payment failures, and licensing gaps pushes people into piracy networks.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses unauthorized access to digital content, VPN usage, and regional compliance with intellectual property laws, which relate to IT policies, controls, and legal adherence under IT governance."
+          },
+          {
+            "title": "Could a huge data centre revitalise Ayrshire - or ruin it?",
+            "url": "https://www.bbc.com/news/articles/c2d1ny161yyo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-03-01T09:25:25.000Z",
+            "summary": "Controversial proposals to turn land near HMP Kilmarnock into a technology hub are being advanced by energy company ILI Group.",
+            "confidence": 0.75,
+            "reasoning": "The proposal centers on building a large AI data center, which involves IT infrastructure, energy consumption, and technology deployment considerations, relevant to IT governance frameworks that manage IT resources and risks."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Could a huge data centre revitalise Ayrshire - or ruin it?",
+            "url": "https://www.bbc.com/news/articles/c2d1ny161yyo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-03-01T09:25:25.000Z",
+            "summary": "Controversial proposals to turn land near HMP Kilmarnock into a technology hub are being advanced by energy company ILI Group.",
+            "confidence": 0.68,
+            "reasoning": "The article highlights potential benefits like job creation and investment, alongside risks such as environmental impact and community opposition, relating to the governance process of identifying, planning, and realizing benefits from initiatives."
+          },
+          {
+            "title": "Trump orders government to stop using Anthropic in battle over AI use",
+            "url": "https://www.bbc.com/news/articles/cn48jj3y8ezo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-02-28T03:50:05.000Z",
+            "summary": "The move announced on social media comes after a standoff between Anthropic's boss and the US Department of Defense.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on the government's assessment of risks versus benefits in using Anthropic's AI, implying a consideration of whether expected benefits (e.g., military capabilities) are realized, though it is less explicitly discussed than governance aspects."
+          },
+          {
+            "title": "Anthropic Hits Back After US Military Labels It a ‘Supply Chain Risk’",
+            "url": "https://www.wired.com/story/anthropic-supply-chain-risk-shockwaves-silicon-valley/",
+            "source": "WIRED",
+            "published": "2026-02-28T03:30:41.000Z",
+            "summary": "Anthropic says it would be “legally unsound” for the Pentagon to blacklist its technology after talks over military use of its artificial intelligence models broke down.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on negotiations over the use of AI models for military purposes, implying considerations of expected benefits versus risks, though this is less directly addressed compared to governance and strategic aspects."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Engineer held hostage by client who asked for the wrong fix",
+            "url": "https://www.theregister.com/2026/02/27/on_call/",
+            "source": "The Register",
+            "published": "2026-02-27T07:30:07.000Z",
+            "summary": "<h4>'I was no longer field support. I was collateral'</h4> <p><strong>On Call</strong>  Friday has arrived, bringing a promise of fleeting freedom – and a new instalment of On Call, <em>The Register</em>'s reader-contributed column that retells your tales of tech support incidents that became memorable for all the wrong reasons.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a tech support incident involving a field engineer resolving a hardware failure (failed system board), which aligns with the incident management process of restoring normal service operation as quickly as possible."
+          },
+          {
+            "title": "ServiceNow boasts its AI bot is resolving 90% of its own help desk tickets",
+            "url": "https://www.theregister.com/2026/02/26/servicenow_ai_bot_helpdesk_tickets/",
+            "source": "The Register",
+            "published": "2026-02-26T23:22:09.000Z",
+            "summary": "<h4>When it gets stuck, the bot will escalate rather than hallucinate</h4> <p>ServiceNow claims it has created an AI agent that is currently solving 90 percent of the inbound IT tickets to the company's own employee help desk.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on an AI agent autonomously resolving IT help desk tickets, which is a core function of incident management, including handling high-volume issues like password resets and account unlocks within defined escalation paths."
+          },
+          {
+            "title": "OpenClaw, but in containers: Meet NanoClaw",
+            "url": "https://www.theregister.com/2026/03/01/nanoclaw_container_openclaw/",
+            "source": "The Register",
+            "published": "2026-03-01T11:30:06.000Z",
+            "summary": "<h4>A smaller, security-conscious take on the viral AI agent platform</h4> <p><strong>Interview</strong>  Ideally, you shouldn't have to defend yourself against your own AI agent. But we don't live in an ideal world and an unrestrained agent can cause a ton of damage.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses security incidents involving AI agents (e.g., deleting an inbox) and the development of a more secure platform to prevent such issues, which relates to identifying, responding to, and mitigating incidents in IT services."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "X Is Drowning in Disinformation Following US and Israeli Attack on Iran",
+            "url": "https://www.wired.com/story/x-is-drowning-in-disinformation-following-us-and-israels-attack-on-iran/",
+            "source": "WIRED",
+            "published": "2026-02-28T22:40:53.000Z",
+            "summary": "WIRED has reviewed hundreds of posts on X that promote misleading claims about the locations and scale of the attack.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses analyzing and reviewing large volumes of posts on X (a social media platform), which involves retrieving and examining stored digital data to identify disinformation patterns, aligning with data handling and investigation aspects of the topic."
+          },
+          {
+            "title": "Hacked Prayer App Sends ‘Surrender’ Messages to Iranians Amid Israeli and US Strikes",
+            "url": "https://www.wired.com/story/hacked-prayer-app-sends-surrender-messages-to-iranians-amid-israeli-strikes/",
+            "source": "WIRED",
+            "published": "2026-02-28T15:58:09.000Z",
+            "summary": "As Israeli airstrikes hit Tehran this morning, Iranians received mysterious push notifications saying that “help is on the way,” promising amnesty if they surrender.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a hacked mobile app sending unauthorized push notifications, which involves accessing, manipulating, and retrieving data from the app's storage and notification systems, a core aspect of digital evidence handling in cyber forensics."
+          },
+          {
+            "title": "The Piracy Problem Streaming Platforms Can’t Solve",
+            "url": "https://www.wired.com/story/the-piracy-problem-streaming-platforms-cant-solve/",
+            "source": "WIRED",
+            "published": "2026-03-01T10:00:00.000Z",
+            "summary": "In parts of the Middle East and North Africa, a patchwork of sanctions, payment failures, and licensing gaps pushes people into piracy networks.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses piracy networks, VPNs, Telegram channels, and shared drives, which involve technologies for storing and distributing digital content, though the focus is more on access and legal issues than forensic analysis."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "X Is Drowning in Disinformation Following US and Israeli Attack on Iran",
+            "url": "https://www.wired.com/story/x-is-drowning-in-disinformation-following-us-and-israels-attack-on-iran/",
+            "source": "WIRED",
+            "published": "2026-02-28T22:40:53.000Z",
+            "summary": "WIRED has reviewed hundreds of posts on X that promote misleading claims about the locations and scale of the attack.",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on the spread of disinformation on social media platform X, which is a key method of gathering and disseminating false or misleading information to influence public perception, directly aligning with intelligence and reconnaissance aspects of information gathering in cyber operations."
+          },
+          {
+            "title": "Hacked Prayer App Sends ‘Surrender’ Messages to Iranians Amid Israeli and US Strikes",
+            "url": "https://www.wired.com/story/hacked-prayer-app-sends-surrender-messages-to-iranians-amid-israeli-strikes/",
+            "source": "WIRED",
+            "published": "2026-02-28T15:58:09.000Z",
+            "summary": "As Israeli airstrikes hit Tehran this morning, Iranians received mysterious push notifications saying that “help is on the way,” promising amnesty if they surrender.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a cyber attack (hacked app sending messages) used in a geopolitical conflict, which involves gathering intelligence or influencing a target population, aligning with the reconnaissance and intelligence aspects of information gathering in cyber operations."
+          },
+          {
+            "title": "Area Man Accidentally Hacks 6,700 Camera-Enabled Robot Vacuums",
+            "url": "https://www.wired.com/story/security-news-this-week-area-man-accidentally-hacks-6700-camera-enabled-robot-vacuums/",
+            "source": "WIRED",
+            "published": "2026-02-28T11:30:00.000Z",
+            "summary": "Plus: The top US cyber agency falls into shambles, AI models develop an upsetting penchant for nuclear weapons, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses data broker breaches, investigations into data collection practices, and government subpoenas for information from tech companies, all of which involve the collection, aggregation, or exposure of data—a core aspect of information gathering in cybersecurity."
+          }
+        ]
+      }
+    ]
+  }
+]
