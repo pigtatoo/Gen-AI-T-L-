@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Brits fear AI will strip the human touch from public services",
+            "url": "https://www.theregister.com/2026/03/07/ai_public_sector_poll/",
+            "source": "The Register",
+            "published": "2026-03-07T11:01:07.000Z",
+            "summary": "<h4>'There's a naive techno-utopianism in Whitehall'</h4> <p>Brits are worried that AI will dehumanize public services, leading to less human contact and oversight as well as job losses, according to people questioned by pollster Ipsos.…</p>",
+            "confidence": 0.82,
+            "reasoning": "The article discusses public concerns about AI implementation in public services, including risks like reduced human oversight, privacy, and data security. IT Governance directly addresses the policies, processes, and controls for managing IT systems, ensuring they align with organizational goals and mitigate such risks."
+          },
+          {
+            "title": "X probes offensive posts by xAI’s Grok chatbot, Sky News reports",
+            "url": "https://www.channelnewsasia.com/business/x-probes-offensive-posts-xais-grok-chatbot-sky-news-reports-5979936",
+            "source": "Latest News",
+            "published": "2026-03-08T13:51:27.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses X (formerly Twitter) investigating offensive posts by an AI chatbot (Grok), which involves oversight, control, and ethical management of information technology systems—a core aspect of IT Governance."
+          },
+          {
+            "title": "AI agents now help attackers, including North Korea, manage their drudge work",
+            "url": "https://www.theregister.com/2026/03/08/deploy_and_manage_attack_infrastructure/",
+            "source": "The Register",
+            "published": "2026-03-08T11:00:06.000Z",
+            "summary": "<h4>Crims 'will do what gets them their objective easiest and fastest,' Microsoft threat intel boss tells The Reg</h4> <p><strong>interview</strong>  AI agents allow cybercriminals and nation-state hackers to outsource the \"janitorial-type work\" needed to plan and carry out cyberattacks, according to Sherrod DeGrippo, Microsoft's GM of global threat intelligence. North Korea is taking advantage.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI agents being used by threat actors to manage attack infrastructure and perform reconnaissance, which directly relates to IT governance concerns around technology oversight, security controls, and managing IT risks."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Brits fear AI will strip the human touch from public services",
+            "url": "https://www.theregister.com/2026/03/07/ai_public_sector_poll/",
+            "source": "The Register",
+            "published": "2026-03-07T11:01:07.000Z",
+            "summary": "<h4>'There's a naive techno-utopianism in Whitehall'</h4> <p>Brits are worried that AI will dehumanize public services, leading to less human contact and oversight as well as job losses, according to people questioned by pollster Ipsos.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article highlights strategic decisions around AI adoption, such as balancing efficiency gains (like reducing administrative work) with public trust and workforce impacts. Strategic Management involves planning and executing high-level objectives, which aligns with how governments approach AI integration and its societal implications."
+          },
+          {
+            "title": "How Each Gulf Country Is Intercepting Iranian Missiles and Drones",
+            "url": "https://www.wired.com/story/how-each-gulf-country-is-intercepting-iranian-missiles-and-drones/",
+            "source": "WIRED",
+            "published": "2026-03-07T11:00:00.000Z",
+            "summary": "As missiles and drones cross the region’s skies, the Gulf’s layered air-defense networks—from THAAD to Patriot batteries—are being tested in real time.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses national defense strategies, layered air-defense networks, and real-time responses to threats, which align with strategic planning and resource allocation in high-stakes environments."
+          },
+          {
+            "title": "AI agents now help attackers, including North Korea, manage their drudge work",
+            "url": "https://www.theregister.com/2026/03/08/deploy_and_manage_attack_infrastructure/",
+            "source": "The Register",
+            "published": "2026-03-08T11:00:06.000Z",
+            "summary": "<h4>Crims 'will do what gets them their objective easiest and fastest,' Microsoft threat intel boss tells The Reg</h4> <p><strong>interview</strong>  AI agents allow cybercriminals and nation-state hackers to outsource the \"janitorial-type work\" needed to plan and carry out cyberattacks, according to Sherrod DeGrippo, Microsoft's GM of global threat intelligence. North Korea is taking advantage.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.6,
+            "reasoning": "The article highlights how adversaries strategically use AI to improve efficiency and scale of attacks, which relates to strategic management of technology and competitive threats, though the focus is more on external threats than internal strategy."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Brits fear AI will strip the human touch from public services",
+            "url": "https://www.theregister.com/2026/03/07/ai_public_sector_poll/",
+            "source": "The Register",
+            "published": "2026-03-07T11:01:07.000Z",
+            "summary": "<h4>'There's a naive techno-utopianism in Whitehall'</h4> <p>Brits are worried that AI will dehumanize public services, leading to less human contact and oversight as well as job losses, according to people questioned by pollster Ipsos.…</p>",
+            "confidence": 0.68,
+            "reasoning": "The article contrasts perceived risks and opportunities of AI, noting that some see benefits like freeing staff time, while others fear job losses. Benefit Realization focuses on ensuring planned benefits (e.g., efficiency, cost reduction) are achieved and measured, which relates to the debate over whether AI will deliver promised advantages or unintended negatives."
+          },
+          {
+            "title": "Anthropic bods rework AI damage yardstick, find scant labor impact",
+            "url": "https://www.theregister.com/2026/03/07/anthropic_bods_rework_ai_damage/",
+            "source": "The Register",
+            "published": "2026-03-07T00:07:18.000Z",
+            "summary": "<h4>It's the end of the world as we know it, and AI feels fine</h4> <p>Anthropic economists Maxim Massenkoff and Peter McCrory report that AI is not eliminating as many jobs as experts have predicted. …</p>",
+            "confidence": 0.65,
+            "reasoning": "The article evaluates the actual outcomes of AI implementation versus predicted benefits (like job displacement), relating to measuring and realizing expected advantages from technological investments."
+          },
+          {
+            "title": "Oracle and OpenAI's Texas Stargate datacenter expansion reportedly on the skids",
+            "url": "https://www.theregister.com/2026/03/07/openai_oracle_dc/",
+            "source": "The Register",
+            "published": "2026-03-07T00:51:11.000Z",
+            "summary": "<h4>Meta supposedly considering untapped capacity in deal brokered by Nvidia</h4> <p>OpenAI and compute partner Oracle have reportedly abandoned a planned expansion of their flagship Stargate datacenter, after negotiations were stalled by financing and Sam Altman's apparent fear of commitment.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.55,
+            "reasoning": "The article implies challenges in forecasting demand and realizing expected benefits from the datacenter investment, but this is a minor theme compared to the strategic and financial negotiations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI agents now help attackers, including North Korea, manage their drudge work",
+            "url": "https://www.theregister.com/2026/03/08/deploy_and_manage_attack_infrastructure/",
+            "source": "The Register",
+            "published": "2026-03-08T11:00:06.000Z",
+            "summary": "<h4>Crims 'will do what gets them their objective easiest and fastest,' Microsoft threat intel boss tells The Reg</h4> <p><strong>interview</strong>  AI agents allow cybercriminals and nation-state hackers to outsource the \"janitorial-type work\" needed to plan and carry out cyberattacks, according to Sherrod DeGrippo, Microsoft's GM of global threat intelligence. North Korea is taking advantage.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.95,
+            "reasoning": "The article explicitly describes AI agents performing automated reconnaissance tasks like scanning systems and gathering information about targets, which directly aligns with the topic of information gathering in cyber attacks."
+          },
+          {
+            "title": "This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won’t Work",
+            "url": "https://www.wired.com/story/deveillance-spectre-i/",
+            "source": "WIRED",
+            "published": "2026-03-06T23:45:14.000Z",
+            "summary": "Deveillance’s Spectre I, developed by a recent Harvard grad, wants to give people control over the always-on wearables surrounding their lives. The problem? Physics.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a device designed to detect and log nearby microphones, which is a form of reconnaissance or information gathering about potential surveillance threats in the environment."
+          },
+          {
+            "title": "The Future of Iran’s Internet Is More Uncertain Than Ever",
+            "url": "https://www.wired.com/story/the-future-of-irans-internet-is-more-uncertain-than-ever/",
+            "source": "WIRED",
+            "published": "2026-03-06T20:06:06.000Z",
+            "summary": "Iran’s internet shutdown has reduced connectivity by 99 percent, with air strikes likely causing additional outages, and few workarounds remaining.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses internet blackouts and limited connectivity, which can hinder information gathering by citizens and external entities, though the direct focus is on infrastructure disruption rather than active intelligence collection."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.8,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "This Jammer Wants to Block Always-Listening AI Wearables. It Probably Won’t Work",
+            "url": "https://www.wired.com/story/deveillance-spectre-i/",
+            "source": "WIRED",
+            "published": "2026-03-06T23:45:14.000Z",
+            "summary": "Deveillance’s Spectre I, developed by a recent Harvard grad, wants to give people control over the always-on wearables surrounding their lives. The problem? Physics.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a device designed to jam and detect microphones, which relates to technologies that capture and potentially store audio data, touching on aspects of how information is acquired and managed, though it focuses more on prevention than forensic retrieval."
+          },
+          {
+            "title": "Firefox taps Anthropic AI bug hunter, but rancid RAM still flipping bits",
+            "url": "https://www.theregister.com/2026/03/06/firefox_bugs_anthropic_ai/",
+            "source": "The Register",
+            "published": "2026-03-06T20:41:44.000Z",
+            "summary": "<h4>Now if only device makers would deliver higher quality components</h4> <p>Thanks to Anthropic's AI and its bug-detecting abilities, Firefox users can now enjoy stronger security. Unfortunately, if browser crashes rather than security flaws are the problem, Claude probably can't help.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses bit flips in memory (RAM), which is a hardware component for data storage, and mentions crashes related to bad memory, directly linking to storage technology issues in digital devices."
+          },
+          {
+            "title": "AI agents now help attackers, including North Korea, manage their drudge work",
+            "url": "https://www.theregister.com/2026/03/08/deploy_and_manage_attack_infrastructure/",
+            "source": "The Register",
+            "published": "2026-03-08T11:00:06.000Z",
+            "summary": "<h4>Crims 'will do what gets them their objective easiest and fastest,' Microsoft threat intel boss tells The Reg</h4> <p><strong>interview</strong>  AI agents allow cybercriminals and nation-state hackers to outsource the \"janitorial-type work\" needed to plan and carry out cyberattacks, according to Sherrod DeGrippo, Microsoft's GM of global threat intelligence. North Korea is taking advantage.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses AI agents performing reconnaissance and managing attack infrastructure, which involves accessing, scanning, and retrieving data from compromised systems and network blocks—activities related to data storage and retrieval in a forensic context."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Bundle of human neurons hooked to silicon learns to stumble through Doom",
+            "url": "https://www.theregister.com/2026/03/08/neurons_doom/",
+            "source": "The Register",
+            "published": "2026-03-08T09:30:06.000Z",
+            "summary": "<h4>What hath science wrought?</h4> <p>A clump of living human brain cells wired into a silicon chip has answered the internet's most important computing question: yes, it can run Doom.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a system using reinforcement learning where neurons adapt their activity based on feedback to perform tasks like moving and shooting in a game, which aligns with algorithmic concepts of learning and optimization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Microsoft finally gets around to fixing Windows 10 Recovery Environment after breaking it in October",
+            "url": "https://www.theregister.com/2026/03/06/microsoft_finally_gets_around_to/",
+            "source": "The Register",
+            "published": "2026-03-06T11:38:06.000Z",
+            "summary": "<h4>Released from the curse of the update bork fairy</h4> <p>Microsoft has finally fixed a Windows Recovery Environment (WinRE) bug it introduced in Windows 10's final update.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a software bug (broken Windows Recovery Environment) introduced by an update, its impact on users, and the subsequent fix released by Microsoft. This directly aligns with the incident management process of identifying, logging, categorizing, prioritizing, and resolving incidents to restore normal service operation."
+          },
+          {
+            "title": "The Future of Iran’s Internet Is More Uncertain Than Ever",
+            "url": "https://www.wired.com/story/the-future-of-irans-internet-is-more-uncertain-than-ever/",
+            "source": "WIRED",
+            "published": "2026-03-06T20:06:06.000Z",
+            "summary": "Iran’s internet shutdown has reduced connectivity by 99 percent, with air strikes likely causing additional outages, and few workarounds remaining.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a large-scale internet blackout affecting millions, which can be viewed as a major IT service disruption requiring processes for detection, response, and restoration, aligning with incident management principles."
+          },
+          {
+            "title": "Why Is Alexa+ So Bad?",
+            "url": "https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/",
+            "source": "WIRED",
+            "published": "2026-03-06T11:00:00.000Z",
+            "summary": "I stuck Amazon’s Echo Show 15 and its Alexa+ AI assistant in my kitchen for a month. Things have not gone well.",
+            "confidence": 0.65,
+            "reasoning": "The article describes persistent failures and unreliability of the Alexa+ AI assistant, which aligns with incident management's focus on restoring normal service operation after disruptions, though the context is a consumer product rather than a formal IT service."
+          }
+        ]
+      }
+    ]
+  }
+]
