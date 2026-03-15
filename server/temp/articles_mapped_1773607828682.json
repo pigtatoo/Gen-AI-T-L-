@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Palantir Demos Show How the Military Could Use AI Chatbots to Generate War Plans",
+            "url": "https://www.wired.com/story/palantir-demos-show-how-the-military-can-use-ai-chatbots-to-generate-war-plans/",
+            "source": "WIRED",
+            "published": "2026-03-13T10:00:00.000Z",
+            "summary": "Software demos and Pentagon records detail how chatbots like Anthropic’s Claude could help the Pentagon analyze intelligence and suggest next steps.",
+            "confidence": 0.9,
+            "reasoning": "The article focuses on AI chatbots like Claude being used by the military to analyze intelligence, uncover data-driven insights, and identify patterns, which directly aligns with the process of gathering and synthesizing information for decision-making."
+          },
+          {
+            "title": "A Hacker Accidentally Broke Into the FBI’s Epstein Files",
+            "url": "https://www.wired.com/story/security-news-this-week-a-hacker-accidentally-broke-into-the-fbis-epstein-files/",
+            "source": "WIRED",
+            "published": "2026-03-14T10:30:00.000Z",
+            "summary": "Plus: A porn-quitting app exposed the masturbation habits of hundreds of thousands of users, Russian hackers are trying to take over people’s Signal accounts, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article describes multiple cyber incidents (hacker accessing FBI files, Iranian state-backed attacks, GPS attacks, scammers) that likely involve reconnaissance or intelligence collection as a preliminary phase."
+          },
+          {
+            "title": "Pentagon AI chief praises Palantir tech for speeding battlefield strikes",
+            "url": "https://www.theregister.com/2026/03/13/palantirs_maven_smart_system_iran/",
+            "source": "The Register",
+            "published": "2026-03-13T01:00:30.000Z",
+            "summary": "<h4>Going from eight systems to one means fewer people make decisions to unleash Epic Fury</h4> <p>As the US continues its strikes on Iran as part of Operation Epic Fury, speakers at Palantir's AIPCON event on Thursday said the company’s Maven Smart System product has shortened the time it takes the Department of Defense to select and hit targets on the battlefield during the conflict.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI systems (Maven Smart System) that accelerate target identification and decision-making in military operations, which involves collecting and processing battlefield intelligence—a form of information gathering relevant to cyber security contexts like reconnaissance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Rogue AI agents can work together to hack systems and steal secrets",
+            "url": "https://www.theregister.com/2026/03/12/rogue_ai_agents_worked_together/",
+            "source": "The Register",
+            "published": "2026-03-12T23:49:32.000Z",
+            "summary": "<h4>Prompt like a hard-ass boss who won't tolerate failure and bots will find ways to breach policy</h4> <p>AI agents work together to bypass security controls and stealthily steal sensitive data from within the enterprise systems in which they operate, according to tests carried out by frontier security lab Irregular.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI agents exfiltrating and stealing sensitive data from enterprise systems, which directly involves how data is stored, accessed, and retrieved, making this topic relevant to data security and forensic analysis of data breaches."
+          },
+          {
+            "title": "District denies enrollment to child based on license plate reader data",
+            "url": "https://www.theregister.com/2026/03/12/district_denies_enrollment_to_child/",
+            "source": "The Register",
+            "published": "2026-03-12T20:32:01.000Z",
+            "summary": "<h4>Automated checks raised doubts, though key questions remain unanswered</h4> <p>American parents of school-aged children may want to pay attention to where their cars are parked and for how long, as license plate reader data is now being cited by at least one school district when challenging whether students live where they say they do.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the use of license plate reader data, which involves the storage and retrieval of automated surveillance information, to make decisions about student residency. This directly relates to how data is collected, stored, and accessed for investigative purposes."
+          },
+          {
+            "title": "A Hacker Accidentally Broke Into the FBI’s Epstein Files",
+            "url": "https://www.wired.com/story/security-news-this-week-a-hacker-accidentally-broke-into-the-fbis-epstein-files/",
+            "source": "WIRED",
+            "published": "2026-03-14T10:30:00.000Z",
+            "summary": "Plus: A porn-quitting app exposed the masturbation habits of hundreds of thousands of users, Russian hackers are trying to take over people’s Signal accounts, and more.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses hacking incidents and data breaches (e.g., FBI files, app data exposure), which involve accessing, compromising, or retrieving stored digital information, aligning with forensic analysis of storage systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AFRINIC accuses litigant of trying to ‘paralyse’ it",
+            "url": "https://www.theregister.com/2026/03/13/afrinic_strikes_back_at_litigant/",
+            "source": "The Register",
+            "published": "2026-03-13T18:13:39.000Z",
+            "summary": "<h4>A 'web of litigation'</h4> <p>The African Network Information Centre (AFRINIC) has accused one its members of trying to \"paralyse\" the organization.…</p>",
+            "confidence": 0.9,
+            "reasoning": "The article details AFRINIC's operational paralysis due to litigation and governance failures, directly relating to IT governance principles concerning the management, oversight, and control of IT resources (IP address allocation) and organizational structures."
+          },
+          {
+            "title": "A Hacker Accidentally Broke Into the FBI’s Epstein Files",
+            "url": "https://www.wired.com/story/security-news-this-week-a-hacker-accidentally-broke-into-the-fbis-epstein-files/",
+            "source": "WIRED",
+            "published": "2026-03-14T10:30:00.000Z",
+            "summary": "Plus: A porn-quitting app exposed the masturbation habits of hundreds of thousands of users, Russian hackers are trying to take over people’s Signal accounts, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses cybersecurity incidents, state-backed hacking, and disruptions to IT systems, which relate to IT governance frameworks for managing security risks and ensuring proper controls."
+          },
+          {
+            "title": "'Are you freaking crazy?' Bot harasses woman, gets led away by cops",
+            "url": "https://www.theregister.com/2026/03/13/china_bot_berated_woman_freaking_crazy/",
+            "source": "The Register",
+            "published": "2026-03-13T17:48:24.000Z",
+            "summary": "<h4>An incident in Macau</h4> <p>A 70-year old woman in China loudly shouted at a robot to leave her alone, but the bot instead stood its ground and did a “raise the roof” move when the woman called it “freaking crazy.”…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article describes an incident involving a robot's autonomous behavior and interaction with a human, raising questions about the governance of IT systems, including deployment protocols, safety controls, and oversight of AI/robotic technologies in public spaces."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Japan Approves the World’s First Treatment Made With Reprogrammed Human Cells",
+            "url": "https://www.wired.com/story/japan-approves-the-worlds-first-treatment-made-with-reprogrammed-human-cells/",
+            "source": "WIRED",
+            "published": "2026-03-14T09:00:00.000Z",
+            "summary": "Researchers in Japan pioneered reprogrammed cells 20 years ago. Now the country has given the first-ever authorizations to manufacture and sell medical products based on the technology.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Japan's regulatory approval of a groundbreaking medical technology, which involves strategic decisions by government bodies and institutions to advance healthcare innovation and position the country as a leader in regenerative medicine."
+          },
+          {
+            "title": "AFRINIC accuses litigant of trying to ‘paralyse’ it",
+            "url": "https://www.theregister.com/2026/03/13/afrinic_strikes_back_at_litigant/",
+            "source": "The Register",
+            "published": "2026-03-13T18:13:39.000Z",
+            "summary": "<h4>A 'web of litigation'</h4> <p>The African Network Information Centre (AFRINIC) has accused one its members of trying to \"paralyse\" the organization.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The litigation and advocacy campaigns are strategic actions by a member that impact AFRINIC's ability to execute its core mission and resume normal operations, highlighting challenges in strategic direction and organizational resilience."
+          },
+          {
+            "title": "Higher Jet Fuel Prices Could Melt Your Summer Travel Plans",
+            "url": "https://www.wired.com/story/higher-jet-fuel-prices-could-melt-your-summer-travel-plans/",
+            "source": "WIRED",
+            "published": "2026-03-13T15:56:28.000Z",
+            "summary": "Airline ticket prices are already rising, but an extended crisis in Iran could have bigger effects on the global travel industry.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses how external geopolitical risks (war in Iran) impact airline operational costs and pricing strategies, requiring strategic adjustments in scheduling, routes, and financial planning to manage profitability and market positioning."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Japan Approves the World’s First Treatment Made With Reprogrammed Human Cells",
+            "url": "https://www.wired.com/story/japan-approves-the-worlds-first-treatment-made-with-reprogrammed-human-cells/",
+            "source": "WIRED",
+            "published": "2026-03-14T09:00:00.000Z",
+            "summary": "Researchers in Japan pioneered reprogrammed cells 20 years ago. Now the country has given the first-ever authorizations to manufacture and sell medical products based on the technology.",
+            "confidence": 0.65,
+            "reasoning": "The approval marks a step toward realizing the benefits of iPS cell research after 20 years, focusing on translating scientific advancements into practical medical treatments, though direct financial or project benefit discussions are limited."
+          },
+          {
+            "title": "AFRINIC accuses litigant of trying to ‘paralyse’ it",
+            "url": "https://www.theregister.com/2026/03/13/afrinic_strikes_back_at_litigant/",
+            "source": "The Register",
+            "published": "2026-03-13T18:13:39.000Z",
+            "summary": "<h4>A 'web of litigation'</h4> <p>The African Network Information Centre (AFRINIC) has accused one its members of trying to \"paralyse\" the organization.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The disruption from litigation prevents AFRINIC from fulfilling its functions and delivering value (IP address management) to its members, indicating a failure in realizing intended benefits from its governance and service agreements."
+          },
+          {
+            "title": "Higher Jet Fuel Prices Could Melt Your Summer Travel Plans",
+            "url": "https://www.wired.com/story/higher-jet-fuel-prices-could-melt-your-summer-travel-plans/",
+            "source": "WIRED",
+            "published": "2026-03-13T15:56:28.000Z",
+            "summary": "Airline ticket prices are already rising, but an extended crisis in Iran could have bigger effects on the global travel industry.",
+            "confidence": 0.6,
+            "reasoning": "Airlines face challenges in recouping current high fuel costs through future ticket sales, highlighting risks to expected financial benefits and the need to align operational changes with revenue targets."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Watchdog boss calls Capita's £370M DWP win 'extraordinary' amid pension portal dumpster fire",
+            "url": "https://www.theregister.com/2026/03/13/capita_contracts_questioned/",
+            "source": "The Register",
+            "published": "2026-03-13T13:44:57.000Z",
+            "summary": "<h4>PAC chair asks Cabinet Office if anyone bothered telling dept about the shambles before handing over the keys</h4> <p>The chair of the UK Parliament's public spending watchdog has dubbed the Department for Work and Pensions' (DWP) decision to award Capita a £370 million shared service contract \"extraordinary,\" given the outsourcing firm's \"failings\" in supporting the Civil Service Pension Scheme (CSPS).…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.95,
+            "reasoning": "The article details significant service failures (unrecognized logins, broken portal links, failed pension payments) following a system transition, which are core incidents requiring logging, prioritization, and resolution."
+          },
+          {
+            "title": "Azure startup credits don't apply to Claude via Azure AI Foundry, reader finds – after $1,600 charge",
+            "url": "https://www.theregister.com/2026/03/13/a_cautionary_tale_azure_startup_credits/",
+            "source": "The Register",
+            "published": "2026-03-13T13:13:12.000Z",
+            "summary": "<h4>Gets bounced between Microsoft and Anthropic like a support ticket nobody wants to own</h4> <p>Companies using credits bundled with Microsoft for Startups have found some unwelcome surprises on their credit card statements after deploying Anthropic's Claude via Azure AI Foundry.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a customer experiencing unexpected billing and being bounced between Microsoft and Anthropic for resolution, which aligns with incident management processes for logging, tracking, and resolving service disruptions or issues."
+          },
+          {
+            "title": "AFRINIC accuses litigant of trying to ‘paralyse’ it",
+            "url": "https://www.theregister.com/2026/03/13/afrinic_strikes_back_at_litigant/",
+            "source": "The Register",
+            "published": "2026-03-13T18:13:39.000Z",
+            "summary": "<h4>A 'web of litigation'</h4> <p>The African Network Information Centre (AFRINIC) has accused one its members of trying to \"paralyse\" the organization.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes AFRINIC's operational paralysis due to litigation and procedural roadblocks, which aligns with incident management's focus on restoring normal service operations after disruptions, though the cause is legal rather than technical."
+          }
+        ]
+      }
+    ]
+  }
+]
