@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "New POW exchange possible as Ukraine and US conclude peace talks",
+            "url": "https://www.channelnewsasia.com/world/new-pow-exchange-possible-ukraine-and-us-conclude-peace-talks-6010171",
+            "source": "Latest News",
+            "published": "2026-03-22T19:41:23.000Z",
+            "summary": "Zelenskyy has urged the US to keep pressure on Russia as Washington temporarily lifted sanctions on Russian oil.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses high-level geopolitical negotiations (Ukraine-US peace talks) and strategic decisions like lifting sanctions, which align with strategic management's focus on organizational direction and policy in response to external environments."
+          },
+          {
+            "title": "Israel to 'advance targeted ground operations' in Lebanon",
+            "url": "https://www.channelnewsasia.com/world/israel-advance-targeted-ground-operations-in-lebanon-6010136",
+            "source": "Latest News",
+            "published": "2026-03-22T18:41:55.000Z",
+            "summary": "Israeli continues to target Hezbollah as military operations commence in Lebanon during the US-Israeli war against Iran.",
+            "confidence": 0.65,
+            "reasoning": "The article describes military and geopolitical actions by Israel, which involve high-level decision-making, resource allocation, and strategic planning in a conflict context, aligning with strategic management's focus on organizational direction and major initiatives."
+          },
+          {
+            "title": "Allegations against ICC war crimes prosecutor still under review",
+            "url": "https://www.channelnewsasia.com/world/allegations-against-icc-war-crimes-prosecutor-still-under-review-6010111",
+            "source": "Latest News",
+            "published": "2026-03-22T18:25:03.000Z",
+            "summary": "US sanctions were placed on Karim and other prosecutors investigating allegations of Israeli war crimes in the Middle East.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses geopolitical actions (US sanctions) in response to international legal proceedings, which relates to high-level organizational or state strategy in managing external risks and compliance with international norms."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The Best Subscription-Free Home Security Cameras I've Tried",
+            "url": "https://www.wired.com/story/best-subscription-free-security-cameras/",
+            "source": "WIRED",
+            "published": "2026-03-22T11:00:00.000Z",
+            "summary": "You don’t have to upload your video to the cloud or pay a monthly fee to secure your home. These security cameras record locally.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses data privacy, local data storage, and security camera management, which relate to IT governance principles for managing IT systems securely and in alignment with privacy requirements."
+          },
+          {
+            "title": "AI videos of sexualised black women removed from TikTok after BBC investigation",
+            "url": "https://www.bbc.com/news/articles/c070e283k8vo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-03-22T00:45:45.000Z",
+            "summary": "Dozens of Instagram and TikTok accounts have used AI avatars to promote explicit content, the BBC finds.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses platforms (TikTok, Instagram) enforcing policies against AI-generated explicit content, which relates to IT governance frameworks for managing technology use, compliance, and ethical standards."
+          },
+          {
+            "title": "Cyberattack on a Car Breathalyzer Firm Leaves Drivers Stuck",
+            "url": "https://www.wired.com/story/security-news-this-week-cyberattack-on-a-car-breathalyzer-firm-leaves-drivers-stuck/",
+            "source": "WIRED",
+            "published": "2026-03-21T10:30:00.000Z",
+            "summary": "Plus: The FBI admits it’s buying phone data to track Americans, Iranian hackers disrupt medical care at Maryland hospitals, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article details multiple cybersecurity incidents (botnets, data exposures, encryption changes) that highlight failures in IT policies, controls, and oversight, which are core concerns of IT Governance."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "At Palantir’s Developer Conference, AI Is Built to Win Wars",
+            "url": "https://www.wired.com/story/palantir-developer-conference-ai-war-alex-karp/",
+            "source": "WIRED",
+            "published": "2026-03-20T15:00:00.000Z",
+            "summary": "As business soars, Palantir is doubling down on a vision of AI built for battlefield advantage—and attracting customers who agree.",
+            "confidence": 0.68,
+            "reasoning": "The article highlights Palantir's commercial growth and government contracts, suggesting a focus on delivering and measuring value from AI investments, though less explicitly tied to formal benefit tracking."
+          },
+          {
+            "title": "Anthropic Denies It Could Sabotage AI Tools During War",
+            "url": "https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/",
+            "source": "WIRED",
+            "published": "2026-03-21T00:03:20.000Z",
+            "summary": "The Department of Defense alleges the AI developer could manipulate models in the middle of war. Company executives argue that’s impossible.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on the potential failure to realize expected benefits from AI technology in military operations due to perceived risks and the ensuing ban, though this is a secondary theme compared to governance and strategic actions."
+          },
+          {
+            "title": "UK police force presses pause on live facial recognition after study finds racial bias",
+            "url": "https://www.theregister.com/2026/03/20/uk_police_force_suspend_live_faical_recog_racial_bias/",
+            "source": "The Register",
+            "published": "2026-03-20T13:35:25.000Z",
+            "summary": "<h4>Cams statistically more likely to ID Black people, says new research</h4> <p>A UK police force has suspended its deployment of live facial recognition (LFR) technology after a study revealed it was statistically more likely to identify Black people on a watchlist database.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The suspension highlights a reassessment of the technology's intended benefits versus unintended harms (like racial bias), touching on benefit realization processes that evaluate whether outcomes align with expected advantages and ethical considerations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "CERN eggheads burn AI into silicon to stem data deluge",
+            "url": "https://www.theregister.com/2026/03/22/cern_eggheads_burn_ai_into/",
+            "source": "The Register",
+            "published": "2026-03-22T11:11:13.000Z",
+            "summary": "<h4>The operating system of the universe isn’t going to debug itself</h4> <p><strong>feature</strong>  CERN is nothing like today's agentic AI jockeys, who mostly rely on pre-set weights and generic TPUs and GPUs to generate their slop. CERN burns custom nanosecond-speed AI into the silicon itself just to eliminate excess data.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses CERN's need to manage and reduce massive data volumes (40,000 EBs annually) from the LHC in real-time, which directly relates to storage challenges and retrieval optimization, though the focus is more on real-time processing than forensic retrieval."
+          },
+          {
+            "title": "The Best Subscription-Free Home Security Cameras I've Tried",
+            "url": "https://www.wired.com/story/best-subscription-free-security-cameras/",
+            "source": "WIRED",
+            "published": "2026-03-22T11:00:00.000Z",
+            "summary": "You don’t have to upload your video to the cloud or pay a monthly fee to secure your home. These security cameras record locally.",
+            "confidence": 0.75,
+            "reasoning": "The article focuses on local storage of security camera footage, which directly relates to storage technologies and methods for retrieving recorded data, though the context is consumer-focused rather than forensic."
+          },
+          {
+            "title": "AI videos of sexualised black women removed from TikTok after BBC investigation",
+            "url": "https://www.bbc.com/news/articles/c070e283k8vo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-03-22T00:45:45.000Z",
+            "summary": "Dozens of Instagram and TikTok accounts have used AI avatars to promote explicit content, the BBC finds.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses the identification and investigation of AI-generated content across social media platforms, which involves locating, accessing, and analyzing digital data—a process reliant on information storage and retrieval technologies for forensic analysis."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "A Top Democrat Is Urging Colleagues to Support Trump’s Spy Machine",
+            "url": "https://www.wired.com/story/a-top-democrat-is-urging-colleagues-to-support-trumps-spy-machine/",
+            "source": "WIRED",
+            "published": "2026-03-20T20:46:45.000Z",
+            "summary": "Congressman Jim Himes claims a sweeping surveillance authority should stay intact because he hasn't seen abuses by Kash Patel's FBI, according to internal messaging obtained by WIRED.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Section 702 surveillance, which involves the collection and interception of electronic communications for intelligence purposes, directly aligning with the concept of information gathering in cybersecurity."
+          },
+          {
+            "title": "Cyberattack on a Car Breathalyzer Firm Leaves Drivers Stuck",
+            "url": "https://www.wired.com/story/security-news-this-week-cyberattack-on-a-car-breathalyzer-firm-leaves-drivers-stuck/",
+            "source": "WIRED",
+            "published": "2026-03-21T10:30:00.000Z",
+            "summary": "Plus: The FBI admits it’s buying phone data to track Americans, Iranian hackers disrupt medical care at Maryland hospitals, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article describes multiple incidents involving the collection of sensitive data (e.g., exposed customer service calls, phone data purchases, stolen victim data via DarkSword), which aligns with the reconnaissance and data collection phase of cyber attacks."
+          },
+          {
+            "title": "Payment biz pulls plug on open source charity after KYC spat",
+            "url": "https://www.theregister.com/2026/03/21/fsfe_dropped_by_its_payments/",
+            "source": "The Register",
+            "published": "2026-03-21T09:30:07.000Z",
+            "summary": "<h4>Free Software Foundation Europe says it was asked for supporters' passwords; Nexi insists it only wanted test credentials to check cancellation flows</h4> <p>The Free Software Foundation Europe says its electronic-payments provider Nexi Group unexpectedly \"cancelled\" its account – cutting the charity off from around 450 donors.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a payment provider requesting usernames and passwords of supporters under the guise of risk analysis and fraud prevention, which could be seen as an attempt at unauthorized information gathering or credential harvesting, though the context is a compliance dispute rather than a direct attack."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Payment biz pulls plug on open source charity after KYC spat",
+            "url": "https://www.theregister.com/2026/03/21/fsfe_dropped_by_its_payments/",
+            "source": "The Register",
+            "published": "2026-03-21T09:30:07.000Z",
+            "summary": "<h4>Free Software Foundation Europe says it was asked for supporters' passwords; Nexi insists it only wanted test credentials to check cancellation flows</h4> <p>The Free Software Foundation Europe says its electronic-payments provider Nexi Group unexpectedly \"cancelled\" its account – cutting the charity off from around 450 donors.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a service disruption where a payment provider unexpectedly canceled an account, impacting donors and requiring a transition to a new provider. This aligns with incident management's focus on restoring normal service operations after an unplanned interruption."
+          },
+          {
+            "title": "Cryptographers engage in war of words over RustSec bug reports and subsequent ban",
+            "url": "https://www.theregister.com/2026/03/20/cryptographer_nadim_kobeissi_rustsec_ban/",
+            "source": "The Register",
+            "published": "2026-03-20T21:07:17.000Z",
+            "summary": "<h4>Rust security maintainers contend Nadim Kobeissi's vulnerability claims are too much</h4> <p>Since February, cryptographer Nadim Kobeissi has been trying to get code fixes applied to Rust cryptography libraries to address what he says are critical bugs. For his efforts, he's been dismissed, ignored, and banned from Rust security channels.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a security vulnerability reporting process, conflicts over handling bug reports, and escalations to moderation teams, which parallels incident management's focus on logging, categorizing, and resolving incidents, though it lacks formal IT service management framework elements."
+          },
+          {
+            "title": "Meta’s latest AI improves its terrible content moderation, just a little",
+            "url": "https://www.theregister.com/2026/03/20/meta_ai_content_moderation/",
+            "source": "The Register",
+            "published": "2026-03-20T04:16:30.000Z",
+            "summary": "<h4>Enterprise tools have detected impossible logins for years. Zuck’s human mods couldn’t join the dots</h4> <p>Meta has revealed it’s tested using AI for content moderation chores and found it does better than humans.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI detecting and mitigating security incidents like scams, account takeovers, and policy violations, which aligns with incident management's focus on identifying, analyzing, and resolving disruptions."
+          }
+        ]
+      }
+    ]
+  }
+]
