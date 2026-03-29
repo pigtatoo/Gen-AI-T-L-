@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "'JD or Marco?’: Iran war raises 2028 stakes as Trump weighs Vance vs. Rubio",
+            "url": "https://www.channelnewsasia.com/world/jd-or-marco-iran-war-raises-2028-stakes-trump-weighs-vance-vs-rubio-6024056",
+            "source": "Latest News",
+            "published": "2026-03-29T18:52:21.000Z",
+            "summary": "JD Vance has taken a cautious approach to the Iran war, while Marco Rubio has aligned himself closely with Trump’s hawkish stance.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses political strategy and positioning of potential vice-presidential candidates (Vance vs. Rubio) in response to an international conflict, which involves high-level decision-making and alignment with leadership stances—key aspects of strategic management."
+          },
+          {
+            "title": "Ukraine's Zelenskyy visiting Jordan for next leg of Gulf 'security' talks amid Iran war",
+            "url": "https://www.channelnewsasia.com/world/ukraines-zelenskyy-visiting-jordan-next-leg-gulf-security-talks-6024231",
+            "source": "Latest News",
+            "published": "2026-03-29T17:01:15.000Z",
+            "summary": "Kyiv has offered its air-defence expertise and drone technology to countries in the region seeking to counter Iran's drone attacks.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Ukraine's strategic diplomatic and security engagements, offering defense expertise to counter regional threats, which aligns with strategic decision-making and international risk management."
+          },
+          {
+            "title": "Russian tanker nears Cuba, defying US oil blockade",
+            "url": "https://www.channelnewsasia.com/world/russian-tanker-nears-cuba-defying-us-oil-blockade-6024421",
+            "source": "Latest News",
+            "published": "2026-03-29T19:03:25.000Z",
+            "summary": "Cuba lost its main oil supplier in January when US forces captured Venezuela's socialist leader, Nicolas Maduro.",
+            "confidence": 0.65,
+            "reasoning": "The article involves geopolitical strategy, international sanctions, and resource management, which relate to strategic decision-making and risk assessment in a global context."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "A School District Tried to Help Train Waymos to Stop for School Buses. It Didn’t Work",
+            "url": "https://www.wired.com/story/a-school-district-tried-to-help-train-waymos-to-stop-for-school-buses-it-didnt-work/",
+            "source": "WIRED",
+            "published": "2026-03-29T11:00:00.000Z",
+            "summary": "The incidents in Austin raise questions about how self-driving cars “learn” and adapt to their surroundings.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Waymo's software development, recall, and ongoing incidents, highlighting failures in IT governance processes such as oversight, risk management, and compliance in deploying autonomous vehicle technology."
+          },
+          {
+            "title": "Your Photos Are Probably Giving Away Your Location. Here’s How to Stop That",
+            "url": "https://www.wired.com/story/how-to-stop-your-photos-giving-away-your-location/",
+            "source": "WIRED",
+            "published": "2026-03-29T10:30:00.000Z",
+            "summary": "All your snaps come with metadata containing more information than you might realize.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses managing digital information (photo metadata and location data), which involves IT policies, data handling, and security controls—key aspects of IT governance."
+          },
+          {
+            "title": "Ukraine's Zelenskyy visiting Jordan for next leg of Gulf 'security' talks amid Iran war",
+            "url": "https://www.channelnewsasia.com/world/ukraines-zelenskyy-visiting-jordan-next-leg-gulf-security-talks-6024231",
+            "source": "Latest News",
+            "published": "2026-03-29T17:01:15.000Z",
+            "summary": "Kyiv has offered its air-defence expertise and drone technology to countries in the region seeking to counter Iran's drone attacks.",
+            "confidence": 0.55,
+            "reasoning": "The mention of drone technology and air-defense expertise involves IT and cybersecurity aspects, though the focus is more on geopolitical security than formal IT governance frameworks."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI Research Is Getting Harder to Separate From Geopolitics",
+            "url": "https://www.wired.com/story/made-in-china-ai-research-is-starting-to-split-along-geopolitical-lines/",
+            "source": "WIRED",
+            "published": "2026-03-27T21:46:39.000Z",
+            "summary": "A policy change announced by NeurIPS, the world’s leading AI research conference, drew widespread backlash from Chinese researchers this week and then was quickly reversed.",
+            "confidence": 0.68,
+            "reasoning": "The article touches on the benefits of international research collaboration versus risks of decoupling, relating to realizing strategic benefits while managing compliance risks."
+          },
+          {
+            "title": "A School District Tried to Help Train Waymos to Stop for School Buses. It Didn’t Work",
+            "url": "https://www.wired.com/story/a-school-district-tried-to-help-train-waymos-to-stop-for-school-buses-it-didnt-work/",
+            "source": "WIRED",
+            "published": "2026-03-29T11:00:00.000Z",
+            "summary": "The incidents in Austin raise questions about how self-driving cars “learn” and adapt to their surroundings.",
+            "confidence": 0.55,
+            "reasoning": "The article questions the purported advantage of collective learning in self-driving cars, suggesting a gap between expected benefits (safety, efficiency) and actual outcomes, which relates to evaluating and achieving intended benefits from technology investments."
+          },
+          {
+            "title": "Your Vape Wants to Know How Old You Are",
+            "url": "https://www.wired.com/story/your-vape-wants-to-know-how-old-you-are/",
+            "source": "WIRED",
+            "published": "2026-03-28T11:00:00.000Z",
+            "summary": "Companies hope that biometric age-verification tech in cartridges could put flavored vapes back in business. But it's unlikely to solve the real problems.",
+            "confidence": 0.55,
+            "reasoning": "The article implies potential benefits (regulatory approval, market access) from implementing age-verification tech, though outcomes are uncertain, relating to realizing expected advantages from initiatives."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Your Photos Are Probably Giving Away Your Location. Here’s How to Stop That",
+            "url": "https://www.wired.com/story/how-to-stop-your-photos-giving-away-your-location/",
+            "source": "WIRED",
+            "published": "2026-03-29T10:30:00.000Z",
+            "summary": "All your snaps come with metadata containing more information than you might realize.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses how photos contain metadata (EXIF data) including location, which can be exploited to gather personal information about an individual's whereabouts and habits, directly aligning with reconnaissance techniques in cyber security."
+          },
+          {
+            "title": "To BSOD or not to BSOD? Only Microsoft knows the answer",
+            "url": "https://www.theregister.com/2026/03/28/rsac_bork/",
+            "source": "The Register",
+            "published": "2026-03-28T10:51:08.000Z",
+            "summary": "<h4>Famous blue screens remind conference of security pros that this OS sometimes has bad days</h4> <p><strong>Bork!Bork!Bork!</strong>  When is a bork not a bork? Perhaps when it's on a Microsoft stand at a US security conference.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes analyzing potential BSOD displays at a security conference to determine if they are genuine errors, technical scams, or marketing, which involves collecting and interpreting data about system behavior and potential threats."
+          },
+          {
+            "title": "Ukraine's Zelenskyy visiting Jordan for next leg of Gulf 'security' talks amid Iran war",
+            "url": "https://www.channelnewsasia.com/world/ukraines-zelenskyy-visiting-jordan-next-leg-gulf-security-talks-6024231",
+            "source": "Latest News",
+            "published": "2026-03-29T17:01:15.000Z",
+            "summary": "Kyiv has offered its air-defence expertise and drone technology to countries in the region seeking to counter Iran's drone attacks.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses Ukraine sharing air-defence expertise and drone technology, which involves the collection and transfer of technical and strategic security knowledge, loosely related to intelligence or reconnaissance aspects of information gathering."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Your Photos Are Probably Giving Away Your Location. Here’s How to Stop That",
+            "url": "https://www.wired.com/story/how-to-stop-your-photos-giving-away-your-location/",
+            "source": "WIRED",
+            "published": "2026-03-29T10:30:00.000Z",
+            "summary": "All your snaps come with metadata containing more information than you might realize.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses EXIF metadata stored in digital photos, which involves how information (location, time, device details) is encoded, stored, and can be retrieved or analyzed, directly relating to data storage and retrieval methods in digital forensics."
+          },
+          {
+            "title": "AFC Ajax drops ball as flaws let hackers play admin with tickets and bans",
+            "url": "https://www.theregister.com/2026/03/27/afc_ajax_drops_ball_as/",
+            "source": "The Register",
+            "published": "2026-03-27T12:30:11.000Z",
+            "summary": "<h4>Vulns in Dutch football club's systems didn't just expose data – they let outsiders play with accounts, and even lift stadium bans</h4> <p>Dutch football giant AFC Ajax has admitted to a data breach after an attacker gained access to its internal systems, in an incident that looks less like a stray pass and more like the gates left wide open.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes a data breach involving exposed APIs and digital keys, which relates to how data is stored, accessed, and retrieved in Ajax's systems, though the focus is more on security flaws than the technologies themselves."
+          },
+          {
+            "title": "Your Vape Wants to Know How Old You Are",
+            "url": "https://www.wired.com/story/your-vape-wants-to-know-how-old-you-are/",
+            "source": "WIRED",
+            "published": "2026-03-28T11:00:00.000Z",
+            "summary": "Companies hope that biometric age-verification tech in cartridges could put flavored vapes back in business. But it's unlikely to solve the real problems.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses biometric age-verification technology and blockchain for security, which involves storing and retrieving identity/age data, though the focus is more on application than forensic analysis."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Lloyds bank reveals IT glitch affected almost half a million customers",
+            "url": "https://www.bbc.com/news/articles/c70dqk2vjv8o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-03-27T11:03:29.000Z",
+            "summary": "In a letter to the Treasury Select Committee, Lloyds apologised and said some compensation had been paid.",
+            "confidence": 0.95,
+            "reasoning": "The article describes a major IT glitch affecting customers, detailing the response, investigation, compensation, and communication with stakeholders, which directly aligns with incident management processes."
+          },
+          {
+            "title": "Lloyds app glitch turned transactions into shared experience for 447k users",
+            "url": "https://www.theregister.com/2026/03/27/lloyds_app_glitch_turned_transactions/",
+            "source": "The Register",
+            "published": "2026-03-27T10:18:08.000Z",
+            "summary": "<h4>A botched update mixed up transaction data across accounts, with thousands now receiving goodwill payouts</h4> <p>A botched overnight software update at Lloyds Banking Group left up to 447,000 customers briefly seeing other people's transactions in its mobile apps, with the bank now acknowledging the scale of the incident and compensating affected users.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a major IT service disruption caused by a software update, detailing the incident's cause, impact on users, timeline, and the bank's response including compensation, which aligns directly with incident management processes."
+          },
+          {
+            "title": "ICE Agents Frustrate Airport Workers as Shutdown Drags On",
+            "url": "https://www.wired.com/story/ice-agents-frustrate-airport-employees-as-shutdown-drags-on/",
+            "source": "WIRED",
+            "published": "2026-03-27T15:18:19.000Z",
+            "summary": "“ICE are here and they’re doing literally nothing to help,” said an airline worker in New York.",
+            "confidence": 0.65,
+            "reasoning": "The article describes a disruption (airport security delays) caused by a government shutdown, leading to TSA staff shortages and the deployment of ICE agents as an unplanned response. This resembles an incident where normal service operations are impaired, requiring management and resolution, though the context is governmental rather than typical IT service management."
+          }
+        ]
+      }
+    ]
+  }
+]
