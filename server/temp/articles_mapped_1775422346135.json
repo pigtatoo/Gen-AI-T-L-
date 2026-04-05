@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Researchers didn’t want to glamorize cybercrims. So they roasted them",
+            "url": "https://www.theregister.com/2026/04/05/trellix_john_fokker_roasting_crims/",
+            "source": "The Register",
+            "published": "2026-04-05T13:00:13.000Z",
+            "summary": "<h4>True-crime tales of criminals making fools of themselves</h4> <p><strong>interview</strong>  Cybercrime crews have become almost mystical entities, with security vendors assigning them names like Wizard Spider and Velvet Tempest.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses threat intelligence practices, including monitoring and analyzing cybercriminal groups on the dark web, which aligns with the reconnaissance and data collection aspects of information gathering."
+          },
+          {
+            "title": "The Hack That Exposed Syria’s Sweeping Security Failures",
+            "url": "https://www.wired.com/story/inside-the-hack-that-exposed-syrias-security-failures/",
+            "source": "WIRED",
+            "published": "2026-04-05T09:00:00.000Z",
+            "summary": "When Syrian government accounts were hijacked in March, the breach looked chaotic. But it revealed something more troubling: a state struggling with the most basic layer of cybersecurity.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a breach of government accounts, which likely involved attackers gathering or exploiting information about account access, credentials, or system weaknesses as a preliminary step."
+          },
+          {
+            "title": "Hackers Are Posting the Claude Code Leak With Bonus Malware",
+            "url": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
+            "source": "WIRED",
+            "published": "2026-04-04T10:30:00.000Z",
+            "summary": "Plus: The FBI says a recent hack of its wiretap tools poses a national security risk, attackers stole Cisco source code as part of an ongoing supply chain hacking spree, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article describes how WIRED used basic Google searches to discover sensitive facility information like gate codes on a public learning platform, which aligns with the reconnaissance phase of an attack."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI agents promise to 'run the business,' but who is liable if things go wrong?",
+            "url": "https://www.theregister.com/2026/04/05/ai_agents_liability/",
+            "source": "The Register",
+            "published": "2026-04-05T10:00:11.000Z",
+            "summary": "<h4>Vendors tout the potential, but responsibility remains unclear</h4> <p><strong>Feature</strong>  \"You can't blame it on the box,\" says the boss of a UK financial regulator. What about the people who sold you the box? Good luck with that, says a global tech analyst.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.9,
+            "reasoning": "The article discusses AI agents making autonomous decisions in business operations (HR, finance, supply chain), raising questions about accountability, liability, and risk management—core concerns of IT governance frameworks that ensure IT systems align with organizational goals and compliance."
+          },
+          {
+            "title": "Researchers didn’t want to glamorize cybercrims. So they roasted them",
+            "url": "https://www.theregister.com/2026/04/05/trellix_john_fokker_roasting_crims/",
+            "source": "The Register",
+            "published": "2026-04-05T13:00:13.000Z",
+            "summary": "<h4>True-crime tales of criminals making fools of themselves</h4> <p><strong>interview</strong>  Cybercrime crews have become almost mystical entities, with security vendors assigning them names like Wizard Spider and Velvet Tempest.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses industry practices around naming and discussing cybercriminal groups, which relates to how IT security governance frameworks and communication policies are established and followed within organizations."
+          },
+          {
+            "title": "With One Million Displaced, Lebanon Turns to Digital Wallets for Aid",
+            "url": "https://www.wired.com/story/with-one-million-displaced-lebanon-turns-to-digital-wallets-for-aid/",
+            "source": "WIRED",
+            "published": "2026-04-05T09:30:00.000Z",
+            "summary": "Amid mass displacement and collapsing trust in institutions, digital wallets are becoming critical conduits for aid, connecting diaspora donors directly with communities on the ground.",
+            "confidence": 0.65,
+            "reasoning": "The use of digital fintech platforms and digital wallets for aid distribution touches on the governance of IT systems, data flows, and technology-enabled processes in a high-risk environment."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Iran attacks energy infrastructure across Gulf states",
+            "url": "https://www.channelnewsasia.com/world/iran-attack-energy-infrastructure-middle-east-6037606",
+            "source": "Latest News",
+            "published": "2026-04-05T12:51:00.000Z",
+            "summary": "Iran's attacks on Gulf energy infrastructure as well as its effective closure of the Strait of Hormuz have convulsed the global economy.",
+            "confidence": 0.75,
+            "reasoning": "The article describes geopolitical actions (Iran's attacks, closure of Strait of Hormuz) that create significant strategic risks and disruptions to global energy supply and the economy, directly impacting an organization's strategic planning and risk management."
+          },
+          {
+            "title": "Trump threatens Iranian power plants, bridges in expletive-laden social media post",
+            "url": "https://www.channelnewsasia.com/world/iran-war-trump-threatens-power-plants-bridges-hormuz-6037596",
+            "source": "Latest News",
+            "published": "2026-04-05T12:48:00.000Z",
+            "summary": "“You’ll be living in hell – just watch!” US President Donald Trump said on Truth Social as the clock ticks down on his 48-hour ultimatum for Iran to reopen the Strait of Hormuz.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a high-stakes geopolitical threat involving national security, international relations, and resource control (Strait of Hormuz), which relates to the strategic direction, risk assessment, and decision-making at the highest levels of governance."
+          },
+          {
+            "title": "Researchers didn’t want to glamorize cybercrims. So they roasted them",
+            "url": "https://www.theregister.com/2026/04/05/trellix_john_fokker_roasting_crims/",
+            "source": "The Register",
+            "published": "2026-04-05T13:00:13.000Z",
+            "summary": "<h4>True-crime tales of criminals making fools of themselves</h4> <p><strong>interview</strong>  Cybercrime crews have become almost mystical entities, with security vendors assigning them names like Wizard Spider and Velvet Tempest.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article touches on strategic industry conversations and approaches (like 'psyops' and public communication) to manage perceptions of cyber threats, aligning with strategic management of security posture and stakeholder messaging."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI agents promise to 'run the business,' but who is liable if things go wrong?",
+            "url": "https://www.theregister.com/2026/04/05/ai_agents_liability/",
+            "source": "The Register",
+            "published": "2026-04-05T10:00:11.000Z",
+            "summary": "<h4>Vendors tout the potential, but responsibility remains unclear</h4> <p><strong>Feature</strong>  \"You can't blame it on the box,\" says the boss of a UK financial regulator. What about the people who sold you the box? Good luck with that, says a global tech analyst.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.65,
+            "reasoning": "The article contrasts vendor promises of AI benefits (e.g., automation, efficiency) with potential failures (e.g., hallucinations, incorrect filings), touching on the challenge of realizing expected benefits while managing associated risks and liabilities."
+          },
+          {
+            "title": "With One Million Displaced, Lebanon Turns to Digital Wallets for Aid",
+            "url": "https://www.wired.com/story/with-one-million-displaced-lebanon-turns-to-digital-wallets-for-aid/",
+            "source": "WIRED",
+            "published": "2026-04-05T09:30:00.000Z",
+            "summary": "Amid mass displacement and collapsing trust in institutions, digital wallets are becoming critical conduits for aid, connecting diaspora donors directly with communities on the ground.",
+            "confidence": 0.55,
+            "reasoning": "The article implies benefits from using digital wallets (e.g., direct aid, lower costs, speed), which aligns with evaluating and achieving intended outcomes from initiatives, though the connection is indirect."
+          },
+          {
+            "title": "The Hack That Exposed Syria’s Sweeping Security Failures",
+            "url": "https://www.wired.com/story/inside-the-hack-that-exposed-syrias-security-failures/",
+            "source": "WIRED",
+            "published": "2026-04-05T09:00:00.000Z",
+            "summary": "When Syrian government accounts were hijacked in March, the breach looked chaotic. But it revealed something more troubling: a state struggling with the most basic layer of cybersecurity.",
+            "confidence": 0.55,
+            "reasoning": "The incident suggests a lack of realized benefits from cybersecurity investments, as basic protections failed, impacting the state's ability to securely communicate and maintain operational integrity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI agents promise to 'run the business,' but who is liable if things go wrong?",
+            "url": "https://www.theregister.com/2026/04/05/ai_agents_liability/",
+            "source": "The Register",
+            "published": "2026-04-05T10:00:11.000Z",
+            "summary": "<h4>Vendors tout the potential, but responsibility remains unclear</h4> <p><strong>Feature</strong>  \"You can't blame it on the box,\" says the boss of a UK financial regulator. What about the people who sold you the box? Good luck with that, says a global tech analyst.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI agents causing potential business failures (e.g., incorrect filings, supply chain issues), which could trigger incidents requiring management, response, and resolution processes."
+          },
+          {
+            "title": "Ex-Microsoft engineer believes Azure problems stem from talent exodus",
+            "url": "https://www.theregister.com/2026/04/04/azure_talent_exodus/",
+            "source": "The Register",
+            "published": "2026-04-04T10:00:06.000Z",
+            "summary": "<h4>The cloud service's woes reflect a crisis made worse by AI – under-investment in people</h4> <p>In 2024, federal cybersecurity evaluators reportedly dismissed Microsoft 365 Government Community Cloud High (GCC High) as garbage, although they used a more colorful term. To understand why, it helps to consider the history of the underlying Azure infrastructure.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes Azure's ongoing disruptions, small failures building up, and the platform 'fighting fires,' which directly relates to identifying, managing, and resolving incidents in IT services."
+          },
+          {
+            "title": "Trump wants to take a battle axe to CISA again and slash $707M from budget",
+            "url": "https://www.theregister.com/2026/04/03/trump_cisa_budget/",
+            "source": "The Register",
+            "published": "2026-04-03T22:41:05.000Z",
+            "summary": "<h4>Ex-CISA official tells The Reg: 'this would weaken the system for managing cyber risk'</h4> <p>The US Cybersecurity and Infrastructure Security Agency's budget will see yet another deep cut if Congress approves President Trump's proposal to slash CISA's spending by $707 million in fiscal year 2027.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses budget cuts to a cybersecurity agency, which could weaken cyber risk management and increase the likelihood of preventable incidents escalating, directly relating to the processes and resources needed for effective incident response and management."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The Hack That Exposed Syria’s Sweeping Security Failures",
+            "url": "https://www.wired.com/story/inside-the-hack-that-exposed-syrias-security-failures/",
+            "source": "WIRED",
+            "published": "2026-04-05T09:00:00.000Z",
+            "summary": "When Syrian government accounts were hijacked in March, the breach looked chaotic. But it revealed something more troubling: a state struggling with the most basic layer of cybersecurity.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a breach of government accounts, implying potential failures in secure data storage, access control, or credential management, which are core aspects of this topic."
+          },
+          {
+            "title": "Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk",
+            "url": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+            "source": "WIRED",
+            "published": "2026-04-03T21:28:14.000Z",
+            "summary": "Major AI labs are investigating a security incident that impacted Mercor, a leading data vendor. The incident could have exposed key data about how they train AI models.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach at a data vendor, directly involving how proprietary AI training datasets are stored, accessed, and potentially exposed, which falls under the management and security of information storage systems."
+          },
+          {
+            "title": "CBP Facility Codes Sure Seem to Have Leaked Via Online Flashcards",
+            "url": "https://www.wired.com/story/cbp-facility-codes-sure-seem-to-have-leaked-via-online-flashcards/",
+            "source": "WIRED",
+            "published": "2026-04-03T09:00:00.000Z",
+            "summary": "The Quizlet flashcards, which WIRED found through basic Google searches, seem to include sensitive information about gate security at Customs and Border Protection locations.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses sensitive information being stored and made accessible on an online learning platform (Quizlet), highlighting issues with how data is stored, retrieved, and potentially leaked, which relates to the management and security of digital information storage systems."
+          }
+        ]
+      }
+    ]
+  }
+]
