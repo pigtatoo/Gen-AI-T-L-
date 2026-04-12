@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Trump orders US Navy to block Hormuz after Iran talks fail",
+            "url": "https://www.channelnewsasia.com/world/trump-strait-hormuz-naval-blockade-us-iran-war-6051796",
+            "source": "Latest News",
+            "published": "2026-04-12T13:25:00.000Z",
+            "summary": "In response, Iran's Revolutionary Guards warned they have traffic in the strategic waterway under full control and would trap any enemy \"in a deadly vortex\".",
+            "confidence": 0.75,
+            "reasoning": "The article describes a high-level geopolitical decision (U.S. military order) and a strategic response from Iran, involving national security and international relations, which aligns with strategic management's focus on high-level planning, decision-making, and response to external threats."
+          },
+          {
+            "title": "UK regulators rush to assess risks of latest Anthropic AI model, FT reports",
+            "url": "https://www.channelnewsasia.com/business/uk-regulators-rush-assess-risks-latest-anthropic-ai-model-ft-reports-6051736",
+            "source": "Latest News",
+            "published": "2026-04-12T12:13:25.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "Regulatory assessment of emerging AI technologies relates to strategic decision-making and risk management at an organizational or national level, aligning with strategic oversight."
+          },
+          {
+            "title": "Nigerian airstrike leaves 200 feared dead in Yobe, councillor and residents say",
+            "url": "https://www.channelnewsasia.com/world/nigerian-airstrike-leaves-200-feared-dead-in-yobe-councillor-and-residents-say-6051801",
+            "source": "Latest News",
+            "published": "2026-04-12T20:11:22.000Z",
+            "summary": "Africa's most populous country has been fighting a jihadist insurgency for 17 years, since Boko Haram's 2009 uprising, and civilians have been caught in the crossfire and killed in military air strikes aimed at militants before.",
+            "confidence": 0.65,
+            "reasoning": "The article describes a military airstrike with significant civilian casualties, which relates to high-level decision-making, risk assessment, and strategic oversight failures in governance, aligning with strategic management's focus on organizational direction and control."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK regulators rush to assess risks of latest Anthropic AI model, FT reports",
+            "url": "https://www.channelnewsasia.com/business/uk-regulators-rush-assess-risks-latest-anthropic-ai-model-ft-reports-6051736",
+            "source": "Latest News",
+            "published": "2026-04-12T12:13:25.000Z",
+            "summary": "",
+            "confidence": 0.9,
+            "reasoning": "The article discusses UK regulators assessing risks of a new AI model, which directly involves governance frameworks for IT systems, technology oversight, and compliance with regulatory standards."
+          },
+          {
+            "title": "I vibe coded a feed reading web app. It was enlightening and uncomfortable",
+            "url": "https://www.theregister.com/2026/04/12/vibe_coding_works/",
+            "source": "The Register",
+            "published": "2026-04-12T14:45:11.000Z",
+            "summary": "<h4>AI-assisted software development is transforming the industry, but you already knew that</h4> <p>Vibe coding works. I wish it didn't. But it does, well enough. And barring some revolution that overturns the new world disorder, machine learning cannot be undone.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI-assisted software development, its risks, and the need for accountability in implementation, which relates to IT governance frameworks for managing technology use and oversight."
+          },
+          {
+            "title": "‘The Audacity’ Is the Broligarchy Takedown You Were Waiting For",
+            "url": "https://www.wired.com/story/the-audacity-is-the-broligarchy-takedown-you-were-waiting-for/",
+            "source": "WIRED",
+            "published": "2026-04-12T12:00:00.000Z",
+            "summary": "AMC’s new black comedy about a manchild tech titan spinning out of control is a skewering Silicon Valley’s billionaire class deserves.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses a tech CEO's behavior in Silicon Valley, touching on industry ethics and leadership in a technology context, though it focuses more on personal flaws than formal IT governance structures."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Why Is It So Hard to Fix an Electric Bike? (2026)",
+            "url": "https://www.wired.com/story/why-is-it-so-hard-to-fix-an-electric-bike/",
+            "source": "WIRED",
+            "published": "2026-04-12T12:00:00.000Z",
+            "summary": "Bike shop mechanics have lost fingers and their shirts while repairing ebikes of dubious origins. Make sure yours is repairable and third-party certified.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the risks and failures (injuries, financial loss) from non-compliant products, highlighting the importance of realizing the intended benefits (safety, reliability) through third-party certification and proper standards."
+          },
+          {
+            "title": "UK regulators rush to assess risks of latest Anthropic AI model, FT reports",
+            "url": "https://www.channelnewsasia.com/business/uk-regulators-rush-assess-risks-latest-anthropic-ai-model-ft-reports-6051736",
+            "source": "Latest News",
+            "published": "2026-04-12T12:13:25.000Z",
+            "summary": "",
+            "confidence": 0.6,
+            "reasoning": "Indirectly relevant, as evaluating AI model risks could involve assessing the intended benefits versus potential downsides, though the article focuses more on risk than benefit measurement."
+          },
+          {
+            "title": "Growing void between enterprise and frontier AI puts open weights models in the spotlight",
+            "url": "https://www.theregister.com/2026/04/12/ai_open_weights_models/",
+            "source": "The Register",
+            "published": "2026-04-12T10:51:06.000Z",
+            "summary": "<h4>Most customers don't need the biggest baddest models, just ones that work, are cheap, and won't pirate their proprietary data</h4> <p><strong>FEATURE</strong>  Spring has sprung and that means another wave of open weights AI models from the likes of Google, Microsoft, Alibaba, and Nvidia. But this time feels a bit different.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The article touches on enterprises seeking models that 'work, are cheap, and won't pirate their proprietary data,' relating to realizing benefits from AI investments while managing risks, though it's less explicitly about measuring outcomes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Tech support chap's boss got him out of jail so he could finish a job",
+            "url": "https://www.theregister.com/2026/04/10/on_call/",
+            "source": "The Register",
+            "published": "2026-04-10T07:00:06.000Z",
+            "summary": "<h4>The right person for the job didn't have the right passport for the job</h4> <p><strong>On Call</strong>  Welcome to another edition of On Call, <i>The Register's</i> reader-contributed column that shares your stories of tech support incidents that crossed a line.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a tech support incident involving an employee's arrest due to a visa issue while on a service assignment, which disrupts normal operations and requires urgent resolution—core elements of incident management."
+          },
+          {
+            "title": "How Salesforce and ServiceNow are squaring off in the battle for the helpdesk",
+            "url": "https://www.theregister.com/2026/04/11/salesforce_vs_servicenow_itsm_battle/",
+            "source": "The Register",
+            "published": "2026-04-11T14:45:13.000Z",
+            "summary": "<h4>Benioff banks on user engagement while McDermott wants to govern AI agents</h4> <p><strong>FEATURE</strong>  Salesforce CEO and chief “SaaSquatch” Mark Benioff boasted about the wins his company's ITSM product had last quarter in the terms a proud dad uses to talk about the art work his kids taped to the refrigerator.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses IT Service Management (ITSM) products from Salesforce and ServiceNow, which are platforms designed to manage IT services, including handling incidents and service requests. The competitive context and focus on helpdesk functionality directly relate to core incident management processes."
+          },
+          {
+            "title": "South Korea introduces universal basic mobile data access",
+            "url": "https://www.theregister.com/2026/04/10/south_korea_data_access_universal/",
+            "source": "The Register",
+            "published": "2026-04-10T03:14:13.000Z",
+            "summary": "<h4>Everyone gets unlimited 400 Kbps access, oldies get expanded caps, and leaky telcos get their social license back</h4> <p>Universal basic income is an idea that hasn’t gained much traction, but South Korea on Thursday implemented a universal basic mobile data access scheme.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article mentions security lapses and data leaks at telcos, which are incidents requiring management and response, though the focus is more on policy and service provision."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Two different attackers poisoned popular open source tools - and showed us the future of supply chain compromise",
+            "url": "https://www.theregister.com/2026/04/11/trivy_axios_supply_chain_attacks/",
+            "source": "The Register",
+            "published": "2026-04-11T11:11:09.000Z",
+            "summary": "<h4>Time to start dropping SBOMs</h4> <p><strong>FEATURE</strong>  Two supply chain attacks in March infected open source tools with malware and used this access to steal secrets from tens of thousands – if not more – organizations. We won't know the full blast radius for months.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.95,
+            "reasoning": "The article details supply chain attacks where attackers compromised open-source tools to steal secrets from organizations, which is a direct method of gathering sensitive information from a wide range of targets."
+          },
+          {
+            "title": "How the Internet Broke Everyone’s Bullshit Detectors",
+            "url": "https://www.wired.com/story/how-the-internet-broke-everyones-bullshit-detectors/",
+            "source": "WIRED",
+            "published": "2026-04-11T09:30:00.000Z",
+            "summary": "From AI-generated images to restricted satellite data, the systems used to verify what’s real online are struggling to keep up.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses the use of synthetic media, propaganda, and manipulated information to influence perception and obscure truth, which directly relates to information gathering as an attack vector in cyber operations where adversaries collect, fabricate, or distort information to achieve strategic objectives."
+          },
+          {
+            "title": "Hungarian government creds left in the safe hands of 'FrankLampard'",
+            "url": "https://www.theregister.com/2026/04/11/hungary_government_logins_breach/",
+            "source": "The Register",
+            "published": "2026-04-11T08:30:14.000Z",
+            "summary": "<h4>Nearly 800 state logins surfaced in breach data, including defense and NATO-linked accounts</h4> <p>Hungary's government has discovered the hard way that the biggest threat to national security might just be its own password choices.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article details the discovery and analysis of leaked government credentials from breach dumps, which is a direct example of attackers or researchers gathering sensitive information (usernames, passwords, organizational data) to understand and potentially exploit security weaknesses."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Two different attackers poisoned popular open source tools - and showed us the future of supply chain compromise",
+            "url": "https://www.theregister.com/2026/04/11/trivy_axios_supply_chain_attacks/",
+            "source": "The Register",
+            "published": "2026-04-11T11:11:09.000Z",
+            "summary": "<h4>Time to start dropping SBOMs</h4> <p><strong>FEATURE</strong>  Two supply chain attacks in March infected open source tools with malware and used this access to steal secrets from tens of thousands – if not more – organizations. We won't know the full blast radius for months.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses supply chain attacks on open-source tools, which often involve malware compromising systems to steal secrets. This relates to forensic analysis of how data (secrets, logs, malware artifacts) is stored, accessed, and retrieved during investigations, though the direct forensic technology focus is limited."
+          },
+          {
+            "title": "How the Internet Broke Everyone’s Bullshit Detectors",
+            "url": "https://www.wired.com/story/how-the-internet-broke-everyones-bullshit-detectors/",
+            "source": "WIRED",
+            "published": "2026-04-11T09:30:00.000Z",
+            "summary": "From AI-generated images to restricted satellite data, the systems used to verify what’s real online are struggling to keep up.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the challenge of verifying digital content and the speed of synthetic media outpacing verification systems, which relates to how information is stored, accessed, and retrieved for forensic analysis in cyber contexts."
+          },
+          {
+            "title": "Hungarian government creds left in the safe hands of 'FrankLampard'",
+            "url": "https://www.theregister.com/2026/04/11/hungary_government_logins_breach/",
+            "source": "The Register",
+            "published": "2026-04-11T08:30:14.000Z",
+            "summary": "<h4>Nearly 800 state logins surfaced in breach data, including defense and NATO-linked accounts</h4> <p>Hungary's government has discovered the hard way that the biggest threat to national security might just be its own password choices.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses compromised credentials circulating in breach dumps, which relates to how data (like passwords) is stored, accessed, and retrieved insecurely, highlighting failures in secure storage practices."
+          }
+        ]
+      }
+    ]
+  }
+]
