@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Zelenskyy slams oil sanctions relief for Russia",
+            "url": "https://www.channelnewsasia.com/world/zelenskyy-slams-oil-sanctions-relief-russia-6066691",
+            "source": "Latest News",
+            "published": "2026-04-19T18:25:22.000Z",
+            "summary": "The US extended it's waive on Russian oil sanctions as conflict in the Middle East has caused oil prices to rise world wide.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses geopolitical sanctions policy (oil sanctions relief for Russia) and its connection to global oil price fluctuations due to conflict, which involves high-level strategic decision-making and international relations impacting organizational environments."
+          },
+          {
+            "title": "Iran rebuffs Trump announcement of new peace talks, state news agency reports",
+            "url": "https://www.channelnewsasia.com/world/iran-rebuffs-trump-announcement-new-peace-talks-state-news-agency-reports-6066731",
+            "source": "Latest News",
+            "published": "2026-04-19T19:30:12.000Z",
+            "summary": "Hours after US President Trump sent envoys to Islamabad for negotiations, Iran's state news agency said the government would reject the talks.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses high-level diplomatic negotiations and strategic decisions between nations (US and Iran), which relates to strategic planning and decision-making at an organizational or national level."
+          },
+          {
+            "title": "US security agency is using Anthropic's Mythos despite blacklist, Axios reports",
+            "url": "https://www.channelnewsasia.com/business/us-security-agency-using-anthropics-mythos-despite-blacklist-axios-reports-6066681",
+            "source": "Latest News",
+            "published": "2026-04-19T18:12:18.000Z",
+            "summary": "",
+            "confidence": 0.55,
+            "reasoning": "The agency's decision to use a blacklisted technology may reflect strategic choices in managing security operations or technological capabilities, though the article's focus on compliance and blacklists is more governance-oriented than broad strategic alignment."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "US security agency is using Anthropic's Mythos despite blacklist, Axios reports",
+            "url": "https://www.channelnewsasia.com/business/us-security-agency-using-anthropics-mythos-despite-blacklist-axios-reports-6066681",
+            "source": "Latest News",
+            "published": "2026-04-19T18:12:18.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a US security agency's use of a specific AI technology (Anthropic's Mythos) despite it being on a blacklist, which directly relates to IT governance principles concerning technology adoption, compliance with internal policies, and risk management in IT systems."
+          },
+          {
+            "title": "Ruby Central in 'real financial jeopardy' following RubyGems maintainer ruckus",
+            "url": "https://www.theregister.com/2026/04/19/rubygems_nonprofit_in_real_financial/",
+            "source": "The Register",
+            "published": "2026-04-19T08:00:10.000Z",
+            "summary": "<h4>Non profit loses several staffers including its executive director</h4> <p>Ruby Central, a nonprofit that supports the Ruby programming language ecosystem, in is \"real financial jeopardy,\" according to a missive from its board members.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses governance issues within Ruby Central, a nonprofit managing critical infrastructure (rubygems.org), including the removal of maintainers, financial mismanagement, and impacts on the Ruby tooling supply chain, which aligns with IT Governance's focus on IT systems, policies, and oversight."
+          },
+          {
+            "title": "It Takes 2 Minutes to Hack the EU’s New Age-Verification App",
+            "url": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
+            "source": "WIRED",
+            "published": "2026-04-18T10:30:00.000Z",
+            "summary": "Plus: Major data breaches at a gym chain and hotel giant, a disruptive DDoS attack against Bluesky, dubious ICE hires, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses cybersecurity failures (hacking of an app, data breaches, DDoS attacks) and privacy violations (surveillance, face recognition), which relate directly to IT policies, controls, and oversight for managing IT risks and compliance."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
+            "url": "https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-18T00:37:06.000Z",
+            "summary": "The discussion is a sign the AI firm's technology may be too critical for even the US government to do without.",
+            "confidence": 0.68,
+            "reasoning": "The meeting explores collaboration opportunities to address challenges in scaling AI technology, implying a focus on achieving intended benefits from technological investments while managing risks."
+          },
+          {
+            "title": "Atlassian’s new data collection policy protects rich customers while AI eats the rest",
+            "url": "https://www.theregister.com/2026/04/18/atlassians_new_data_collection_policy/",
+            "source": "The Register",
+            "published": "2026-04-18T07:30:10.000Z",
+            "summary": "<h4>From August 17, the outfit will collect customer metadata by default unless you pay for the top tier</h4> <p>Unless a customer pays for the most expensive enterprise license, or the law forbids it, Atlassian is going to collect their data to train its AI models. And you can't fully opt out.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The policy highlights trade-offs between customer benefits (e.g., improved AI features) and costs (e.g., loss of data privacy), relating to benefit realization in terms of value delivery and stakeholder impact."
+          },
+          {
+            "title": "Ruby Central in 'real financial jeopardy' following RubyGems maintainer ruckus",
+            "url": "https://www.theregister.com/2026/04/19/rubygems_nonprofit_in_real_financial/",
+            "source": "The Register",
+            "published": "2026-04-19T08:00:10.000Z",
+            "summary": "<h4>Non profit loses several staffers including its executive director</h4> <p>Ruby Central, a nonprofit that supports the Ruby programming language ecosystem, in is \"real financial jeopardy,\" according to a missive from its board members.…</p>",
+            "confidence": 0.55,
+            "reasoning": "The financial jeopardy and operational disruptions suggest a failure to realize expected benefits from organizational strategies and investments, though this connection is less direct than the other topics."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Atlassian’s new data collection policy protects rich customers while AI eats the rest",
+            "url": "https://www.theregister.com/2026/04/18/atlassians_new_data_collection_policy/",
+            "source": "The Register",
+            "published": "2026-04-18T07:30:10.000Z",
+            "summary": "<h4>From August 17, the outfit will collect customer metadata by default unless you pay for the top tier</h4> <p>Unless a customer pays for the most expensive enterprise license, or the law forbids it, Atlassian is going to collect their data to train its AI models. And you can't fully opt out.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article details Atlassian's systematic collection of customer metadata and in-app data for AI training, which is a form of corporate information gathering. This directly relates to the cybersecurity concept of gathering data, albeit in a business context rather than a malicious attack."
+          },
+          {
+            "title": "It Takes 2 Minutes to Hack the EU’s New Age-Verification App",
+            "url": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
+            "source": "WIRED",
+            "published": "2026-04-18T10:30:00.000Z",
+            "summary": "Plus: Major data breaches at a gym chain and hotel giant, a disruptive DDoS attack against Bluesky, dubious ICE hires, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses surveillance techniques like face recognition, social media monitoring, and in-person surveillance, which are methods of collecting personal data without consent, aligning with the concept of information gathering in a cybersecurity context."
+          },
+          {
+            "title": "White House and Anthropic hold 'productive' meeting amid fears over Mythos model",
+            "url": "https://www.bbc.com/news/articles/cyv10e1d13po?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-18T00:37:06.000Z",
+            "summary": "The discussion is a sign the AI firm's technology may be too critical for even the US government to do without.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses an AI tool (Mythos) that autonomously finds and exploits vulnerabilities in code, which aligns with the reconnaissance and intelligence collection phase of cyber attacks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "It Takes 2 Minutes to Hack the EU’s New Age-Verification App",
+            "url": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
+            "source": "WIRED",
+            "published": "2026-04-18T10:30:00.000Z",
+            "summary": "Plus: Major data breaches at a gym chain and hotel giant, a disruptive DDoS attack against Bluesky, dubious ICE hires, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses data breaches, surveillance data collection (face recognition, social media monitoring), and unauthorized access to systems, all of which involve how data is stored, accessed, and potentially retrieved by attackers or investigators."
+          },
+          {
+            "title": "Tinder and Zoom offer 'proof of humanity' eye-scans to combat AI",
+            "url": "https://www.bbc.com/news/articles/cp9vppem4evo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-17T19:05:43.000Z",
+            "summary": "The tech aims to identify people's irises and stop the rise of fake accounts and malicious scams.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a system that scans irises to generate a unique identification code (World ID) stored on a smartphone, which involves storing and retrieving biometric identity data for verification purposes."
+          },
+          {
+            "title": "Opsec oopsie: Dutch navy frigate location outed by mailing it a Bluetooth tracker",
+            "url": "https://www.theregister.com/2026/04/17/dutch_navy_frigate_tracked/",
+            "source": "The Register",
+            "published": "2026-04-17T16:31:32.000Z",
+            "summary": "<h4>Or, how public information and a €5 tracker exposed an avoidable opsec lapse</h4> <p>Militaries around the world spend countless hours training, developing policies, and implementing best operational security practices, so imagine the size of the egg on the face of the Dutch navy when journalists managed to track one of its warships for less than the cost of some hagelslag and a coffee.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.75,
+            "reasoning": "The article describes the use of publicly available online instructions (open-source intelligence) to obtain a mailing address, which involves retrieving and utilizing stored operational information. The core lapse exploited is the accessibility and retrieval of sensitive logistical data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "CISA tells feds to patch 13-year-old Apache ActiveMQ bug under active attack",
+            "url": "https://www.theregister.com/2026/04/17/cisa_tells_feds_to_patch/",
+            "source": "The Register",
+            "published": "2026-04-17T17:09:51.000Z",
+            "summary": "<h4>Bug hiding in plain sight for over a decade lands on KEV list</h4> <p>CISA is sounding the alarm on a newly-exploited Apache ActiveMQ bug, ordering federal agencies to patch within two weeks as attackers circle a flaw that's been quietly lurking for more than a decade.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a critical vulnerability requiring urgent patching by federal agencies, which directly aligns with incident management processes for identifying, responding to, and resolving security incidents to restore normal service operations."
+          },
+          {
+            "title": "Users complain that UK Azure is having capacity problems",
+            "url": "https://www.theregister.com/2026/04/17/users_complain_of_uk_azure/",
+            "source": "The Register",
+            "published": "2026-04-17T14:56:26.000Z",
+            "summary": "<h4>We hear Sweden is lovely place for workloads to visit</h4> <p>Microsoft Azure capacity woes are back, and worse than ever, judging by the complaints of UK users.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a widespread service disruption (Azure capacity issues) affecting users, which aligns with incident management's focus on restoring normal service operations and minimizing business impact."
+          },
+          {
+            "title": "Atlassian’s new data collection policy protects rich customers while AI eats the rest",
+            "url": "https://www.theregister.com/2026/04/18/atlassians_new_data_collection_policy/",
+            "source": "The Register",
+            "published": "2026-04-18T07:30:10.000Z",
+            "summary": "<h4>From August 17, the outfit will collect customer metadata by default unless you pay for the top tier</h4> <p>Unless a customer pays for the most expensive enterprise license, or the law forbids it, Atlassian is going to collect their data to train its AI models. And you can't fully opt out.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses Atlassian's data collection policies for Jira Service Management, which is a tool used in IT service management for handling incidents and service requests. The mention of Service Level Agreements (SLAs) in Jira Service Management directly relates to incident management processes."
+          }
+        ]
+      }
+    ]
+  }
+]
