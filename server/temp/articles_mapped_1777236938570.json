@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos",
+            "url": "https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/",
+            "source": "WIRED",
+            "published": "2026-04-25T10:30:00.000Z",
+            "summary": "Plus: Spy firms tap into a global telecom weakness to track targets, 500,000 UK health records go up for sale on Alibaba, Apple patches a revealing notification bug, and more.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses cybersecurity vulnerabilities, Mozilla's use of AI to fix bugs, and issues like unauthorized access to communications and surveillance programs, all of which are core to IT governance, risk management, and compliance."
+          },
+          {
+            "title": "Tokenmaxxing isn't an AI strategy",
+            "url": "https://www.theregister.com/2026/04/26/ai_price_tag/",
+            "source": "The Register",
+            "published": "2026-04-26T14:48:10.000Z",
+            "summary": "<h4>Before checking AI's price tag, see whether it fits</h4> <p>What does AI cost? It's a simple question and an important one – the answer will determine the fate of companies and shape society. But it's also a question that can't be answered in a meaningful way without additional context.…</p>",
+            "confidence": 0.75,
+            "reasoning": "Article discusses AI costs, data center power, water use, and regulatory concerns, which are key IT governance issues around resource management and compliance."
+          },
+          {
+            "title": "Ex-AWS legend explains what enterprises need to make AI actually work",
+            "url": "https://www.theregister.com/2026/04/25/ai_enterprise_matt_domo/",
+            "source": "The Register",
+            "published": "2026-04-25T13:07:06.000Z",
+            "summary": "<h4>AI transformation is about people and organization, not technology</h4> <p>Enterprise AI projects go off the rails when companies focus on the technology instead of the people.…</p>",
+            "confidence": 0.6,
+            "reasoning": "Mentions technology decisions and organizational change, but less direct focus on governance frameworks."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Ex-AWS legend explains what enterprises need to make AI actually work",
+            "url": "https://www.theregister.com/2026/04/25/ai_enterprise_matt_domo/",
+            "source": "The Register",
+            "published": "2026-04-25T13:07:06.000Z",
+            "summary": "<h4>AI transformation is about people and organization, not technology</h4> <p>Enterprise AI projects go off the rails when companies focus on the technology instead of the people.…</p>",
+            "confidence": 0.95,
+            "reasoning": "Article emphasizes aligning AI with business strategy, leadership, and organizational change."
+          },
+          {
+            "title": "Tokenmaxxing isn't an AI strategy",
+            "url": "https://www.theregister.com/2026/04/26/ai_price_tag/",
+            "source": "The Register",
+            "published": "2026-04-26T14:48:10.000Z",
+            "summary": "<h4>Before checking AI's price tag, see whether it fits</h4> <p>What does AI cost? It's a simple question and an important one – the answer will determine the fate of companies and shape society. But it's also a question that can't be answered in a meaningful way without additional context.…</p>",
+            "confidence": 0.85,
+            "reasoning": "Article emphasizes that AI investment must fit company strategy, questioning whether token-based pricing and unchecked spending align with strategic goals."
+          },
+          {
+            "title": "The Online Civil War About ‘Michael’ Is a Battle Over Truth",
+            "url": "https://www.wired.com/story/the-online-civil-war-about-michael-is-a-battle-over-truth/",
+            "source": "WIRED",
+            "published": "2026-04-25T10:00:00.000Z",
+            "summary": "Fans want to reclaim the music and myth of Michael Jackson in the new biopic while critics call for accountability. Who’s right?",
+            "confidence": 0.75,
+            "reasoning": "The article discusses competing narratives and truth determination in the context of a biopic, which involves strategic management of reputation and legacy."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Ex-AWS legend explains what enterprises need to make AI actually work",
+            "url": "https://www.theregister.com/2026/04/25/ai_enterprise_matt_domo/",
+            "source": "The Register",
+            "published": "2026-04-25T13:07:06.000Z",
+            "summary": "<h4>AI transformation is about people and organization, not technology</h4> <p>Enterprise AI projects go off the rails when companies focus on the technology instead of the people.…</p>",
+            "confidence": 0.9,
+            "reasoning": "Focus on measuring success, creating value, and avoiding failures from poor implementation."
+          },
+          {
+            "title": "Tokenmaxxing isn't an AI strategy",
+            "url": "https://www.theregister.com/2026/04/26/ai_price_tag/",
+            "source": "The Register",
+            "published": "2026-04-26T14:48:10.000Z",
+            "summary": "<h4>Before checking AI's price tag, see whether it fits</h4> <p>What does AI cost? It's a simple question and an important one – the answer will determine the fate of companies and shape society. But it's also a question that can't be answered in a meaningful way without additional context.…</p>",
+            "confidence": 0.7,
+            "reasoning": "Article highlights hidden costs like skill atrophy and environmental impact, questioning whether AI benefits justify the total cost, which is central to benefit realization."
+          },
+          {
+            "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
+            "url": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-24T22:45:28.000Z",
+            "summary": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
+            "confidence": 0.5,
+            "reasoning": "The article touches on the failure to realize the potential benefit of reporting suspicious activity, but this is secondary to the governance and compliance failures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
+            "url": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-24T22:45:28.000Z",
+            "summary": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses OpenAI's failure to report a user's account to law enforcement despite identifying problematic usage, which relates to the collection and handling of threat intelligence."
+          },
+          {
+            "title": "Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos",
+            "url": "https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/",
+            "source": "WIRED",
+            "published": "2026-04-25T10:30:00.000Z",
+            "summary": "Plus: Spy firms tap into a global telecom weakness to track targets, 500,000 UK health records go up for sale on Alibaba, Apple patches a revealing notification bug, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article mentions spy firms exploiting telecom weaknesses for tracking targets, which involves information gathering."
+          },
+          {
+            "title": "The viral manifesto of 'anti-woke' tech boss with NHS and defence contracts",
+            "url": "https://www.bbc.com/news/articles/c4gjkj7975po?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-25T01:18:33.000Z",
+            "summary": "The boss of the controversial tech company with UK government contracts published a 22-point plan on the future of the West.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses Palantir's data platform contracts with NHS and MoD, which involve collecting, analyzing, and searching large datasets, directly relating to information gathering in cyber security."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.8,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ShinyHunters claim they have cruise giant Carnival's booty as 7.5M emails surface",
+            "url": "https://www.theregister.com/2026/04/24/shinyhunters_claim_cruise_giant_carnivals/",
+            "source": "The Register",
+            "published": "2026-04-24T15:35:52.000Z",
+            "summary": "<h4>Leak-site bragging meets breach hunters as Have I Been Pwned flags millions of records</h4> <p>Carnival Corporation, the world's largest cruise company, is dealing with choppy waters after Have I Been Pwned flagged what it claimed were 7.5 million unique email addresses all allegedly tied to one of its subsidiaries. …</p>",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach involving 8.7 million records of personal data (names, DOBs, genders, membership details) stored in a loyalty program database, directly relating to how such data is stored and retrieved in cyber forensic contexts."
+          },
+          {
+            "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
+            "url": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-04-24T22:45:28.000Z",
+            "summary": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses OpenAI's failure to retrieve and report account information from their systems to law enforcement, which involves data storage and retrieval processes relevant to forensic technology."
+          },
+          {
+            "title": "Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos",
+            "url": "https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/",
+            "source": "WIRED",
+            "published": "2026-04-25T10:30:00.000Z",
+            "summary": "Plus: Spy firms tap into a global telecom weakness to track targets, 500,000 UK health records go up for sale on Alibaba, Apple patches a revealing notification bug, and more.",
+            "confidence": 0.6,
+            "reasoning": "The article mentions data breaches and unauthorized access to systems, which involve storage and retrieval of digital information, but the connection is indirect and not the primary focus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "To fix this Wi-Fi network, we'll need a crane",
+            "url": "https://www.theregister.com/2026/04/24/on_call/",
+            "source": "The Register",
+            "published": "2026-04-24T07:00:15.000Z",
+            "summary": "<h4>Won't somebody think of the children not being hit by a load of building materials?</h4> <p><strong>On Call</strong>  Delivering excellent tech support can sometimes require heavy lifting, a feat <em>The Register</em> celebrates each Friday with a new instalment of On Call – the reader-contributed column that shares your stories of hoisting glitchy tech back to full function.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a Wi-Fi connectivity issue affecting laptops, which is an incident that needs to be resolved through troubleshooting and escalation to a technician."
+          },
+          {
+            "title": "Weak security means attackers could disable all of a city's public EV chargers",
+            "url": "https://www.theregister.com/2026/04/24/rentable_iot_security_flaws/",
+            "source": "The Register",
+            "published": "2026-04-24T04:10:33.000Z",
+            "summary": "<h4>Demonstrated in China, probably applicable elsewhere</h4> <p><strong>Black Hat Asia</strong>  Developers of rented internet of things infrastructure – stuff like public EV chargers and shared e-bikes – are prioritizing user convenience over security, and leaving themselves exposed to wide-scale denial of service attacks on their services.…</p> <p><!--#include virtual='/data_centre/_whitepaper_textlinks_top.html' --></p>",
+            "confidence": 0.9,
+            "reasoning": "Article discusses security vulnerabilities in IoT devices that could lead to denial of service attacks, which directly relates to managing incidents."
+          },
+          {
+            "title": "US clarifies mobile hotspots part of foreign router ban despite rarity of American made consumer kit",
+            "url": "https://www.theregister.com/2026/04/24/fcc_does_a_doubletake_adds/",
+            "source": "The Register",
+            "published": "2026-04-24T16:03:14.000Z",
+            "summary": "<h4>Silicon often from US, but the kit from APAC and elsewhere</h4> <p>America's telco regulator has clarified its ban on foreign-made routers also includes mobile hotspots and domestic routers that use a 5G cellular connection to the internet.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article discusses a regulatory ban that could lead to incidents (e.g., service disruptions) for users of affected devices, aligning with incident management's focus on handling disruptions."
+          }
+        ]
+      }
+    ]
+  }
+]
