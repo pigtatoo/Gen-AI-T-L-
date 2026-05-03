@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "German chancellor downplays row with Trump after troop drawdown announced",
+            "url": "https://www.channelnewsasia.com/asia/german-chancellor-downplays-row-trump-after-troop-drawdown-announced-6097236",
+            "source": "Latest News",
+            "published": "2026-05-03T19:03:20.000Z",
+            "summary": "The US President returned the number of American troops stationed in Germany to pre-Ukraine War levels.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses a geopolitical decision (troop drawdown) and diplomatic response, which involves strategic management of international relations and defense policy."
+          },
+          {
+            "title": "Iran says it has received US response to its latest offer for talks",
+            "url": "https://www.channelnewsasia.com/world/iran-says-it-has-received-us-response-its-latest-offer-talks-6097326",
+            "source": "Latest News",
+            "published": "2026-05-03T20:13:10.000Z",
+            "summary": "Peace talks between the US and Iran have continually failed under the fragile ceasefire.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses US-Iran peace talks and ceasefire negotiations, which involve high-level strategic decision-making and geopolitical risk management."
+          },
+          {
+            "title": "Sweden boards suspected 'shadow fleet' vessel",
+            "url": "https://www.channelnewsasia.com/world/sweden-boards-suspected-shadow-fleet-vessel-6097226",
+            "source": "Latest News",
+            "published": "2026-05-03T18:07:58.000Z",
+            "summary": "Vessel part of Russia's \"shadow fleet\" have been confiscated in the Baltic sea amidst the Ukraine War.&nbsp;",
+            "confidence": 0.75,
+            "reasoning": "The article involves confiscation of a shadow fleet vessel amid geopolitical tensions (Ukraine War), which relates to strategic risk management and compliance with international sanctions."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Job's a good 'un: Bank of England tech project wins watchdog praise",
+            "url": "https://www.theregister.com/2026/05/03/bank_of_england_tech_migration/",
+            "source": "The Register",
+            "published": "2026-05-03T08:34:07.000Z",
+            "summary": "<h4>PAC: Now why can't everybody else in public sector do it like this?</h4> <p>Parliament's spending watchdog has held up a successful large-scale public sector tech transformation as a rare example worth emulating, in a striking departure from the usual diet of failure and overspend.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article discusses the Bank of England's RTGS system implementation, highlighting the Public Accounts Committee's praise for overcoming common public sector transformation challenges, directly relating to IT governance practices and oversight."
+          },
+          {
+            "title": "Disneyland Now Uses Face Recognition on Visitors",
+            "url": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
+            "source": "WIRED",
+            "published": "2026-05-02T10:30:00.000Z",
+            "summary": "Plus: The NSA tests Anthropic’s Mythos Preview to find vulnerabilities, a Finnish teen is charged over the Scattered Spider hacking spree, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses authentication standards (FIDO Alliance), security risk modes for AI (OpenAI), and spyware risks, all relating to IT governance frameworks for managing technology risks."
+          },
+          {
+            "title": "Royal Navy chief backs drones, autonomous weapons in ‘Hybrid Navy’",
+            "url": "https://www.theregister.com/2026/05/03/future_royal_navy_drones_high_tech/",
+            "source": "The Register",
+            "published": "2026-05-03T10:30:14.000Z",
+            "summary": "<h4>Plan mixes crewed ships, robot escorts, and long-range strike to bolster a stretched fleet</h4> <p>The leader of Britain’s Royal Navy has outlined a “Hybrid Navy” built on a mix of crewed, uncrewed, and autonomous platforms to ensure it can continue to defend the nation and operate overseas.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article mentions adoption of new technology like drones and autonomous weapons, which relates to governance of technology, but the focus is more on strategic military planning than IT governance."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Job's a good 'un: Bank of England tech project wins watchdog praise",
+            "url": "https://www.theregister.com/2026/05/03/bank_of_england_tech_migration/",
+            "source": "The Register",
+            "published": "2026-05-03T08:34:07.000Z",
+            "summary": "<h4>PAC: Now why can't everybody else in public sector do it like this?</h4> <p>Parliament's spending watchdog has held up a successful large-scale public sector tech transformation as a rare example worth emulating, in a striking departure from the usual diet of failure and overspend.…</p>",
+            "confidence": 0.75,
+            "reasoning": "The article contrasts the successful RTGS project with failed ones like the Emergency Services Network and NS&I overhaul, focusing on achieving intended outcomes and avoiding overspend, which ties to benefit realization."
+          },
+          {
+            "title": "OpenAI Enables Marketing Cookies by Default for Free ChatGPT Users",
+            "url": "https://www.wired.com/story/openai-enables-cookies-by-default-for-free-chatgpt-users/",
+            "source": "WIRED",
+            "published": "2026-05-01T21:46:46.000Z",
+            "summary": "ChatGPT’s new privacy policy states how the company uses cookies for tracking, to turn free users into paying subscribers.",
+            "confidence": 0.7,
+            "reasoning": "The article implies OpenAI aims to realize benefits from user data through targeted advertising, but the primary focus is on policy and strategy rather than explicit benefit measurement."
+          },
+          {
+            "title": "Disneyland Now Uses Face Recognition on Visitors",
+            "url": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
+            "source": "WIRED",
+            "published": "2026-05-02T10:30:00.000Z",
+            "summary": "Plus: The NSA tests Anthropic’s Mythos Preview to find vulnerabilities, a Finnish teen is charged over the Scattered Spider hacking spree, and more.",
+            "confidence": 0.5,
+            "reasoning": "The article's focus on security measures and spyware risks indirectly touches on ensuring technology benefits are realized without negative impacts, but relevance is limited."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Disneyland Now Uses Face Recognition on Visitors",
+            "url": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
+            "source": "WIRED",
+            "published": "2026-05-02T10:30:00.000Z",
+            "summary": "Plus: The NSA tests Anthropic’s Mythos Preview to find vulnerabilities, a Finnish teen is charged over the Scattered Spider hacking spree, and more.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses the NSA testing Anthropic's Mythos Preview to find vulnerabilities, which involves gathering information on AI systems for security purposes."
+          },
+          {
+            "title": "Royal Navy chief backs drones, autonomous weapons in ‘Hybrid Navy’",
+            "url": "https://www.theregister.com/2026/05/03/future_royal_navy_drones_high_tech/",
+            "source": "The Register",
+            "published": "2026-05-03T10:30:14.000Z",
+            "summary": "<h4>Plan mixes crewed ships, robot escorts, and long-range strike to bolster a stretched fleet</h4> <p>The leader of Britain’s Royal Navy has outlined a “Hybrid Navy” built on a mix of crewed, uncrewed, and autonomous platforms to ensure it can continue to defend the nation and operate overseas.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The speech by the Royal Navy chief involves gathering and presenting information on current capabilities and future plans, though the focus is more on operational strategy than cyber-specific information gathering."
+          },
+          {
+            "title": "UK drivers' agency shrugs off claims of week-long booking site smashes, blames browser configs",
+            "url": "https://www.theregister.com/2026/05/02/dvsa_shrugs_off_outages/",
+            "source": "The Register",
+            "published": "2026-05-02T09:24:07.000Z",
+            "summary": "<h4>Agency insists everything is working fine, even though users spend days failing to load it</h4> <p>The DVSA's driving test booking system has spent the week offline, according to frustrated users.…</p>",
+            "confidence": 0.6,
+            "reasoning": "The article involves users and reporters investigating the system's behavior, which aligns with information gathering activities about system vulnerabilities or availability."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK drivers' agency shrugs off claims of week-long booking site smashes, blames browser configs",
+            "url": "https://www.theregister.com/2026/05/02/dvsa_shrugs_off_outages/",
+            "source": "The Register",
+            "published": "2026-05-02T09:24:07.000Z",
+            "summary": "<h4>Agency insists everything is working fine, even though users spend days failing to load it</h4> <p>The DVSA's driving test booking system has spent the week offline, according to frustrated users.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a system outage that prevents users from accessing the booking service, which is a classic incident. The agency's response involves investigation and communication, aligning with incident management processes."
+          },
+          {
+            "title": "Brace for the patch tsunami: AI is unearthing decades of buried code debt",
+            "url": "https://www.theregister.com/2026/05/02/ncsc_brace_for_patch_tsunami/",
+            "source": "The Register",
+            "published": "2026-05-02T08:30:09.000Z",
+            "summary": "<h4>Britain's cyber agency says the bill for years of technical shortcuts is coming due, and it's arriving all at once</h4> <p>Britain's cyber agency is warning that AI-fuelled bug hunting is about to flush out years of buried flaws, leaving defenders scrambling to keep up.…</p>",
+            "confidence": 0.92,
+            "reasoning": "Article discusses a wave of security patches and vulnerabilities, directly relating to handling incidents caused by bugs and flaws."
+          },
+          {
+            "title": "Job's a good 'un: Bank of England tech project wins watchdog praise",
+            "url": "https://www.theregister.com/2026/05/03/bank_of_england_tech_migration/",
+            "source": "The Register",
+            "published": "2026-05-03T08:34:07.000Z",
+            "summary": "<h4>PAC: Now why can't everybody else in public sector do it like this?</h4> <p>Parliament's spending watchdog has held up a successful large-scale public sector tech transformation as a rare example worth emulating, in a striking departure from the usual diet of failure and overspend.…</p>",
+            "confidence": 0.65,
+            "reasoning": "The article discusses challenges and problems in large-scale tech projects, which relates to handling incidents in IT service management."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK pensions dept goes shopping for spy-van tech with £2M surveillance tender",
+            "url": "https://www.theregister.com/2026/05/01/dwp_goes_shopping_for_spyvan/",
+            "source": "The Register",
+            "published": "2026-05-01T10:43:07.000Z",
+            "summary": "<h4>Covert cameras, live-streaming systems, and in-vehicle recording kit sought to catch out fraudsters</h4> <p>The Department for Work and Pensions has gone shopping for covert cameras, live-streaming kit, and vehicle-based recording gear as it lines up a £2 million upgrade to watch fraud suspects in real time.…</p>",
+            "confidence": 0.95,
+            "reasoning": "The article describes a central evidence system for storing, reviewing, and exporting footage, directly relating to information storage and retrieval technologies."
+          },
+          {
+            "title": "Bright idea? UK firm pioneers data centres using lampposts",
+            "url": "https://www.bbc.com/news/articles/c98r4e594p7o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-05-01T21:23:33.000Z",
+            "summary": "The solar-powered iLamps will have a built-in Nvidia chip but there are questions over their security and scalability.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses data centres and storage in lampposts, relating to information storage and retrieval technologies."
+          },
+          {
+            "title": "You Found Satoshi? Let’s See the Receipts",
+            "url": "https://www.wired.com/story/you-found-satoshi-lets-see-the-receipts/",
+            "source": "WIRED",
+            "published": "2026-05-01T15:00:00.000Z",
+            "summary": "Two new projects, including one from a Pulitzer-winning reporter, claim they’ve solved the mystery of Bitcoin’s creator. So why does the hunt continue?",
+            "confidence": 0.65,
+            "reasoning": "The article discusses Bitcoin's creator and cryptocurrency, which involves blockchain technology—a form of distributed ledger that relies on information storage and retrieval. However, the article focuses more on investigation and journalism than technical storage aspects."
+          }
+        ]
+      }
+    ]
+  }
+]
