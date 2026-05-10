@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "China, US to hold trade talks in Seoul ahead of Trump-Xi summit",
+            "url": "https://www.channelnewsasia.com/world/china-us-hold-trade-talks-in-seoul-ahead-trump-xi-summit-6112241",
+            "source": "Latest News",
+            "published": "2026-05-10T17:04:10.000Z",
+            "summary": "Amidst conflict the in the Middle East and rising oil costs, the meeting between the world's largest two economies aims to focus on easing international tensions.&nbsp;",
+            "confidence": 0.9,
+            "reasoning": "The article discusses high-level trade talks between China and the US, which involves strategic decision-making and international relations management."
+          },
+          {
+            "title": "Ukraine, Russia trade accusations of violating US-backed ceasefire",
+            "url": "https://www.channelnewsasia.com/world/ukraine-russia-trade-accusations-violating-us-backed-ceasefire-6112291",
+            "source": "Latest News",
+            "published": "2026-05-10T18:28:08.000Z",
+            "summary": "The fragile ceasefire has come under strain as both countries search for a permanent to end the war.&nbsp;",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a geopolitical conflict involving ceasefire violations and war termination, which relates to strategic management of international relations and risk."
+          },
+          {
+            "title": "Latvian defence minister resigns after Ukrainian drones hit oil tanks",
+            "url": "https://www.channelnewsasia.com/world/latvian-defence-minister-resigns-after-ukrainian-drones-hit-oil-tanks-6112251",
+            "source": "Latest News",
+            "published": "2026-05-10T17:27:13.000Z",
+            "summary": "Russia has used electronic warfare to disrupt the path of Ukrainian drones.",
+            "confidence": 0.75,
+            "reasoning": "The resignation of a defence minister due to a geopolitical conflict and military incident involves high-level decision-making and risk management, aligning with strategic management."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Both Fedora and Ubuntu will get AI support – soon",
+            "url": "https://www.theregister.com/oses/2026/05/10/both-fedora-and-ubuntu-will-get-ai-support-soon/5237409",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-10T13:00:00.000Z",
+            "summary": "Furores are fermenting in the forums",
+            "confidence": 0.75,
+            "reasoning": "Article discusses policy decisions, community governance, and AI-assisted contribution policies within Fedora, which relates to IT governance frameworks."
+          },
+          {
+            "title": "Do City Delivery Drones Make Sense? No One Knows, but They're Flying Over NYC",
+            "url": "https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/",
+            "source": "WIRED",
+            "published": "2026-05-10T10:30:00.000Z",
+            "summary": "One of the country’s busiest airspaces has a new kind of flying machine—maybe temporarily.",
+            "confidence": 0.7,
+            "reasoning": "The program involves oversight of technology (drones) and airspace management, touching on governance of IT systems and regulatory compliance."
+          },
+          {
+            "title": "Latvian defence minister resigns after Ukrainian drones hit oil tanks",
+            "url": "https://www.channelnewsasia.com/world/latvian-defence-minister-resigns-after-ukrainian-drones-hit-oil-tanks-6112251",
+            "source": "Latest News",
+            "published": "2026-05-10T17:27:13.000Z",
+            "summary": "Russia has used electronic warfare to disrupt the path of Ukrainian drones.",
+            "confidence": 0.6,
+            "reasoning": "The mention of electronic warfare disrupting drones relates to technology governance and cybersecurity risks, though not the primary focus."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Do City Delivery Drones Make Sense? No One Knows, but They're Flying Over NYC",
+            "url": "https://www.wired.com/story/do-city-delivery-drones-make-sense-no-one-knows-but-theyre-flying-over-nyc/",
+            "source": "WIRED",
+            "published": "2026-05-10T10:30:00.000Z",
+            "summary": "One of the country’s busiest airspaces has a new kind of flying machine—maybe temporarily.",
+            "confidence": 0.6,
+            "reasoning": "The article questions whether the drone delivery service will provide tangible benefits like faster deliveries and cost-effectiveness, directly relating to benefit realization."
+          },
+          {
+            "title": "China, US to hold trade talks in Seoul ahead of Trump-Xi summit",
+            "url": "https://www.channelnewsasia.com/world/china-us-hold-trade-talks-in-seoul-ahead-trump-xi-summit-6112241",
+            "source": "Latest News",
+            "published": "2026-05-10T17:04:10.000Z",
+            "summary": "Amidst conflict the in the Middle East and rising oil costs, the meeting between the world's largest two economies aims to focus on easing international tensions.&nbsp;",
+            "confidence": 0.5,
+            "reasoning": "The trade talks aim to ease international tensions and potentially yield economic benefits, though the article does not detail specific outcomes."
+          },
+          {
+            "title": "Iran war hits datacenter building supply chains, upping costs",
+            "url": "https://www.theregister.com/on-prem/2026/05/08/iran-war-disrupts-datacenter-construction-supply-chains-raises-material-costs/5235852",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T15:56:48.000Z",
+            "summary": "BCS says builders face up to 20% material hikes and patchy deliveries",
+            "confidence": 0.5,
+            "reasoning": "The increased costs and delays could affect the expected benefits from datacenter projects, though the article focuses more on immediate operational impacts than on long-term benefit tracking."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Disgraced US gov software contractor found guilty of database destruction",
+            "url": "https://www.theregister.com/cyber-crime/2026/05/08/former-us-contractor-convicted-in-federal-database-wipe-case/5237296",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T17:10:14.000Z",
+            "summary": "Twin brother still faces trial over broader cybercrime allegations",
+            "confidence": 0.95,
+            "reasoning": "Article involves deletion of 96 databases containing US government data, directly relating to storage and retrieval of digital information."
+          },
+          {
+            "title": "Hackers ate my homework: Educational SaaS Canvas down after cyberattack",
+            "url": "https://www.theregister.com/security/2026/05/08/hackers-ate-my-homework-educational-saas-canvas-down-after-cyberattack/5235561",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T10:59:10.000Z",
+            "summary": "ShinyHunters takes the credit and gives developer an F for security",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a cyberattack on Canvas, an educational SaaS platform that stores and retrieves course materials, assignments, and data, directly relating to information storage and retrieval technologies."
+          },
+          {
+            "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
+            "url": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
+            "source": "WIRED",
+            "published": "2026-05-09T10:30:00.000Z",
+            "summary": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets “violent left wing extremists,” leaked documents reveal Russia's school for elite hackers, and more.",
+            "confidence": 0.7,
+            "reasoning": "The article mentions Canvas going into maintenance mode after a ransomware attack, which involves data storage and retrieval systems being compromised; also references Google Chrome's Gemini Nano AI model taking up storage space, and vibe coded apps exposing data, all relating to information storage and retrieval technologies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Disgraced US gov software contractor found guilty of database destruction",
+            "url": "https://www.theregister.com/cyber-crime/2026/05/08/former-us-contractor-convicted-in-federal-database-wipe-case/5237296",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T17:10:14.000Z",
+            "summary": "Twin brother still faces trial over broader cybercrime allegations",
+            "confidence": 0.95,
+            "reasoning": "Article details the brothers obtaining a plaintext password and accessing an EEOC account, which is a clear act of information gathering."
+          },
+          {
+            "title": "Meta U-turns on encryption push for Instagram as DMs go plaintext",
+            "url": "https://www.theregister.com/security/2026/05/08/meta-u-turns-on-encryption-push-for-instagram-as-dms-go-plaintext/5235705",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T12:42:00.000Z",
+            "summary": "After years of insisting end-to-end encryption was the future of online comms, Zuckcorp has handed itself full visibility into user chats once again",
+            "confidence": 0.5,
+            "reasoning": "The shift to plaintext DMs enables Meta to access user messages, which could be used for information gathering, though the article focuses more on privacy loss than active intelligence collection."
+          },
+          {
+            "title": "UK abandons police database cloud move after £35M transformation stalls",
+            "url": "https://www.theregister.com/public-sector/2026/05/08/uk-abandons-police-database-cloud-move-after-35m-transformation-stalls/5235718",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T12:16:41.000Z",
+            "summary": "Home Office finds 80% of code cannot be reused, balks at £26M in extra costs",
+            "confidence": 0.5,
+            "reasoning": "The database is used for sharing police intelligence information, but the article primarily covers the migration failure, not the gathering process itself."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ON CALL: Custom PC worked in the lab, failed on site – and so did the angry client",
+            "url": "https://www.theregister.com/on-prem/2026/05/08/on-call-custom-pc-worked-in-the-lab-failed-on-site-and-so-did-the-angry-client/5232357",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T07:00:00.000Z",
+            "summary": "It's amazing what happens when you plug everything in",
+            "confidence": 0.95,
+            "reasoning": "The article describes a field support incident where a non-functional PC caused client anger and required urgent repair, directly relating to incident management processes."
+          },
+          {
+            "title": "AWS warns of EC2 'impairment' as power loss hits notorious US-EAST-1 region",
+            "url": "https://www.theregister.com/off-prem/2026/05/08/aws-warns-of-ec2-impairment-as-power-loss-hits-notorious-us-east-1-region/5235509",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T02:33:35.000Z",
+            "summary": "Extra aircon found to cool overheating datacenter as users complain their resources are... nowhere",
+            "confidence": 0.95,
+            "reasoning": "The article describes a power outage causing service impairments, which is a classic incident management scenario involving detection, response, and communication."
+          },
+          {
+            "title": "HPE drops first Juniper x Aruba collab – self-driving Wi-Fi",
+            "url": "https://www.theregister.com/networks/2026/05/08/hpe-drops-first-juniper-x-aruba-collab-self-driving-wi-fi/5235463",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-08T02:00:10.000Z",
+            "summary": "NetAdmins can stay in the loop while they learn to trust AI to tackle some scutwork",
+            "confidence": 0.85,
+            "reasoning": "Article discusses AI-driven autonomous network operations that detect and resolve issues like frequency conflicts, VLAN mismatches, and capacity problems, which are core to incident management."
+          }
+        ]
+      }
+    ]
+  }
+]
