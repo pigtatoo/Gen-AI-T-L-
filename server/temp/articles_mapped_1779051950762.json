@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Israeli strikes kill eight people in Gaza, medics say",
+            "url": "https://www.channelnewsasia.com/world/israeli-strikes-kill-eight-people-in-gaza-medics-say-6126681",
+            "source": "Latest News",
+            "published": "2026-05-17T19:43:17.000Z",
+            "summary": "Israel and Hamas remain deadlocked in indirect talks to advance US President Donald Trump's post-war plan for Gaza that is meant to end more than two years of fighting with Hamas disarming as Israeli troops withdraw from Gaza.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses negotiations and a post-war plan involving US President Trump, Israel, and Hamas, which relates to strategic decision-making and geopolitical risk management."
+          },
+          {
+            "title": "Ukraine drones kill four in Russia, Moscow faces biggest attack in over a year",
+            "url": "https://www.channelnewsasia.com/world/ukraine-drones-kill-four-in-russia-moscow-faces-biggest-attack-in-over-year-6127171",
+            "source": "Latest News",
+            "published": "2026-05-17T20:28:09.000Z",
+            "summary": "Confirming the attack, Volodymyr Zelenskyy posted a video on X of a drone in flight, columns of black smoke and fire crews trying to extinguish flames.",
+            "confidence": 0.7,
+            "reasoning": "The article involves geopolitical conflict (Ukraine-Russia war), which relates to strategic management of national security and international relations risks."
+          },
+          {
+            "title": "Enough with the AI FOMO, go slow-mo, says Domo CDO",
+            "url": "https://www.theregister.com/ai-ml/2026/05/17/enough-with-the-ai-fomo-go-slow-mo-says-domo-cdo/5240840",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-17T14:00:00.000Z",
+            "summary": "You're not the only one annoyed by the hype",
+            "confidence": 0.65,
+            "reasoning": "Addresses strategic decisions regarding AI adoption, fear-based marketing, and the need for careful planning rather than rushing."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Wanted: Digital chief for England's schools. Must enjoy data, AI, and concrete problems",
+            "url": "https://www.theregister.com/public-sector/2026/05/17/wanted-digital-chief-for-englands-schools-must-enjoy-data-ai-and-concrete-problems/5240242",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-17T08:30:00.000Z",
+            "summary": "Are you ready to RAAC?",
+            "confidence": 0.95,
+            "reasoning": "The article discusses a new digital and infrastructure role overseeing technology, data, AI, and school building safety, which directly involves IT governance, risk management, and compliance with safety standards."
+          },
+          {
+            "title": "AI-generated code is 'pain waiting to happen'",
+            "url": "https://www.theregister.com/ai-ml/2026/05/16/ai-generated-code-is-pain-waiting-to-happen/5241574",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-16T17:01:00.000Z",
+            "summary": "The boom is piling up technical debt, warns Lightrun's Moshe Sambol",
+            "confidence": 0.9,
+            "reasoning": "Article discusses risks of AI-generated code causing technical debt and governance issues around AI tool adoption and developer training."
+          },
+          {
+            "title": "Enough with the AI FOMO, go slow-mo, says Domo CDO",
+            "url": "https://www.theregister.com/ai-ml/2026/05/17/enough-with-the-ai-fomo-go-slow-mo-says-domo-cdo/5240840",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-17T14:00:00.000Z",
+            "summary": "You're not the only one annoyed by the hype",
+            "confidence": 0.75,
+            "reasoning": "Discusses AI technology pushed onto companies, creating anxiety and urgency, which relates to governance of IT systems and risk management."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Wanted: Digital chief for England's schools. Must enjoy data, AI, and concrete problems",
+            "url": "https://www.theregister.com/public-sector/2026/05/17/wanted-digital-chief-for-englands-schools-must-enjoy-data-ai-and-concrete-problems/5240242",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-17T08:30:00.000Z",
+            "summary": "Are you ready to RAAC?",
+            "confidence": 0.7,
+            "reasoning": "The focus on improving outcomes for children and young people through digital and data expertise implies benefit realization, though the article emphasizes risk and accountability more directly."
+          },
+          {
+            "title": "AI-generated code is 'pain waiting to happen'",
+            "url": "https://www.theregister.com/ai-ml/2026/05/16/ai-generated-code-is-pain-waiting-to-happen/5241574",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-16T17:01:00.000Z",
+            "summary": "The boom is piling up technical debt, warns Lightrun's Moshe Sambol",
+            "confidence": 0.6,
+            "reasoning": "Article implies potential failure to realize benefits of AI tools due to inadequate training and increased technical debt."
+          },
+          {
+            "title": "Europe built sovereign clouds to escape US control. Then forgot about the processors",
+            "url": "https://www.theregister.com/systems/2026/05/16/europe-built-sovereign-clouds-to-escape-us-control-then-forgot-about-the-processors/5237735",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-16T10:30:00.000Z",
+            "summary": "Intel ME and AMD PSP: The silicon layer nobody certifies",
+            "confidence": 0.6,
+            "reasoning": "The article implies that the intended benefits of sovereign clouds (immunity from extraterritorial laws) may not be fully realized due to reliance on US-based processors with hidden management engines, touching on benefit realization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Google reimburses Register sources who were victims of API fraud",
+            "url": "https://www.theregister.com/devops/2026/05/15/google-reimburses-register-sources-who-were-victims-of-api-fraud/5241429",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-15T21:26:32.000Z",
+            "summary": "But it's holding fast on auto-expanding customers' budgets",
+            "confidence": 0.95,
+            "reasoning": "The article describes unauthorized API calls leading to unexpected bills, which is an incident requiring resolution and reimbursement."
+          },
+          {
+            "title": "Wanted: Digital chief for England's schools. Must enjoy data, AI, and concrete problems",
+            "url": "https://www.theregister.com/public-sector/2026/05/17/wanted-digital-chief-for-englands-schools-must-enjoy-data-ai-and-concrete-problems/5240242",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-17T08:30:00.000Z",
+            "summary": "Are you ready to RAAC?",
+            "confidence": 0.92,
+            "reasoning": "The article discusses safety risks and life-and-death decisions, including removal of unsafe RAAC concrete from schools, which directly relates to managing incidents in the education estate."
+          },
+          {
+            "title": "Datacenters slurping up so much juice they boosted prices 75% in largest US energy market",
+            "url": "https://www.theregister.com/on-prem/2026/05/15/datacenters-slurping-juice-help-drive-75-jump-in-pjm-power-prices/5241491",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-15T21:02:01.000Z",
+            "summary": "BYO power for AI bit barns may be the best way to ease the problem, says energy watchdog",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a major incident (75% price increase) caused by datacenter load growth, which is a key concern for IT service management incident handling."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
+            "url": "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
+            "source": "WIRED",
+            "published": "2026-05-16T10:30:00.000Z",
+            "summary": "Plus: Instructure’s Canvas ransomware debacle comes to a close, an alleged dark net market kingpin gets arrested, OpenAI workers fall victim to a supply chain attack, and more.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses cybercriminal twins forgetting to turn off Microsoft Teams recording, which relates to information gathering through surveillance and data collection."
+          },
+          {
+            "title": "Tesla Reveals New Details About Robotaxi Crashes—and the Humans Involved",
+            "url": "https://www.wired.com/story/tesla-reveals-new-details-about-robotaxi-crashes-and-the-humans-involved/",
+            "source": "WIRED",
+            "published": "2026-05-15T19:51:16.000Z",
+            "summary": "Remote operators (slowly) drove the automaker’s autonomous vehicles into a metal fence and a construction barricade, Tesla says.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses Tesla's disclosure of crash details in a federal database, which involves information gathering related to incidents, but not directly cyber security attack or defense."
+          },
+          {
+            "title": "Git is unprepared for the AI coding tsunami",
+            "url": "https://www.theregister.com/devops/2026/05/15/git-is-unprepared-for-the-ai-coding-tsunami/5241480",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-15T20:15:56.000Z",
+            "summary": "An influx of agents is pushing GitHub to the brink",
+            "confidence": 0.5,
+            "reasoning": "The article discusses AI-generated code and pull requests, which could involve information gathering about code changes, but it is not a primary focus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Dude… where’s my password? Claude reunites forgetful stoner with $400k Bitcoin stash",
+            "url": "https://www.theregister.com/offbeat/2026/05/14/claude-reunites-stoner-with-bitcoin-after-losing-password/5240492",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-14T13:30:00.000Z",
+            "summary": "AI to the rescue as 11-year search for password turns up in old PC files",
+            "confidence": 0.95,
+            "reasoning": "The article describes recovering a forgotten password from old PC files using AI, which involves storage and retrieval of digital information."
+          },
+          {
+            "title": "Nobody believes the 'criminals and scumbags' who hacked Canvas really deleted stolen student data",
+            "url": "https://www.theregister.com/cyber-crime/2026/05/14/security-pros-doubt-canvas-attackers-really-deleted-stolen-student-data/5240799",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-14T22:42:11.000Z",
+            "summary": "Other than Instructure execs - maybe?",
+            "confidence": 0.9,
+            "reasoning": "The article discusses data theft, storage, and deletion of student data, which relates to how information is stored and retrieved in digital systems."
+          },
+          {
+            "title": "The US Is Using AI to Hunt Down Insider Trading on Polymarket",
+            "url": "https://www.wired.com/story/polymarket-insider-trading-cftc-michael-selig-interview/",
+            "source": "WIRED",
+            "published": "2026-05-15T09:30:00.000Z",
+            "summary": "CFTC chairman Michael Selig sat down with WIRED to discuss how the agency scours Polymarket and other prediction markets for illegal activity.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses the CFTC using AI to analyze trading data from Polymarket, which involves storing and retrieving large volumes of transactional information to detect insider trading."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Anthropic’s Bun Rust rewrite merged at speed of AI",
+            "url": "https://www.theregister.com/devops/2026/05/14/anthropics-bun-rust-rewrite-merged-at-speed-of-ai/5240381",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-14T13:01:00.000Z",
+            "summary": "Version 1.3.14 of JavaScript toolkit released as last Zig version; a million lines of Rust code merged in gargantuan commit",
+            "confidence": 0.7,
+            "reasoning": "Article discusses code rewrite and performance, which relates to algorithmic efficiency."
+          }
+        ]
+      }
+    ]
+  }
+]
