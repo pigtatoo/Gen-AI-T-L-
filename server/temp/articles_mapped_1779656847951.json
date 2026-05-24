@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Netanyahu says Trump agrees Iran deal must remove nuclear threat",
+            "url": "https://www.channelnewsasia.com/asia/netanyahu-trump-iran-nuclear-lebanon-attacks-6139021",
+            "source": "Latest News",
+            "published": "2026-05-24T19:33:48.000Z",
+            "summary": "Posting on Telegram, Netanyahu said this would require dismantling Iran's nuclear enrichment facilities and removing enriched nuclear material from its territory.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses high-level geopolitical strategy and decision-making regarding nuclear threat management, which falls under strategic management of national security and international relations."
+          },
+          {
+            "title": "Russia kills 4 in massive Ukraine attack using nuclear-capable missile",
+            "url": "https://www.channelnewsasia.com/world/russia-ukraine-attack-nuclear-capable-missile-6138876",
+            "source": "Latest News",
+            "published": "2026-05-24T17:15:05.000Z",
+            "summary": "Russia's army confirmed it had launched the Oreshnik at Ukraine for the third time in the war, saying it was \"in response to Ukraine's terrorist attacks on civilian infrastructure on Russian territory\". The missile was used without a nuclear warhead.",
+            "confidence": 0.65,
+            "reasoning": "The article describes a military escalation involving nuclear-capable missiles, which impacts geopolitical stability and strategic decision-making, relevant to risk management."
+          },
+          {
+            "title": "West Ham face uncertain future after Premier League demise",
+            "url": "https://www.channelnewsasia.com/sport/west-ham-face-uncertain-future-after-premier-league-demise-6139291",
+            "source": "Latest News",
+            "published": "2026-05-24T19:09:53.000Z",
+            "summary": "",
+            "confidence": 0.6,
+            "reasoning": "The article title discusses 'uncertain future' and 'Premier League demise', which may relate to strategic management challenges for West Ham."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK MPs slam digital ID rollout as a 'fiasco' after botched launch",
+            "url": "https://www.theregister.com/public-sector/2026/05/23/uk-mps-slam-digital-id-rollout-as-a-fiasco-after-botched-launch/5245124",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-23T09:30:00.000Z",
+            "summary": "Government's 'rushed' plans damaged public confidence before ministers had even explained how the system would work",
+            "confidence": 0.95,
+            "reasoning": "The article discusses the government's rushed and poorly managed rollout of digital ID, highlighting failures in policy development, public consultation, and implementation—core aspects of IT governance."
+          },
+          {
+            "title": "AI eyes scanning for bugs create a worrisome Linux security trend",
+            "url": "https://www.theregister.com/security/2026/05/23/ai-eyes-scanning-for-bugs-create-a-worrisome-linux-security-trend/5244742",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-23T10:59:00.000Z",
+            "summary": "Dirty Frag, Copy Fail, and Fragesia show the new reality",
+            "confidence": 0.9,
+            "reasoning": "Article discusses Linux kernel vulnerabilities and security trends, directly relating to IT governance's focus on managing IT risks and security."
+          },
+          {
+            "title": "Quantum ‘Jamming’ Could Help Unlock the Mysteries of Causality",
+            "url": "https://www.wired.com/story/quantum-jamming-could-help-unlock-the-mysteries-of-causality/",
+            "source": "WIRED",
+            "published": "2026-05-23T11:00:00.000Z",
+            "summary": "To keep communications secure in a post-quantum world, cryptographers are digging down into the concept of cause and effect.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses post-quantum cryptography and communication security, which involves IT governance frameworks for managing risks and controls in digital systems."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Zuck defends monitoring employees to win AI race in purported leaked audio",
+            "url": "https://www.theregister.com/ai-ml/2026/05/22/zuck-defends-monitoring-employees-to-win-ai-race-in-purported-leaked-audio/5245379",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T20:55:41.000Z",
+            "summary": "Limping Llama model needs a crutch made of surveillance tools",
+            "confidence": 0.7,
+            "reasoning": "The monitoring is intended to feed data into AI models to improve performance, which is a form of benefit realization from employee activities, though the focus is more on immediate surveillance than long-term benefit tracking."
+          },
+          {
+            "title": "UK MPs slam digital ID rollout as a 'fiasco' after botched launch",
+            "url": "https://www.theregister.com/public-sector/2026/05/23/uk-mps-slam-digital-id-rollout-as-a-fiasco-after-botched-launch/5245124",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-23T09:30:00.000Z",
+            "summary": "Government's 'rushed' plans damaged public confidence before ministers had even explained how the system would work",
+            "confidence": 0.6,
+            "reasoning": "The article mentions potential benefits of digital ID for public services, but notes that the botched launch undermines trust and realization of these benefits."
+          },
+          {
+            "title": "AT&T sues to ditch Cali copper phone lines to save billions",
+            "url": "https://www.theregister.com/networks/2026/05/22/att-sues-to-ditch-cali-copper-phone-lines-to-save-billions/5244917",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T13:29:00.000Z",
+            "summary": "Telecoms giant files suit in Golden State so it doesn't have to maintain network it claims is hardly used",
+            "confidence": 0.6,
+            "reasoning": "The article mentions cost savings and investment benefits from transitioning to fiber, but benefit realization is less directly addressed compared to governance and strategy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK MPs slam digital ID rollout as a 'fiasco' after botched launch",
+            "url": "https://www.theregister.com/public-sector/2026/05/23/uk-mps-slam-digital-id-rollout-as-a-fiasco-after-botched-launch/5245124",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-23T09:30:00.000Z",
+            "summary": "Government's 'rushed' plans damaged public confidence before ministers had even explained how the system would work",
+            "confidence": 0.75,
+            "reasoning": "The article discusses government's failure in policy development and public consultation, which relates to how information about the digital ID system was gathered and communicated."
+          },
+          {
+            "title": "Minor edits to AI skills can make agents go rogue",
+            "url": "https://www.theregister.com/ai-ml/2026/05/22/minor-edits-to-ai-skills-can-make-agents-go-rogue/5245413",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T21:37:20.000Z",
+            "summary": "Text is the new attack",
+            "confidence": 0.65,
+            "reasoning": "The article discusses how AI agents can be attacked via text-based skills, which is a form of reconnaissance or exploitation that may involve gathering information about system vulnerabilities, but the primary focus is on attack surfaces rather than active information gathering."
+          },
+          {
+            "title": "Feds unwittingly leak pilots' pre-crash conversation",
+            "url": "https://www.theregister.com/science/2026/05/23/feds-unwittingly-leak-pilots-pre-crash-conversation/5245462",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T23:20:02.000Z",
+            "summary": "Release of spectrogram of cockpit recorder audio allows conversation recovery with 'emerging' decades-old tech",
+            "confidence": 0.6,
+            "reasoning": "The incident involves recovering sensitive information (pilot conversation) from a released image, which is a form of information gathering through technical means."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Irish Rail writes down €50M after train IT project goes off the rails",
+            "url": "https://www.theregister.com/public-sector/2026/05/22/irish-rail-writes-down-50m-after-train-it-project-goes-off-the-rails/5244857",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T10:34:02.000Z",
+            "summary": "State-owned operator loses confidence in delayed traffic management system as politicians compare Ireland’s latest public-sector IT fiasco to 'Groundhog Day'",
+            "confidence": 0.95,
+            "reasoning": "The article describes a failed IT project causing operational disruption and financial loss, which is a core incident management scenario."
+          },
+          {
+            "title": "UK MPs slam digital ID rollout as a 'fiasco' after botched launch",
+            "url": "https://www.theregister.com/public-sector/2026/05/23/uk-mps-slam-digital-id-rollout-as-a-fiasco-after-botched-launch/5245124",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-23T09:30:00.000Z",
+            "summary": "Government's 'rushed' plans damaged public confidence before ministers had even explained how the system would work",
+            "confidence": 0.75,
+            "reasoning": "The article describes a botched launch and public confidence damage, which aligns with incident management's focus on handling disruptions and restoring normal service operation."
+          },
+          {
+            "title": "Workday wants AI to punch in instead of having to hire new recruits",
+            "url": "https://www.theregister.com/saas/2026/05/22/workday-wants-ai-to-punch-in-instead-of-having-to-hire-new-recruits/5245011",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T12:59:00.000Z",
+            "summary": "CEO eyes margin gains by keeping headcount flat – bold for a company selling HR software to employers",
+            "confidence": 0.7,
+            "reasoning": "The article discusses AI agents replacing human roles in IT operations, which relates to automated incident handling and response."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Feds unwittingly leak pilots' pre-crash conversation",
+            "url": "https://www.theregister.com/science/2026/05/23/feds-unwittingly-leak-pilots-pre-crash-conversation/5245462",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T23:20:02.000Z",
+            "summary": "Release of spectrogram of cockpit recorder audio allows conversation recovery with 'emerging' decades-old tech",
+            "confidence": 0.95,
+            "reasoning": "The article discusses recovery of audio from a spectrogram image, which involves extracting and reconstructing stored information from an image format, directly relating to information storage and retrieval technologies."
+          },
+          {
+            "title": "Zuck defends monitoring employees to win AI race in purported leaked audio",
+            "url": "https://www.theregister.com/ai-ml/2026/05/22/zuck-defends-monitoring-employees-to-win-ai-race-in-purported-leaked-audio/5245379",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T20:55:41.000Z",
+            "summary": "Limping Llama model needs a crutch made of surveillance tools",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Meta's use of keystroke, mouse click, and screenshot monitoring to collect data for training AI models, which directly involves technologies for storing and retrieving user interaction data."
+          },
+          {
+            "title": "Media giant settles for $930k with FTC over allegations it lied about eavesdropping on conversations through smart devices",
+            "url": "https://www.theregister.com/legal/2026/05/22/media-giant-settles-for-930k-amid-user-snooping-allegations/5245180",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-22T15:19:51.000Z",
+            "summary": "Cox Media Group allegedly sold a bogus AI-powered snoopfest service",
+            "confidence": 0.75,
+            "reasoning": "The article involves data brokers selling email lists and claims of eavesdropping via smart devices, which relates to how information is stored and retrieved in digital forensics contexts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "AI may speed up search for drugs to treat brain conditions",
+            "url": "https://www.bbc.com/news/articles/cdrp3zzzp71o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-05-22T21:30:06.000Z",
+            "summary": "Researchers hope the work will help identify affordable, effective drugs to treat conditions like MND.",
+            "confidence": 0.9,
+            "reasoning": "The article explicitly mentions using algorithms to detect patterns of disease and predict suitable medicines, which directly relates to the Algorithms topic."
+          }
+        ]
+      }
+    ]
+  }
+]
