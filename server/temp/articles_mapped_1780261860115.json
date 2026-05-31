@@ -1,0 +1,266 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Philippines defence chief backs US calls for higher military spending, says allies must pull their weight",
+            "url": "https://www.channelnewsasia.com/asia/philippines-defence-secretary-gilberto-teodoro-shangri-la-dialogue-interview-6152541",
+            "source": "Latest News",
+            "published": "2026-05-31T15:16:21.000Z",
+            "summary": "Speaking to CNA's Leong Wai Kit on the sidelines of the Shangri-La Dialogue, Philippine Defence Secretary Gilberto Teodoro Jr also defended recent military exercises with allies, and blames China's \"expansionism\" for tensions in the South China Sea.&nbsp;",
+            "confidence": 0.95,
+            "reasoning": "Article discusses defense policy, military spending, and alliance strategy, which are key aspects of strategic management in governance."
+          },
+          {
+            "title": "Nike World Cup Uniforms Made of Recycled Textiles Won’t Solve Fashion Waste",
+            "url": "https://www.wired.com/story/nike-recycled-world-cup-uniforms/",
+            "source": "WIRED",
+            "published": "2026-05-30T08:30:00.000Z",
+            "summary": "The activewear giant has used chemical recycling to make jersey for 16 teams competing in the tournament. But the technique is unlikely to help solve fashion’s waste issue.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Nike's strategic initiative to use chemical recycling for World Cup uniforms, highlighting its sustainability goals and the challenges of scalability, which relates to strategic decision-making and corporate governance."
+          },
+          {
+            "title": "Cybercrime Crew Claims It Hacked Mike Lindell’s MyPillow",
+            "url": "https://www.wired.com/story/security-news-this-week-cybercrime-crew-claims-it-hacked-mike-lindells-mypillow/",
+            "source": "WIRED",
+            "published": "2026-05-30T10:30:00.000Z",
+            "summary": "Plus: A ransomware group is now stealing data in person, BusPatrol wants to hand its license plate surveillance data to the cops, and more.",
+            "confidence": 0.65,
+            "reasoning": "Discusses Pentagon's awareness of threats but lack of strategic action to implement fixes, indicating strategic management issues."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Okta writes its own license to kill rogue AI agents",
+            "url": "https://www.theregister.com/ai-ml/2026/05/29/okta-writes-its-own-license-to-kill-rogue-ai-agents/5248766",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T21:20:21.000Z",
+            "summary": "CEO Todd McKinnon says customers including ServiceNow want an off switch",
+            "confidence": 0.95,
+            "reasoning": "Article discusses security and governance of AI agents, including identity management and kill switches, which are core IT governance concerns."
+          },
+          {
+            "title": "Amazon Is Making an AI-Animated ‘Good Advice Cupcake’ TV Show. Its Original Creator Is Furious",
+            "url": "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/",
+            "source": "WIRED",
+            "published": "2026-05-29T20:56:59.000Z",
+            "summary": "Loryn Brantz created The Good Advice Cupcake for BuzzFeed years ago. The company licensed the character for a new Amazon series—made with AI—without her consent.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses intellectual property disputes, licensing of digital content, and use of AI in media production, which involve IT governance issues such as data rights, AI oversight, and compliance with legal agreements."
+          },
+          {
+            "title": "Cybercrime Crew Claims It Hacked Mike Lindell’s MyPillow",
+            "url": "https://www.wired.com/story/security-news-this-week-cybercrime-crew-claims-it-hacked-mike-lindells-mypillow/",
+            "source": "WIRED",
+            "published": "2026-05-30T10:30:00.000Z",
+            "summary": "Plus: A ransomware group is now stealing data in person, BusPatrol wants to hand its license plate surveillance data to the cops, and more.",
+            "confidence": 0.75,
+            "reasoning": "Article mentions US military's failure to adopt security protections for troop location data, reflecting poor IT governance and risk management."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Nike World Cup Uniforms Made of Recycled Textiles Won’t Solve Fashion Waste",
+            "url": "https://www.wired.com/story/nike-recycled-world-cup-uniforms/",
+            "source": "WIRED",
+            "published": "2026-05-30T08:30:00.000Z",
+            "summary": "The activewear giant has used chemical recycling to make jersey for 16 teams competing in the tournament. But the technique is unlikely to help solve fashion’s waste issue.",
+            "confidence": 0.7,
+            "reasoning": "The article questions whether the environmental benefits of chemical recycling will be realized, focusing on the gap between Nike's claims and actual outcomes, which aligns with benefit realization in governance."
+          },
+          {
+            "title": "Amazon Is Making an AI-Animated ‘Good Advice Cupcake’ TV Show. Its Original Creator Is Furious",
+            "url": "https://www.wired.com/story/story/amazon-is-making-an-ai-animated-good-advice-cupcake-tv-show-its-original-creator-is-furious/",
+            "source": "WIRED",
+            "published": "2026-05-29T20:56:59.000Z",
+            "summary": "Loryn Brantz created The Good Advice Cupcake for BuzzFeed years ago. The company licensed the character for a new Amazon series—made with AI—without her consent.",
+            "confidence": 0.7,
+            "reasoning": "The article touches on the expected benefits of AI-driven content creation for Amazon and BuzzFeed, but also highlights risks of not realizing benefits due to legal disputes and creator backlash."
+          },
+          {
+            "title": "‘We’re Just Getting the Crumbs Here’: Contractors Protest Layoffs at Meta’s European Headquarters",
+            "url": "https://www.wired.com/story/meta-covalen-protest-strike-dublin/",
+            "source": "WIRED",
+            "published": "2026-05-29T20:18:01.000Z",
+            "summary": "Soon-to-be-laid-off Meta contractors say they’re being treated differently than Mark Zuckerberg’s full-time employees, who stand to receive more generous severance packages.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on severance benefits and workers' demands for fair compensation, which aligns with benefit realization in terms of ensuring equitable outcomes from corporate actions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Russian oligarch's financial network crashed thanks to a crank and a cleaner",
+            "url": "https://www.theregister.com/networks/2026/05/29/russian-oligarchs-financial-network-crashed-thanks-to-a-crank-and-a-cleaner/5243167",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T06:32:00.000Z",
+            "summary": "What a wind-up!",
+            "confidence": 0.95,
+            "reasoning": "The article describes a network outage caused by physical damage to Ethernet cables, which is a clear incident requiring management and resolution."
+          },
+          {
+            "title": "Microsoft tests the 15-character limit of Windows Server admins' patience",
+            "url": "https://www.theregister.com/oses/2026/05/28/microsoft-tests-the-15-character-limit-of-windows-server-admins-patience/5247943",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-28T16:30:00.000Z",
+            "summary": "May security update trips over hostnames of a very specific length",
+            "confidence": 0.95,
+            "reasoning": "The article describes a bug in Windows Server 2016 security update that disrupts domain controller discovery, which is an incident requiring management and resolution."
+          },
+          {
+            "title": "Okta writes its own license to kill rogue AI agents",
+            "url": "https://www.theregister.com/ai-ml/2026/05/29/okta-writes-its-own-license-to-kill-rogue-ai-agents/5248766",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T21:20:21.000Z",
+            "summary": "CEO Todd McKinnon says customers including ServiceNow want an off switch",
+            "confidence": 0.55,
+            "reasoning": "Rogue AI agents and kill switches relate to incident response and management."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "23andMe inherits lawsuit over 'disturbing' DNA data breach",
+            "url": "https://www.theregister.com/legal/2026/05/29/rob-bonta-sues-23andmes-new-owners-over-2023-breach/5248565",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T16:12:26.000Z",
+            "summary": "California AG claims genetics biz downplayed 2023 mega-leak while paying ransom to attacker",
+            "confidence": 0.95,
+            "reasoning": "The article discusses a data breach where sensitive genetic and personal information was stolen and sold on the dark web, which is a form of information gathering by attackers."
+          },
+          {
+            "title": "Hands-On With Gemini Spark: I Gave It Access to My Life and It Friend-Zoned My Boyfriend",
+            "url": "https://www.wired.com/story/google-gemini-spark-ai-agent-hands-on/",
+            "source": "WIRED",
+            "published": "2026-05-29T19:07:46.000Z",
+            "summary": "Google’s new AI agent combed through my emails, documents, and calendar to plan a birthday party and still didn’t clock the person most important to me.",
+            "confidence": 0.6,
+            "reasoning": "The AI agent collects and analyzes personal information from emails and documents to plan an event."
+          },
+          {
+            "title": "We Asked the ‘Future of Truth’ Author to Explain How He Used AI. It Didn’t Go Well",
+            "url": "https://www.wired.com/story/future-of-truth-ai-interview/",
+            "source": "WIRED",
+            "published": "2026-05-29T16:30:00.000Z",
+            "summary": "A book about how AI shapes perceptions of reality came under fire for using AI-generated quotes. Its problems go beyond that.",
+            "confidence": 0.5,
+            "reasoning": "The use of AI detection tools to verify content authenticity relates to information gathering techniques."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ShinyHunters adds Charter to trophy shelf after 4.9M customer records leak",
+            "url": "https://www.theregister.com/cyber-crime/2026/05/29/shinyhunters-adds-charter-to-trophy-shelf-after-49m-customer-records-leak/5248281",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T10:22:31.000Z",
+            "summary": "Telco giant says no sensitive data was taken, though names, addresses, phones, and emails are now out there",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a data breach where customer records (names, addresses, phones, emails) were stolen and leaked, directly involving storage and retrieval of personal information."
+          },
+          {
+            "title": "Malware dev tries to steal Claude users' secrets, writes npm slop, leaks own GitHub private token",
+            "url": "https://www.theregister.com/cyber-crime/2026/05/27/supply-chain-brain-drain-npm-attacker-foolishly-leaks-own-github-private-token/5247424",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-27T20:33:03.000Z",
+            "summary": "Script kiddies these days",
+            "confidence": 0.9,
+            "reasoning": "The article discusses malware that steals secrets and leaks tokens, involving data storage and retrieval in the context of cybersecurity."
+          },
+          {
+            "title": "23andMe inherits lawsuit over 'disturbing' DNA data breach",
+            "url": "https://www.theregister.com/legal/2026/05/29/rob-bonta-sues-23andmes-new-owners-over-2023-breach/5248565",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-29T16:12:26.000Z",
+            "summary": "California AG claims genetics biz downplayed 2023 mega-leak while paying ransom to attacker",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach involving sensitive genetic data, which directly relates to how information is stored and retrieved securely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 2,
+        "articles": [
+          {
+            "title": "AI hiring algorithms reject Black, Asian job seekers at higher rates",
+            "url": "https://www.theregister.com/ai-ml/2026/05/27/ai-hiring-algorithms-reject-black-asian-job-seekers-at-higher-rates/5247387",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-05-27T19:39:39.000Z",
+            "summary": "Stanford researchers argue need for transparency and independent testing",
+            "confidence": 0.85,
+            "reasoning": "The article discusses AI hiring algorithms that exhibit bias, directly relating to the study of algorithms and their societal impact."
+          },
+          {
+            "title": "Amazon Thinks the Future of Data Centers Depends on a Technical Problem It Just Solved",
+            "url": "https://www.wired.com/story/amazon-thinks-the-future-of-data-centers-depends-on-a-technical-problem-it-just-solved/",
+            "source": "WIRED",
+            "published": "2026-05-28T10:30:00.000Z",
+            "summary": "The tech giant says a breakthrough in data center networking has dramatically accelerated the flow of information through its massive cloud infrastructure.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses a breakthrough in networking design using a 'quasi-random' approach, which involves algorithmic concepts for optimizing data flow and reducing bottlenecks."
+          }
+        ]
+      }
+    ]
+  }
+]
