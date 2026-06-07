@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Global airlines slash 2026 profit forecast on fuel shock from Iran war",
+            "url": "https://www.channelnewsasia.com/world/global-airlines-slash-2026-profit-forecast-fuel-shock-iran-war-6167711",
+            "source": "Latest News",
+            "published": "2026-06-07T19:38:51.000Z",
+            "summary": "Airlines are also expected to cut unprofitable routes to protect margins, while fares, which have surged since the start of the Iran war, are unlikely to fall soon, Walsh said.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses airlines slashing profit forecasts and cutting unprofitable routes due to geopolitical risk (Iran war), which involves strategic decision-making and risk management at the organizational level."
+          },
+          {
+            "title": "Russian drug suspects arrested in Bali after high-speed car chase",
+            "url": "https://www.channelnewsasia.com/asia/russian-drug-suspects-arrested-in-bali-after-high-speed-car-chase-6167626",
+            "source": "Latest News",
+            "published": "2026-06-07T18:28:06.000Z",
+            "summary": "Indonesia has some of the world's toughest anti-drug laws, including the death penalty for traffickers, but has maintained a moratorium on executions for several years.",
+            "confidence": 0.75,
+            "reasoning": "The article involves law enforcement operations and policy decisions regarding drug enforcement, which relates to strategic management of public safety and international compliance."
+          },
+          {
+            "title": "Cathay Pacific plans more aircraft orders across fleet, CEO says",
+            "url": "https://www.channelnewsasia.com/business/cathay-pacific-plans-more-aircraft-orders-across-fleet-ceo-says-6167631",
+            "source": "Latest News",
+            "published": "2026-06-07T18:10:00.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "Aircraft orders are a major strategic decision for an airline, involving long-term planning and resource allocation."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Home Office ditches legacy asylum database, keeps the spreadsheets",
+            "url": "https://www.theregister.com/public-sector/2026/06/07/home-office-ditches-legacy-asylum-database-keeps-the-spreadsheets/5251780",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T10:16:00.000Z",
+            "summary": "Years into a major IT overhaul, MPs say the department still lacks reliable view of what is happening across the asylum system",
+            "confidence": 0.75,
+            "reasoning": "The migration to Atlas was intended to improve case management, but the article highlights failure to achieve expected benefits like a single reliable view of cases."
+          },
+          {
+            "title": "Global airlines slash 2026 profit forecast on fuel shock from Iran war",
+            "url": "https://www.channelnewsasia.com/world/global-airlines-slash-2026-profit-forecast-fuel-shock-iran-war-6167711",
+            "source": "Latest News",
+            "published": "2026-06-07T19:38:51.000Z",
+            "summary": "Airlines are also expected to cut unprofitable routes to protect margins, while fares, which have surged since the start of the Iran war, are unlikely to fall soon, Walsh said.",
+            "confidence": 0.6,
+            "reasoning": "Airlines are adjusting operations to protect margins, which relates to ensuring that strategic decisions (e.g., route cuts) lead to intended financial benefits, though the focus is more on immediate risk response than long-term benefit tracking."
+          },
+          {
+            "title": "Start spreading the news: Datacenters may face one-year ban in NY",
+            "url": "https://www.theregister.com/legal/2026/06/05/new-york-advances-one-year-datacenter-permit-moratorium/5251911",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-05T22:35:16.000Z",
+            "summary": "The bill awaits Gov. Hochul's signature after passing the state legislature",
+            "confidence": 0.6,
+            "reasoning": "The legislation aims to evaluate environmental and consumer impacts, which relates to ensuring benefits (e.g., energy savings, ratepayer protection) are realized from datacenter projects."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Home Office ditches legacy asylum database, keeps the spreadsheets",
+            "url": "https://www.theregister.com/public-sector/2026/06/07/home-office-ditches-legacy-asylum-database-keeps-the-spreadsheets/5251780",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T10:16:00.000Z",
+            "summary": "Years into a major IT overhaul, MPs say the department still lacks reliable view of what is happening across the asylum system",
+            "confidence": 0.95,
+            "reasoning": "Article discusses IT overhaul, legacy system migration, data integration issues, and lack of reliable IT systems for asylum case management."
+          },
+          {
+            "title": "UK exam watchdog frets over smart specs turning GCSEs into Google searches",
+            "url": "https://www.theregister.com/personal-tech/2026/06/07/uk-exam-watchdog-frets-over-smart-specs-turning-gcses-into-google-searches/5251365",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T08:30:00.000Z",
+            "summary": "Ofqual says smart glasses, hidden earpieces, and AI tools are creating a new generation of cheating headaches",
+            "confidence": 0.95,
+            "reasoning": "The article discusses regulatory challenges and risks posed by technology (smart glasses, AI tools) in exam settings, directly relating to IT governance and compliance."
+          },
+          {
+            "title": "Brit maritime agency heralds fresh global rules for crewless cargo ships",
+            "url": "https://www.theregister.com/offbeat/2026/06/07/brit-maritime-agency-heralds-fresh-global-rules-for-crewless-cargo-ships/5251616",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T11:00:00.000Z",
+            "summary": "If you thought driverless cars were bad, imagine a 200,000 ton container ship",
+            "confidence": 0.9,
+            "reasoning": "Article discusses development of international regulatory framework (MASS Code) for autonomous ships, involving standards, compliance, and governance of technology."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Has Microsoft Lost Its Mojo (Again)?",
+            "url": "https://www.wired.com/story/has-microsoft-lost-its-mojo-again/",
+            "source": "WIRED",
+            "published": "2026-06-05T15:00:00.000Z",
+            "summary": "Microsoft’s AI products aren’t selling, and Github’s been plagued with troubles. WIRED spoke with VP Scott Hanselman about whether the company is in catch-up mode.",
+            "confidence": 0.95,
+            "reasoning": "Article discusses GitHub's unprecedented downtimes, which are incidents, and mentions complaints and defections, directly relating to incident management."
+          },
+          {
+            "title": "China Mobile Jiangsu and ZTE unveil intelligent complaint analysis agent to reshape core network O&M",
+            "url": "https://www.theregister.com/networks/2026/06/05/china-mobile-jiangsu-and-zte-unveil-intelligent-complaint-analysis-agent-to-reshape-core-network-om/5251564",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-05T14:53:49.000Z",
+            "summary": "PARTNER CONTENT: Leveraging multi-modal LLMs and agent technology to automate signaling analysis and shift core network O&M from experience to knowledge-driven",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on automating complaint handling and signaling analysis for core network O&M, which directly relates to identifying and resolving incidents in IT service management."
+          },
+          {
+            "title": "Home Office ditches legacy asylum database, keeps the spreadsheets",
+            "url": "https://www.theregister.com/public-sector/2026/06/07/home-office-ditches-legacy-asylum-database-keeps-the-spreadsheets/5251780",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T10:16:00.000Z",
+            "summary": "Years into a major IT overhaul, MPs say the department still lacks reliable view of what is happening across the asylum system",
+            "confidence": 0.6,
+            "reasoning": "Reliance on spreadsheets and disconnected systems leads to inability to track cases or spot backlogs, indicating potential incidents in service delivery."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Oxford Uni student data pwned yet again - this time via career platform breach",
+            "url": "https://www.theregister.com/security/2026/06/06/oxford-university-data-pwned-again-by-career-platform-breach/5251754",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-06T07:28:00.000Z",
+            "summary": "Totally different attack from the break-in last month. Oh so that's OK then",
+            "confidence": 0.95,
+            "reasoning": "The article describes a data breach where attackers accessed and potentially exfiltrated personal data (names, emails, passwords) from a university career platform, which is a form of information gathering by threat actors."
+          },
+          {
+            "title": "UK exam watchdog frets over smart specs turning GCSEs into Google searches",
+            "url": "https://www.theregister.com/personal-tech/2026/06/07/uk-exam-watchdog-frets-over-smart-specs-turning-gcses-into-google-searches/5251365",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T08:30:00.000Z",
+            "summary": "Ofqual says smart glasses, hidden earpieces, and AI tools are creating a new generation of cheating headaches",
+            "confidence": 0.75,
+            "reasoning": "Smart glasses and hidden earpieces are used to gather exam information surreptitiously, which relates to unauthorized information gathering."
+          },
+          {
+            "title": "Crypto-Funded Chinese Peptide Labs Are Booming",
+            "url": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
+            "source": "WIRED",
+            "published": "2026-06-06T10:30:00.000Z",
+            "summary": "Plus: Hackers use Meta’s AI bots to hack Instagram accounts, Anthropic helps NSA hackers, a decades-long GPS satellite mystery may have been solved, and more.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses Meta's dormant face recognition code, which involves biometric data collection and potential privacy violations, aligning with information gathering techniques in cyber security."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crypto-Funded Chinese Peptide Labs Are Booming",
+            "url": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
+            "source": "WIRED",
+            "published": "2026-06-06T10:30:00.000Z",
+            "summary": "Plus: Hackers use Meta’s AI bots to hack Instagram accounts, Anthropic helps NSA hackers, a decades-long GPS satellite mystery may have been solved, and more.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses face recognition code stored on phones, biometric galleries, and cryptographic handshakes for call verification, all involving data storage and retrieval technologies relevant to cyber forensics."
+          },
+          {
+            "title": "UK exam watchdog frets over smart specs turning GCSEs into Google searches",
+            "url": "https://www.theregister.com/personal-tech/2026/06/07/uk-exam-watchdog-frets-over-smart-specs-turning-gcses-into-google-searches/5251365",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-07T08:30:00.000Z",
+            "summary": "Ofqual says smart glasses, hidden earpieces, and AI tools are creating a new generation of cheating headaches",
+            "confidence": 0.75,
+            "reasoning": "The article discusses smart glasses and hidden earpieces that store and retrieve information for cheating, directly relating to storage and retrieval technologies."
+          },
+          {
+            "title": "Oxford Uni student data pwned yet again - this time via career platform breach",
+            "url": "https://www.theregister.com/security/2026/06/06/oxford-university-data-pwned-again-by-career-platform-breach/5251754",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-06T07:28:00.000Z",
+            "summary": "Totally different attack from the break-in last month. Oh so that's OK then",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a data breach involving encrypted password storage and exposure of user data, directly relating to how information is stored and retrieved in digital systems."
+          }
+        ]
+      }
+    ]
+  }
+]
