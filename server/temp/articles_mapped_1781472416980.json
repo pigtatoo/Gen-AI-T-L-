@@ -1,0 +1,275 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The Strait of Hormuz Has Been Closed for 100 Days. Why Aren’t Oil Prices Higher?",
+            "url": "https://www.wired.com/story/strait-of-hormuz-closed-100-days-why-arent-oil-prices-higher/",
+            "source": "WIRED",
+            "published": "2026-06-14T10:00:00.000Z",
+            "summary": "President Donald Trump says a secret mission moved 100 million barrels of oil through the blocked Strait of Hormuz. That number is impossible to verify.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses geopolitical disruption and strategic decision-making regarding oil movement through a critical chokepoint, involving national security and economic strategy."
+          },
+          {
+            "title": "Trump says Israeli strike on Lebanon should not have happened, but Iran deal close",
+            "url": "https://www.channelnewsasia.com/world/trump-says-israeli-strike-lebanon-should-not-have-happened-iran-deal-close-6182721",
+            "source": "Latest News",
+            "published": "2026-06-14T19:14:00.000Z",
+            "summary": "The conflict between Israel and Iran-aligned Hezbollah in Lebanon was reignited by the start of the US-Israeli war against Iran more than three months ago.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses geopolitical conflict and potential deal-making, which involves strategic management of international relations and risk."
+          },
+          {
+            "title": "Protesters set Tesla ablaze, smash UN office's windows in Geneva anti-G7 march",
+            "url": "https://www.channelnewsasia.com/world/protesters-set-tesla-ablaze-smash-un-offices-windows-in-geneva-anti-g7-march-6182576",
+            "source": "Latest News",
+            "published": "2026-06-14T19:45:00.000Z",
+            "summary": "The Jun ​15–17 G7 summit in Evian-les-Bains, on the shore of Lake Geneva, will bring together the leaders of France, Britain, Canada, Germany, Italy, Japan and the United States, alongside the ‌European Union.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses a G7 summit, which involves strategic international governance and policy management."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "EU sovereignty push gives tech buyers a new alphabet soup to swallow",
+            "url": "https://www.theregister.com/off-prem/2026/06/14/eu-sovereignty-push-gives-tech-buyers-a-new-alphabet-soup-to-swallow/5251995",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T09:15:00.000Z",
+            "summary": "Brussels presses on despite US fury as it looks to enforce cloud autonomy and bolster open source",
+            "confidence": 0.95,
+            "reasoning": "Article discusses EU regulations on cloud autonomy, data sovereignty, and tech supply chains, directly relating to IT governance frameworks and compliance."
+          },
+          {
+            "title": "AI is code – and can't be prompted into being smarter",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T12:30:00.000Z",
+            "summary": "From Java tests to Shai-Hulud, bots keep proving they'll swallow anything you feed them",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI coding agents ignoring license terms and project warnings, which relates to governance of IT systems and AI usage policies."
+          },
+          {
+            "title": "Scientists pour cold water on claims phones are rewiring kids' brains",
+            "url": "https://www.theregister.com/personal-tech/2026/06/14/scientists-pour-cold-water-on-claims-phones-are-rewiring-kids-brains/5254792",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T07:30:00.000Z",
+            "summary": "MPs told that while concerns over handsets and social media grows, evidence they're changing children's brains is limited",
+            "confidence": 0.7,
+            "reasoning": "The article discusses parliamentary committee hearings on the impact of digital devices and social media, which relates to oversight and governance of technology use."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "EU sovereignty push gives tech buyers a new alphabet soup to swallow",
+            "url": "https://www.theregister.com/off-prem/2026/06/14/eu-sovereignty-push-gives-tech-buyers-a-new-alphabet-soup-to-swallow/5251995",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T09:15:00.000Z",
+            "summary": "Brussels presses on despite US fury as it looks to enforce cloud autonomy and bolster open source",
+            "confidence": 0.7,
+            "reasoning": "The article implies expected benefits from sovereignty (e.g., security, autonomy), but benefit realization is less directly addressed than governance and strategy."
+          },
+          {
+            "title": "Anthropic Says It’s Taking Claude Fable 5 Offline to Comply With US Government Order",
+            "url": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
+            "source": "WIRED",
+            "published": "2026-06-13T02:26:10.000Z",
+            "summary": "“The government believes it has become aware of a method of bypassing, or ‘jailbreaking’ Fable 5,” the company said in a blog post.",
+            "confidence": 0.65,
+            "reasoning": "The article mentions the goal of using AI for cybersecurity improvements, but the primary focus is on compliance and governance rather than directly realizing benefits."
+          },
+          {
+            "title": "Meta Employees Absolutely Hate Mark Zuckerberg’s Plan for a Companywide AI Hackathon",
+            "url": "https://www.wired.com/story/meta-employees-absolutely-hate-mark-zuckerbergs-hackathon-idea/",
+            "source": "WIRED",
+            "published": "2026-06-12T23:45:26.000Z",
+            "summary": "“I’m not sure that this company supports a hackathon culture anymore,” one employee posted in a forum open to the entire staff.",
+            "confidence": 0.5,
+            "reasoning": "The hackathon aims to build camaraderie and AI innovation, but employees question the actual benefits given workload and morale issues, touching on benefit realization challenges."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI is code – and can't be prompted into being smarter",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T12:30:00.000Z",
+            "summary": "From Java tests to Shai-Hulud, bots keep proving they'll swallow anything you feed them",
+            "confidence": 0.6,
+            "reasoning": "The article discusses AI coding agents ingesting project output and code, which relates to information gathering by automated systems."
+          },
+          {
+            "title": "A Court Has Ruled That Google Is Liable for False Statements Generated by AI Overviews",
+            "url": "https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/",
+            "source": "WIRED",
+            "published": "2026-06-13T09:00:00.000Z",
+            "summary": "The ruling holds that a company that designs, trains, operates, and manages an AI system must assume legal liability for any damages caused by the responses it generates.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on how AI summaries gather and misinterpret information, which is tangentially related to information gathering techniques."
+          },
+          {
+            "title": "EU sovereignty push gives tech buyers a new alphabet soup to swallow",
+            "url": "https://www.theregister.com/off-prem/2026/06/14/eu-sovereignty-push-gives-tech-buyers-a-new-alphabet-soup-to-swallow/5251995",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-14T09:15:00.000Z",
+            "summary": "Brussels presses on despite US fury as it looks to enforce cloud autonomy and bolster open source",
+            "confidence": 0.5,
+            "reasoning": "The article touches on geopolitical risks and data sovereignty, which may involve intelligence gathering on technology dependencies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AWS rolls the dice for faster, more efficient networking",
+            "url": "https://www.theregister.com/networks/2026/06/13/aws-rolls-the-dice-for-faster-more-efficient-networking/5253248",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-13T11:00:00.000Z",
+            "summary": "Honey, I flattened the datacenter network",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a novel networking topology based on random graph theory, which involves algorithmic design for network efficiency and performance."
+          },
+          {
+            "title": "Google's new open-weights model brings image-generation tricks to AI text generation",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/11/googles-diffusiongemma-uses-diffusion-tech-to-speed-text-generation/5254406",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-11T18:31:31.000Z",
+            "summary": "Language model builds on diffusion tech to boost output performance by up to 4x, claims Chocolate Factory",
+            "confidence": 0.8,
+            "reasoning": "The article discusses diffusion-based generative techniques and model architecture, which involve algorithmic processes for text generation, though not specifically data structure algorithms."
+          },
+          {
+            "title": "Cost per sample? Try cost per attempt",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/11/cost-per-sample-try-cost-per-attempt/5254313",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-11T15:53:56.000Z",
+            "summary": "PARTNER CONTENT Your genomics pipeline is probably failing 30% of the time and you're paying for all of it",
+            "confidence": 0.7,
+            "reasoning": "Article discusses GPU-accelerated alignment tools and AI-driven variant calling, which involve algorithmic optimizations in genomics pipelines."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.5,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Microsoft has mostly repaired flaw in Surface hardware that allowed unprotected devices to be bricked by a single packet",
+            "url": "https://www.theregister.com/security/2026/06/12/microsoft-has-mostly-repaired-flaw-in-surface-hardware-that-allowed-unprotected-devices-to-be-bricked-by-a-single-packet/5253895",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-12T13:05:00.000Z",
+            "summary": "And it was Microsoft Copilot that unwittingly revealed the longstanding vulnerability",
+            "confidence": 0.95,
+            "reasoning": "The article discusses firmware vulnerabilities in Surface devices, which involve embedded controller firmware and storage technologies, directly relating to information storage and retrieval."
+          },
+          {
+            "title": "KPMG's AI report becomes an accidental demo of AI hallucinations",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-12T15:38:53.000Z",
+            "summary": "GPTZero claims only 5 of the report's 45 citations matched their sources, raising questions about how the Big Four's AI study was assembled",
+            "confidence": 0.9,
+            "reasoning": "The article discusses retrieval and verification of citations from an AI-generated report, directly relating to information storage and retrieval technologies in forensic analysis."
+          },
+          {
+            "title": "A Court Has Ruled That Google Is Liable for False Statements Generated by AI Overviews",
+            "url": "https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/",
+            "source": "WIRED",
+            "published": "2026-06-13T09:00:00.000Z",
+            "summary": "The ruling holds that a company that designs, trains, operates, and manages an AI system must assume legal liability for any damages caused by the responses it generates.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI-generated summaries that retrieve and combine information from various sources, which relates to information storage and retrieval technologies, though the focus is more on liability than technical retrieval methods."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Here’s How AI Agents Can Protect EV Chargers",
+            "url": "https://www.wired.com/story/researchers-in-spain-show-how-ai-agents-can-protect-ev-chargers/",
+            "source": "WIRED",
+            "published": "2026-06-13T06:30:00.000Z",
+            "summary": "An AI agent system proposed by researchers in Spain promises to prevent energy theft and damage to EV chargers, as well as the critical energy infrastructure that powers them.",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on detecting and preventing cyberattacks and energy theft at EV chargers, which are incidents that need to be managed to ensure service continuity."
+          },
+          {
+            "title": "XP-era Windows spotted haunting London's driverless railway",
+            "url": "https://www.theregister.com/offbeat/2026/06/13/xp-era-windows-spotted-haunting-londons-driverless-railway/5253651",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-13T08:30:00.000Z",
+            "summary": "A blast from the past greets commuters",
+            "confidence": 0.75,
+            "reasoning": "The article describes an application error on a railway display, which is an unplanned interruption or reduction in quality of an IT service, fitting the incident management process."
+          },
+          {
+            "title": "‘Tell Him He’s a Piece of Shit’: Meta’s New AI Unit Is a Total Mess",
+            "url": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
+            "source": "WIRED",
+            "published": "2026-06-12T21:16:25.000Z",
+            "summary": "Executives and employees alike are struggling with Meta’s chaotic AI strategy, according to sources and internal discussions reviewed by WIRED.",
+            "confidence": 0.75,
+            "reasoning": "The article describes a chaotic and disruptive incident during a company presentation, involving employee outbursts and frustration, which relates to handling incidents in an IT service management context."
+          }
+        ]
+      }
+    ]
+  }
+]
