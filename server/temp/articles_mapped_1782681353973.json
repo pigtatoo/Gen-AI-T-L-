@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The ‘Almost Homeless’ Subreddit Is a Stark Glimpse at Soaring Wealth Inequality",
+            "url": "https://www.wired.com/story/the-almost-homeless-subreddit-is-a-stark-glimpse-at-soaring-wealth-inequality/",
+            "source": "WIRED",
+            "published": "2026-06-28T11:00:00.000Z",
+            "summary": "As the billionaire class gets richer, the growing online community is offering tips on how to survive with very little.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses wealth inequality, social welfare system strain, and economic risk, which are macro-level strategic concerns for governance and compliance."
+          },
+          {
+            "title": "Iraq detains politicians, officials in anti-corruption crackdown",
+            "url": "https://www.channelnewsasia.com/world/iraq-detains-politicians-officials-in-anti-corruption-crackdown-6216236",
+            "source": "Latest News",
+            "published": "2026-06-28T19:29:00.000Z",
+            "summary": "",
+            "confidence": 0.9,
+            "reasoning": "The article discusses anti-corruption crackdown involving detention of politicians and officials, which directly relates to governance and strategic management of public sector integrity."
+          },
+          {
+            "title": "Iran warns ships not to bypass its chosen Hormuz route",
+            "url": "https://www.channelnewsasia.com/world/iran-warns-ships-not-bypass-its-chosen-hormuz-route-6216696",
+            "source": "Latest News",
+            "published": "2026-06-28T19:13:35.000Z",
+            "summary": "Tehran has continued to insist on controlling passage through the vital strait, through which a fifth of the world's oil and liquefied natural gas travel in normal times, something it did not have before the war.",
+            "confidence": 0.9,
+            "reasoning": "The article involves geopolitical risk management and strategic control over a critical maritime chokepoint (Strait of Hormuz), which directly relates to strategic management of risks and resources."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The ‘Almost Homeless’ Subreddit Is a Stark Glimpse at Soaring Wealth Inequality",
+            "url": "https://www.wired.com/story/the-almost-homeless-subreddit-is-a-stark-glimpse-at-soaring-wealth-inequality/",
+            "source": "WIRED",
+            "published": "2026-06-28T11:00:00.000Z",
+            "summary": "As the billionaire class gets richer, the growing online community is offering tips on how to survive with very little.",
+            "confidence": 0.7,
+            "reasoning": "The article indirectly touches on the failure of social welfare programs to deliver promised benefits to citizens, relating to benefit realization in public policy."
+          },
+          {
+            "title": "Iraq detains politicians, officials in anti-corruption crackdown",
+            "url": "https://www.channelnewsasia.com/world/iraq-detains-politicians-officials-in-anti-corruption-crackdown-6216236",
+            "source": "Latest News",
+            "published": "2026-06-28T19:29:00.000Z",
+            "summary": "",
+            "confidence": 0.5,
+            "reasoning": "Anti-corruption efforts aim to achieve benefits such as improved governance and public trust, but the article does not explicitly mention benefit realization processes."
+          },
+          {
+            "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
+            "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+            "source": "WIRED",
+            "published": "2026-06-27T10:30:00.000Z",
+            "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+            "confidence": 0.5,
+            "reasoning": "Mentions predictive policing program and its implications, which relates to assessing outcomes and benefits of governance initiatives."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
+            "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+            "source": "WIRED",
+            "published": "2026-06-27T10:30:00.000Z",
+            "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses data breaches, security incidents (LastPass, infostealer), and cybersecurity governance issues."
+          },
+          {
+            "title": "It's looking like a hot, messy summer for security teams as AI finds countless previously hidden vulns",
+            "url": "https://www.theregister.com/security/2026/06/27/its-looking-like-a-hot-messy-summer-for-security-teams-as-ai-finds-countless-previously-hidden-vulns/5260478",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-27T06:59:00.000Z",
+            "summary": "Time to start praying to the goddess of wisdom and war",
+            "confidence": 0.9,
+            "reasoning": "The article discusses the formation of a coalition (Athena) to manage open source vulnerabilities using AI, which involves oversight, risk management, and decision-making processes related to IT security, aligning with IT governance principles."
+          },
+          {
+            "title": "Tech firms are blaming AI for mega device and console price rises",
+            "url": "https://www.bbc.co.uk/news/articles/cd95k584pzqo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-06-27T23:10:47.000Z",
+            "summary": "Xbox consoles, Nintendo's new Switch 2 and Valve's Steam Deck are just some of the gadgets seeing price hikes in recent months.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses how AI demand impacts hardware supply chains and pricing, relating to IT governance challenges in managing technology resources and risks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "It's looking like a hot, messy summer for security teams as AI finds countless previously hidden vulns",
+            "url": "https://www.theregister.com/security/2026/06/27/its-looking-like-a-hot-messy-summer-for-security-teams-as-ai-finds-countless-previously-hidden-vulns/5260478",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-27T06:59:00.000Z",
+            "summary": "Time to start praying to the goddess of wisdom and war",
+            "confidence": 0.95,
+            "reasoning": "The article discusses using AI to find vulnerabilities in open source code, which is a form of information gathering for security purposes."
+          },
+          {
+            "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
+            "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+            "source": "WIRED",
+            "published": "2026-06-27T10:30:00.000Z",
+            "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses data breaches, exposure of personal information, and investigation into predictive policing data, all involving collection and analysis of information."
+          },
+          {
+            "title": "Trump Administration Allows Anthropic to Release  Mythos to Select US Organizations",
+            "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+            "source": "WIRED",
+            "published": "2026-06-27T00:26:14.000Z",
+            "summary": "After weeks of negotiations, the White House permitted Anthropic to grant access to its most advanced AI model to a select group of US companies and government agencies.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses the release of an advanced AI cybersecurity model to select organizations for cyber defense, which involves gathering and analyzing threat information."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.5,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The Pentagon Is Looking Into the Dialog Data Exposure for Unmasking National Security Officials",
+            "url": "https://www.wired.com/story/the-pentagon-is-looking-into-the-dialog-data-exposure-for-unmasking-national-security-officials/",
+            "source": "WIRED",
+            "published": "2026-06-26T16:30:33.000Z",
+            "summary": "Exposed records from the private group included the personal information of a senior White House intelligence official and an active-duty special operations officer.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses a data exposure caused by a misconfigured website, which directly relates to how information is stored and retrieved, and the security failures in these technologies."
+          },
+          {
+            "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
+            "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+            "source": "WIRED",
+            "published": "2026-06-27T10:30:00.000Z",
+            "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses data breaches, exposure of personal information, and data storage misconfigurations, which are relevant to how information is stored and retrieved in forensic contexts."
+          },
+          {
+            "title": "Amazon Q flaw let booby-trapped Git repos execute code, swipe cloud creds",
+            "url": "https://www.theregister.com/cyber-crime/2026/06/26/amazon-q-flaw-let-booby-trapped-git-repos-execute-code-swipe-cloud-creds/5263202",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-26T15:34:00.000Z",
+            "summary": "Researchers warn many AI coding assistants now execute commands from project configurations",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AI coding assistants accessing developer environments and cloud credentials, which relates to how sensitive information is stored and retrieved, a core aspect of information storage and retrieval technologies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "NASA tests AI medic for astronauts too far from Earth to call a doctor",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/27/nasa-tests-ai-medic-for-astronauts-too-far-from-earth-to-call-a-doctor/5262828",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-27T09:20:00.000Z",
+            "summary": "Please state the nature of the medical emergency",
+            "confidence": 0.95,
+            "reasoning": "The article describes a system for diagnosing and treating medical symptoms, which is a form of incident management for health issues in space."
+          },
+          {
+            "title": "ZTE showcases practical path to Level-4 autonomous networks through agentic AI and cross-domain innovation at DTW Ignite 2026",
+            "url": "https://www.theregister.com/networks/2026/06/26/zte-showcases-practical-path-to-level-4-autonomous-networks-through-agentic-ai-and-cross-domain-innovation-at-dtw-ignite-2026/5263080",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-26T12:09:35.000Z",
+            "summary": "PARTNER CONTENT: Highlighting Level-4 autonomous network solutions, TM Forum Excellence Award finalists, and joint operator trials powering cross-domain fault management and Dynamic 5G Slicing",
+            "confidence": 0.9,
+            "reasoning": "The article discusses cross-domain fault management and intelligent fault management, which are core aspects of incident management."
+          },
+          {
+            "title": "It's looking like a hot, messy summer for security teams as AI finds countless previously hidden vulns",
+            "url": "https://www.theregister.com/security/2026/06/27/its-looking-like-a-hot-messy-summer-for-security-teams-as-ai-finds-countless-previously-hidden-vulns/5260478",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-27T06:59:00.000Z",
+            "summary": "Time to start praying to the goddess of wisdom and war",
+            "confidence": 0.85,
+            "reasoning": "The article discusses finding and patching vulnerabilities in open source software, which directly relates to handling security incidents and managing their resolution."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "ZTE builds a TCO-optimal AI factory to fuel token economy",
+            "url": "https://www.theregister.com/ai-and-ml/2026/06/25/zte-builds-a-tco-optimal-ai-factory-to-fuel-token-economy/5262082",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-06-25T11:02:39.000Z",
+            "summary": "PARTNER CONTENT: Leveraging OEX architecture SuperPODs and multi-dimensional co-design to maximize tokens per second and lower total cost of ownership for scaled inference",
+            "confidence": 0.7,
+            "reasoning": "The article discusses deep optimization, acceleration, and co-design from software algorithms to scheduling, which are algorithmic concepts but not core to data structures."
+          }
+        ]
+      }
+    ]
+  }
+]
