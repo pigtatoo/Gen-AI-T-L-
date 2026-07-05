@@ -1,0 +1,266 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Parents warned not to publicly share children’s images amid AI abuse risks",
+            "url": "https://www.bbc.co.uk/news/articles/cd7wj7d0jzzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-03T15:57:42.000Z",
+            "summary": "The NCA says there is a growing threat of children's images being used to create child abuse material.",
+            "confidence": 0.75,
+            "reasoning": "The NCA and IWF are issuing guidance and strategies to manage the risk of AI abuse, reflecting strategic management of emerging threats."
+          },
+          {
+            "title": "Infernos devastate forests as Europe's temperatures rise again",
+            "url": "https://www.channelnewsasia.com/world/infernos-devastate-forests-europes-temperatures-rise-again-6233346",
+            "source": "Latest News",
+            "published": "2026-07-05T17:06:35.000Z",
+            "summary": "Fires have devastated more than 42,000 acres of land - an area more than twice the size of Manhattan - across Portugal, Spain, France and Greece, with temperatures predicted to reach 40C in places.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses environmental risks and crises (forest fires) that require strategic planning and management to mitigate impacts on governance and compliance."
+          },
+          {
+            "title": "AdaptHealth says attackers sweet-talked their way into cloud systems and stole patient data",
+            "url": "https://www.theregister.com/security/2026/07/03/adapthealth-crooks-stole-our-passwords-patient-health-data/5266512",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T14:29:00.000Z",
+            "summary": "Third-party contractor compromise exposed health information and insurance billing passwords",
+            "confidence": 0.65,
+            "reasoning": "The incident impacts strategic decisions regarding risk management and vendor oversight, but the focus is more on operational security than strategic planning."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AdaptHealth says attackers sweet-talked their way into cloud systems and stole patient data",
+            "url": "https://www.theregister.com/security/2026/07/03/adapthealth-crooks-stole-our-passwords-patient-health-data/5266512",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T14:29:00.000Z",
+            "summary": "Third-party contractor compromise exposed health information and insurance billing passwords",
+            "confidence": 0.95,
+            "reasoning": "The article details a security breach involving social engineering, third-party contractor access, and cloud system compromise, which directly relates to IT governance failures in managing access controls and vendor risk."
+          },
+          {
+            "title": "Parents warned not to publicly share children’s images amid AI abuse risks",
+            "url": "https://www.bbc.co.uk/news/articles/cd7wj7d0jzzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-03T15:57:42.000Z",
+            "summary": "The NCA says there is a growing threat of children's images being used to create child abuse material.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses AI-generated child abuse imagery, which involves the governance and regulation of AI technologies and online platforms to prevent misuse."
+          },
+          {
+            "title": "Security Roundup: Apple’s Hide My Email Service Fails to Hide Your Email",
+            "url": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+            "source": "WIRED",
+            "published": "2026-07-04T10:30:00.000Z",
+            "summary": "Plus: Alleged Scattered Spider hacking member extradited, dozens of license plate reader errors, and Indian officials are concerned about WhatsApp’s username rollout.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses security vulnerabilities (Apple Hide My Email, Pegasus spyware) and compliance risks (EU pro-competition rules, Meta contractor practices), directly relating to IT governance and risk management."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI bills are baffling the C-suite after shift to usage-based pricing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/03/ai-bills-are-baffling-the-c-suite-after-shift-to-usage-based-pricing/5266383",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T10:35:00.000Z",
+            "summary": "KPMG finds nearly a third of execs struggle to understand costs as companies rethink deployments",
+            "confidence": 0.8,
+            "reasoning": "Nearly half of organizations rephased AI deployments when costs outweighed expected value, indicating a focus on ensuring benefits are realized from AI initiatives."
+          },
+          {
+            "title": "Parents warned not to publicly share children’s images amid AI abuse risks",
+            "url": "https://www.bbc.co.uk/news/articles/cd7wj7d0jzzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-03T15:57:42.000Z",
+            "summary": "The NCA says there is a growing threat of children's images being used to create child abuse material.",
+            "confidence": 0.6,
+            "reasoning": "The article mentions the benefits of AI in everyday life but focuses on its misuse, indirectly relating to ensuring that AI's benefits are realized without harm."
+          },
+          {
+            "title": "All Your Favorite Gadgets Are Getting Way More Expensive … Again",
+            "url": "https://www.wired.com/story/we-are-in-the-knockout-round-of-price-increases-for-consumer-electronics/",
+            "source": "WIRED",
+            "published": "2026-07-03T11:00:00.000Z",
+            "summary": "Thanks to the AI-driven chip shortage, prices for phones, computers, and consoles are sky-high—and still climbing.",
+            "confidence": 0.6,
+            "reasoning": "The article implies that companies are not realizing benefits from consumer electronics due to cost increases and supply constraints, touching on benefit realization from IT investments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 2,
+        "articles": [
+          {
+            "title": "There’s a Global Network of Fungi Under Your Feet. This Is the First Complete Map",
+            "url": "https://www.wired.com/story/theres-a-global-network-of-fungi-under-your-feet-this-is-the-first-complete-map/",
+            "source": "WIRED",
+            "published": "2026-07-05T09:30:00.000Z",
+            "summary": "A new study has succeeded in mapping, on a global scale, the fungal network that supports plant life and helps regulate our planet’s climate.",
+            "confidence": 0.6,
+            "reasoning": "The article mentions using machine learning (a type of algorithm) to analyze data and create the map, but the primary focus is on biological networks, not data structure algorithms."
+          },
+          {
+            "title": "AI is 'not smart' so what's next in artificial intelligence?",
+            "url": "https://www.bbc.co.uk/news/articles/cj6gr0xkyr3o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-02T23:02:09.000Z",
+            "summary": "Leading AI researcher Yan LeCun has a start-up which is developing a more flexible AI system.",
+            "confidence": 0.6,
+            "reasoning": "Article discusses AI systems and their limitations, which indirectly relates to algorithmic approaches in AI, but not specifically to data structure algorithms."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Security Roundup: Apple’s Hide My Email Service Fails to Hide Your Email",
+            "url": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+            "source": "WIRED",
+            "published": "2026-07-04T10:30:00.000Z",
+            "summary": "Plus: Alleged Scattered Spider hacking member extradited, dozens of license plate reader errors, and Indian officials are concerned about WhatsApp’s username rollout.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses Apple's Hide My Email vulnerability exposing user emails, which involves information leakage and gathering of personal data."
+          },
+          {
+            "title": "User swore hacker called General Failure had invaded his PC",
+            "url": "https://www.theregister.com/personal-tech/2026/07/03/user-swore-hacker-called-general-failure-had-invaded-his-pc/5265548",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T06:30:00.000Z",
+            "summary": "Maybe they were looking for Private Data",
+            "confidence": 0.7,
+            "reasoning": "The article describes a sysadmin investigating a user's complaint, which involves gathering information about the error and system state."
+          },
+          {
+            "title": "AdaptHealth says attackers sweet-talked their way into cloud systems and stole patient data",
+            "url": "https://www.theregister.com/security/2026/07/03/adapthealth-crooks-stole-our-passwords-patient-health-data/5266512",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T14:29:00.000Z",
+            "summary": "Third-party contractor compromise exposed health information and insurance billing passwords",
+            "confidence": 0.6,
+            "reasoning": "Attackers accessed sensitive data including patient information and passwords, which could be used for further intelligence gathering."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Parents warned not to publicly share children’s images amid AI abuse risks",
+            "url": "https://www.bbc.co.uk/news/articles/cd7wj7d0jzzo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-03T15:57:42.000Z",
+            "summary": "The NCA says there is a growing threat of children's images being used to create child abuse material.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses AI-generated child sexual abuse material (CSAM) that is stored and retrieved online, involving digital evidence and forensic analysis of such content."
+          },
+          {
+            "title": "AdaptHealth says attackers sweet-talked their way into cloud systems and stole patient data",
+            "url": "https://www.theregister.com/security/2026/07/03/adapthealth-crooks-stole-our-passwords-patient-health-data/5266512",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T14:29:00.000Z",
+            "summary": "Third-party contractor compromise exposed health information and insurance billing passwords",
+            "confidence": 0.85,
+            "reasoning": "The article discusses cloud systems, patient management systems, document storage platforms, and electronic health record portals, which directly involve information storage and retrieval technologies."
+          },
+          {
+            "title": "Security Roundup: Apple’s Hide My Email Service Fails to Hide Your Email",
+            "url": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+            "source": "WIRED",
+            "published": "2026-07-04T10:30:00.000Z",
+            "summary": "Plus: Alleged Scattered Spider hacking member extradited, dozens of license plate reader errors, and Indian officials are concerned about WhatsApp’s username rollout.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Apple's Hide My Email service, which involves generating and forwarding email addresses, directly relating to how information is stored, retrieved, and managed in digital systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Microsoft said exploitation was 'less likely' ... but CISA just added SharePoint RCE to KEV list",
+            "url": "https://www.theregister.com/security/2026/07/02/microsoft-said-exploitation-was-less-likely-but-cisa-just-added-sharepoint-rce-to-kev-list/5265886",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-02T14:40:30.000Z",
+            "summary": "Attackers need little more than a valid SharePoint account to execute code on vulnerable on-prem servers",
+            "confidence": 0.95,
+            "reasoning": "The article describes an active security vulnerability (CVE-2026-45659) being exploited in the wild, which is a key incident that would trigger incident management processes for IT service management."
+          },
+          {
+            "title": "AI bills are baffling the C-suite after shift to usage-based pricing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/03/ai-bills-are-baffling-the-c-suite-after-shift-to-usage-based-pricing/5266383",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T10:35:00.000Z",
+            "summary": "KPMG finds nearly a third of execs struggle to understand costs as companies rethink deployments",
+            "confidence": 0.75,
+            "reasoning": "The article discusses challenges in understanding and controlling AI operating costs, which can lead to incidents such as unexpected budget overruns or service disruptions, aligning with incident management's focus on handling disruptions."
+          },
+          {
+            "title": "Amazon’s Mechanical Turk to stop accepting new customers – and not even AI can save it",
+            "url": "https://www.theregister.com/off-prem/2026/07/03/amazons-mechanical-turk-to-stop-accepting-new-customers-and-not-even-ai-can-save-it/5266274",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-03T02:22:36.000Z",
+            "summary": "Workers who use OG crowdsourcing platform say AWS is closing accounts",
+            "confidence": 0.75,
+            "reasoning": "The article discusses AWS closing accounts and stopping new customers for Mechanical Turk, which is a service change that could lead to incidents for users, and mentions 'Services in Maintenance' and power loss in US-EAST-1, aligning with incident management."
+          }
+        ]
+      }
+    ]
+  }
+]
