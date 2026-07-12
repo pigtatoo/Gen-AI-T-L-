@@ -1,0 +1,266 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Myanmar tells ASEAN detained Aung San Suu Kyi will be looked after, special envoy says",
+            "url": "https://www.channelnewsasia.com/asia/myanmar-asean-aung-san-suu-kyi-looked-after-6249191",
+            "source": "Latest News",
+            "published": "2026-07-12T13:22:00.000Z",
+            "summary": "The top diplomats of the 11-member Association of Southeast Asian Nations met in person with their Myanmar counterpart on Sunday for the first time since the coup, in an effort to kick-start a five-year-old peace initiative that has failed to end a civil war gripping the country.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses ASEAN's peace initiative and diplomatic efforts to manage a civil war and political crisis in Myanmar, directly relating to strategic management of regional governance and conflict resolution."
+          },
+          {
+            "title": "Ukraine's Zelenskyy orders government reshuffle, new PM",
+            "url": "https://www.channelnewsasia.com/world/ukraine-government-reshuffle-zelenskyy-new-pm-6249321",
+            "source": "Latest News",
+            "published": "2026-07-12T14:15:00.000Z",
+            "summary": "Ukrainian President Volodymyr&nbsp;Zelenskyy did not say who would replace current Prime Minister Yulia Svyrydenko&nbsp;or elaborate on the reasons for the move.",
+            "confidence": 0.85,
+            "reasoning": "Government reshuffle and appointment of a new prime minister are strategic management decisions at the national level."
+          },
+          {
+            "title": "Bangladesh monsoon death toll hits 50, thousands displaced",
+            "url": "https://www.channelnewsasia.com/asia/bangladesh-monsoon-rain-landslide-deaths-displaced-6249356",
+            "source": "Latest News",
+            "published": "2026-07-12T14:41:00.000Z",
+            "summary": "About 35,000 people have been forced to seek shelter in government-run centres amid flash floods and landslides triggered by monsoon rains in the country.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses a natural disaster causing displacement and government response, which relates to strategic crisis management and risk mitigation."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Irish datacenters now guzzle 23% of the country's electricity",
+            "url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-11T10:00:00.000Z",
+            "summary": "Consumption rose another 10% while restrictions on most new grid connections remained around Dublin",
+            "confidence": 0.9,
+            "reasoning": "The article discusses datacenter electricity consumption and regulatory restrictions on grid connections, which directly relate to IT governance policies and compliance with energy regulations."
+          },
+          {
+            "title": "It's an AI web, and we're just rats in the walls",
+            "url": "https://www.theregister.com/columnists/2026/07/12/its-an-ai-web-and-were-just-rats-in-the-walls/5269760",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-12T07:34:00.000Z",
+            "summary": "Bots, not people, are now the ones who use the internet the most",
+            "confidence": 0.85,
+            "reasoning": "The article discusses the dominance of bots over human internet traffic, highlighting risks like misinformation, botnets, and AI-driven content, which are key concerns in IT governance regarding technology oversight, security, and compliance."
+          },
+          {
+            "title": "AI Found a Root Bug in Linux That Everyone Missed for 15 Years",
+            "url": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+            "source": "WIRED",
+            "published": "2026-07-11T10:30:00.000Z",
+            "summary": "Plus: The Pentagon is training amateurs to become part of its hacker army, a Flock license plate reader error led to cops surrounding a car reviewer, and more.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses cybersecurity vulnerabilities (Linux bug), government hacking programs, and data privacy issues (MSG surveillance, EU Chat Control), which relate to IT governance frameworks and controls."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "It's an AI web, and we're just rats in the walls",
+            "url": "https://www.theregister.com/columnists/2026/07/12/its-an-ai-web-and-were-just-rats-in-the-walls/5269760",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-12T07:34:00.000Z",
+            "summary": "Bots, not people, are now the ones who use the internet the most",
+            "confidence": 0.6,
+            "reasoning": "The article implies that the intended benefits of the internet (e.g., access to knowledge) are being undermined by bot dominance, touching on the realization of value from technology investments."
+          },
+          {
+            "title": "OpenAI’s Head of Safety Is Leaving the Company",
+            "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
+            "source": "WIRED",
+            "published": "2026-07-11T01:07:26.000Z",
+            "summary": "Johannes Heidecke’s departure comes as OpenAI tries to further integrate its research and safety teams.",
+            "confidence": 0.6,
+            "reasoning": "The focus on integrating safety to improve model decisions and launch outcomes suggests a goal of realizing benefits from safety governance, though less directly emphasized."
+          },
+          {
+            "title": "Meta pulls new AI image feature after days of backlash",
+            "url": "https://www.bbc.co.uk/news/articles/c2dy6e8klw0o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-11T01:45:59.000Z",
+            "summary": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback.",
+            "confidence": 0.5,
+            "reasoning": "The feature failed to deliver intended benefits due to negative public response and privacy concerns, indicating poor benefit realization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 2,
+        "articles": [
+          {
+            "title": "AI tool scours the web for job openings, preps your resume and cover letter",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/09/ai-tool-scours-the-web-for-job-openings-preps-your-resume-and-cover-letter/5269410",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-09T17:40:00.000Z",
+            "summary": "Searching for work sucks; AI combs the internet and sucks it all up. Combine the two and let 'er rip with this Python project",
+            "confidence": 0.65,
+            "reasoning": "The article mentions AI scoring and ranking of job matches, which involves algorithmic processing, but it is not focused on core data structure algorithms."
+          },
+          {
+            "title": "Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides",
+            "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/",
+            "source": "WIRED",
+            "published": "2026-07-12T10:00:00.000Z",
+            "summary": "Researchers cobbled together funding and time to show how quantum computing could aid in the development of drugs to help underserved populations and combat rare diseases.",
+            "confidence": 0.6,
+            "reasoning": "The article discusses generative AI models and quantum computing for peptide generation, which involves algorithmic processes for prediction and optimization."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "It's an AI web, and we're just rats in the walls",
+            "url": "https://www.theregister.com/columnists/2026/07/12/its-an-ai-web-and-were-just-rats-in-the-walls/5269760",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-12T07:34:00.000Z",
+            "summary": "Bots, not people, are now the ones who use the internet the most",
+            "confidence": 0.9,
+            "reasoning": "The article discusses the prevalence of bots and AI-generated content, which relates to automated data collection and analysis, a key aspect of information gathering in cybersecurity."
+          },
+          {
+            "title": "Apple sues OpenAI, its employees claiming theft of trade secrets",
+            "url": "https://www.bbc.co.uk/news/articles/cy8w379e091o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-10T22:54:16.000Z",
+            "summary": "Apple said in a Friday lawsuit that OpenAI’s nascent hardware business is “rotten to its core.”",
+            "confidence": 0.9,
+            "reasoning": "The lawsuit involves theft of trade secrets and confidential product development information, which is a form of unauthorized information gathering."
+          },
+          {
+            "title": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
+            "url": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
+            "source": "WIRED",
+            "published": "2026-07-10T20:44:05.000Z",
+            "summary": "The iPhone maker claims OpenAI encouraged poached employees to bring over confidential presentations, secret prototypes, and key supplier details.",
+            "confidence": 0.75,
+            "reasoning": "The article describes alleged theft of confidential designs, prototypes, and supplier details, which involves unauthorized collection of sensitive information."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.6,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets",
+            "url": "https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/",
+            "source": "WIRED",
+            "published": "2026-07-10T20:44:05.000Z",
+            "summary": "The iPhone maker claims OpenAI encouraged poached employees to bring over confidential presentations, secret prototypes, and key supplier details.",
+            "confidence": 0.9,
+            "reasoning": "The lawsuit involves trade secrets, confidential designs, and prototypes, which relate to how information is stored and retrieved in a forensic context, particularly regarding proprietary hardware data."
+          },
+          {
+            "title": "It's an AI web, and we're just rats in the walls",
+            "url": "https://www.theregister.com/columnists/2026/07/12/its-an-ai-web-and-were-just-rats-in-the-walls/5269760",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-12T07:34:00.000Z",
+            "summary": "Bots, not people, are now the ones who use the internet the most",
+            "confidence": 0.7,
+            "reasoning": "The article discusses bot traffic and AI-generated content, which relates to how information is stored and retrieved on the web, though not directly forensic."
+          },
+          {
+            "title": "AI Found a Root Bug in Linux That Everyone Missed for 15 Years",
+            "url": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+            "source": "WIRED",
+            "published": "2026-07-11T10:30:00.000Z",
+            "summary": "Plus: The Pentagon is training amateurs to become part of its hacker army, a Flock license plate reader error led to cops surrounding a car reviewer, and more.",
+            "confidence": 0.5,
+            "reasoning": "The article discusses various security incidents and data handling practices (e.g., MSG's database categorization, government website hijacks, and copyright complaints), which tangentially relate to information storage and retrieval technologies. However, the primary focus is on cybersecurity threats and surveillance, not core forensic storage technologies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Capita hears demand for pension scheme cleanup 'loud and clear' – but won't say yes",
+            "url": "https://www.theregister.com/public-sector/2026/07/10/capita-hears-demand-for-pension-scheme-cleanup-loud-and-clear-but-wont-say-yes/5269852",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-10T12:41:12.000Z",
+            "summary": "Outsourcer wants a commercial chinwag before agreeing to cover UK government's recovery costs",
+            "confidence": 0.95,
+            "reasoning": "The article details a major service failure in the Civil Service Pension Scheme, involving emergency support and recovery teams, which is a classic incident management scenario."
+          },
+          {
+            "title": "OpenAI’s Head of Safety Is Leaving the Company",
+            "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
+            "source": "WIRED",
+            "published": "2026-07-11T01:07:26.000Z",
+            "summary": "Johannes Heidecke’s departure comes as OpenAI tries to further integrate its research and safety teams.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses a safety head leaving due to reorganization, which relates to managing incidents in AI safety and model releases, though not directly IT service incidents."
+          },
+          {
+            "title": "AI-driven datacenter builds drive Microsoft's emissions up a quarter in one year",
+            "url": "https://www.theregister.com/on-prem/2026/07/10/ai-driven-datacenter-builds-drive-microsofts-emissions-up-a-quarter-in-one-year/5269924",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-10T14:01:00.000Z",
+            "summary": "Firm faces quandary of wanting to help the environment, but also wanting to force AI on everyone",
+            "confidence": 0.75,
+            "reasoning": "The article describes a significant increase in emissions due to datacenter construction, which could lead to incidents (e.g., environmental non-compliance, service disruptions) that require management."
+          }
+        ]
+      }
+    ]
+  }
+]
