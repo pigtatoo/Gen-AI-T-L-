@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Connecting AI agents to outside services explodes the risk radius",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/19/connecting-ai-agents-to-outside-services-explodes-the-risk-radius/5274640",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-19T16:05:00.000Z",
+            "summary": "Connect all the things and watch what happens",
+            "confidence": 0.9,
+            "reasoning": "The article discusses risks associated with AI agent integrations and connectors, which directly relates to IT governance concerns over data security, access control, and compliance with third-party services."
+          },
+          {
+            "title": "Your Period Tracker Is (Probably) Spying on You",
+            "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+            "source": "WIRED",
+            "published": "2026-07-18T10:30:00.000Z",
+            "summary": "Plus: Russian cyberspies turn to infrastructure hacking, DHS repeatedly fails to realize it’d been hacked, a breach exposes an AI music generator’s scraping ways, and more.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses data privacy, surveillance, AI regulation, and government IT failures, which are core IT governance issues."
+          },
+          {
+            "title": "The Best Motion Sensors and Home Security Gadgets Without Cameras",
+            "url": "https://www.wired.com/story/best-motion-sensors-private-alternatives-security/",
+            "source": "WIRED",
+            "published": "2026-07-18T10:30:00.000Z",
+            "summary": "If you prefer not to have cameras in and around your home, try one of these more private, WIRED-tested security devices.",
+            "confidence": 0.6,
+            "reasoning": "The article discusses risks associated with security cameras, including vulnerabilities, data privacy, and surveillance, which relate to IT governance principles of risk management and compliance."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Starbucks Korea staff form union after 'Tank Day' campaign fiasco",
+            "url": "https://www.channelnewsasia.com/asia/starbucks-south-korea-tank-day-union-6263716",
+            "source": "Latest News",
+            "published": "2026-07-19T11:55:07.000Z",
+            "summary": "Starbucks Korea sparked uproar when it ran a \"Tank Day\" reusable cup promotion on May 18, the 46th anniversary of the deadly Gwangju uprising.",
+            "confidence": 0.85,
+            "reasoning": "Article discusses a company's promotion decision (Tank Day) that led to reputational risk and employee unionization, involving strategic misalignment with stakeholder expectations."
+          },
+          {
+            "title": "US launches strikes to 'punish' Iran after troops killed",
+            "url": "https://www.channelnewsasia.com/world/us-iran-strikes-american-troops-killed-jordan-israel-6263826",
+            "source": "Latest News",
+            "published": "2026-07-19T13:55:00.000Z",
+            "summary": "Iran rapidly responded to the strikes, saying two US bases in Kuwait were targeted in response to more than a week of intensifying attacks.&nbsp;",
+            "confidence": 0.75,
+            "reasoning": "The article discusses US military strikes against Iran in response to troop deaths, which involves geopolitical risk and strategic decision-making at a national security level."
+          },
+          {
+            "title": "Connecting AI agents to outside services explodes the risk radius",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/19/connecting-ai-agents-to-outside-services-explodes-the-risk-radius/5274640",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-19T16:05:00.000Z",
+            "summary": "Connect all the things and watch what happens",
+            "confidence": 0.6,
+            "reasoning": "The article's focus on enterprise adoption and rate of change of connectors implies strategic decisions about risk management and resource allocation, but the core content is more operational than strategic."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "San Francisco Demands Apple and Google Delete AI ‘Nudify’ Apps From App Stores",
+            "url": "https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/",
+            "source": "WIRED",
+            "published": "2026-07-17T10:00:00.000Z",
+            "summary": "The City Attorney’s Office sent the tech giants cease-and-desist letters this week telling them to stop profiting from 13 “face-swap” apps that are overwhelmingly used to target women and girls.",
+            "confidence": 0.65,
+            "reasoning": "The article implies that the benefits of AI technology are undermined by misuse, and the legal action aims to ensure that societal benefits from app stores are not offset by harm, aligning with benefit realization principles."
+          },
+          {
+            "title": "The CDC Has a Cyclospora Lab. DOGE Downsized It Last Year",
+            "url": "https://www.wired.com/story/cdc-cyclospora-lab-doge-downsized-it-last-year/",
+            "source": "WIRED",
+            "published": "2026-07-17T09:15:00.000Z",
+            "summary": "“Based on simple math, these outbreak responses—which require rapid, timely responses—are going to be greatly diminished,” the former CDC lab director tells WIRED.",
+            "confidence": 0.6,
+            "reasoning": "The cuts reduce the lab's ability to respond to outbreaks, undermining the intended public health benefits of the CDC's work."
+          },
+          {
+            "title": "A $10K Bounty Aims to Make Sony’s PlayStation 5 a Computer Again",
+            "url": "https://www.wired.com/story/a-10k-bounty-aims-to-make-the-ps5-a-computer-again/",
+            "source": "WIRED",
+            "published": "2026-07-17T10:30:00.000Z",
+            "summary": "Nice PlayStation you got. Bet it could probably run Linux too.",
+            "confidence": 0.5,
+            "reasoning": "The bounty aims to realize the benefit of using a PS5 for computing beyond gaming, aligning with benefit realization in terms of unlocking value from owned hardware."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AWS Billing Glitch Hits Customers With Billion-Dollar Fees",
+            "url": "https://www.wired.com/story/amazon-web-services-glitch-oh-no/",
+            "source": "WIRED",
+            "published": "2026-07-17T19:50:38.000Z",
+            "summary": "An error with the cloud computing giant’s billing operation caused some customers’ monthly bills to rise from a few cents to billions of dollars.",
+            "confidence": 0.95,
+            "reasoning": "The article describes a billing glitch as an unplanned interruption or reduction in quality of AWS billing service, which is a classic incident requiring management per ITIL framework."
+          },
+          {
+            "title": "How Google’s New Gemini Rates Work and How to Track Your Usage",
+            "url": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
+            "source": "WIRED",
+            "published": "2026-07-18T10:00:00.000Z",
+            "summary": "Now that Google has changed how its usage quotas are tallied, you might not get as many AI responses as you did before.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses usage quotas and limits for Google's Gemini AI, which can lead to service interruptions or access issues, aligning with incident management's focus on handling disruptions."
+          },
+          {
+            "title": "Connecting AI agents to outside services explodes the risk radius",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/19/connecting-ai-agents-to-outside-services-explodes-the-risk-radius/5274640",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-19T16:05:00.000Z",
+            "summary": "Connect all the things and watch what happens",
+            "confidence": 0.7,
+            "reasoning": "Article discusses risks and security incidents related to AI connectors, which aligns with incident management's focus on identifying and managing security events."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
+            "url": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+            "source": "WIRED",
+            "published": "2026-07-18T09:00:00.000Z",
+            "summary": "“Context bombing” tricks malicious AI agents into shutting down before they can do harm.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses prompt injection attacks and context bombing, which involve gathering information about AI system vulnerabilities and secrets stored in AWS to trigger defensive mechanisms."
+          },
+          {
+            "title": "Polymarket’s Corporate Structure Is a Mystery—Even to Some of Its Former Employees",
+            "url": "https://www.wired.com/story/whats-up-with-polymarkets-panama-entity/",
+            "source": "WIRED",
+            "published": "2026-07-17T18:30:00.000Z",
+            "summary": "The prediction market’s Panamanian operation seems odd, even for a company whose CEO had his apartment raided by FBI agents.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses investigative reporting by WIRED, uncovering hidden corporate structures and employee locations, which directly involves information gathering techniques."
+          },
+          {
+            "title": "Your Period Tracker Is (Probably) Spying on You",
+            "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+            "source": "WIRED",
+            "published": "2026-07-18T10:30:00.000Z",
+            "summary": "Plus: Russian cyberspies turn to infrastructure hacking, DHS repeatedly fails to realize it’d been hacked, a breach exposes an AI music generator’s scraping ways, and more.",
+            "confidence": 0.85,
+            "reasoning": "The article mentions exposure of drone video footage, data breaches, and surveillance, which align with information gathering techniques."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Your Period Tracker Is (Probably) Spying on You",
+            "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+            "source": "WIRED",
+            "published": "2026-07-18T10:30:00.000Z",
+            "summary": "Plus: Russian cyberspies turn to infrastructure hacking, DHS repeatedly fails to realize it’d been hacked, a breach exposes an AI music generator’s scraping ways, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses data exposure, surveillance footage, and AI scraping, which relate to how digital information is stored and retrieved in forensic contexts."
+          },
+          {
+            "title": "Prompt Injection Attacks Are Thwarting AI Hacking Agents",
+            "url": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+            "source": "WIRED",
+            "published": "2026-07-18T09:00:00.000Z",
+            "summary": "“Context bombing” tricks malicious AI agents into shutting down before they can do harm.",
+            "confidence": 0.85,
+            "reasoning": "The article discusses storing prompt injections alongside secrets in cloud storage (AWS), relating to information storage and retrieval in forensic contexts."
+          },
+          {
+            "title": "A $10K Bounty Aims to Make Sony’s PlayStation 5 a Computer Again",
+            "url": "https://www.wired.com/story/a-10k-bounty-aims-to-make-the-ps5-a-computer-again/",
+            "source": "WIRED",
+            "published": "2026-07-17T10:30:00.000Z",
+            "summary": "Nice PlayStation you got. Bet it could probably run Linux too.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses Sony's proprietary software locks on PS5 consoles and the ability to install alternative operating systems, which relates to how data and software are stored, accessed, and retrieved on the device."
+          }
+        ]
+      }
+    ]
+  }
+]
