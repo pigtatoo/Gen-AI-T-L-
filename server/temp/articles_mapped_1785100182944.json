@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Iran will halt attacks as long as US maintains pause, Iranian source says after Trump calls off strikes",
+            "url": "https://www.channelnewsasia.com/world/iran-says-halt-attacks-if-us-maintains-pause-6279116",
+            "source": "Latest News",
+            "published": "2026-07-26T15:08:22.000Z",
+            "summary": "The US ambassador to the United Nations, Mike Waltz, told Fox News on Sunday that Trump had decided to pause US attacks to allow more time for diplomacy.",
+            "confidence": 0.75,
+            "reasoning": "The article involves high-level diplomatic decision-making by the US and Iran, which relates to strategic management of international relations and risk."
+          },
+          {
+            "title": "Singapore condemns attacks on Saudi Arabia, urges all parties to exercise restraint: MFA",
+            "url": "https://www.channelnewsasia.com/singapore/mfa-condemn-red-sea-attacks-saudi-arabia-6279121",
+            "source": "Latest News",
+            "published": "2026-07-26T15:38:00.000Z",
+            "summary": "Houthi rebels earlier said they downed a Saudi drone over Yemen, a day after the group claimed it attacked oil facilities in the Gulf kingdom.",
+            "confidence": 0.65,
+            "reasoning": "The article involves international relations and diplomatic responses to security threats, which relates to strategic decision-making and risk management at a national level."
+          },
+          {
+            "title": "France and Spain battle 'unpredictable' wildfires as 300,000 evacuated",
+            "url": "https://www.channelnewsasia.com/world/france-spain-wildfire-heatwave-blaze-evacuation-6278921",
+            "source": "Latest News",
+            "published": "2026-07-26T11:14:00.000Z",
+            "summary": "Other European Union countries have been sending help to Spain and France in the form of aircraft, fire crews and vehicles.",
+            "confidence": 0.65,
+            "reasoning": "The article describes a crisis event (wildfires) requiring coordinated international response, which relates to risk management and strategic decision-making by governments."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
+            "url": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
+            "source": "WIRED",
+            "published": "2026-07-25T10:30:00.000Z",
+            "summary": "Plus: Russian hackers are trying to steal US nuclear scientists’ emails, the State Department bans known scammers from entering the United States, and more.",
+            "confidence": 0.9,
+            "reasoning": "Article discusses cybersecurity risks, hacking incidents, and vulnerabilities in AI systems and embedded devices, which are core IT governance concerns."
+          },
+          {
+            "title": "Trump expands voluntary pledge to keep datacenter costs off household power bills",
+            "url": "https://www.theregister.com/on-prem/2026/07/26/trump-expands-voluntary-pledge-to-keep-datacenter-costs-off-household-power-bills/5278346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-26T10:10:00.000Z",
+            "summary": "Pinkie promise gains 200-plus new participants and precisely zero enforcement",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the expansion of a pledge involving datacenter developers, power companies, and state governments to manage costs and regulatory decisions, which relates to governance structures for IT infrastructure and energy resources."
+          },
+          {
+            "title": "The Best Subscription-Free Home Security Cameras I’ve Tried",
+            "url": "https://www.wired.com/story/best-subscription-free-security-cameras/",
+            "source": "WIRED",
+            "published": "2026-07-26T10:00:00.000Z",
+            "summary": "You don’t have to upload your video to the cloud or pay a monthly fee to secure your home. These security cameras record locally.",
+            "confidence": 0.7,
+            "reasoning": "Article discusses data privacy, local vs cloud storage, and security of video footage, which relates to IT governance principles around data management and security controls."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Trump expands voluntary pledge to keep datacenter costs off household power bills",
+            "url": "https://www.theregister.com/on-prem/2026/07/26/trump-expands-voluntary-pledge-to-keep-datacenter-costs-off-household-power-bills/5278346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-26T10:10:00.000Z",
+            "summary": "Pinkie promise gains 200-plus new participants and precisely zero enforcement",
+            "confidence": 0.65,
+            "reasoning": "The pledge aims to ensure that the benefits of datacenter growth (e.g., economic development) do not come at the cost of higher household electricity bills, focusing on realizing value while mitigating negative impacts."
+          },
+          {
+            "title": "Anti-AI open source has an enemy in common, but almost nothing else",
+            "url": "https://www.theregister.com/ai-and-ml/2026/07/25/anti-ai-open-source-has-an-enemy-in-common-but-almost-nothing-else/5278275",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-25T10:17:00.000Z",
+            "summary": "Building bot-free alternatives may require lefties, libertarians, and culture warriors to share code",
+            "confidence": 0.6,
+            "reasoning": "Article touches on debates about benefits and drawbacks of AI, including data harvesting and environmental concerns, which relate to value realization from technology investments."
+          },
+          {
+            "title": "PlayStation Network outage resolved after thousands of gamers unable to play",
+            "url": "https://www.bbc.co.uk/news/articles/cx2j0wy1gl5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-24T20:37:21.000Z",
+            "summary": "The outage affected gamers' ability to launch games, apps or network features on their PlayStation.",
+            "confidence": 0.55,
+            "reasoning": "Sony's digital-only strategy aims to realize benefits like cost savings and efficiency, but the outage undermines customer confidence and highlights risks to benefit realization from digital transformation, as users question the reliability of the all-digital future."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "PlayStation Network outage resolved after thousands of gamers unable to play",
+            "url": "https://www.bbc.co.uk/news/articles/cx2j0wy1gl5o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-24T20:37:21.000Z",
+            "summary": "The outage affected gamers' ability to launch games, apps or network features on their PlayStation.",
+            "confidence": 0.95,
+            "reasoning": "The article describes a service outage (PlayStation Network) that was resolved, which is a classic incident management scenario involving detection, response, and restoration."
+          },
+          {
+            "title": "London's Gatwick Airport suffers water outage",
+            "url": "https://www.channelnewsasia.com/world/london-gatwick-airport-water-outage-6279041",
+            "source": "Latest News",
+            "published": "2026-07-26T13:50:00.000Z",
+            "summary": "Flights were not reported to be affected, but passengers posted online that they were unable to flush toilets, get hot drinks, wash their hands or fill up water bottles",
+            "confidence": 0.9,
+            "reasoning": "The article describes a water outage at an airport, which is an unplanned interruption to a service (water supply) that needs to be managed and resolved, fitting the definition of an incident in IT service management."
+          },
+          {
+            "title": "LG kills McAfee pop-up after Windows boss steps in",
+            "url": "https://www.theregister.com/personal-tech/2026/07/24/lg-kills-mcafee-pop-up-after-windows-boss-steps-in/5278168",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-24T11:29:00.000Z",
+            "summary": "Advert gets the chop, but the silent app installation mechanism remains untouched",
+            "confidence": 0.9,
+            "reasoning": "Article describes an unwanted pop-up (incident) that was resolved after intervention by Microsoft and LG, directly relating to incident management processes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.5,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "The Best Subscription-Free Home Security Cameras I’ve Tried",
+            "url": "https://www.wired.com/story/best-subscription-free-security-cameras/",
+            "source": "WIRED",
+            "published": "2026-07-26T10:00:00.000Z",
+            "summary": "You don’t have to upload your video to the cloud or pay a monthly fee to secure your home. These security cameras record locally.",
+            "confidence": 0.95,
+            "reasoning": "The article focuses on local vs cloud storage of security camera footage, directly relating to how video data is stored and retrieved."
+          },
+          {
+            "title": "Pope's official prayer app commits cardinal sin, leaks 700K+ users' info",
+            "url": "https://www.theregister.com/security/2026/07/24/popes-official-prayer-app-commits-cardinal-sin-leaks-700k-users-info/5278603",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-24T22:19:16.000Z",
+            "summary": "(Security) hole-ier than thou",
+            "confidence": 0.95,
+            "reasoning": "The article discusses a security vulnerability (IDOR) that leaks user personal data (names, emails) from a database, directly involving how information is stored and retrieved in the app."
+          },
+          {
+            "title": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
+            "url": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-25T10:14:41.000Z",
+            "summary": "Hugging Face said the hack was done at superhuman speed by an AI with little or no human guidance.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a hack involving AI performing 17,000 actions to breach a tech company and steal secrets, which directly relates to how information is stored and retrieved in cyber forensic contexts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
+            "url": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-25T10:14:41.000Z",
+            "summary": "Hugging Face said the hack was done at superhuman speed by an AI with little or no human guidance.",
+            "confidence": 0.95,
+            "reasoning": "The article describes an AI performing 17,000 actions to breach Hugging Face and steal secrets, which is a core information gathering activity."
+          },
+          {
+            "title": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
+            "url": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
+            "source": "WIRED",
+            "published": "2026-07-25T10:30:00.000Z",
+            "summary": "Plus: Russian hackers are trying to steal US nuclear scientists’ emails, the State Department bans known scammers from entering the United States, and more.",
+            "confidence": 0.92,
+            "reasoning": "Article mentions hacking, malware, surveillance, and data theft, which are core to information gathering in cyber attack and defense."
+          },
+          {
+            "title": "Trump vows to investigate EU over fining of US tech companies",
+            "url": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-24T20:23:58.000Z",
+            "summary": "The US president says fines against Google, as well as Apple, Meta and Amazon, should be \"entirely reversed.\"",
+            "confidence": 0.55,
+            "reasoning": "The 301 investigation involves gathering information on trade practices, which has tangential relevance to information gathering in cyber security."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "AMD and Cerebras join forces against Nvidia’s Groq LPUs",
+            "url": "https://www.theregister.com/systems/2026/07/23/amd-and-cerebras-join-forces-against-nvidias-groq-lpus/5277817",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-07-23T21:33:45.000Z",
+            "summary": "The enemy of my enemy is my friend",
+            "confidence": 0.6,
+            "reasoning": "The article discusses inference optimization and system design, which may involve algorithmic considerations for performance, though not explicitly detailed."
+          }
+        ]
+      }
+    ]
+  }
+]
