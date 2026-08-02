@@ -1,0 +1,216 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Indonesia urged to play more active role in global climate diplomacy",
+            "url": "https://www.channelnewsasia.com/asia/indonesia-climate-diplomacy-biodiversity-cop31-6293596",
+            "source": "Latest News",
+            "published": "2026-08-02T11:06:00.000Z",
+            "summary": "Opening the Indonesia Net-Zero Summit (INZS) 2026 at Balai Kartini in Jakarta on Saturday (Aug 1), Dino Patti Djalal, Chairman and Founder of the Foreign Policy Community of Indonesia (FPCI), said that climate change has become \"the greatest blind spot in world affairs\" today.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Indonesia's role in global climate diplomacy, which is a strategic geopolitical and policy issue involving national and international strategic planning and management."
+          },
+          {
+            "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+            "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "New EU rules stipulate that people must be told when they’re interacting with AI or looking at AI-generated or -edited content, leading to fear of “disclosure fatigue.”",
+            "confidence": 0.7,
+            "reasoning": "The new regulations force organizations to strategically manage AI disclosure, impacting marketing, customer service, and operational practices."
+          },
+          {
+            "title": "Is It Possible to Make Smart Glasses That Aren’t Creepy?",
+            "url": "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "As more big companies invest in glasses that record audio and video and pack AI on board, privacy concerns are only getting louder.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on how companies like Meta are making strategic decisions about product features and privacy trade-offs, aligning with strategic management considerations."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+            "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "New EU rules stipulate that people must be told when they’re interacting with AI or looking at AI-generated or -edited content, leading to fear of “disclosure fatigue.”",
+            "confidence": 0.9,
+            "reasoning": "The article covers the EU AI Act's transparency regulations, which are a form of IT governance, mandating compliance and fines for AI use."
+          },
+          {
+            "title": "Is It Possible to Make Smart Glasses That Aren’t Creepy?",
+            "url": "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "As more big companies invest in glasses that record audio and video and pack AI on board, privacy concerns are only getting louder.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses privacy risks, data protection, and compliance issues related to smart glasses, which are core concerns of IT governance."
+          },
+          {
+            "title": "7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran",
+            "url": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
+            "source": "WIRED",
+            "published": "2026-08-01T10:30:00.000Z",
+            "summary": "Plus: The FBI eyes AI-powered tech to detect future crimes, Russia charges Telegram’s founder, xAI sues to stop a state’s “nudification” ban, and the Democrats learn a lesson about getting scammed.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses cyberattacks on critical infrastructure and AI-related security breaches, highlighting the need for robust IT governance and security best practices."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Snapchat joins other popular platforms in fight against 'AI slop'",
+            "url": "https://www.bbc.co.uk/news/articles/c77g6dm5pr8o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-31T21:57:59.000Z",
+            "summary": "Snapchat, YouTube, LinkedIn, and Substack are trying to combat the proliferation of fake AI content.",
+            "confidence": 0.55,
+            "reasoning": "The article implies that reducing AI slop aims to improve user trust and engagement, which can be seen as an attempt to realize benefits from content quality investments, though not explicitly framed in benefit realization terms."
+          },
+          {
+            "title": "AI firms must answer for rogue bots, says boss of hacked company",
+            "url": "https://www.bbc.co.uk/news/articles/cr7k49xjzzeo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-31T18:10:28.000Z",
+            "summary": "Clement Delangue said he didn't want cyber attacks on other companies to become \"normalised\".",
+            "confidence": 0.55,
+            "reasoning": "The article discusses unintended negative outcomes of AI systems, which relates to ensuring that technology investments deliver expected benefits without harmful side effects."
+          },
+          {
+            "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+            "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "New EU rules stipulate that people must be told when they’re interacting with AI or looking at AI-generated or -edited content, leading to fear of “disclosure fatigue.”",
+            "confidence": 0.5,
+            "reasoning": "The article discusses the intended benefits of the AI Act (reducing deception, fostering trust), but focuses more on compliance than on measuring realized benefits."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Is It Possible to Make Smart Glasses That Aren’t Creepy?",
+            "url": "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "As more big companies invest in glasses that record audio and video and pack AI on board, privacy concerns are only getting louder.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses smart glasses that can capture images, audio, and video, which is a form of information gathering about individuals without consent, directly relating to the topic."
+          },
+          {
+            "title": "How police are trying to divert teen hackers away from crime",
+            "url": "https://www.bbc.co.uk/news/articles/cn0nqpy1rk4o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-31T00:42:48.000Z",
+            "summary": "Cyber Prevent is targeting predominantly boys and young men at risk of being drawn to cyber criminality.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses how a teen hacker gathered information about school systems to exploit them, and police intervention focuses on redirecting such activities."
+          },
+          {
+            "title": "Anthropic Says Claude Hacked Into 3 Organizations During Cybersecurity Tests",
+            "url": "https://www.wired.com/story/anthropic-says-claude-hacked-real-systems-during-cybersecurity-tests/",
+            "source": "WIRED",
+            "published": "2026-07-31T01:24:26.000Z",
+            "summary": "In a review triggered by OpenAI’s Hugging Face incident, Anthropic discovered three of its AI models had breached real-world organizations during third-party evaluations.",
+            "confidence": 0.7,
+            "reasoning": "The article describes AI models hacking into organizations, which involves reconnaissance and data collection as part of the attack process."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Is It Possible to Make Smart Glasses That Aren’t Creepy?",
+            "url": "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/",
+            "source": "WIRED",
+            "published": "2026-08-02T10:00:00.000Z",
+            "summary": "As more big companies invest in glasses that record audio and video and pack AI on board, privacy concerns are only getting louder.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses smart glasses that record and store audio, video, and images, directly relating to how information is captured, stored, and retrieved in such devices."
+          },
+          {
+            "title": "AI firms must answer for rogue bots, says boss of hacked company",
+            "url": "https://www.bbc.co.uk/news/articles/cr7k49xjzzeo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-31T18:10:28.000Z",
+            "summary": "Clement Delangue said he didn't want cyber attacks on other companies to become \"normalised\".",
+            "confidence": 0.7,
+            "reasoning": "The article discusses cyber attacks on IT networks and data storage, which relates to how information is stored and retrieved securely."
+          },
+          {
+            "title": "7 States’ Water Systems Hit by Cyberattacks Likely Tied to Iran",
+            "url": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
+            "source": "WIRED",
+            "published": "2026-08-01T10:30:00.000Z",
+            "summary": "Plus: The FBI eyes AI-powered tech to detect future crimes, Russia charges Telegram’s founder, xAI sues to stop a state’s “nudification” ban, and the Democrats learn a lesson about getting scammed.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses cyberattacks, AI breaches, and security testing, which involve data storage and retrieval systems, though not as a central focus."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Xbox tech boss says 'unacceptable' outage should not have affected disc games",
+            "url": "https://www.bbc.co.uk/news/articles/cq5637p7qpno?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-07-30T14:53:20.000Z",
+            "summary": "The outage meant Xbox users had trouble signing into their accounts, seeing their game library and launching games",
+            "confidence": 0.95,
+            "reasoning": "The article describes a service outage and the process of identifying, responding to, and resolving it, which is core to incident management."
+          }
+        ]
+      }
+    ]
+  }
+]
