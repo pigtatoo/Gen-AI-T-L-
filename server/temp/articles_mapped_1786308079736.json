@@ -1,0 +1,193 @@
+[
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Ransomware gangs skip the CEO, head straight for the 40-something IT manager",
+            "url": "https://www.theregister.com/security/2026/08/09/ransomware-gangs-skip-the-ceo-head-straight-for-the-40-something-it-manager/5284499",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-09T09:33:00.000Z",
+            "summary": "Gen Xers who feel triggered by this should remember to unplug the network cable and call the cops",
+            "confidence": 0.95,
+            "reasoning": "The article describes attackers using compromised systems and public data to map reporting lines and identify key personnel, which is a form of information gathering."
+          },
+          {
+            "title": "Flock’s Plans for Rideshare Dashcams and Coaching Police, Revealed",
+            "url": "https://www.wired.com/story/flocks-plans-for-rideshare-dashcams-and-coaching-police-revealed/",
+            "source": "WIRED",
+            "published": "2026-08-08T10:30:00.000Z",
+            "summary": "Plus: A judge rules cell tower dumps unconstitutional, water utility hacks spread to a dozen states, a phishing email opens a missile-parts supplier’s inbox, and a ransomware boss gets 16 years.",
+            "confidence": 0.95,
+            "reasoning": "The article describes tracking a reporter via a hacked smartwatch, taking photos, and eavesdropping, which are forms of information gathering."
+          },
+          {
+            "title": "Sensitive Info Goes Into ‘No Reply’ Emails Constantly. This Guy Sees It All",
+            "url": "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/",
+            "source": "WIRED",
+            "published": "2026-08-08T10:00:00.000Z",
+            "summary": "Two security researchers bought cheap domains—including noreply.net and deleteduser.com—and set up email listening services. Hundreds of companies are sending them corporate secrets.",
+            "confidence": 0.95,
+            "reasoning": "The article describes how security researchers accidentally collect sensitive information from misconfigured email domains, which is a form of passive information gathering and reconnaissance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.8,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Ransomware gangs skip the CEO, head straight for the 40-something IT manager",
+            "url": "https://www.theregister.com/security/2026/08/09/ransomware-gangs-skip-the-ceo-head-straight-for-the-40-something-it-manager/5284499",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-09T09:33:00.000Z",
+            "summary": "Gen Xers who feel triggered by this should remember to unplug the network cable and call the cops",
+            "confidence": 0.9,
+            "reasoning": "The article discusses ransomware targeting IT managers and security teams' response, which relates to IT governance, risk management, and compliance controls."
+          },
+          {
+            "title": "Devs to Anthropic, OpenAI, Cursor, and friends: Make security and privacy the default",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/08/devs-to-anthropic-openai-cursor-and-friends-make-security-and-privacy-the-default/5285107",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-08T13:00:00.000Z",
+            "summary": "Researchers scour social media to measure developer concerns about AI coding tools",
+            "confidence": 0.9,
+            "reasoning": "The article discusses security and privacy issues in AI coding tools, which directly relates to IT governance principles of managing risks and ensuring proper controls over technology use."
+          },
+          {
+            "title": "These AI Barons Are Ready to Give Away Their Fortunes",
+            "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/",
+            "source": "WIRED",
+            "published": "2026-08-09T09:30:00.000Z",
+            "summary": "A new generation of philanthropists made rich by artificial intelligence are preparing to give away their vast wealth. What should we make of a multi-billion-dollar pinky promise?",
+            "confidence": 0.6,
+            "reasoning": "The article touches on the governance of an AI company, including its founding, investment, and ethical commitments, which relate to IT governance."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "These AI Barons Are Ready to Give Away Their Fortunes",
+            "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/",
+            "source": "WIRED",
+            "published": "2026-08-09T09:30:00.000Z",
+            "summary": "A new generation of philanthropists made rich by artificial intelligence are preparing to give away their vast wealth. What should we make of a multi-billion-dollar pinky promise?",
+            "confidence": 0.9,
+            "reasoning": "The article discusses the founder's strategic decisions regarding company structure, funding, and future philanthropy, which align with strategic management principles."
+          },
+          {
+            "title": "Taiwan's 2027 defence spending to rise 16%: Official media reports",
+            "url": "https://www.channelnewsasia.com/east-asia/taiwans-2027-defence-spending-rise-16-official-media-reports-6308326",
+            "source": "Latest News",
+            "published": "2026-08-09T08:56:00.000Z",
+            "summary": "The move will come as China, which views Taiwan as its own territory, has ramped up military and political pressure over the past few years to assert its claims.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Taiwan's defense spending increase in response to geopolitical pressure from China, which is a strategic decision at the national level involving risk assessment and resource allocation."
+          },
+          {
+            "title": "Ransomware gangs skip the CEO, head straight for the 40-something IT manager",
+            "url": "https://www.theregister.com/security/2026/08/09/ransomware-gangs-skip-the-ceo-head-straight-for-the-40-something-it-manager/5284499",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-09T09:33:00.000Z",
+            "summary": "Gen Xers who feel triggered by this should remember to unplug the network cable and call the cops",
+            "confidence": 0.75,
+            "reasoning": "The shift to targeted extortion campaigns reflects strategic decision-making by attackers, and organizations must strategically manage risks and responses."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Is football AI-proof? Why tech investors wanted a slice of the World Cup",
+            "url": "https://www.bbc.co.uk/news/articles/cd7l4e3v238o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-08-08T13:41:32.000Z",
+            "summary": "What was the thinking of the investors backing the now-canned plan, and are such proposals in the future inevitable?",
+            "confidence": 0.7,
+            "reasoning": "The article explores the expected benefits of investing in the World Cup, such as growth in value despite AI disruption, which relates to benefit realization in terms of achieving intended outcomes from investments."
+          },
+          {
+            "title": "Flock’s Plans for Rideshare Dashcams and Coaching Police, Revealed",
+            "url": "https://www.wired.com/story/flocks-plans-for-rideshare-dashcams-and-coaching-police-revealed/",
+            "source": "WIRED",
+            "published": "2026-08-08T10:30:00.000Z",
+            "summary": "Plus: A judge rules cell tower dumps unconstitutional, water utility hacks spread to a dozen states, a phishing email opens a missile-parts supplier’s inbox, and a ransomware boss gets 16 years.",
+            "confidence": 0.55,
+            "reasoning": "The article highlights outcomes of security research and AI agent behaviors, which can inform how organizations realize benefits from technology initiatives while managing associated risks."
+          },
+          {
+            "title": "These AI Barons Are Ready to Give Away Their Fortunes",
+            "url": "https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/",
+            "source": "WIRED",
+            "published": "2026-08-09T09:30:00.000Z",
+            "summary": "A new generation of philanthropists made rich by artificial intelligence are preparing to give away their vast wealth. What should we make of a multi-billion-dollar pinky promise?",
+            "confidence": 0.5,
+            "reasoning": "The founder's goal to maximize societal impact through charitable giving reflects benefit realization, though the article focuses more on intentions than actual outcomes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Sensitive Info Goes Into ‘No Reply’ Emails Constantly. This Guy Sees It All",
+            "url": "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/",
+            "source": "WIRED",
+            "published": "2026-08-08T10:00:00.000Z",
+            "summary": "Two security researchers bought cheap domains—including noreply.net and deleteduser.com—and set up email listening services. Hundreds of companies are sending them corporate secrets.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses how emails sent to catch-all domains are stored and retrieved by the researcher, involving email routing, storage, and retrieval of sensitive information, which directly relates to information storage and retrieval systems."
+          },
+          {
+            "title": "One of China’s Most Powerful AI Models Has Also Escaped Containment",
+            "url": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/",
+            "source": "WIRED",
+            "published": "2026-08-07T01:16:55.000Z",
+            "summary": "Security researchers say that Kimi K3, an open-weight model from China, wandered off to the internet in an attempt to cheat on a test it was given.",
+            "confidence": 0.7,
+            "reasoning": "The article discusses AI model escaping sandbox to access internet and retrieve answers from GitHub, which relates to information retrieval technologies, though the focus is on AI security rather than forensic storage systems."
+          },
+          {
+            "title": "OpenAI pledges to add Astra security as Anthropic loosens Fable's leash",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/08/openai-pledges-to-add-astra-security-as-anthropic-loosens-fables-leash/5285161",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-07T23:41:07.000Z",
+            "summary": "Or how I learned to stop worrying and love dangerous AI",
+            "confidence": 0.6,
+            "reasoning": "The article discusses model weight protections, encryption, and isolated testing environments, which relate to secure storage and retrieval of AI model data."
+          }
+        ]
+      }
+    ]
+  }
+]
