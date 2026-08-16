@@ -1,0 +1,193 @@
+[
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crypto wallet provider SafePal discloses data breach affecting nearly 40,000 users' order information",
+            "url": "https://www.channelnewsasia.com/business/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information-6322481",
+            "source": "Latest News",
+            "published": "2026-08-16T16:03:18.000Z",
+            "summary": "",
+            "confidence": 0.95,
+            "reasoning": "The article is about a data breach at SafePal, which involves unauthorized access and collection of user order information. This directly relates to information gathering as a cyber attack technique where attackers collect sensitive data."
+          },
+          {
+            "title": "Secondhand book sales are booming. Is it because of AI?",
+            "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-08-15T11:25:32.000Z",
+            "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses the collection of books in bulk to train AI, which is a form of data gathering for AI models. This aligns with the concept of information gathering in cyber security, where data is collected for analysis or exploitation."
+          },
+          {
+            "title": "ChainDrop worm crawls into npm supply chain, evades standard defenses",
+            "url": "https://www.theregister.com/security/2026/08/15/chaindrop-worm-crawls-into-npm-supply-chain-evades-standard-defenses/5287958",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-15T10:31:00.000Z",
+            "summary": "Shai-Hulud variant poisons 444 packages, spreads via tarballs and dev-tool hooks",
+            "confidence": 0.95,
+            "reasoning": "The article details a supply chain attack that involves gathering intelligence on popular npm packages and exploiting them to spread malware, which aligns with the information gathering phase of cyber attacks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Crypto wallet provider SafePal discloses data breach affecting nearly 40,000 users' order information",
+            "url": "https://www.channelnewsasia.com/business/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information-6322481",
+            "source": "Latest News",
+            "published": "2026-08-16T16:03:18.000Z",
+            "summary": "",
+            "confidence": 0.9,
+            "reasoning": "Data breach involving order information of 40,000 users directly relates to IT governance, specifically data security, privacy controls, and incident management."
+          },
+          {
+            "title": "Stopping a cyberattack while walking your dog - defensive AI security CEO says it's not ruff to do",
+            "url": "https://www.theregister.com/security/2026/08/16/stopping-a-cyberattack-while-walking-your-dog-defensive-ai-security-ceo-says-its-not-ruff-to-do/5288126",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-16T10:06:00.000Z",
+            "summary": "Corma CEO tells The Reg it's building 'One ring to rule them all, for the defenders to have this power'",
+            "confidence": 0.9,
+            "reasoning": "The article discusses AI-driven security automation for real-time threat detection and response, aligning with IT governance practices for managing and securing IT systems."
+          },
+          {
+            "title": "Secondhand book sales are booming. Is it because of AI?",
+            "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-08-15T11:25:32.000Z",
+            "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses the use of books for AI training, which involves data governance and legal compliance regarding intellectual property, a key aspect of IT governance."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "More than 1,000 rally at Hong Lim Park over Maju Forest, Gillman Barracks plans",
+            "url": "https://www.channelnewsasia.com/singapore/sg-climate-rally-hong-lim-park-maju-forest-gillman-barracks-6322031",
+            "source": "Latest News",
+            "published": "2026-08-16T12:44:00.000Z",
+            "summary": "Participants called for more transparency in land-use decisions and voiced concerns over the loss of green spaces, days after the government said it would retain more greenery at both sites.",
+            "confidence": 0.9,
+            "reasoning": "The article involves public protest over land-use decisions, which relates to strategic planning and stakeholder engagement in governance."
+          },
+          {
+            "title": "Anwar pledges reforms, reaffirms needs-based policies at party congress after electoral setbacks",
+            "url": "https://www.channelnewsasia.com/asia/malaysia-pkr-anwar-ibrahim-pakatan-harapan-6322121",
+            "source": "Latest News",
+            "published": "2026-08-16T11:01:00.000Z",
+            "summary": "Parti Keadilan Rakyat president Anwar Ibrahim hit back at accusations of unfairness in allocating funding to opposition-held areas. He also said cooperation with Barisan Nasional at the federal level must be guided by the interests of Malaysians and the country.&nbsp;",
+            "confidence": 0.9,
+            "reasoning": "The article discusses Anwar Ibrahim's response to electoral setbacks, including policy reaffirmation and coalition cooperation, which are key aspects of strategic management in a political context."
+          },
+          {
+            "title": "Crypto wallet provider SafePal discloses data breach affecting nearly 40,000 users' order information",
+            "url": "https://www.channelnewsasia.com/business/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information-6322481",
+            "source": "Latest News",
+            "published": "2026-08-16T16:03:18.000Z",
+            "summary": "",
+            "confidence": 0.6,
+            "reasoning": "The breach may impact the company's strategic risk management, reputation, and stakeholder trust, requiring strategic responses."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "More than 1,000 rally at Hong Lim Park over Maju Forest, Gillman Barracks plans",
+            "url": "https://www.channelnewsasia.com/singapore/sg-climate-rally-hong-lim-park-maju-forest-gillman-barracks-6322031",
+            "source": "Latest News",
+            "published": "2026-08-16T12:44:00.000Z",
+            "summary": "Participants called for more transparency in land-use decisions and voiced concerns over the loss of green spaces, days after the government said it would retain more greenery at both sites.",
+            "confidence": 0.7,
+            "reasoning": "The concerns about loss of green spaces and transparency in land-use decisions relate to ensuring long-term benefits for the community and environment."
+          },
+          {
+            "title": "Anwar pledges reforms, reaffirms needs-based policies at party congress after electoral setbacks",
+            "url": "https://www.channelnewsasia.com/asia/malaysia-pkr-anwar-ibrahim-pakatan-harapan-6322121",
+            "source": "Latest News",
+            "published": "2026-08-16T11:01:00.000Z",
+            "summary": "Parti Keadilan Rakyat president Anwar Ibrahim hit back at accusations of unfairness in allocating funding to opposition-held areas. He also said cooperation with Barisan Nasional at the federal level must be guided by the interests of Malaysians and the country.&nbsp;",
+            "confidence": 0.7,
+            "reasoning": "The article mentions needs-based policies and fair allocation of funding, which relate to ensuring that resources deliver intended benefits to the population, aligning with benefit realization principles."
+          },
+          {
+            "title": "Stopping a cyberattack while walking your dog - defensive AI security CEO says it's not ruff to do",
+            "url": "https://www.theregister.com/security/2026/08/16/stopping-a-cyberattack-while-walking-your-dog-defensive-ai-security-ceo-says-its-not-ruff-to-do/5288126",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-16T10:06:00.000Z",
+            "summary": "Corma CEO tells The Reg it's building 'One ring to rule them all, for the defenders to have this power'",
+            "confidence": 0.5,
+            "reasoning": "The customer story highlights tangible benefits of AI security tools, such as rapid mitigation and operational efficiency, which relates to realizing benefits from technology investments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Secondhand book sales are booming. Is it because of AI?",
+            "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-08-15T11:25:32.000Z",
+            "summary": "Booksellers are reporting mysterious bulk orders. It's thought the books are being used to train AI - and ending up pulped.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses bulk purchases of secondhand books used for AI training, which involves the storage and retrieval of information from physical books converted to digital data. This directly relates to information storage and retrieval technologies."
+          },
+          {
+            "title": "Crypto wallet provider SafePal discloses data breach affecting nearly 40,000 users' order information",
+            "url": "https://www.channelnewsasia.com/business/crypto-wallet-provider-safepal-discloses-data-breach-affecting-nearly-40000-users-order-information-6322481",
+            "source": "Latest News",
+            "published": "2026-08-16T16:03:18.000Z",
+            "summary": "",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a data breach affecting order information, which involves the storage and retrieval of sensitive data. The breach highlights vulnerabilities in information storage systems."
+          },
+          {
+            "title": "ChainDrop worm crawls into npm supply chain, evades standard defenses",
+            "url": "https://www.theregister.com/security/2026/08/15/chaindrop-worm-crawls-into-npm-supply-chain-evades-standard-defenses/5287958",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-15T10:31:00.000Z",
+            "summary": "Shai-Hulud variant poisons 444 packages, spreads via tarballs and dev-tool hooks",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a supply chain attack on npm packages, which involves the storage and retrieval of malicious code within package repositories, directly relating to information storage and retrieval technologies."
+          }
+        ]
+      }
+    ]
+  }
+]
