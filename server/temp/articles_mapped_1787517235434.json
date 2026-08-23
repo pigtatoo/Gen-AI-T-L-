@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "If you're not using AI to attack your own systems, your adversaries will",
+            "url": "https://www.theregister.com/security/2026/08/22/if-youre-not-using-ai-to-attack-your-own-systems-your-adversaries-will/5291346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T15:02:00.000Z",
+            "summary": "Agents are also the new attack surface - cue defenders' existential angst",
+            "confidence": 0.95,
+            "reasoning": "The article discusses AI-enabled automated reconnaissance and highly personalized phishing, which are key aspects of information gathering in cyber attacks."
+          },
+          {
+            "title": "AWS Security makes an inscrutable choice",
+            "url": "https://www.theregister.com/security/2026/08/22/aws-security-makes-an-inscrutable-choice-corey-quinn/5291446",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-21T23:42:41.000Z",
+            "summary": "Quarantining leaked credentials is not good enough",
+            "confidence": 0.92,
+            "reasoning": "The article discusses leaked AWS credentials found in public repositories, which is a form of information gathering by attackers. It also highlights the importance of detecting and responding to credential leaks, a key aspect of information gathering in cyber defense."
+          },
+          {
+            "title": "Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments",
+            "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
+            "source": "WIRED",
+            "published": "2026-08-22T10:30:00.000Z",
+            "summary": "Plus: Apple sends out an “unprecedented” number of spyware warnings, Ukraine hits a Russian ecommerce giant with cyber and drone attacks, and more.",
+            "confidence": 0.7,
+            "reasoning": "Article mentions a reverse-lookup identification service exposing millions of photos of faces, which relates to information gathering and data exposure."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "If you're not using AI to attack your own systems, your adversaries will",
+            "url": "https://www.theregister.com/security/2026/08/22/if-youre-not-using-ai-to-attack-your-own-systems-your-adversaries-will/5291346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T15:02:00.000Z",
+            "summary": "Agents are also the new attack surface - cue defenders' existential angst",
+            "confidence": 0.9,
+            "reasoning": "The article focuses on AI agents as a new attack surface, emphasizing the need to manage machine identities and treat agents as privileged identities, which directly relates to IT governance and security controls."
+          },
+          {
+            "title": "AI slop is good for business if you know what you're doing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T13:19:00.000Z",
+            "summary": "Your irresponsibility is someone else's opportunity",
+            "confidence": 0.9,
+            "reasoning": "The article discusses risks and quality issues in AI-driven software development, highlighting the need for governance over AI-generated code to ensure maintainability and production readiness."
+          },
+          {
+            "title": "Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments",
+            "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
+            "source": "WIRED",
+            "published": "2026-08-22T10:30:00.000Z",
+            "summary": "Plus: Apple sends out an “unprecedented” number of spyware warnings, Ukraine hits a Russian ecommerce giant with cyber and drone attacks, and more.",
+            "confidence": 0.75,
+            "reasoning": "Article discusses technology risks (AI policing, spyware, data exposure, deepfakes) and organizational responses (OpenAI halting training, Apple removing app), which relate to IT governance frameworks and risk management."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI slop is good for business if you know what you're doing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T13:19:00.000Z",
+            "summary": "Your irresponsibility is someone else's opportunity",
+            "confidence": 0.7,
+            "reasoning": "The article presents a business opportunity for firms to capitalize on fixing 'vibe-coded' apps, aligning with strategic decisions about leveraging AI and addressing market gaps."
+          },
+          {
+            "title": "Your Expired Visa Card Could Be ‘Zombified’ to Make Contactless Payments",
+            "url": "https://www.wired.com/story/security-news-this-week-your-expired-visa-card-could-be-zombiefied-to-make-contactless-payments/",
+            "source": "WIRED",
+            "published": "2026-08-22T10:30:00.000Z",
+            "summary": "Plus: Apple sends out an “unprecedented” number of spyware warnings, Ukraine hits a Russian ecommerce giant with cyber and drone attacks, and more.",
+            "confidence": 0.65,
+            "reasoning": "The article covers strategic decisions by companies (Flock Safety expansion, OpenAI overhauling safety protocols, Meta ad campaigns) and their implications for long-term risk and compliance strategy."
+          },
+          {
+            "title": "If you're not using AI to attack your own systems, your adversaries will",
+            "url": "https://www.theregister.com/security/2026/08/22/if-youre-not-using-ai-to-attack-your-own-systems-your-adversaries-will/5291346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T15:02:00.000Z",
+            "summary": "Agents are also the new attack surface - cue defenders' existential angst",
+            "confidence": 0.6,
+            "reasoning": "The article discusses the strategic implications of AI-driven threats and the need for organizations to adapt their security approaches, touching on risk management and strategic decision-making."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI slop is good for business if you know what you're doing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T13:19:00.000Z",
+            "summary": "Your irresponsibility is someone else's opportunity",
+            "confidence": 0.6,
+            "reasoning": "The article emphasizes achieving actual business value from AI-generated code by ensuring it is production-ready, which relates to realizing intended benefits from technology investments."
+          },
+          {
+            "title": "AWS Security makes an inscrutable choice",
+            "url": "https://www.theregister.com/security/2026/08/22/aws-security-makes-an-inscrutable-choice-corey-quinn/5291446",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-21T23:42:41.000Z",
+            "summary": "Quarantining leaked credentials is not good enough",
+            "confidence": 0.6,
+            "reasoning": "The article implies that AWS's quarantine policy may fail to realize the intended benefit of preventing unauthorized charges while maintaining workload functionality, as it can break customer environments."
+          },
+          {
+            "title": "The Unlikely Place at the Center of China’s AI Boom",
+            "url": "https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/",
+            "source": "WIRED",
+            "published": "2026-08-21T23:25:32.000Z",
+            "summary": "Cheap energy, abundant land, and proximity to Beijing have turned a city in Inner Mongolia into a crucial hub for data centers.",
+            "confidence": 0.6,
+            "reasoning": "The article mentions the scale of investments and capacity, implying a focus on realizing benefits from these projects, though it does not explicitly discuss benefit tracking or realization processes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Homeland security cybercops say patch TrueConf (Russia's Zoom) if you're using it",
+            "url": "https://www.theregister.com/patches/2026/08/21/homeland-security-cybercops-say-patch-trueconf-russias-zoom-if-youre-using-it/5291156",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-21T16:29:00.000Z",
+            "summary": "Ukrainian hacktivists exploiting the bugs, but TrueConf's reach stretches well beyond home turf",
+            "confidence": 0.9,
+            "reasoning": "The article discusses TrueConf, an on-premises video conferencing platform, which involves data storage and retrieval in private networks, directly relating to information storage technologies."
+          },
+          {
+            "title": "AWS Security makes an inscrutable choice",
+            "url": "https://www.theregister.com/security/2026/08/22/aws-security-makes-an-inscrutable-choice-corey-quinn/5291446",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-21T23:42:41.000Z",
+            "summary": "Quarantining leaked credentials is not good enough",
+            "confidence": 0.6,
+            "reasoning": "The article discusses cloud credential security and AWS key management, which relates to secure storage and retrieval of authentication data, though the focus is on security practices rather than forensic storage technologies."
+          },
+          {
+            "title": "If you're not using AI to attack your own systems, your adversaries will",
+            "url": "https://www.theregister.com/security/2026/08/22/if-youre-not-using-ai-to-attack-your-own-systems-your-adversaries-will/5291346",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T15:02:00.000Z",
+            "summary": "Agents are also the new attack surface - cue defenders' existential angst",
+            "confidence": 0.55,
+            "reasoning": "The article discusses AI agents accessing sensitive systems and data, which relates to how information is stored and retrieved in forensic contexts, though the focus is more on attack surfaces than storage technologies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.7,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Hackers poison popular Rust crates to steal developers' credentials",
+            "url": "https://www.theregister.com/security/2026/08/21/hackers-poison-popular-rust-crates-to-steal-developers-credentials/5291075",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-21T14:57:00.000Z",
+            "summary": "Malicious updates turned routine builds into a delivery system for infostealer malware",
+            "confidence": 0.95,
+            "reasoning": "The article describes a security incident involving a supply chain attack on Rust crates, which is a clear example of an incident that would be managed through incident management processes."
+          },
+          {
+            "title": "Tesla’s Door Handles Lead to Its Biggest Recall Yet",
+            "url": "https://www.wired.com/story/teslas-door-handles-lead-to-its-biggest-recall-yet/",
+            "source": "WIRED",
+            "published": "2026-08-21T23:10:00.000Z",
+            "summary": "A Chinese agency says the two recalls affecting some 3 million vehicles can mostly be fixed by over-the-air updates—but they will also require physical warning stickers and camera-related updates.",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a major recall due to safety incidents involving door handles, which aligns with incident management's focus on identifying, responding to, and resolving incidents to restore service and ensure safety."
+          },
+          {
+            "title": "AI slop is good for business if you know what you're doing",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-22T13:19:00.000Z",
+            "summary": "Your irresponsibility is someone else's opportunity",
+            "confidence": 0.85,
+            "reasoning": "The article discusses fixing broken or problematic AI-generated codebases, which aligns with incident management's focus on restoring normal service operation after disruptions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Go updates may delight diehard gophers but displease AI overlords",
+            "url": "https://www.theregister.com/devops/2026/08/20/go-updates-may-delight-diehard-gophers-but-displease-ai-overlords/5290643",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-08-20T21:14:10.000Z",
+            "summary": "v 1.27 expands generics to support methods",
+            "confidence": 0.7,
+            "reasoning": "The article discusses generic programming and type abstraction in Go, which relates to algorithm design and implementation, though it's more about language features than specific algorithms."
+          }
+        ]
+      }
+    ]
+  }
+]
