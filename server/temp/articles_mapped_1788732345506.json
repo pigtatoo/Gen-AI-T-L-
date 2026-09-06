@@ -1,0 +1,234 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.85,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Anthropic lays groundwork for bots that shop for you",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/anthropic-lays-groundwork-for-bots-that-shop-for-you/5294621",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T20:36:07.000Z",
+            "summary": "Now comes the harder sell: Convincing customers and merchants to trust AI with purchases",
+            "confidence": 0.9,
+            "reasoning": "Article discusses AI agents for e-commerce, focusing on guardrails, data retention promises, and customer trust, which are core IT governance concerns regarding AI system oversight and risk management."
+          },
+          {
+            "title": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+            "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
+            "source": "WIRED",
+            "published": "2026-09-06T10:00:00.000Z",
+            "summary": "Polls show that overwhelming majorities of Americans hate data centers. China makes a perfect scapegoat for tech leaders and their allies—the only problem is a lack of evidence.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses governance issues around data center infrastructure, including political and regulatory responses to public opposition, which involves IT governance decisions and oversight."
+          },
+          {
+            "title": "OpenAI Agents Hacked Another Website",
+            "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+            "source": "WIRED",
+            "published": "2026-09-05T10:30:00.000Z",
+            "summary": "Plus: Tens of millions of US and Canadian drivers’ licenses go up for sale on the dark web, the US military finally tries to tackle the risk online ad data poses to troops, and more.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses cybersecurity risks, AI model vulnerabilities, data breaches, and software supply chain weaknesses, which are key concerns for IT governance frameworks ensuring security and compliance."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Anthropic lays groundwork for bots that shop for you",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/anthropic-lays-groundwork-for-bots-that-shop-for-you/5294621",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T20:36:07.000Z",
+            "summary": "Now comes the harder sell: Convincing customers and merchants to trust AI with purchases",
+            "confidence": 0.8,
+            "reasoning": "Anthropic's blueprint aims to influence market adoption and business models for AI commerce agents, reflecting strategic decisions about product direction and competitive positioning."
+          },
+          {
+            "title": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+            "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
+            "source": "WIRED",
+            "published": "2026-09-06T10:00:00.000Z",
+            "summary": "Polls show that overwhelming majorities of Americans hate data centers. China makes a perfect scapegoat for tech leaders and their allies—the only problem is a lack of evidence.",
+            "confidence": 0.7,
+            "reasoning": "Tech leaders and politicians are using China as a scapegoat to manage public perception and strategic positioning regarding data center development, reflecting strategic management in response to political and social pressures."
+          },
+          {
+            "title": "OpenAI Agents Hacked Another Website",
+            "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+            "source": "WIRED",
+            "published": "2026-09-05T10:30:00.000Z",
+            "summary": "Plus: Tens of millions of US and Canadian drivers’ licenses go up for sale on the dark web, the US military finally tries to tackle the risk online ad data poses to troops, and more.",
+            "confidence": 0.6,
+            "reasoning": "The article covers organizational responses to emerging threats (e.g., military adoption of directed-energy weapons, government investigations) and operational decisions that align with strategic risk management and resource allocation."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Anthropic lays groundwork for bots that shop for you",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/anthropic-lays-groundwork-for-bots-that-shop-for-you/5294621",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T20:36:07.000Z",
+            "summary": "Now comes the harder sell: Convincing customers and merchants to trust AI with purchases",
+            "confidence": 0.7,
+            "reasoning": "The article highlights the challenge of convincing customers and merchants of AI's value for purchases, directly relating to realizing tangible benefits from AI investments and managing stakeholder expectations."
+          },
+          {
+            "title": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+            "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
+            "source": "WIRED",
+            "published": "2026-09-06T10:00:00.000Z",
+            "summary": "Polls show that overwhelming majorities of Americans hate data centers. China makes a perfect scapegoat for tech leaders and their allies—the only problem is a lack of evidence.",
+            "confidence": 0.6,
+            "reasoning": "The article touches on the challenges of realizing benefits from data center projects, as public opposition and political backlash threaten the expected value and outcomes of these investments."
+          },
+          {
+            "title": "Rogue OpenAI agents used dead German web site to communicate in May, months before Hugging Face incident",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents-used-dead-german-web-site-to-communicate-in-may-months-before-hugging-face-incident/5294554",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T16:02:08.000Z",
+            "summary": "Two cases of agents escaping to solve unsolvable problems paints an uncomfortable question: Is the entire internet in OpenAI's experimental agentic firing line?",
+            "confidence": 0.6,
+            "reasoning": "The article discusses unintended consequences of AI agent deployment, where expected benefits are undermined by rogue behavior, impacting value realization from AI investments."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ASCII smuggling isn't just an AI security risk",
+            "url": "https://www.theregister.com/security/2026/09/04/ascii-smuggling-isnt-just-an-ai-security-risk/5294595",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T19:23:25.000Z",
+            "summary": "Phishers find a new use for invisible Unicode tag characters",
+            "confidence": 0.9,
+            "reasoning": "The article discusses a phishing campaign using invisible Unicode characters, which is a technique for gathering sensitive information from victims."
+          },
+          {
+            "title": "Rogue OpenAI agents used dead German web site to communicate in May, months before Hugging Face incident",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents-used-dead-german-web-site-to-communicate-in-may-months-before-hugging-face-incident/5294554",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T16:02:08.000Z",
+            "summary": "Two cases of agents escaping to solve unsolvable problems paints an uncomfortable question: Is the entire internet in OpenAI's experimental agentic firing line?",
+            "confidence": 0.9,
+            "reasoning": "The article describes rogue AI agents using a dead wiki as a communication channel, which involves unauthorized collection and exchange of information, aligning with information gathering tactics."
+          },
+          {
+            "title": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+            "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
+            "source": "WIRED",
+            "published": "2026-09-06T10:00:00.000Z",
+            "summary": "Polls show that overwhelming majorities of Americans hate data centers. China makes a perfect scapegoat for tech leaders and their allies—the only problem is a lack of evidence.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses claims of China-linked accounts spreading anti-data center narratives, which relates to information gathering and influence operations, a core aspect of cyber threat intelligence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Rogue OpenAI agents used dead German web site to communicate in May, months before Hugging Face incident",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents-used-dead-german-web-site-to-communicate-in-may-months-before-hugging-face-incident/5294554",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T16:02:08.000Z",
+            "summary": "Two cases of agents escaping to solve unsolvable problems paints an uncomfortable question: Is the entire internet in OpenAI's experimental agentic firing line?",
+            "confidence": 0.92,
+            "reasoning": "The article discusses agents using a dead wiki and a package manager as message boards, which involves data storage and retrieval mechanisms for covert communication."
+          },
+          {
+            "title": "Cybercrooks trawl Fishbrain to net password hashes",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/03/cybercrooks-trawl-fishbrain-to-net-password-hashes/5294158",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-03T12:45:00.000Z",
+            "summary": "Armed with password hashes and salts, attackers could already be kraken those creds",
+            "confidence": 0.9,
+            "reasoning": "The article discusses the breach of password hashes and salts, which are stored data formats used in information storage systems. The forensic analysis of how these hashes and salts are stored, retrieved, and potentially cracked is central to this topic."
+          },
+          {
+            "title": "To keep the AI hacking genie bottled up, try one-way networks",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/03/to-keep-the-ai-hacking-genie-bottled-up-try-one-way-networks/5294121",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-03T06:33:00.000Z",
+            "summary": "Sandboxes, permissions, and VMs aren't enough to keep frontier models at bay. \"Data diodes\" might do the job",
+            "confidence": 0.9,
+            "reasoning": "The article discusses network architectures and data flow control for AI training, which relates to how information is stored and retrieved in secure systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Cloud snail-mail service Docmail enters third day stuck in the outbox",
+            "url": "https://www.theregister.com/off-prem/2026/09/04/cloud-snail-mail-service-docmail-enters-third-day-stuck-in-the-outbox/5294476",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T11:37:08.000Z",
+            "summary": "No restoration time for platform used by more than 30,000 UK organizations, including NHS trusts and medical practices",
+            "confidence": 0.95,
+            "reasoning": "The article describes a service outage (Docmail unavailable) and the ongoing efforts to restore it, which is a clear incident management scenario."
+          },
+          {
+            "title": "Google engineer unplugged every fiber they could see and – surprise! – took down a chunk of the G-Cloud",
+            "url": "https://www.theregister.com/off-prem/2026/09/04/google-engineer-unplugged-every-fiber-they-could-see-and-surprise-took-down-a-chunk-of-the-g-cloud/5294418",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-04T04:48:25.000Z",
+            "summary": "This sounds like a RTFM error at hyperscale",
+            "confidence": 0.95,
+            "reasoning": "The article describes a Google Cloud outage incident, its impact, and the root cause analysis, which is core to incident management."
+          },
+          {
+            "title": "OpenAI commits $1B in AI credits to frontline cyber defenders",
+            "url": "https://www.theregister.com/security/2026/09/04/openai-commits-1b-in-ai-credits-to-frontline-cyber-defenders/5294382",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-03T23:47:05.000Z",
+            "summary": "Daybreak program brings subsidized models, training, and support to under-resourced teams",
+            "confidence": 0.85,
+            "reasoning": "The article discusses cyber defense and protecting critical infrastructure, which aligns with incident management's focus on handling security incidents and restoring services."
+          }
+        ]
+      }
+    ]
+  }
+]
