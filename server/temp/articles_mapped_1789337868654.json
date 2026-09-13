@@ -1,0 +1,239 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Commentary: Ministers can be paid more, but link their salary to performance",
+            "url": "https://www.channelnewsasia.com/commentary/singapore-ministers-salary-increase-link-performance-6380591",
+            "source": "Latest News",
+            "published": "2026-09-13T22:00:00.000Z",
+            "summary": "Linking pay to performance will become more important if the current difficulty with getting top people in the private and public sector continues, says veteran newspaper editor Han Fook Kwang.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses linking ministerial pay to performance and attracting top talent to public and private sectors, which relates to strategic human capital and compensation strategy decisions at the organizational/governance level."
+          },
+          {
+            "title": "Trump downplays warnings of AI risks, citing rivalry with China",
+            "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T18:49:37.000Z",
+            "summary": "The US President said \"negative forces\" were airing concerns about \"things that won't happen\".",
+            "confidence": 0.72,
+            "reasoning": "Trump's emphasis on leading China in AI and the geopolitical rivalry frame AI development as a strategic national priority, aligning with strategic management's focus on long-term positioning and competitive advantage."
+          },
+          {
+            "title": "Police probe interior design firm Axion Design after complaints over stalled renovations, missing furniture",
+            "url": "https://www.channelnewsasia.com/singapore/axion-design-renovation-interior-refund-police-6378646",
+            "source": "Latest News",
+            "published": "2026-09-13T22:00:00.000Z",
+            "summary": "Some affected customers are owed tens of thousands of dollars, while others say they had to live in homes with unfinished renovation works.",
+            "confidence": 0.55,
+            "reasoning": "The article involves a firm's operational and reputational challenges, which relate to strategic management in terms of business continuity, customer trust, and crisis response."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Commentary: Ministers can be paid more, but link their salary to performance",
+            "url": "https://www.channelnewsasia.com/commentary/singapore-ministers-salary-increase-link-performance-6380591",
+            "source": "Latest News",
+            "published": "2026-09-13T22:00:00.000Z",
+            "summary": "Linking pay to performance will become more important if the current difficulty with getting top people in the private and public sector continues, says veteran newspaper editor Han Fook Kwang.",
+            "confidence": 0.68,
+            "reasoning": "The core argument of linking pay to performance directly concerns ensuring that compensation delivers intended outcomes and value, aligning with benefit realization principles of measuring whether investments (salaries) yield expected results."
+          },
+          {
+            "title": "Trump downplays warnings of AI risks, citing rivalry with China",
+            "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T18:49:37.000Z",
+            "summary": "The US President said \"negative forces\" were airing concerns about \"things that won't happen\".",
+            "confidence": 0.55,
+            "reasoning": "The debate over slowing AI development to reduce existential risk versus maintaining competitive pace touches on balancing potential benefits against risks, though benefit realization is not the primary focus."
+          },
+          {
+            "title": "Questions mount over what an AI 'slowdown' would look like",
+            "url": "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T18:20:22.000Z",
+            "summary": "While pacing AI development might sound like a quick fix, it is far from an easy solution.",
+            "confidence": 0.55,
+            "reasoning": "The debate over slowing AI development implicitly weighs potential benefits of rapid innovation against risks, touching on whether intended benefits will be realized."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
+            "url": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T14:53:40.000Z",
+            "summary": "It comes as the AI firm's boss has called for the technology's development to be slowed down, citing \"serious\" risks.",
+            "confidence": 0.82,
+            "reasoning": "The article centers on calls for industry-wide regulation, independent monitoring of AI model development, and coordinated slowdowns between companies and governments, which are core IT governance concerns around oversight, accountability, and control of emerging technology."
+          },
+          {
+            "title": "Trump downplays warnings of AI risks, citing rivalry with China",
+            "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T18:49:37.000Z",
+            "summary": "The US President said \"negative forces\" were airing concerns about \"things that won't happen\".",
+            "confidence": 0.78,
+            "reasoning": "The article centers on AI risk warnings and calls for slowing development, which relate to governing technology and managing its societal risks, a core concern of IT governance."
+          },
+          {
+            "title": "Questions mount over what an AI 'slowdown' would look like",
+            "url": "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-13T18:20:22.000Z",
+            "summary": "While pacing AI development might sound like a quick fix, it is far from an easy solution.",
+            "confidence": 0.78,
+            "reasoning": "It involves governance of AI development, oversight of powerful AI models, and calls from leaders for controls on development pace, aligning with IT governance themes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.9,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "‘I’m Really Terrified’: A Mathematician Grapples With AI’s Recent Breakthroughs",
+            "url": "https://www.wired.com/story/mathematician-steven-strogatz-grapples-with-ai-recent-breakthroughs/",
+            "source": "WIRED",
+            "published": "2026-09-12T10:00:00.000Z",
+            "summary": "Steven Strogatz coauthored a book about how math is moving beyond human understanding. He spoke with WIRED about the seismic impact artificial intelligence has had on his life’s work.",
+            "confidence": 0.95,
+            "reasoning": "The article discusses AI-driven breakthroughs in solving long-standing mathematical problems, which fundamentally involve algorithmic advances and computational strategies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+            "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
+            "source": "WIRED",
+            "published": "2026-09-11T18:59:25.000Z",
+            "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on Meta's alleged extraction, storage, and retrieval of biometric faceprints from Facebook and Instagram photos, including a faceprint database configured to receive updates and face matching against stored profile images."
+          },
+          {
+            "title": "The US Government Launched 3 Previously Unreported Investigations of Polymarket Trades",
+            "url": "https://www.wired.com/story/polymarket-investigations-iran-biden-google-foia/",
+            "source": "WIRED",
+            "published": "2026-09-11T19:21:34.000Z",
+            "summary": "The agency that oversees prediction markets has investigated Polymarket trades on Biden pardons and the Iran war—and even more potential insider trading at Google, documents obtained by WIRED show.",
+            "confidence": 0.82,
+            "reasoning": "The article centers on documents obtained via a FOIA request and CFTC voting records, illustrating how information is stored, retrieved, and used as evidence in regulatory investigations."
+          },
+          {
+            "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
+            "url": "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/",
+            "source": "WIRED",
+            "published": "2026-09-11T09:00:00.000Z",
+            "summary": "A combination of rapid advances, recursive self-improvement, and agentic swarms are genuinely “spooking people” inside big labs.",
+            "confidence": 0.52,
+            "reasoning": "The article discusses AI models building successors and recursive self-improvement, which involves storing and retrieving model states, training data, and knowledge across generations; forensic analysis of such systems would rely on information storage and retrieval technologies to trace how AI systems evolve and where control is lost."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+            "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
+            "source": "WIRED",
+            "published": "2026-09-11T18:59:25.000Z",
+            "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on Meta allegedly harvesting Facebook and Instagram photos and extracting biometric information without consent, which is a form of collecting personal data—a core information gathering concern in cyber security attack and defense."
+          },
+          {
+            "title": "The US Government Launched 3 Previously Unreported Investigations of Polymarket Trades",
+            "url": "https://www.wired.com/story/polymarket-investigations-iran-biden-google-foia/",
+            "source": "WIRED",
+            "published": "2026-09-11T19:21:34.000Z",
+            "summary": "The agency that oversees prediction markets has investigated Polymarket trades on Biden pardons and the Iran war—and even more potential insider trading at Google, documents obtained by WIRED show.",
+            "confidence": 0.82,
+            "reasoning": "The article centers on obtaining government documents via FOIA requests and investigating trading records, which aligns with intelligence/information gathering activities."
+          },
+          {
+            "title": "The US and Mexico Announce They’re Teaming Up Against Drones",
+            "url": "https://www.wired.com/story/us-and-mexico-announce-teaming-up-against-drones/",
+            "source": "WIRED",
+            "published": "2026-09-11T09:15:00.000Z",
+            "summary": "The new joint operation uses laser-based technology capable of detecting, tracking, and disabling commercial drones linked to human and drug trafficking.",
+            "confidence": 0.72,
+            "reasoning": "The operation's first phase involved tracking and detecting commercial drones used by criminal entities, which aligns with reconnaissance and surveillance activities typical of information gathering in cyber defense contexts."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "I Fixed a Tractor Using John Deere’s Self-Repair Service. Farmers Aren’t Sold on It",
+            "url": "https://www.wired.com/story/i-fixed-a-tractor-john-deere-self-repair-service/",
+            "source": "WIRED",
+            "published": "2026-09-11T10:45:00.000Z",
+            "summary": "The agricultural machine manufacturer has a subscription service that lets owners repair their own equipment. Why is barely anybody using it?",
+            "confidence": 0.85,
+            "reasoning": "The article describes identifying and resolving a specific equipment fault (disconnected water-in-fuel sensor) using diagnostic instructions, which parallels incident management processes of detecting, diagnosing, and restoring service."
+          }
+        ]
+      }
+    ]
+  }
+]
