@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "CNA Explains: Beyond the Air India stake, how have SIA's other investments fared?",
+            "url": "https://www.channelnewsasia.com/singapore/sia-air-india-investment-track-record-6391561",
+            "source": "Latest News",
+            "published": "2026-09-20T22:00:00.000Z",
+            "summary": "One analyst says Singapore Airlines' track record of investments in other airlines has been \"pretty underwhelming\".",
+            "confidence": 0.92,
+            "reasoning": "The article examines Singapore Airlines' investment strategy and track record in other airlines, which directly relates to strategic management decisions and portfolio choices."
+          },
+          {
+            "title": "Commentary: BRICS found consensus in New Delhi but that also showed its limits",
+            "url": "https://www.channelnewsasia.com/commentary/china-india-modi-xi-brics-summit-iran-war-6391206",
+            "source": "Latest News",
+            "published": "2026-09-20T22:00:00.000Z",
+            "summary": "The watered-down language in the joint declaration showed less a resolution of differences than the narrowing ground on which consensus can be found, says RSIS’ Nazia Hussain.",
+            "confidence": 0.78,
+            "reasoning": "The article analyzes BRICS consensus-building and the strategic limits of multilateral alignment, which aligns with strategic management themes of positioning, coalition dynamics, and long-term direction."
+          },
+          {
+            "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+            "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+            "confidence": 0.65,
+            "reasoning": "Meta's decision to launch Muse as a mainstream AI agent and its cross-promotion strategy reflect strategic choices about product direction, market positioning, and alignment with company goals."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "CNA Explains: Beyond the Air India stake, how have SIA's other investments fared?",
+            "url": "https://www.channelnewsasia.com/singapore/sia-air-india-investment-track-record-6391561",
+            "source": "Latest News",
+            "published": "2026-09-20T22:00:00.000Z",
+            "summary": "One analyst says Singapore Airlines' track record of investments in other airlines has been \"pretty underwhelming\".",
+            "confidence": 0.78,
+            "reasoning": "The article discusses whether SIA's investments have delivered expected returns, with an analyst calling the track record 'underwhelming,' which speaks to benefit realization from strategic investments."
+          },
+          {
+            "title": "It’s Donald Trump Versus MAGA on Data Centers",
+            "url": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The president has doubled down on data centers and AI. His base is running in the opposite direction.",
+            "confidence": 0.65,
+            "reasoning": "The debate over data centers involves questions about whether the promised benefits of AI and data center expansion justify the costs and risks, touching on benefit realization and value assessment."
+          },
+          {
+            "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+            "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+            "confidence": 0.58,
+            "reasoning": "The article questions whether Muse delivers promised user benefits like task automation versus primarily serving Meta's data collection interests, touching on whether expected outcomes are actually realized."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+            "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+            "confidence": 0.82,
+            "reasoning": "The article raises concerns about Meta's Muse app and its data collection practices, user consent, and built-in protections, which are core IT governance issues around oversight, accountability, and control of technology use."
+          },
+          {
+            "title": "It’s Donald Trump Versus MAGA on Data Centers",
+            "url": "https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The president has doubled down on data centers and AI. His base is running in the opposite direction.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses political and public opposition to data center construction and AI expansion, which relates to how IT infrastructure decisions are governed, including stakeholder concerns and regulatory oversight."
+          },
+          {
+            "title": "What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That",
+            "url": "https://www.wired.com/story/how-to-use-memory-in-chatgpt/",
+            "source": "WIRED",
+            "published": "2026-09-20T09:30:00.000Z",
+            "summary": "Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses ChatGPT's memory feature and privacy considerations, which relate to how AI systems are governed, data handling policies, and user control mechanisms—core aspects of IT governance for emerging technologies."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+            "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on Meta's Muse app collecting extensive personal data such as bank account, email, and passport information, which directly relates to information gathering as a security concern."
+          },
+          {
+            "title": "Google's Gemini AI hacked three companies in security test",
+            "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-19T13:39:32.000Z",
+            "summary": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC.",
+            "confidence": 0.95,
+            "reasoning": "The article states Gemini found 'public information online' before hacking, which directly matches reconnaissance and information gathering techniques used in cyber attacks."
+          },
+          {
+            "title": "What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That",
+            "url": "https://www.wired.com/story/how-to-use-memory-in-chatgpt/",
+            "source": "WIRED",
+            "published": "2026-09-20T09:30:00.000Z",
+            "summary": "Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses how ChatGPT stores user interactions and builds memory context about users, which relates to how information about individuals is collected and retained by AI systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "What ChatGPT Thinks It Knows About You Is Affecting Its Answers. Here’s How to Change That",
+            "url": "https://www.wired.com/story/how-to-use-memory-in-chatgpt/",
+            "source": "WIRED",
+            "published": "2026-09-20T09:30:00.000Z",
+            "summary": "Understanding how ChatGPT’s latest memory upgrade works will help you get even more out of OpenAI’s productivity tool.",
+            "confidence": 0.92,
+            "reasoning": "The article discusses how ChatGPT stores user interactions in memory and retrieves them to provide context-aware responses, directly relating to information storage and retrieval technologies."
+          },
+          {
+            "title": "North Korea's fake job interviews infected 30,000 devices",
+            "url": "https://www.theregister.com/security/2026/09/18/north-koreas-fake-job-interviews-infected-30000-devices/5297461",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-18T16:53:00.000Z",
+            "summary": "WaterPlum recruiters used bogus coding tests to backdoor jobseekers and raid more than 7,000 crypto wallets",
+            "confidence": 0.78,
+            "reasoning": "The article describes attackers compromising cryptocurrency wallets and stealing funds, which involves accessing, storing, and retrieving sensitive data from digital storage systems."
+          },
+          {
+            "title": "Meta's Muse Is Better at Surveilling Than Helping Me",
+            "url": "https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/",
+            "source": "WIRED",
+            "published": "2026-09-20T10:30:00.000Z",
+            "summary": "The Muse app continues Meta’s trend of opting users into data collection for AI training. It also nudges you to share your bank account, email, and passport information.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses Meta's Muse app collecting and connecting to user data sources like email and bank accounts, which relates to how information is stored, accessed, and retrieved by AI systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "Forget the AI Slowdown—the Vulnerability Explosion Is Already Happening",
+            "url": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
+            "source": "WIRED",
+            "published": "2026-09-19T11:00:00.000Z",
+            "summary": "AI labs are toying with an industry-wide pact to slow development. Meanwhile, widely available AI chatbots are already helping uncover a tidal wave of security flaws.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses a surge of vulnerabilities and patches that strain IT and security teams, which relates to incident management processes for handling security incidents and vulnerabilities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Mathematicians Hate AI. They Can’t Quit It",
+            "url": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
+            "source": "WIRED",
+            "published": "2026-09-19T10:00:00.000Z",
+            "summary": "Powerful AI models have created an existential risk to the field, but researchers can’t stop relying on them because they’re too useful.",
+            "confidence": 0.92,
+            "reasoning": "The article centers on AI models solving complex mathematical problems and proofs, which are fundamentally algorithmic processes, and discusses coding agents like Codex and Claude used for mathematical reasoning."
+          },
+          {
+            "title": "The virtual worlds where robots are trained",
+            "url": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-17T23:00:47.000Z",
+            "summary": "Training systems that allow robots to negotiate the real world are getting more sophisticated.",
+            "confidence": 0.75,
+            "reasoning": "The article discusses training robots through simulations to find an optimal solution known as a policy, which involves algorithmic optimization and reinforcement learning algorithms."
+          },
+          {
+            "title": "Microsoft agentically ports Copilot runtime to Rust for $120K",
+            "url": "https://www.theregister.com/devops/2026/09/18/microsoft-agentically-ports-copilot-runtime-to-rust-for-120k/5297549",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-18T21:11:05.000Z",
+            "summary": "The Rust compiler remains unperturbed by the antics of the LLM",
+            "confidence": 0.55,
+            "reasoning": "The article describes an automated code porting process involving AI agents converting TypeScript to Rust, which relates to algorithmic transformation and code migration techniques, though it does not focus on traditional algorithm design or analysis."
+          }
+        ]
+      }
+    ]
+  }
+]
