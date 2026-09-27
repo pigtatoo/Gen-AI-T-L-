@@ -1,0 +1,248 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.75,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Indonesia’s disaster mitigation masterplan hinges on enforcement, community preparedness",
+            "url": "https://www.channelnewsasia.com/asia/indonesia-disaster-mitigation-plan-prevention-6408086",
+            "source": "Latest News",
+            "published": "2026-09-27T22:00:00.000Z",
+            "summary": "A string of disasters has prompted Indonesia to draw up a mitigation masterplan. Experts tell CNA that one of the challenges is ensuring the capabilities are consistently connected and maintained across a country of more than 17,000 islands.",
+            "confidence": 0.82,
+            "reasoning": "The article centers on Indonesia's national disaster mitigation masterplan, a long-term strategic initiative involving planning, coordination, and resource allocation across a vast archipelago, which aligns with strategic management themes of goal-setting and execution."
+          },
+          {
+            "title": "South Korea demands apology from Ukraine over North Korean prisoners of war disclosure",
+            "url": "https://www.channelnewsasia.com/east-asia/north-korea-prisoners-war-ukraine-transfer-disclosure-6414156",
+            "source": "Latest News",
+            "published": "2026-09-27T22:48:47.000Z",
+            "summary": "",
+            "confidence": 0.78,
+            "reasoning": "The article involves diplomatic tensions between South Korea and Ukraine over the disclosure of North Korean prisoners of war, which relates to strategic geopolitical decision-making and international relations management."
+          },
+          {
+            "title": "'A proving ground': Why F&B founders take a chance on incubator spaces with short leases and uncertain odds",
+            "url": "https://www.channelnewsasia.com/singapore/food-beverage-restaurants-hawkers-incubator-temporary-short-lease-6410281",
+            "source": "Latest News",
+            "published": "2026-09-27T22:00:00.000Z",
+            "summary": "For budding F&amp;B entrepreneurs, temporary spaces serve as a place to test their concepts and to learn the realities of running a business.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses F&B founders using incubator spaces to test business concepts and learn operational realities, which relates to strategic decision-making about market entry and business model validation."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Nicotine Is Mounting a Comeback in the Wellness Movement",
+            "url": "https://www.wired.com/story/nicotine-is-mounting-a-comeback-in-the-wellness-movement/",
+            "source": "WIRED",
+            "published": "2026-09-27T09:30:00.000Z",
+            "summary": "Improving mood and increasing longevity are just some of the unfounded claims about this substance circling around the “natural” medicine corners of the internet.",
+            "confidence": 0.6,
+            "reasoning": "The article critiques unfounded claims about nicotine's benefits, highlighting the gap between purported wellness benefits and actual evidence, relevant to benefit realization oversight."
+          },
+          {
+            "title": "'A proving ground': Why F&B founders take a chance on incubator spaces with short leases and uncertain odds",
+            "url": "https://www.channelnewsasia.com/singapore/food-beverage-restaurants-hawkers-incubator-temporary-short-lease-6410281",
+            "source": "Latest News",
+            "published": "2026-09-27T22:00:00.000Z",
+            "summary": "For budding F&amp;B entrepreneurs, temporary spaces serve as a place to test their concepts and to learn the realities of running a business.",
+            "confidence": 0.58,
+            "reasoning": "Entrepreneurs use short-lease incubator spaces to realize benefits such as concept testing and gaining practical business experience before committing to permanent locations."
+          },
+          {
+            "title": "Commentary: Dystopia, Inc - would you like your news with or without hallucinations?",
+            "url": "https://www.channelnewsasia.com/commentary/ai-world-news-day-fact-check-fake-images-6412936",
+            "source": "Latest News",
+            "published": "2026-09-27T21:59:00.000Z",
+            "summary": "AI rarely pays for the expensively-produced professional journalism it hoovers up, says AFP Global News Director Phil Chetwynd on World News Day (Sep 28).",
+            "confidence": 0.55,
+            "reasoning": "The article questions whether the benefits of AI are being realized fairly, as AI profits from journalism without paying for its production, highlighting a gap between expected and actual benefits for content creators."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Commentary: Dystopia, Inc - would you like your news with or without hallucinations?",
+            "url": "https://www.channelnewsasia.com/commentary/ai-world-news-day-fact-check-fake-images-6412936",
+            "source": "Latest News",
+            "published": "2026-09-27T21:59:00.000Z",
+            "summary": "AI rarely pays for the expensively-produced professional journalism it hoovers up, says AFP Global News Director Phil Chetwynd on World News Day (Sep 28).",
+            "confidence": 0.72,
+            "reasoning": "The article discusses AI's use of professional journalism without compensation, raising issues of oversight, accountability, and ethical use of technology, which are central concerns of IT governance."
+          },
+          {
+            "title": "The Data Center Backlash Should Also Be a Climate Reckoning. It Isn’t Yet",
+            "url": "https://www.wired.com/story/data-center-backlash-climate-reckoning/",
+            "source": "WIRED",
+            "published": "2026-09-27T10:00:00.000Z",
+            "summary": "Climate groups are latching onto the data center opposition movement, but it remains to be seen if they can get people to care about the facilities’ impact on the atmosphere.",
+            "confidence": 0.65,
+            "reasoning": "The article centers on data centers, AI infrastructure, and the governance of their environmental and climate impacts, including corporate panels and activist disruptions at Climate Week."
+          },
+          {
+            "title": "Indonesia’s disaster mitigation masterplan hinges on enforcement, community preparedness",
+            "url": "https://www.channelnewsasia.com/asia/indonesia-disaster-mitigation-plan-prevention-6408086",
+            "source": "Latest News",
+            "published": "2026-09-27T22:00:00.000Z",
+            "summary": "A string of disasters has prompted Indonesia to draw up a mitigation masterplan. Experts tell CNA that one of the challenges is ensuring the capabilities are consistently connected and maintained across a country of more than 17,000 islands.",
+            "confidence": 0.55,
+            "reasoning": "The article emphasizes the challenge of ensuring capabilities are consistently connected and maintained across 17,000+ islands, implying the need for coordinated systems, data, and infrastructure governance, which relates to IT governance in enabling nationwide connectivity and monitoring."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 2,
+        "articles": [
+          {
+            "title": "Amazon sellers watch as inventory vanishes into pending-order purgatory",
+            "url": "https://www.theregister.com/channel/2026/09/25/amazon-sellers-watch-as-inventory-vanishes-into-pending-order-purgatory/5298922",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-25T11:13:00.000Z",
+            "summary": "High-value goods remain tied up as merchants debate attack or platform glitch",
+            "confidence": 0.92,
+            "reasoning": "The article describes an unexpected disruption where Amazon marketplace orders are stuck in pending status, tying up seller inventory and preventing legitimate purchases, which is a classic incident requiring investigation, triage, and resolution."
+          },
+          {
+            "title": "Indonesia’s disaster mitigation masterplan hinges on enforcement, community preparedness",
+            "url": "https://www.channelnewsasia.com/asia/indonesia-disaster-mitigation-plan-prevention-6408086",
+            "source": "Latest News",
+            "published": "2026-09-27T22:00:00.000Z",
+            "summary": "A string of disasters has prompted Indonesia to draw up a mitigation masterplan. Experts tell CNA that one of the challenges is ensuring the capabilities are consistently connected and maintained across a country of more than 17,000 islands.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses disaster mitigation and response to a string of disasters, which parallels incident management processes of identifying, responding to, and resolving disruptive events."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OpenAI bots meddled with multiple US government agency sites",
+            "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-26T02:50:56.000Z",
+            "summary": "OpenAI said its bots accessed public data from a range of institutions during test exercises.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on OpenAI bots autonomously accessing and collecting public data from government, university, and agency websites, which is a direct example of information gathering as a cyber operation."
+          },
+          {
+            "title": "Old-School Credit Card Scams Are Far From Dead",
+            "url": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
+            "source": "WIRED",
+            "published": "2026-09-26T12:00:00.000Z",
+            "summary": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox.",
+            "confidence": 0.75,
+            "reasoning": "The fake banking websites are designed to collect victims' personal and financial details, which constitutes information gathering by cybercriminals."
+          },
+          {
+            "title": "Thieves Stole ‘Nvidia’ Trailers. They Got 20 Tons of Sand",
+            "url": "https://www.wired.com/story/thieves-stole-nvidia-trailers-they-got-20-tons-of-sand/",
+            "source": "WIRED",
+            "published": "2026-09-25T20:30:40.000Z",
+            "summary": "They wanted the silicon. They got the sand.",
+            "confidence": 0.72,
+            "reasoning": "The thieves appear to have identified and targeted specific trailers based on the Nvidia/PlusAI branding and perceived valuable cargo, suggesting reconnaissance or information gathering about the shipment's location and contents."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OpenAI bots meddled with multiple US government agency sites",
+            "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-26T02:50:56.000Z",
+            "summary": "OpenAI said its bots accessed public data from a range of institutions during test exercises.",
+            "confidence": 0.72,
+            "reasoning": "The article centers on AI bots accessing, retrieving, and extracting public data from government, university, and agency websites, which directly relates to information retrieval technologies and how stored information is accessed."
+          },
+          {
+            "title": "Tech Now",
+            "url": "https://www.bbc.co.uk/iplayer/episode/m0032d9k?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-09-26T01:00:00.000Z",
+            "summary": "Ammie Sekhon explores tech used to identify and remove counterfeit products online.",
+            "confidence": 0.72,
+            "reasoning": "Identifying and removing counterfeit products online relies on storing, indexing, querying, and retrieving product data and digital records, which aligns with information storage and retrieval technologies used in cyber forensics."
+          },
+          {
+            "title": "Old-School Credit Card Scams Are Far From Dead",
+            "url": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
+            "source": "WIRED",
+            "published": "2026-09-26T12:00:00.000Z",
+            "summary": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox.",
+            "confidence": 0.62,
+            "reasoning": "The article discusses physical scam letters, fake cards, QR codes, and URLs that direct victims to fake banking websites to capture credentials—an information storage and retrieval process involving data collection and access, which is relevant to forensic analysis of how fraudulent information is stored and retrieved."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 1,
+        "articles": [
+          {
+            "title": "New software dependency validation process increases speeds by 54x",
+            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-09-25T18:57:10.000Z",
+            "summary": "Overhead reduced by as much as 99.7%",
+            "confidence": 0.75,
+            "reasoning": "The article discusses optimizing software build dependency verification, which involves algorithmic techniques to reduce overhead and increase speed by 54x, directly relating to algorithm efficiency and design."
+          }
+        ]
+      }
+    ]
+  }
+]
