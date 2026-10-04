@@ -1,0 +1,275 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "US removes B-1 bombers from UK base amid security concerns",
+            "url": "https://www.channelnewsasia.com/world/us-removes-bombers-uk-base-security-concerns-6431771",
+            "source": "Latest News",
+            "published": "2026-10-04T22:46:09.000Z",
+            "summary": "",
+            "confidence": 0.72,
+            "reasoning": "The article concerns a strategic military decision by the US to remove B-1 bombers from a UK base amid security concerns, reflecting high-level strategic resource and defense posture management."
+          },
+          {
+            "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
+            "url": "https://www.channelnewsasia.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-6431831",
+            "source": "Latest News",
+            "published": "2026-10-04T22:35:15.000Z",
+            "summary": "",
+            "confidence": 0.72,
+            "reasoning": "The article discusses OpenAI's Altman advocating that AI benefits warrant accepting some risks, which reflects strategic decision-making about balancing innovation opportunities against organizational and societal risks."
+          },
+          {
+            "title": "Britain set to levy tariffs on Chinese electric cars, The Times reports",
+            "url": "https://www.channelnewsasia.com/business/britain-set-levy-tariffs-chinese-electric-cars-times-reports-6431791",
+            "source": "Latest News",
+            "published": "2026-10-04T21:46:25.000Z",
+            "summary": "",
+            "confidence": 0.65,
+            "reasoning": "The article concerns a government tariff decision on Chinese electric cars, which is a strategic policy move affecting international trade and market positioning."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
+            "url": "https://www.channelnewsasia.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-6431831",
+            "source": "Latest News",
+            "published": "2026-10-04T22:35:15.000Z",
+            "summary": "",
+            "confidence": 0.68,
+            "reasoning": "The article centers on the argument that AI's benefits justify accepting certain risks, directly relating to evaluating and realizing expected benefits from technology investments."
+          },
+          {
+            "title": "AkzoNobel could sell unit to Nippon Paint for over $1 billion, FT reports",
+            "url": "https://www.channelnewsasia.com/business/akzonobel-could-sell-unit-nippon-paint-over-1-billion-ft-reports-6431671",
+            "source": "Latest News",
+            "published": "2026-10-04T19:12:16.000Z",
+            "summary": "",
+            "confidence": 0.55,
+            "reasoning": "Selling a unit for over $1 billion implies expected financial benefits and value realization from the transaction."
+          },
+          {
+            "title": "Fulcrum Echo promises AI text in the style of any writer, so I tested it",
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/04/fulcrum-echo-promises-ai-text-in-the-style-of-any-writer-so-i-tested-it/5300944",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-04T15:15:00.000Z",
+            "summary": "I am just a copy of a copy of a copy, everything I say has come before",
+            "confidence": 0.55,
+            "reasoning": "The article touches on whether Fulcrum's Echo AI tool delivers intended value and how writers must decide on its use, implicating evaluation of realized benefits from AI adoption."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "FIA to investigate software bug after Bahrain GP in Malaysia",
+            "url": "https://www.channelnewsasia.com/sport/fia-investigate-software-bug-after-bahrain-gp-in-malaysia-6431781",
+            "source": "Latest News",
+            "published": "2026-10-04T21:41:21.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article discusses investigating a software bug, which relates to IT governance practices around software quality and incident management."
+          },
+          {
+            "title": "Former Anthropic researcher Coxon to testify at New York City AI hearing, Bloomberg News reports",
+            "url": "https://www.channelnewsasia.com/business/former-anthropic-researcher-coxon-testify-new-york-city-ai-hearing-bloomberg-news-reports-6431736",
+            "source": "Latest News",
+            "published": "2026-10-04T20:46:14.000Z",
+            "summary": "",
+            "confidence": 0.75,
+            "reasoning": "The article involves a former AI researcher testifying at a government AI hearing, which relates to the oversight, regulation, and governance of AI technology and IT systems."
+          },
+          {
+            "title": "OpenAI's Altman says AI benefits warrant accepting some risks",
+            "url": "https://www.channelnewsasia.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-6431831",
+            "source": "Latest News",
+            "published": "2026-10-04T22:35:15.000Z",
+            "summary": "",
+            "confidence": 0.55,
+            "reasoning": "The topic of accepting AI risks touches on governance frameworks for overseeing AI development and deployment, though the article focuses more on strategic risk acceptance than formal IT governance structures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Clever database, but can it run Doom?",
+            "url": "https://www.theregister.com/databases/2026/10/03/clever-database-but-can-it-run-doom/5300506",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-03T12:02:00.000Z",
+            "summary": "Reg hack learns the meaning of 'Be careful what you wish for'",
+            "confidence": 0.92,
+            "reasoning": "The article discusses porting Doom's game logic and renderer to SQL, which involves algorithmic design and implementation in an unconventional environment, directly relating to algorithms."
+          },
+          {
+            "title": "AI Is Making a Mess of Nurses’ Schedules. They Say It’s a Safety Issue",
+            "url": "https://www.wired.com/story/ai-making-mess-of-nurses-schedules-they-say-its-a-safety-issue/",
+            "source": "WIRED",
+            "published": "2026-10-02T09:30:00.000Z",
+            "summary": "A hospital giant and radiology network turned to Palantir to streamline scheduling, but nurses and other staff say the new software is causing errors, burnout, and frustration.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses an AI-powered scheduling tool (Timpani) that uses algorithms to assign nurse shifts, which relates to algorithmic design and optimization."
+          },
+          {
+            "title": "Pi coding agent pulls a 180 and adds MCP support",
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/02/pi-coding-agent-pulls-a-180-and-adds-mcp-support/5300678",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-02T07:01:00.000Z",
+            "summary": "To maintain minimalism, a new harness layer has been folded into a separate component",
+            "confidence": 0.55,
+            "reasoning": "The article discusses a coding agent and protocol integration, which relates to algorithmic design and decision models like the Jev decision model, though the connection is indirect."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.82,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ICE Has Been Dumping Protester Photos Into a Palantir Database",
+            "url": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
+            "source": "WIRED",
+            "published": "2026-10-02T19:52:36.000Z",
+            "summary": "DHS agents not only tracked and intimidated people observing ICE activity in Maine, but stored information about them in a Palantir-built database, newly unsealed court filings say.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on DHS collecting and storing dossiers on ICE observers, including photos, license plates, and other personal data in a Palantir-built database, which is a clear example of information gathering as a surveillance and intelligence collection activity."
+          },
+          {
+            "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
+            "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+            "source": "WIRED",
+            "published": "2026-10-03T12:00:00.000Z",
+            "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
+            "confidence": 0.92,
+            "reasoning": "The article describes Muse compiling detailed profiles of every person in the user's life, extracting internal files, and organizing personal data, which directly relates to information gathering techniques and privacy implications."
+          },
+          {
+            "title": "This Shoe Company’s Instagram Ad With a Frat Is Pissing People Off",
+            "url": "https://www.wired.com/story/this-shoe-companys-instagram-ad-with-a-frat-is-pissing-people-off/",
+            "source": "WIRED",
+            "published": "2026-10-02T18:19:53.000Z",
+            "summary": "A collaborative Instagram post between footwear line HeyDude and a University of Florida frat is sparking backlash due to sexual cyber-harassment allegations against two former members.",
+            "confidence": 0.82,
+            "reasoning": "The article describes former fraternity members allegedly using anonymous burner accounts to identify and target a fellow student by name and sorority affiliation, which involves reconnaissance and collection of personal information about a victim."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.76,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "ICE Has Been Dumping Protester Photos Into a Palantir Database",
+            "url": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
+            "source": "WIRED",
+            "published": "2026-10-02T19:52:36.000Z",
+            "summary": "DHS agents not only tracked and intimidated people observing ICE activity in Maine, but stored information about them in a Palantir-built database, newly unsealed court filings say.",
+            "confidence": 0.95,
+            "reasoning": "The article centers on a Palantir-built Investigative Case Management database used to store dossiers including photos and license plate numbers, directly involving information storage and retrieval technologies."
+          },
+          {
+            "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
+            "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+            "source": "WIRED",
+            "published": "2026-10-03T12:00:00.000Z",
+            "summary": "Millions have downloaded Meta’s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
+            "confidence": 0.82,
+            "reasoning": "The article describes how Muse organizes and presents user data by creating pages for every person in the user's life, compiling data on family, partners, friends, and colleagues, which directly relates to information storage and retrieval technologies."
+          },
+          {
+            "title": "This Shoe Company’s Instagram Ad With a Frat Is Pissing People Off",
+            "url": "https://www.wired.com/story/this-shoe-companys-instagram-ad-with-a-frat-is-pissing-people-off/",
+            "source": "WIRED",
+            "published": "2026-10-02T18:19:53.000Z",
+            "summary": "A collaborative Instagram post between footwear line HeyDude and a University of Florida frat is sparking backlash due to sexual cyber-harassment allegations against two former members.",
+            "confidence": 0.72,
+            "reasoning": "The article involves dissemination of nonconsensual intimate images via anonymous burner accounts and social media platforms, which relates to how digital information is stored, retrieved, and traced in cyber forensic investigations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.88,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "UK spending watchdog opens investigation into Capita's pension fiasco",
+            "url": "https://www.theregister.com/public-sector/2026/10/02/uk-spending-watchdog-opens-investigation-into-capitas-pension-fiasco/5300766",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-02T10:04:04.000Z",
+            "summary": "Outsourcer admits service remains below expectations after missed recovery deadline",
+            "confidence": 0.82,
+            "reasoning": "The article describes repeated missed service levels, a glitchy online portal, and members struggling to access pension information and payments, which are core incident management concerns around restoring normal service and managing service disruptions."
+          },
+          {
+            "title": "Flight delayed? So are these codec updates",
+            "url": "https://www.theregister.com/offbeat/2026/10/02/flight-delayed-so-are-these-codec-updates/5300405",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-02T08:30:00.000Z",
+            "summary": "A slice of Bolivian bork at Alcantarí International Airport",
+            "confidence": 0.82,
+            "reasoning": "The article describes an unexpected update prompt appearing on a public airport display, which represents an unplanned service disruption or incident that would need to be logged, diagnosed, and resolved under incident management processes."
+          },
+          {
+            "title": "AI Is Making a Mess of Nurses’ Schedules. They Say It’s a Safety Issue",
+            "url": "https://www.wired.com/story/ai-making-mess-of-nurses-schedules-they-say-its-a-safety-issue/",
+            "source": "WIRED",
+            "published": "2026-10-02T09:30:00.000Z",
+            "summary": "A hospital giant and radiology network turned to Palantir to streamline scheduling, but nurses and other staff say the new software is causing errors, burnout, and frustration.",
+            "confidence": 0.55,
+            "reasoning": "The article describes scheduling errors and staffing imbalances caused by AI software that may harm patients, which relates to managing service disruptions and incidents affecting care delivery."
+          }
+        ]
+      }
+    ]
+  }
+]
