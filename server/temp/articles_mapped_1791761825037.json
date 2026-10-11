@@ -1,0 +1,275 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI is less regulated than milk, says Microsoft president",
+            "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-10-11T23:07:35.000Z",
+            "summary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
+            "confidence": 0.92,
+            "reasoning": "The article centers on calls for global AI regulations, safety rules, legal obligations for incident reporting, and oversight of AI products, which directly relate to governance frameworks and controls for emerging technology."
+          },
+          {
+            "title": "Commentary: What if the HR department's AI prefers resumes written by AI?",
+            "url": "https://www.channelnewsasia.com/commentary/jobs-apply-resume-ai-use-skills-hr-6450116",
+            "source": "Latest News",
+            "published": "2026-10-11T21:59:00.000Z",
+            "summary": "If AI is biased towards AI, it adds a fresh dimension of jeopardy in the dismal hiring arms race, says the Financial Times’ Pilita Clark.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses AI systems used in hiring decisions, which falls under IT governance concerns regarding algorithmic bias, oversight, and ethical use of technology."
+          },
+          {
+            "title": "Amazon in talks to buy AI startup Decart for around $7 billion, WSJ reports",
+            "url": "https://www.channelnewsasia.com/business/amazon-in-talks-buy-ai-startup-decart-around-7-billion-wsj-reports-6451486",
+            "source": "Latest News",
+            "published": "2026-10-11T21:16:49.000Z",
+            "summary": "",
+            "confidence": 0.5,
+            "reasoning": "Acquiring an AI startup involves IT governance considerations such as technology integration, oversight, and alignment with Amazon's IT strategy."
+          }
+        ]
+      },
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI is less regulated than milk, says Microsoft president",
+            "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-10-11T23:07:35.000Z",
+            "summary": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge.",
+            "confidence": 0.78,
+            "reasoning": "The debate over AI regulation versus self-regulation, global competitiveness with China, and the UK's potential leadership role reflect strategic decisions and positioning by governments and firms in the AI sector."
+          },
+          {
+            "title": "Why investment-linked policy sales have surged even as complaints rise",
+            "url": "https://www.channelnewsasia.com/singapore/ilp-investment-linked-policies-demand-complaint-6446421",
+            "source": "Latest News",
+            "published": "2026-10-11T22:00:00.000Z",
+            "summary": "Simpler sign-ups and welcome bonuses may be driving demand for investment-linked policies in Singapore, industry experts say.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses market dynamics and business strategy around investment-linked policy sales, including drivers like simpler sign-ups and welcome bonuses, which relates to strategic decision-making in the insurance sector."
+          },
+          {
+            "title": "Commentary: What if the HR department's AI prefers resumes written by AI?",
+            "url": "https://www.channelnewsasia.com/commentary/jobs-apply-resume-ai-use-skills-hr-6450116",
+            "source": "Latest News",
+            "published": "2026-10-11T21:59:00.000Z",
+            "summary": "If AI is biased towards AI, it adds a fresh dimension of jeopardy in the dismal hiring arms race, says the Financial Times’ Pilita Clark.",
+            "confidence": 0.55,
+            "reasoning": "The article touches on hiring as a strategic HR function and the arms race dynamic between AI-written resumes and AI screening, which has strategic implications for talent acquisition."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Why investment-linked policy sales have surged even as complaints rise",
+            "url": "https://www.channelnewsasia.com/singapore/ilp-investment-linked-policies-demand-complaint-6446421",
+            "source": "Latest News",
+            "published": "2026-10-11T22:00:00.000Z",
+            "summary": "Simpler sign-ups and welcome bonuses may be driving demand for investment-linked policies in Singapore, industry experts say.",
+            "confidence": 0.65,
+            "reasoning": "The surge in sales despite rising complaints touches on whether expected benefits (demand, customer satisfaction) are being realized, relevant to benefit realization in product and service delivery."
+          },
+          {
+            "title": "AI Is Getting Really Good at Messing With Cybercriminals",
+            "url": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
+            "source": "WIRED",
+            "published": "2026-10-10T12:00:00.000Z",
+            "summary": "Anti-cybercrime initiatives are increasingly using AI to scam the scammers by tricking them into talking to lifelike bots that they think are real victims.",
+            "confidence": 0.65,
+            "reasoning": "The initiative aims to save potential victims and squander scammer resources, demonstrating measurable benefits from AI-driven anti-cybercrime tools."
+          },
+          {
+            "title": "Amazon in talks to buy AI startup Decart for around $7 billion, WSJ reports",
+            "url": "https://www.channelnewsasia.com/business/amazon-in-talks-buy-ai-startup-decart-around-7-billion-wsj-reports-6451486",
+            "source": "Latest News",
+            "published": "2026-10-11T21:16:49.000Z",
+            "summary": "",
+            "confidence": 0.6,
+            "reasoning": "A major acquisition like this is typically driven by expected benefits such as AI capabilities, market positioning, and future returns, making benefit realization relevant."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Commentary: What if the HR department's AI prefers resumes written by AI?",
+            "url": "https://www.channelnewsasia.com/commentary/jobs-apply-resume-ai-use-skills-hr-6450116",
+            "source": "Latest News",
+            "published": "2026-10-11T21:59:00.000Z",
+            "summary": "If AI is biased towards AI, it adds a fresh dimension of jeopardy in the dismal hiring arms race, says the Financial Times’ Pilita Clark.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses AI systems evaluating and filtering resumes, which involves storing candidate data and retrieving relevant information from applicant databases, a core aspect of information storage and retrieval technologies."
+          },
+          {
+            "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody's ready",
+            "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-11T11:30:00.000Z",
+            "summary": "Meanwhile, AI agents move robotic arms, 'make OT device operator screens lie'",
+            "confidence": 0.72,
+            "reasoning": "The article discusses AI systems finding and attacking critical OT/industrial infrastructure, which involves retrieving and accessing stored operational data and device configurations during forensic investigation of such attacks."
+          },
+          {
+            "title": "King warns malicious online actors are evolving tactics",
+            "url": "https://www.bbc.co.uk/news/articles/cme3xl7d18z2o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-10-10T15:56:32.000Z",
+            "summary": "The King spoke of \"threats to our international order\" in a letter marking the 10th anniversary of the National Cyber Security Centre.",
+            "confidence": 0.62,
+            "reasoning": "The article references automated technologies, evolving tactics, and safeguarding critical infrastructure, which relate to how information is stored, retrieved, and protected in cyber forensic contexts, though the article does not explicitly discuss storage or retrieval systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody's ready",
+            "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-11T11:30:00.000Z",
+            "summary": "Meanwhile, AI agents move robotic arms, 'make OT device operator screens lie'",
+            "confidence": 0.72,
+            "reasoning": "The article describes AI systems finding and attacking critical OT infrastructure, which involves reconnaissance and discovery of targets before exploitation."
+          },
+          {
+            "title": "UK PM Burnham says Russia interfered in 2016 Brexit vote",
+            "url": "https://www.channelnewsasia.com/world/uk-andy-burham-russia-interfere-brexit-6450551",
+            "source": "Latest News",
+            "published": "2026-10-11T21:42:00.000Z",
+            "summary": "Russia has previously denied meddling in the Brexit vote, casting Britain as gripped by anti-Russian hysteria.",
+            "confidence": 0.65,
+            "reasoning": "The article discusses alleged Russian interference in the 2016 Brexit vote, which involves intelligence/information operations and influence campaigns, loosely related to information gathering activities in cyber operations."
+          },
+          {
+            "title": "King warns malicious online actors are evolving tactics",
+            "url": "https://www.bbc.co.uk/news/articles/cme3xl7d18z2o?at_medium=RSS&at_campaign=rss",
+            "source": "BBC News",
+            "published": "2026-10-10T15:56:32.000Z",
+            "summary": "The King spoke of \"threats to our international order\" in a letter marking the 10th anniversary of the National Cyber Security Centre.",
+            "confidence": 0.55,
+            "reasoning": "The article mentions disinformation and hostile online activity, which can involve information gathering techniques used by malicious actors, though the article does not explicitly detail such methods."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.95,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "HPE's networking boss says AI will handle all trouble tickets without humans in two years",
+            "url": "https://www.theregister.com/networks/2026/10/11/hpes-networking-boss-says-ai-will-handle-all-trouble-tickets-without-humans-in-two-years/5302179",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-11T09:37:00.000Z",
+            "summary": "And you'll trust agents to do that for the same reason you no longer worry about automatic transmissions",
+            "confidence": 0.95,
+            "reasoning": "The article directly discusses AI handling trouble tickets and automated remediation, which are core aspects of incident management in ITSM."
+          },
+          {
+            "title": "Rejecting a promotion sent field service tech into support hell",
+            "url": "https://www.theregister.com/systems/2026/10/09/rejecting-a-promotion-sent-field-service-tech-into-support-hell/5301300",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-09T07:31:00.000Z",
+            "summary": "Chap who took the job left a trail of wreckage – and invaluable case studies – in his incompetent wake",
+            "confidence": 0.9,
+            "reasoning": "The article describes a field service tech dealing with support issues and incompetent management, which relates to handling and resolving IT incidents."
+          },
+          {
+            "title": "EC users should be afraid of a US kill switch - not some new software",
+            "url": "https://www.theregister.com/columnists/2026/10/10/ec-users-should-be-afraid-of-a-us-kill-switch-not-some-new-software/5301875",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-10T09:05:00.000Z",
+            "summary": "EU executive branch is building a sovereign backup with\nElement, not replacing Teams. Not yet anyway",
+            "confidence": 0.85,
+            "reasoning": "The article discusses the European Commission preparing for a potential US kill switch by deploying a self-hosted backup to Microsoft Teams, which is a contingency plan for a major service disruption—a key aspect of incident management."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "HPE's networking boss says AI will handle all trouble tickets without humans in two years",
+            "url": "https://www.theregister.com/networks/2026/10/11/hpes-networking-boss-says-ai-will-handle-all-trouble-tickets-without-humans-in-two-years/5302179",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-11T09:37:00.000Z",
+            "summary": "And you'll trust agents to do that for the same reason you no longer worry about automatic transmissions",
+            "confidence": 0.72,
+            "reasoning": "The article discusses AIOps and automated remediation, which involve algorithmic decision-making and automation of network operations, aligning with the concept of algorithms."
+          },
+          {
+            "title": "Growing pains: how distributed AI training changes the network between datacenters",
+            "url": "https://www.theregister.com/networks/2026/10/09/sponsored-growing-pains-how-distributed-ai-training-changes-the-network-between-datacenters/5301554",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-09T15:00:00.000Z",
+            "summary": "SPONSORED FEATURE: While linking the GPUs in a datacenter is a challenge, coordinating thousands of them to work efficiently over hundreds of kilometers presents a new set of difficulties.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses large-scale distributed AI training, which relies on algorithms for coordinating computation, synchronization, and optimization across multiple datacenters."
+          },
+          {
+            "title": "So long, Spokes: GitHub rewrites storage to restore reliability, just in time for agentic hordes",
+            "url": "https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/5302148",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-09T06:03:00.000Z",
+            "summary": "Octocats claim 35x write improvement",
+            "confidence": 0.55,
+            "reasoning": "The article discusses architectural changes to Git storage, including decoupling reads from writes and offloading maintenance, which relate to algorithmic design for performance optimization (35x write improvement)."
+          }
+        ]
+      }
+    ]
+  }
+]
