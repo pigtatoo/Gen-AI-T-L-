@@ -1,0 +1,275 @@
+[
+  {
+    "moduleId": 1,
+    "moduleTitle": "Governance Risk & Compliance",
+    "moduleConfidence": 0.92,
+    "topics": [
+      {
+        "topicId": 3,
+        "topicTitle": "Strategic Management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Australia's Challenger gets takeover bid from unit of Japan's Daiichi Life",
+            "url": "https://www.channelnewsasia.com/business/australias-challenger-gets-takeover-bid-unit-japans-daiichi-life-6470476",
+            "source": "Latest News",
+            "published": "2026-10-18T21:48:12.000Z",
+            "summary": "",
+            "confidence": 0.82,
+            "reasoning": "The article concerns a takeover bid, a significant strategic corporate event involving a Japanese insurer's unit acquiring Australia's Challenger, reflecting strategic decision-making and corporate strategy."
+          },
+          {
+            "title": "Zelenskyy tells NBC 'thankful' US has unblocked intelligence sharing",
+            "url": "https://www.channelnewsasia.com/world/zelenskyy-tells-nbc-thankful-us-has-unblocked-intelligence-sharing-6470361",
+            "source": "Latest News",
+            "published": "2026-10-18T19:40:00.000Z",
+            "summary": "In the past week, Kyiv also reported restrictions to satellite services operated by Elon Musk's SpaceX, which Ukraine relies on for battlefield communications.&nbsp;The Trump administration has denied it was behind any slowdown.",
+            "confidence": 0.6,
+            "reasoning": "The situation involves geopolitical strategy, reliance on foreign satellite services for battlefield communications, and high-level decisions by the Trump administration and Ukraine leadership."
+          },
+          {
+            "title": "No easy gig: China's push to better protect platform workers faces hurdles",
+            "url": "https://www.channelnewsasia.com/east-asia/china-gig-workers-draft-rules-protection-6459661",
+            "source": "Latest News",
+            "published": "2026-10-18T22:00:00.000Z",
+            "summary": "China's proposed rules aim to improve pay, rest and working conditions for tens of millions of gig workers, but analysts warn that financial pressures, differing work arrangements and enforcement challenges could limit their impact.",
+            "confidence": 0.55,
+            "reasoning": "The article concerns government policy strategy to regulate platform labor markets, balancing economic pressures, enforcement, and stakeholder interests—reflecting strategic management of regulatory objectives."
+          }
+        ]
+      },
+      {
+        "topicId": 5,
+        "topicTitle": "Benefit Realization",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Amazon wants you to Bee-lieve wearable AI can recall it all for you",
+            "url": "https://www.theregister.com/personal-tech/2026/10/17/amazon-wants-you-to-bee-lieve-wearable-ai-can-recall-it-all-for-you/5303569",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-17T09:00:00.000Z",
+            "summary": "Would you like personalized shopping recommendations based on that conversation you just had?",
+            "confidence": 0.65,
+            "reasoning": "The $300 million acquisition and new product development hinge on realizing intended benefits like personalized shopping recommendations and user adoption."
+          },
+          {
+            "title": "Australia's Challenger gets takeover bid from unit of Japan's Daiichi Life",
+            "url": "https://www.channelnewsasia.com/business/australias-challenger-gets-takeover-bid-unit-japans-daiichi-life-6470476",
+            "source": "Latest News",
+            "published": "2026-10-18T21:48:12.000Z",
+            "summary": "",
+            "confidence": 0.55,
+            "reasoning": "A takeover bid implies expected synergies and value creation, which relates to benefit realization from strategic investments, though the article text is limited."
+          },
+          {
+            "title": "Get in the bin! UK Space Agency wants public to name its debris removal mission",
+            "url": "https://www.theregister.com/science/2026/10/17/get-in-the-bin-uk-space-agency-wants-public-to-name-its-debris-removal-mission/5303555",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-17T07:29:00.000Z",
+            "summary": "ClearSpace UK aims to be operational in 2029 with public's suggestion etched on the side of the spacecraft",
+            "confidence": 0.5,
+            "reasoning": "The article emphasizes expected outcomes such as cleaning up space debris and enabling refuellable, repeatable missions, which relates to realizing intended benefits from an investment of public funds."
+          }
+        ]
+      },
+      {
+        "topicId": 1,
+        "topicTitle": "IT Governance",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
+            "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
+            "source": "WIRED",
+            "published": "2026-10-18T10:30:00.000Z",
+            "summary": "Adult performers are questioning why Meta allows its AI agent to sext while restricting their social media accounts.",
+            "confidence": 0.72,
+            "reasoning": "The article centers on Meta's content moderation policies and enforcement decisions regarding its AI agent versus human creators, which falls under IT governance concerns like policy-setting, platform rules, and accountability for technology use."
+          },
+          {
+            "title": "Encryption Is Getting Squeezed From All Sides",
+            "url": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+            "source": "WIRED",
+            "published": "2026-10-17T12:00:00.000Z",
+            "summary": "Canada’s planned surveillance law is the latest grim step in a series of threats to encryption that are spreading around the world.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses government legislation and regulatory pressures on encryption and surveillance, which reflects governance frameworks and oversight of technology policy."
+          },
+          {
+            "title": "Zelenskyy tells NBC 'thankful' US has unblocked intelligence sharing",
+            "url": "https://www.channelnewsasia.com/world/zelenskyy-tells-nbc-thankful-us-has-unblocked-intelligence-sharing-6470361",
+            "source": "Latest News",
+            "published": "2026-10-18T19:40:00.000Z",
+            "summary": "In the past week, Kyiv also reported restrictions to satellite services operated by Elon Musk's SpaceX, which Ukraine relies on for battlefield communications.&nbsp;The Trump administration has denied it was behind any slowdown.",
+            "confidence": 0.55,
+            "reasoning": "The article discusses government decisions on intelligence sharing and satellite communications services, reflecting oversight and control of critical IT/information systems and service restrictions."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 9,
+    "moduleTitle": "Cyber Security Attack & Defense",
+    "moduleConfidence": 0.65,
+    "topics": [
+      {
+        "topicId": 12,
+        "topicTitle": "Information gathering",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Zelenskyy tells NBC 'thankful' US has unblocked intelligence sharing",
+            "url": "https://www.channelnewsasia.com/world/zelenskyy-tells-nbc-thankful-us-has-unblocked-intelligence-sharing-6470361",
+            "source": "Latest News",
+            "published": "2026-10-18T19:40:00.000Z",
+            "summary": "In the past week, Kyiv also reported restrictions to satellite services operated by Elon Musk's SpaceX, which Ukraine relies on for battlefield communications.&nbsp;The Trump administration has denied it was behind any slowdown.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses intelligence sharing between the US and Ukraine, which relates to the collection and exchange of information—a core aspect of information gathering in cyber defense contexts."
+          },
+          {
+            "title": "Encryption Is Getting Squeezed From All Sides",
+            "url": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+            "source": "WIRED",
+            "published": "2026-10-17T12:00:00.000Z",
+            "summary": "Canada’s planned surveillance law is the latest grim step in a series of threats to encryption that are spreading around the world.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses surveillance laws and data retention requirements that enable governments and intelligence agencies to collect and access people's information, which relates to information gathering activities."
+          },
+          {
+            "title": "Uncle Scam Wants You … to cough up your cash and personal data, FBI warns ahead of midterms",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/16/uncle-scam-wants-you-to-cough-up-your-cash-and-personal-data-fbi-warns-ahead-of-midterms/5303512",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-16T14:30:00.000Z",
+            "summary": "The inevitable election-themed cyberattacks are whirring again, as the feds issue PSA about the ones to watch out for",
+            "confidence": 0.62,
+            "reasoning": "The article describes election-themed scams that steal personal data for use in follow-on frauds, which relates to information gathering techniques used by attackers to collect victim data."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 2,
+    "moduleTitle": "Cyber Forensic Technology",
+    "moduleConfidence": 0.55,
+    "topics": [
+      {
+        "topicId": 2,
+        "topicTitle": "Information Storage and Retrieval Technologies",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Don’t Let a Crypto Inheritance Get Stuck on the Blockchain",
+            "url": "https://www.wired.com/story/crypto-inheritance-how-to/",
+            "source": "WIRED",
+            "published": "2026-10-17T10:30:00.000Z",
+            "summary": "Claiming an inheritance of Bitcoin or other cryptocurrency can be like hunting for buried treasure. It doesn’t have to be.",
+            "confidence": 0.78,
+            "reasoning": "The article discusses how cryptocurrency is stored in custodial vs. noncustodial wallets and the challenges of retrieving/inheriting digital assets after death, which relates to information storage and retrieval technologies."
+          },
+          {
+            "title": "Encryption Is Getting Squeezed From All Sides",
+            "url": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+            "source": "WIRED",
+            "published": "2026-10-17T12:00:00.000Z",
+            "summary": "Canada’s planned surveillance law is the latest grim step in a series of threats to encryption that are spreading around the world.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses data retention requirements in encrypted services and government access to stored user information, which relates to how information is stored and retrieved in forensic contexts."
+          },
+          {
+            "title": "New online tool will check lawyers' sloppy AI-written briefs since they can't seem to be bothered",
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/16/new-online-tool-will-check-lawyers-sloppy-ai-written-briefs-since-they-cant-seem-to-be-bothered/5303589",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-16T16:08:35.000Z",
+            "summary": "Bogus AI-generated citations keep turning up in court documents, but lawyers could at least run those docs through this legal citation checker",
+            "confidence": 0.72,
+            "reasoning": "CiteProof crawls and searches legal briefs/filings to retrieve and verify case citations and quoted opinions, which aligns with retrieval technologies applied to stored document content."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 7,
+    "moduleTitle": "it service management",
+    "moduleConfidence": 0.78,
+    "topics": [
+      {
+        "topicId": 11,
+        "topicTitle": "incident management",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "Capita set to miss legal deadline on 93,000 civil servants' pension fixes, claims union",
+            "url": "https://www.theregister.com/public-sector/2026/10/16/capita-set-to-miss-legal-deadline-on-93000-civil-servants-pension-fixes-claims-union/5303500",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-16T11:51:39.000Z",
+            "summary": "PCS says outsourcer still stuck in design phase while retirees wait for McCloud corrections",
+            "confidence": 0.82,
+            "reasoning": "The article describes a glitchy online portal and service buckling under demand, with thousands unable to receive payments or update details, which are service incidents requiring incident management processes."
+          },
+          {
+            "title": "Networking problems after the October 2026 Windows update? NTLM might be to blame",
+            "url": "https://www.theregister.com/security/2026/10/16/networking-problems-after-the-october-2026-windows-update-ntlm-might-be-to-blame/5303503",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-16T15:30:00.000Z",
+            "summary": "Legacy protocol is going to be axed, and enforcement by default will highlight how migration is going",
+            "confidence": 0.72,
+            "reasoning": "The article describes a Windows update breaking networking and authentication for enterprises, which would generate incidents requiring detection, diagnosis, and resolution under incident management processes."
+          },
+          {
+            "title": "Bank of America had to bring in 1,000 contractors to patch all the bugs Mythos identified",
+            "url": "https://www.theregister.com/security/2026/10/15/bank-of-america-had-to-bring-in-1000-contractors-to-patch-all-the-bugs-mythos-identified/5303275",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-15T13:45:00.000Z",
+            "summary": "CEO said the workers were hired in Q2 and are still helping today",
+            "confidence": 0.72,
+            "reasoning": "The article describes Bank of America responding to a large volume of vulnerabilities discovered by Mythos, hiring contractors to patch flaws and spending significant remediation costs—an organizational response to a major security event that aligns with incident response and remediation activities within incident management."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "moduleId": 3,
+    "moduleTitle": "Data Structure and Algorithm ",
+    "moduleConfidence": 0.72,
+    "topics": [
+      {
+        "topicId": 4,
+        "topicTitle": "Algorithms",
+        "articleCount": 3,
+        "articles": [
+          {
+            "title": "$24,000 AI experiment ports TypeScript compiler to Rust",
+            "url": "https://www.theregister.com/devops/2026/10/15/24000-ai-experiment-ports-typescript-compiler-to-rust/5303409",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-15T18:52:52.000Z",
+            "summary": "Microsoft's Go rewrite gets some competition, with a developer claiming his port runs twice as fast",
+            "confidence": 0.72,
+            "reasoning": "The article discusses porting a compiler and performance improvements (2x/12.5x faster), which relates to algorithmic efficiency and implementation trade-offs."
+          },
+          {
+            "title": "Kids’ Content Is Deeply Broken. A New Platform Wants to Fix It",
+            "url": "https://www.wired.com/story/maka-streaming-platform-for-kids-fighting-against-ai-slop/",
+            "source": "WIRED",
+            "published": "2026-10-15T11:00:00.000Z",
+            "summary": "Low-quality AI-generated content currently dominates children’s media. Maka, a streaming platform run by child development experts, is offering an alternative.",
+            "confidence": 0.72,
+            "reasoning": "The article discusses recommendation/curation algorithms that drive autoplay and endless scrolling on platforms like YouTube, and how Maka intentionally designs its algorithms to avoid maximizing watch time, which relates to algorithmic design concepts."
+          },
+          {
+            "title": "YouTuber built 30-frame-per-second grayscale Game Boy, then open sourced it for all e-paper displays",
+            "url": "https://www.theregister.com/offbeat/2026/10/15/youtuber-built-30-frame-per-second-grayscale-game-boy-then-open-sourced-it-for-all-e-paper-displays/5303394",
+            "source": "www.theregister.com - Articles",
+            "published": "2026-10-15T17:15:00.000Z",
+            "summary": "Not afraid of custom waveforms frying your e-paper? Download it from GitHub and give it a shot on your stock screen today",
+            "confidence": 0.55,
+            "reasoning": "The article discusses custom waveforms and an open source E Ink driver used to drive an e-paper display, which involves algorithmic signal/pulse control, though the coverage is brief and hardware-focused rather than a formal algorithm discussion."
+          }
+        ]
+      }
+    ]
+  }
+]
